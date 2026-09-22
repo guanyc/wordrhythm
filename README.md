@@ -15,19 +15,25 @@ npm run dev      # http://localhost:3000
 ## Build
 
 ```bash
-npm run build
-npm run start
+npm run build      # produces a static site in ./out
 ```
 
+> This project uses `output: "export"`, so it builds to plain static files in
+> `out/`. Preview locally with any static server, e.g. `npx serve out`, or use
+> `npm run dev` for the dev server.
+
 ## Deploy to Cloudflare Pages (from GitHub)
+
+This is a fully static Next.js site — no functions/SSR required.
 
 1. Push this repo to GitHub.
 2. Cloudflare Dashboard → **Workers & Pages → Create → Pages → Connect to Git**.
 3. Select the repository.
-4. Framework preset: **Next.js**.
-5. Build command: `npx @cloudflare/next-on-pages`
-   (or simply `next build` — Cloudflare detects Next.js).
-6. Add custom domain: `wordrhythm.app` (DNS managed in Cloudflare).
+4. Framework preset: **Next.js** (Cloudflare detects it), or choose "None"
+   and set build/output manually:
+   - Build command: `npm run build`
+   - Build output directory: `out`
+5. Add custom domain: `wordrhythm.app` (DNS managed in Cloudflare).
 
 ## Project structure
 
