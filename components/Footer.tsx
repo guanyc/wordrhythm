@@ -16,6 +16,9 @@ export default function Footer() {
             <Link href="/take-a-break" className="hover:text-ink">
               Take a Break
             </Link>
+            <Link href="/privacy" className="hover:text-ink">
+              Privacy
+            </Link>
             <Link href="/" className="hover:text-ink">
               Home
             </Link>

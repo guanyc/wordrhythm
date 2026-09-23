@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Screenshots from "@/components/Screenshots";
 import { takeABreak } from "@/lib/versions";
 
@@ -82,6 +83,14 @@ export default function TakeABreakPage() {
         >
           Get Take a Break on Google Play
         </a>
+        <p className="mt-4 text-sm text-muted">
+          <Link
+            href="/privacy/take-a-break"
+            className="font-semibold text-brand hover:underline"
+          >
+            Privacy policy
+          </Link>
+        </p>
       </div>
     </section>
   );

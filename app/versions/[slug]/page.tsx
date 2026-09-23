@@ -90,6 +90,15 @@ export default async function VersionPage({
               </span>
             </div>
           )}
+
+          <p className="mt-4 text-sm text-muted">
+            <Link
+              href={`/privacy/${version.slug}`}
+              className="font-semibold text-brand hover:underline"
+            >
+              Privacy policy
+            </Link>
+          </p>
         </div>
       </div>
 
