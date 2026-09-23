@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { privacyPolicies } from "@/lib/privacy";
+import { publicPrivacyPolicies } from "@/lib/privacy";
 
 export const metadata: Metadata = {
   title: "Privacy policies",
@@ -23,7 +23,7 @@ export default function PrivacyIndexPage() {
       </p>
 
       <ul className="mt-8 space-y-3">
-        {privacyPolicies.map((policy) => (
+        {publicPrivacyPolicies().map((policy) => (
           <li key={policy.slug}>
             <Link
               href={`/privacy/${policy.slug}`}

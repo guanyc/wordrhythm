@@ -19,7 +19,11 @@ export async function generateMetadata({
   return {
     title: `${policy.appName} privacy policy`,
     description: `How ${policy.appName} handles your data. Last updated ${policy.updated}.`,
-    alternates: { canonical: `/privacy/${policy.slug}` },
+    alternates: policy.hidden
+      ? undefined
+      : { canonical: `/privacy/${policy.slug}` },
+    // Policies for apps outside this site stay reachable but unlisted.
+    robots: policy.hidden ? { index: false, follow: false } : undefined,
   };
 }
 

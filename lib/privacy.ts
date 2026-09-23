@@ -20,6 +20,12 @@ export interface PrivacyPolicy {
   icon?: string;
   /** Matching /versions/[slug], when the app is a Bible translation */
   versionSlug?: string;
+  /**
+   * Other apps by the same developer. They are reachable at
+   * /privacy/<slug> for store listings, but stay out of the index
+   * page and out of search results.
+   */
+  hidden?: boolean;
 }
 
 const DEVELOPER = "Guan Yongchun";
@@ -118,10 +124,53 @@ export const privacyPolicies: PrivacyPolicy[] = [
     updated: "June 2026",
     icon: "/apps/take-a-break/icon.png",
   },
+  {
+    slug: "quick",
+    appName: "Bible KJV Quick",
+    storeName: "Bible KJV Quick",
+    androidPackage: "com.gyc.ace.quick",
+    playUrl: "https://play.google.com/store/apps/details?id=com.gyc.ace.quick",
+    developerName: DEVELOPER,
+    legalEntity: DEVELOPER,
+    contactEmail: EMAIL,
+    updated: "September 11, 2026",
+    hidden: true,
+  },
+  {
+    slug: "hanzinova",
+    appName: "HanziNova HanziWriter",
+    storeName: "HanziNova: HSK Chinese Writing",
+    androidPackage: "com.guanyc.hanzinova.hanziwrite",
+    playUrl:
+      "https://play.google.com/store/apps/details?id=com.guanyc.hanzinova.hanziwrite",
+    developerName: DEVELOPER,
+    legalEntity: DEVELOPER,
+    contactEmail: EMAIL,
+    updated: "March 1, 2026",
+    hidden: true,
+  },
+  {
+    slug: "winfirst",
+    appName: "Win First",
+    storeName: "Born Win",
+    androidPackage: "com.guanyc.stock.discipline",
+    playUrl:
+      "https://play.google.com/store/apps/details?id=com.guanyc.stock.discipline",
+    developerName: DEVELOPER,
+    legalEntity: DEVELOPER,
+    contactEmail: EMAIL,
+    updated: "August 20, 2024",
+    hidden: true,
+  },
 ];
 
 export function getPrivacy(slug: string): PrivacyPolicy | undefined {
   return privacyPolicies.find((p) => p.slug === slug);
+}
+
+/** Policies linked from /privacy — the apps hosted on this site. */
+export function publicPrivacyPolicies(): PrivacyPolicy[] {
+  return privacyPolicies.filter((p) => !p.hidden);
 }
 
 /**
