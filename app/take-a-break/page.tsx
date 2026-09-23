@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Screenshots from "@/components/Screenshots";
+import { takeABreak } from "@/lib/versions";
 
 export const metadata: Metadata = {
   title: "Take a Break",
@@ -57,9 +59,25 @@ export default function TakeABreakPage() {
         ))}
       </ol>
 
+      <div className="mt-14">
+        <h2 className="text-xl font-semibold tracking-tight">
+          Inside Take a Break
+        </h2>
+        <p className="mt-2 text-sm text-muted">
+          Screenshots from the Google Play listing.
+        </p>
+        <div className="mt-6">
+          <Screenshots
+            variant="strip"
+            shots={takeABreak.screenshots}
+            label="Take a Break"
+          />
+        </div>
+      </div>
+
       <div className="mt-12">
         <a
-          href="https://play.google.com/store/apps/details?id=com.guanyc.takeabreak"
+          href={takeABreak.playUrl}
           className="inline-flex items-center justify-center rounded-xl bg-brand px-6 py-3 font-semibold text-white shadow-card transition-transform hover:-translate-y-0.5"
         >
           Get Take a Break on Google Play

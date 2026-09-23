@@ -1,6 +1,6 @@
 # Word Rhythm
 
-Brand hub for the **Word Rhythm** Bible app family — `Word Rhythm: KJV / ASV / WEB / Biblia RVR / Bible LSG`.
+Brand hub for the **Word Rhythm** Bible app family — `Word Rhythm: KJV / ASV / WEB / Biblia RVR / 和合本 / Bíblia AA`.
 Slogan: *Scripture for the rhythm of everyday life.*
 
 Built with **Next.js 15 (App Router) + TypeScript + Tailwind CSS**. No backend — fully static/deployable.
@@ -39,18 +39,23 @@ This is a fully static Next.js site — no functions/SSR required.
 
 ```
 app/
-  layout.tsx        # root layout + metadata
-  globals.css       # palette (CSS vars) + rhythm equalizer animation
-  page.tsx          # home: hero + rhythm flow + version grid + CTA
-  versions/page.tsx # all translations
+  layout.tsx              # root layout + metadata
+  globals.css             # palette (CSS vars) + rhythm equalizer animation
+  page.tsx                # home: hero + rhythm flow + version grid + screenshot strip
+  versions/page.tsx       # all translations
+  versions/[slug]/page.tsx# per-version detail: icon, Play link, screenshots
   take-a-break/page.tsx
-components/         # Header, Footer, Hero, RhythmFlow, VersionCard
-lib/versions.ts     # single source of truth for the version grid
-DESIGN.md           # brand analysis + site design
+components/               # Header, Footer, Hero, RhythmFlow, VersionCard, Screenshots
+lib/versions.ts           # single source of truth for the version grid
+public/apps/<slug>/       # icons + screenshots pulled from Google Play
+DESIGN.md                 # brand analysis + site design
 ```
 
 ## Adding a translation
 
-Edit `lib/versions.ts` — add an entry (`slug`, `code`, `name`, `listing`,
-`summary`, `status`, optional `package`/`playUrl`). It flows into the home
-grid and `/versions` automatically.
+1. Add an entry in `lib/versions.ts` (`slug`, `code`, `name`, `listing`,
+   `storeTitle`, `language`, `summary`, `status`, optional
+   `package`/`playUrl`).
+2. Drop its Play Store assets into `public/apps/<slug>/`: `icon.png` plus
+   `01.jpg`–`04.jpg` screenshots (the `shots()` helper in `lib/versions.ts`
+   wires the paths automatically).

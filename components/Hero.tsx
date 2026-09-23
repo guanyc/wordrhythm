@@ -7,10 +7,16 @@ export default function Hero() {
       <h1 className="mx-auto max-w-3xl text-4xl font-semibold leading-tight tracking-tight sm:text-6xl">
         Scripture for the rhythm of everyday life
       </h1>
-      <p className="mx-auto mt-6 max-w-xl text-lg text-muted">
-        God&apos;s Word, part of your daily rhythm. Read in the morning, pause
-        during the day, reflect in the evening — one calm companion across
-        every translation.
+      <p className="mx-auto mt-6 max-w-xl space-y-1 text-lg text-muted">
+        <span className="block">
+          God&apos;s Word, part of your daily rhythm.
+        </span>
+        <span className="block">
+          Read in the morning, pause during the day, reflect in the evening.
+        </span>
+        <span className="block">
+          One calm companion across every translation.
+        </span>
       </p>
 
       <div className="wr-eq mt-10 justify-center" aria-hidden="true">

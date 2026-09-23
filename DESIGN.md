@@ -25,12 +25,14 @@
 - 备选：`God's Word, part of your daily rhythm.`
 
 **版本子品牌（商店命名）**
-- `Word Rhythm: KJV Bible`
-- `Word Rhythm: ASV Bible`
-- `Word Rhythm: WEB Bible`
-- `Word Rhythm: Biblia RVR`
-- `Word Rhythm: Bible LSG`
+- `Word Rhythm: KJV Bible`（现商店名 `Bible KJV`，com.gyc.ace.kjv）
+- `Word Rhythm: ASV Bible`（现 `Bible ASV - Holy Bible`，com.gyc.ace.asv）
+- `Word Rhythm: WEB Bible`（现 `Bible Web-World English Bible`，com.gyc.ace.webu）
+- `Word Rhythm: Biblia RVR`（现 `Biblia RVR - Reina Valera`，com.gyc.ace.esp）
+- `Word Rhythm: 和合本圣经`（现 `和合本圣经 - 祷告、灵修与每日读经`，com.gyc.ace.bible）
+- `Word Rhythm: Bíblia AA`（现 `Bíblia AA Almeida Atualizada`，com.guanyc.ace.almeida）
 - 统一母品牌：`Word Rhythm Bible`
+- 另有独立 App：`Take a Break`（com.guanyc.takeabreak）
 
 **"Rhythm" 如何被功能解释（站点主线）**
 ```
@@ -99,7 +101,9 @@ Evening ────  Reflection / Reading
 ---
 
 ## 6. 待你确认 / 下一步
-1. 译本清单与状态：当前仅 KJV 为 live（com.gyc.ace.kjv），其余标 planned。是否齐全？是否要加 CUV？
+1. 译本清单与状态：✅ 已确认 —— KJV / ASV / WEB / RVR / 和合本 CUV / 葡语 AA 六个版本全部在
+   Google Play live（见上文清单），图标与截图已从商店页抓取到 `public/apps/<slug>/`；
+   站点首页、`/versions` 卡片、`/versions/[slug]` 详情页与 Take a Break 页均已接入。
 2. Hub vs 每译本子页：先 Hub，还是直接做 `/versions/[slug]` 详情页？
 3. 文案语言：英文为主，是否要中文/西语/法语版本切换（对应 RVR/LSG）？
 4. 是否复用 guanyc.com 已有的 KJV 营销长文作为 `/versions/kjv` 内容？

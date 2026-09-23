@@ -5,7 +5,7 @@ import { versions } from "@/lib/versions";
 export const metadata: Metadata = {
   title: "Versions",
   description:
-    "Word Rhythm across every translation — KJV, ASV, WEB, Biblia RVR, Bible LSG.",
+    "Word Rhythm across every translation — KJV, ASV, WEB, Biblia RVR, 和合本, Bíblia AA.",
 };
 
 export default function VersionsPage() {
