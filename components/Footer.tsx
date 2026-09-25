@@ -1,14 +1,18 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer className="mt-20 border-t border-black/5 bg-surface">
       <div className="mx-auto max-w-5xl px-5 py-10 text-sm text-muted">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <p className="font-semibold text-ink">Word Rhythm</p>
-            <p>Scripture for the rhythm of everyday life.</p>
-          </div>
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-6">
+          <Image
+            src="/brand/og.jpg"
+            alt="Word Rhythm — Scripture for the rhythm of everyday life"
+            width={1200}
+            height={557}
+            className="w-full max-w-md rounded-2xl shadow-card sm:max-w-sm"
+          />
           <nav className="flex flex-wrap gap-4">
             <Link href="/versions" className="hover:text-ink">
               Versions

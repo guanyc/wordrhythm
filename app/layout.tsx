@@ -26,8 +26,8 @@ export const metadata: Metadata = {
       {
         url: "/brand/og.jpg",
         width: 1200,
-        height: 451,
-        alt: "Word Rhythm — Let God's Word speak to your heart. Read, Listen, Reflect, Grow.",
+        height: 557,
+        alt: "Word Rhythm — Scripture for the rhythm of everyday life",
       },
     ],
   },
