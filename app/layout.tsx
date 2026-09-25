@@ -11,6 +11,10 @@ export const metadata: Metadata = {
   description:
     "Word Rhythm puts God's Word into the rhythm of everyday life — morning, day, and evening. Multiple Bible translations, one calm daily companion.",
   metadataBase: new URL("https://wordrhythm.app"),
+  icons: {
+    icon: [{ url: "/brand/icon-512.png", type: "image/png", sizes: "512x512" }],
+    apple: "/brand/apple-touch-icon.png",
+  },
   openGraph: {
     title: "Word Rhythm — Scripture for the rhythm of everyday life",
     description:
@@ -18,6 +22,18 @@ export const metadata: Metadata = {
     url: "https://wordrhythm.app",
     siteName: "Word Rhythm",
     type: "website",
+    images: [
+      {
+        url: "/brand/og.jpg",
+        width: 1200,
+        height: 451,
+        alt: "Word Rhythm — Let God's Word speak to your heart. Read, Listen, Reflect, Grow.",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/brand/og.jpg"],
   },
 };
 

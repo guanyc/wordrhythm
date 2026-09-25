@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Hero from "@/components/Hero";
 import RhythmFlow from "@/components/RhythmFlow";
 import Screenshots from "@/components/Screenshots";
@@ -62,6 +63,18 @@ export default function HomePage() {
         />
       )}
       <Hero />
+
+      <section className="mx-auto max-w-5xl px-5 pb-6">
+        <Image
+          src="/brand/og.jpg"
+          alt="Word Rhythm — Let God's Word speak to your heart. Read, Listen, Reflect, Grow."
+          width={1200}
+          height={451}
+          priority
+          className="w-full rounded-3xl shadow-card"
+        />
+      </section>
+
       <RhythmFlow />
 
       <section className="mx-auto max-w-5xl px-5 py-10">

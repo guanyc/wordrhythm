@@ -1,10 +1,17 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section className="mx-auto max-w-5xl px-5 pt-16 pb-10 text-center sm:pt-24">
-      <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-brand">
-        Word Rhythm
-      </p>
-      <h1 className="mx-auto max-w-3xl text-4xl font-semibold leading-tight tracking-tight sm:text-6xl">
+      <Image
+        src="/brand/icon-512.png"
+        alt="Word Rhythm app icon"
+        width={88}
+        height={88}
+        priority
+        className="mx-auto rounded-[22%] shadow-card"
+      />
+      <h1 className="mx-auto mt-6 max-w-3xl text-4xl font-semibold leading-tight tracking-tight sm:text-6xl">
         Scripture for the rhythm of everyday life
       </h1>
       <p className="mx-auto mt-6 max-w-xl space-y-1 text-lg text-muted">

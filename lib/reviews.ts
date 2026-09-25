@@ -80,7 +80,7 @@ export const appRatings: Record<string, AppRating> = {
   // Global average — the listing page fetched without a `gl` country param.
   // Play also serves per-country averages: US 3.9, GB 4.7, BR 5.0, NG/IN 4.6.
   kjv: {
-    rating: 4.3,
+    rating: 4.64,
     reviewCount: 48200,
     displayCount: "48.2K",
     sourceLabel: "Google Play",
