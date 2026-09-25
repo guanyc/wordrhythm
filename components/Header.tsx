@@ -4,6 +4,7 @@ const nav = [
   { href: "/", label: "Home" },
   { href: "/versions", label: "Versions" },
   { href: "/take-a-break", label: "Take a Break" },
+  { href: "/blog", label: "Guides" },
 ];
 
 export default function Header() {

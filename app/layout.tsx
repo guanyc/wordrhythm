@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   description:
     "Word Rhythm puts God's Word into the rhythm of everyday life — morning, day, and evening. Multiple Bible translations, one calm daily companion.",
   metadataBase: new URL("https://wordrhythm.app"),
+  alternates: {
+    types: {
+      "application/rss+xml": [{ url: "/rss.xml", title: "Word Rhythm Guides" }],
+    },
+  },
   icons: {
     icon: [{ url: "/brand/icon-512.png", type: "image/png", sizes: "512x512" }],
     apple: "/brand/apple-touch-icon.png",
