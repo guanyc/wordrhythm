@@ -3,7 +3,7 @@ title: "What Bible Verses Help When You Feel Anxious?"
 description: "Looking for Bible verses for anxiety? Here are several KJV passages that bring peace and reassurance, a soft place to start when worry feels overwhelming."
 date: 2026-07-16
 tags: ["kjv", "anxiety", "bible-verses", "devotional"]
-draft: true
+draft: false
 ---
 
 When anxiety rolls in, the hardest part is often just knowing where to start.

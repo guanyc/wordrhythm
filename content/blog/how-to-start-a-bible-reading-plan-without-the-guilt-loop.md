@@ -3,7 +3,7 @@ title: "How to Start a Bible Reading Plan Without the Guilt Loop"
 description: "Want to start a Bible reading plan without getting stuck in guilt and the pressure to catch up? Here’s a kinder approach to using a Bible reading plan app, with richer plan pages, devotional support, and simple ways to pick back up again."
 date: 2026-07-15
 tags: ["kjv", "reading-plan", "bible-app", "devotional"]
-draft: true
+draft: false
 ---
 
 Lots of people can start a Bible reading plan without trouble.
