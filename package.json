@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "deploy": "wrangler deploy",
+    "indexnow": "node scripts/indexnow.mjs",
     "lint": "next lint"
   },
   "dependencies": {
