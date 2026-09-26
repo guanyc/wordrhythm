@@ -20,7 +20,9 @@ Take a Break does not require account registration and does not directly collect
 
 The app is designed to work without creating a user account.
 
-The app does use limited third-party services for app analytics, crash reporting, and advertising. These services may collect certain technical and usage information automatically, such as device information, app interactions, advertising identifiers, crash logs, and diagnostics data.
+The app does not use precise GPS location and does not track where you go.
+
+The app does use limited third-party services for app analytics, crash reporting, and advertising. These services may automatically collect certain technical and usage information, such as device information, app interactions, advertising identifiers, crash logs, and diagnostics data. Google AdMob may also use **coarse (approximate) location** derived from sources such as your IP address or nearby network information; see *Advertising & Analytics* below.
 
 ## Purchases
 
@@ -39,6 +41,22 @@ If you contact us for support by email, we may receive information you voluntari
 
 This information is used only to respond to your inquiry and provide support.
 
+## Advertising & Analytics
+
+Take a Break uses Google AdMob to support the app through advertising. AdMob may automatically collect certain information — in both current and future versions of the app — including:
+
+*   Advertising ID
+*   Approximate (**coarse**) location, derived from sources such as your IP address or nearby network information
+*   Device information
+*   IP address
+*   App interaction and usage data
+
+Future versions of the app may continue to share coarse (approximate) location with AdMob alongside the information listed above. Any new category of collection is reflected here and in the app's Google Play Data safety disclosure before it takes effect.
+
+Firebase Analytics is used to understand general app usage, and Firebase Crashlytics to improve app stability through crash reporting and diagnostics.
+
+Please refer to Google's policies for details about how these services handle data.
+
 ## Children’s Privacy
 
 Take a Break may be used by children.
@@ -48,10 +66,6 @@ We do not knowingly collect personal information from children under the age of 
 The app does not require users to create accounts, provide personal information, or submit content.
 
 If a parent or guardian believes that a child has provided personal information through support communications, they may contact us and we will delete the information when reasonably possible.
-
-Take a Break uses Google AdMob to display ads. AdMob may collect device and usage data, including advertising identifiers, IP address, approximate location, and app interaction data, as described in Google's policies.
-
-Firebase Analytics and Firebase Crashlytics are used to understand general app usage and improve app stability. We may also use Google AdMob to support the app through advertising. Please refer to Google's policies for details about how these services handle data.
 
 ## Third-Party Services
 

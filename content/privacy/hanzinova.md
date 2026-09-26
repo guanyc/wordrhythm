@@ -54,8 +54,11 @@ We use third-party advertising services that may collect and use data to show re
 * Google AdMob may collect:
 
   * Advertising ID
+  * Approximate (**coarse**) location, derived from sources such as your IP address or nearby network information
   * Device information
   * Interaction with ads
+
+AdMob may collect this information in both current and future versions of the app. Future versions may continue to share coarse (approximate) location alongside the data listed above, and any new category is reflected here and in the app's Google Play Data safety disclosure first.
 
 ---
 
