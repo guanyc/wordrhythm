@@ -12,6 +12,9 @@ import { useEffect } from "react";
  */
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
+/** True when a measurement id is configured (false in dev without .env.local). */
+export const analyticsEnabled = Boolean(GA_ID);
+
 declare global {
   interface Window {
     dataLayer?: unknown[];

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import CookieSettings from "@/components/CookieSettings";
 
 export default function Footer() {
   return (
@@ -28,10 +29,13 @@ export default function Footer() {
             </Link>
           </nav>
         </div>
-        <p className="mt-6 text-xs text-muted/80">
-          © {new Date().getFullYear()} Word Rhythm. A calm daily companion for
-          God&apos;s Word.
-        </p>
+        <div className="mt-6 flex flex-wrap items-center justify-between gap-3 text-xs text-muted/80">
+          <p>
+            © {new Date().getFullYear()} Word Rhythm. A calm daily companion for
+            God&apos;s Word.
+          </p>
+          <CookieSettings />
+        </div>
       </div>
     </footer>
   );
