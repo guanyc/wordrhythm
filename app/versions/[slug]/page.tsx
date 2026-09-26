@@ -18,9 +18,27 @@ export async function generateMetadata({
   const { slug } = await params;
   const version = getVersion(slug);
   if (!version) return { title: "Version not found" };
+
+  const title = version.brandName
+    ? `${version.brandName} · ${version.name}`
+    : version.name;
+  const description = version.tagline
+    ? `${version.tagline} — ${version.summary}`
+    : version.summary;
+
   return {
-    title: version.name,
-    description: version.summary,
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      images: ["/brand/og.jpg"],
+    },
+    twitter: {
+      title,
+      description,
+      images: ["/brand/og.jpg"],
+    },
   };
 }
 
@@ -110,7 +128,7 @@ export default async function VersionPage({
 
       {listing && (
         <div className="mt-12 max-w-2xl space-y-3 border-l-2 border-brand-soft pl-5 text-muted">
-          {listing.intro.map((line) => (
+          {(listing.introZh ?? listing.intro).map((line) => (
             <p key={line} className="text-lg leading-relaxed">
               {line}
             </p>

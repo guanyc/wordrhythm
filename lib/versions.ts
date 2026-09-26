@@ -117,7 +117,7 @@ export const versions: BibleVersion[] = [
     storeTitle: "和合本圣经 - 祷告、灵修与每日读经",
     language: "中文",
     summary:
-      "Chinese Union Version — 晨读、日间片刻与晚间默想，让经文进入日常的节奏。",
+      "和合本圣经 · 中文 —— 晨读、日间片刻与晚间默想，让经文进入日常的节奏。",
     status: "live",
     package: "com.gyc.ace.bible",
     playUrl:

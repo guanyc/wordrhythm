@@ -21,6 +21,8 @@ export interface ListingSection {
 export interface StoreListing {
   /** Opening paragraphs, shown in the "About this app" block. */
   intro: string[];
+  /** Localised intro used instead of `intro` when the app serves a language. */
+  introZh?: string[];
   sections: ListingSection[];
   /** Closing lines shown after the section grid. */
   closing: string[];
@@ -500,6 +502,11 @@ const rvr: StoreListing = {
 };
 
 const cuv: StoreListing = {
+  introZh: [
+    "道韵把和合本圣经放进生活的节奏里——早晨读经，白天稍作停留，夜里安然默想。",
+    "几代华人信徒在教会崇拜、家庭敬拜、个人祷告中所读的，就是和合本。道韵把这份熟悉的经文带进你一天的每个时刻：清晨一处经文与一点默想，忙碌之中片刻的安稳，睡前安静的交托。",
+    "经文可以离线阅读，读经计划不必追赶进度，断了也能随时回来。让神的话进入生活的节奏。",
+  ],
   intro: [
     "Word Rhythm: 和合本圣经 brings the Chinese Union Version into the rhythm of everyday life — read in the morning, pause during the day, rest in the evening.",
     "For generations of Chinese Christians, the CUV has been the Bible read in churches, family worship, personal prayer, and everyday life. This app carries that familiar Scripture into every moment of your day.",
