@@ -22,6 +22,27 @@ export default function PrivacyIndexPage() {
         Each app has its own policy. Pick the one you are looking for.
       </p>
 
+      <Link
+        href="/privacy/website"
+        className="mt-6 flex items-center gap-3 rounded-2xl bg-surface p-4 shadow-card transition-colors hover:border-brand/40"
+      >
+        <span className="grid h-11 w-11 place-items-center rounded-xl bg-brand-soft text-lg">
+          {"WEB"}
+        </span>
+        <span className="flex-1">
+          <span className="block font-semibold">
+            Website privacy &amp; cookies
+          </span>
+          <span className="block text-sm text-muted">
+            Analytics and cookies on wordrhythm.app itself — how to opt in or
+            out.
+          </span>
+        </span>
+        <span aria-hidden="true" className="text-brand">
+          →
+        </span>
+      </Link>
+
       <ul className="mt-8 space-y-3">
         {publicPrivacyPolicies().map((policy) => (
           <li key={policy.slug}>

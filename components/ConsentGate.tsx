@@ -64,8 +64,8 @@ export default function ConsentGate() {
             We use Google Analytics to understand which guides help people
             around here. No ads, no selling of data. You can change your mind at
             any time. Read our{" "}
-            <Link href="/privacy" className="text-brand underline">
-              privacy policy
+            <Link href="/privacy/website" className="text-brand underline">
+              privacy &amp; cookie notice
             </Link>
             .
           </p>
