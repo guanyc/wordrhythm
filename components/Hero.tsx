@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="mx-auto max-w-5xl px-5 pt-16 pb-10 text-center sm:pt-24">
       <Image
-        src="/brand/icon-512.png"
+        src="/brand/icon-176.png"
         alt="Word Rhythm app icon"
         width={88}
         height={88}

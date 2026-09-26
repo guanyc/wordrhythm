@@ -26,10 +26,10 @@ Inside the app, each devotional follows a clear structure:
 It’s designed to be quick enough for a morning routine, but still meaningful enough to carry with you throughout the day.
 
 <div style="display:flex;flex-wrap:wrap;gap:16px;margin:16px 0 20px;">
-  <img src="/images/blog/morning_votd.webp" alt="Morning verse of the day screen" loading="lazy" decoding="async" style="width:min(100%,240px);height:auto;border-radius:16px;" />
-  <img src="/images/blog/day_devotional.webp" alt="Day devotional screen" loading="lazy" decoding="async" style="width:min(100%,240px);height:auto;border-radius:16px;" />
-  <img src="/images/blog/evening_votd.webp" alt="Evening verse of the day screen" loading="lazy" decoding="async" style="width:min(100%,240px);height:auto;border-radius:16px;" />
-  <img src="/images/blog/sleep_audio_entry.webp" alt="Sleep audio entry screen" loading="lazy" decoding="async" style="width:min(100%,240px);height:auto;border-radius:16px;" />
+  <img src="/images/blog/morning_votd.webp" width="480" height="1067" alt="Morning verse of the day screen" loading="lazy" decoding="async" style="width:min(100%,240px);height:auto;border-radius:16px;" />
+  <img src="/images/blog/day_devotional.webp" width="480" height="1067" alt="Day devotional screen" loading="lazy" decoding="async" style="width:min(100%,240px);height:auto;border-radius:16px;" />
+  <img src="/images/blog/evening_votd.webp" width="480" height="768" alt="Evening verse of the day screen" loading="lazy" decoding="async" style="width:min(100%,240px);height:auto;border-radius:16px;" />
+  <img src="/images/blog/sleep_audio_entry.webp" width="480" height="1067" alt="Sleep audio entry screen" loading="lazy" decoding="async" style="width:min(100%,240px);height:auto;border-radius:16px;" />
 </div>
 
 <p style="margin:-4px 0 20px;color:#64748b;font-size:0.95rem;">The four surfaces above make the daily rhythm easier to see: morning, day, evening, and the softer bedtime layer.</p>
@@ -64,10 +64,10 @@ Browse **topic devotionals** like:
 It’s a good fit for people who like structured themes, small group studies, or a personal “one theme at a time” approach.
 
 <div style="display:flex;flex-wrap:wrap;gap:16px;margin:16px 0 20px;">
-  <img src="/images/blog/reading_plan_list.webp" alt="Reading plan list screen" loading="lazy" decoding="async" style="width:min(100%,240px);height:auto;border-radius:16px;" />
-  <img src="/images/blog/reading_plan_detail.webp" alt="Reading plan detail screen" loading="lazy" decoding="async" style="width:min(100%,240px);height:auto;border-radius:16px;" />
-  <img src="/images/blog/advanced_search_filters.webp" alt="Advanced search filters screen" loading="lazy" decoding="async" style="width:min(100%,240px);height:auto;border-radius:16px;" />
-  <img src="/images/blog/offline_bible_reader.webp" alt="Offline Bible reading screen" loading="lazy" decoding="async" style="width:min(100%,240px);height:auto;border-radius:16px;" />
+  <img src="/images/blog/reading_plan_list.webp" width="480" height="768" alt="Reading plan list screen" loading="lazy" decoding="async" style="width:min(100%,240px);height:auto;border-radius:16px;" />
+  <img src="/images/blog/reading_plan_detail.webp" width="480" height="768" alt="Reading plan detail screen" loading="lazy" decoding="async" style="width:min(100%,240px);height:auto;border-radius:16px;" />
+  <img src="/images/blog/advanced_search_filters.webp" width="480" height="768" alt="Advanced search filters screen" loading="lazy" decoding="async" style="width:min(100%,240px);height:auto;border-radius:16px;" />
+  <img src="/images/blog/offline_bible_reader.webp" width="480" height="768" alt="Offline Bible reading screen" loading="lazy" decoding="async" style="width:min(100%,240px);height:auto;border-radius:16px;" />
 </div>
 
 <p style="margin:-4px 0 20px;color:#64748b;font-size:0.95rem;">These feature screens show that the app is not only devotional content, but also reading plans, stronger search, and clean offline reading.</p>

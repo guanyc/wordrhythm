@@ -103,9 +103,9 @@ Often, it’s where faithful engagement begins.
 Screenshots make this product idea easier to picture.
 
 <div style="display:flex;flex-wrap:wrap;gap:16px;margin:16px 0 20px;">
-<img src="/images/blog/marketing-b-reflection.webp" alt="KJV reflection screen" loading="lazy" decoding="async" style="width:min(100%,220px);height:auto;border-radius:16px;" />
-<img src="/images/blog/marketing-b-emotion.webp" alt="KJV emotion-based devotional screen" loading="lazy" decoding="async" style="width:min(100%,220px);height:auto;border-radius:16px;" />
-<img src="/images/blog/marketing-b-prayer.webp" alt="KJV prayer screen" loading="lazy" decoding="async" style="width:min(100%,220px);height:auto;border-radius:16px;" />
+<img src="/images/blog/marketing-b-reflection.webp" width="440" height="782" alt="KJV reflection screen" loading="lazy" decoding="async" style="width:min(100%,220px);height:auto;border-radius:16px;" />
+<img src="/images/blog/marketing-b-emotion.webp" width="440" height="782" alt="KJV emotion-based devotional screen" loading="lazy" decoding="async" style="width:min(100%,220px);height:auto;border-radius:16px;" />
+<img src="/images/blog/marketing-b-prayer.webp" width="440" height="782" alt="KJV prayer screen" loading="lazy" decoding="async" style="width:min(100%,220px);height:auto;border-radius:16px;" />
 </div>
 <p style="margin:-4px 0 20px;color:#64748b;font-size:0.95rem;">This is the core idea visually: Scripture meets you right where you are. From there, it naturally leads into reflection and prayer, instead of ending once you read the verse.</p>This KJV devotional content doesn’t just store Bible text.
 It uses time-based Verse of the Day structure.

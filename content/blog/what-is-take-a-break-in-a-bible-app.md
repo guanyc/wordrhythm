@@ -45,8 +45,8 @@ It just skips all the setup work.
 
 Here’s what that daytime flow looks like inside the app:
 <div style="display:flex;flex-wrap:wrap;gap:16px;margin:16px 0 20px;">
-  <img src="/images/blog/take_a_break_emotion_picker.webp" alt="Take a Break emotion picker in the KJV app" loading="lazy" decoding="async" style="width:min(100%,320px);height:auto;border-radius:16px;" />
-  <img src="/images/blog/take_a_break_result.webp" alt="Take a Break devotional card result in the KJV app" loading="lazy" decoding="async" style="width:min(100%,320px);height:auto;border-radius:16px;" />
+  <img src="/images/blog/take_a_break_emotion_picker.webp" width="640" height="1422" alt="Take a Break emotion picker in the KJV app" loading="lazy" decoding="async" style="width:min(100%,320px);height:auto;border-radius:16px;" />
+  <img src="/images/blog/take_a_break_result.webp" width="640" height="1422" alt="Take a Break devotional card result in the KJV app" loading="lazy" decoding="async" style="width:min(100%,320px);height:auto;border-radius:16px;" />
 </div>
 
 ## Take a Break belongs to the devotional system — but it’s not Verse of the Day

@@ -76,13 +76,13 @@ Just a gentle invitation to spend a moment with Scripture.
 
 <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:flex-start">
   <a href="/images/blog/take-a-break-takeabreak1.webp" target="_blank" rel="noopener">
-    <img src="/images/blog/take-a-break-takeabreak1.webp" alt="Take a Break screenshot 1" loading="lazy" decoding="async" style="width:200px;height:auto;border-radius:12px" />
+    <img src="/images/blog/take-a-break-takeabreak1.webp" width="400" height="225" alt="Take a Break screenshot 1" loading="lazy" decoding="async" style="width:200px;height:auto;border-radius:12px" />
   </a>
   <a href="/images/blog/take-a-break-takeabreak2.webp" target="_blank" rel="noopener">
-    <img src="/images/blog/take-a-break-takeabreak2.webp" alt="Take a Break screenshot 2" loading="lazy" decoding="async" style="width:200px;height:auto;border-radius:12px" />
+    <img src="/images/blog/take-a-break-takeabreak2.webp" width="400" height="225" alt="Take a Break screenshot 2" loading="lazy" decoding="async" style="width:200px;height:auto;border-radius:12px" />
   </a>
   <a href="/images/blog/take-a-break-takeabreak3.webp" target="_blank" rel="noopener">
-    <img src="/images/blog/take-a-break-takeabreak3.webp" alt="Take a Break screenshot 3" loading="lazy" decoding="async" style="width:200px;height:auto;border-radius:12px" />
+    <img src="/images/blog/take-a-break-takeabreak3.webp" width="400" height="225" alt="Take a Break screenshot 3" loading="lazy" decoding="async" style="width:200px;height:auto;border-radius:12px" />
   </a>
 </div>
 

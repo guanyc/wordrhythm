@@ -34,7 +34,7 @@ For many readers, offline support isn’t an extra perk. It’s the foundation.
 
 Here’s what the offline reader looks like inside the app:
 <div style="margin:16px 0 20px;">
-  <img src="/images/blog/marketing-b-reader.webp" alt="KJV Bible reader screen in the app" loading="lazy" decoding="async" style="width:min(100%,360px);height:auto;border-radius:16px;" />
+  <img src="/images/blog/marketing-b-reader.webp" width="720" height="1280" alt="KJV Bible reader screen in the app" loading="lazy" decoding="async" style="width:min(100%,360px);height:auto;border-radius:16px;" />
 </div>
 <p style="margin:-4px 0 20px;color:#64748b;font-size:0.95rem;">Offline access shines when the reading interface itself feels calm and immediate: open the text, flip through chapters, and meet Scripture without friction.</p>
 
