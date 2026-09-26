@@ -57,11 +57,17 @@ export default async function VersionPage({
         )}
         <div className="flex-1">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand">
-            Word Rhythm
+            {version.brandName ?? "Word Rhythm"}
           </p>
           <h1 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
             {version.name}
           </h1>
+
+          {version.tagline && (
+            <p className="mt-2 text-lg font-medium text-brand">
+              {version.tagline}
+            </p>
+          )}
 
           <div className="mt-4 flex flex-wrap items-center gap-2">
             <span className="rounded-lg bg-brand-soft px-3 py-1 text-sm font-bold text-brand">

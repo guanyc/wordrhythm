@@ -9,6 +9,10 @@ export interface BibleVersion {
   name: string;
   /** Word Rhythm store name, e.g. "Word Rhythm: KJV Bible" */
   listing: string;
+  /** Localised brand name, e.g. 道韵 for the Chinese app. Falls back to listing. */
+  brandName?: string;
+  /** Tagline shown beside the brand name, in the same language. */
+  tagline?: string;
   /** Title currently used on Google Play */
   storeTitle: string;
   /** Language of the translation, e.g. "English" */
@@ -108,6 +112,8 @@ export const versions: BibleVersion[] = [
     code: "CUV",
     name: "和合本圣经",
     listing: "Word Rhythm: 和合本圣经",
+    brandName: "道韵",
+    tagline: "让神的话进入生活的节奏",
     storeTitle: "和合本圣经 - 祷告、灵修与每日读经",
     language: "中文",
     summary:
