@@ -710,6 +710,66 @@ const aa: StoreListing = {
   ],
 };
 
+const lsg: StoreListing = {
+  intro: [
+    "Word Rhythm: Louis Segond 1910 brings the classic French translation into the rhythm of everyday life — read in the morning, pause during the day, rest in the evening.",
+    "For generations of French-speaking Christians, the Louis Segond has been the Bible read in church, in family worship, and in personal prayer. This app carries that familiar Scripture into every moment of your day.",
+  ],
+  sections: [
+    {
+      heading: "Morning — begin with Scripture",
+      blocks: [
+        {
+          list: [
+            "Start the day with a verse and a short reflection",
+            "Open the chapter context whenever you want the whole picture",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Day — Take a Break when you need one",
+      blocks: [
+        {
+          list: [
+            "Step away for a quiet moment and return to God’s Word",
+            "Start from how you feel, or from what you are facing",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Evening — end the day in prayer",
+      blocks: [
+        {
+          list: [
+            "Close the day in prayer with Scripture",
+            "Spend quiet moments with God throughout the day too",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Read — the complete Louis Segond Bible",
+      blocks: [
+        {
+          list: [
+            "Read the complete Louis Segond 1910 Bible",
+            "Navigate quickly by book, chapter, and verse",
+            "Continue where you left off",
+            "Clean reading experience with dark mode support and works offline",
+          ],
+        },
+      ],
+    },
+  ],
+  closing: [
+    "Read in the morning. Pause during the day. Reflect in the evening.",
+    "For French-speaking Christians everywhere, keep Scripture close every day.",
+    "Read. Reflect. Pray. Grow.",
+  ],
+};
+
 export const listings: Record<string, StoreListing> = {
   kjv,
   asv,
@@ -717,6 +777,7 @@ export const listings: Record<string, StoreListing> = {
   rvr,
   cuv,
   aa,
+  lsg,
 };
 
 export function getListing(slug: string): StoreListing | undefined {

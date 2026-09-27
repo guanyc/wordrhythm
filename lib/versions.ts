@@ -141,6 +141,19 @@ export const versions: BibleVersion[] = [
     icon: "/apps/aa/icon.png",
     screenshots: shots("aa"),
   },
+  {
+    slug: "lsg",
+    code: "LSG",
+    name: "Louis Segond 1910",
+    listing: "Word Rhythm: Louis Segond 1910",
+    storeTitle: "Louis Segond 1910 - Prière et lecture quotidienne",
+    language: "Français",
+    summary:
+      "Louis Segond 1910 pour le rythme de la vie quotidienne — French Scripture in a calm, daily flow.",
+    status: "planned",
+    package: "com.gyc.ace.lsg",
+    icon: "/apps/lsg/icon.png",
+  },
 ];
 
 export function getVersion(slug: string): BibleVersion | undefined {
