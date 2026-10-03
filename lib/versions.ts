@@ -59,6 +59,7 @@ export const versions: BibleVersion[] = [
     playUrl:
       "https://play.google.com/store/apps/details?id=com.gyc.ace.kjv",
     icon: "/apps/kjv/icon.png",
+    ogImage: "/brand/og-kjv.jpg",
     screenshots: shots("kjv"),
   },
   {
@@ -91,6 +92,7 @@ export const versions: BibleVersion[] = [
     playUrl:
       "https://play.google.com/store/apps/details?id=com.gyc.ace.webu",
     icon: "/apps/web/icon.png",
+    ogImage: "/brand/og-web.jpg",
     screenshots: shots("web"),
   },
   {
@@ -125,6 +127,7 @@ export const versions: BibleVersion[] = [
     playUrl:
       "https://play.google.com/store/apps/details?id=com.gyc.ace.bible",
     icon: "/apps/cuv/icon.png",
+    ogImage: "/brand/og-cuv.jpg",
     screenshots: shots("cuv"),
   },
   {
