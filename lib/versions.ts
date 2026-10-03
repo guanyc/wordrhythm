@@ -24,6 +24,8 @@ export interface BibleVersion {
   package?: string;
   /** Google Play URL (if published) */
   playUrl?: string;
+  /** Optional social share image (1200x630) for this version's page. */
+  ogImage?: string;
   /** App icon in /public (from the Play listing) */
   icon?: string;
   /** Phone screenshots in /public (from the Play listing) */
@@ -157,6 +159,7 @@ export const versions: BibleVersion[] = [
     playUrl:
       "https://play.google.com/store/apps/details?id=com.gyc.ace.lsg",
     icon: "/apps/lsg/icon.png",
+    ogImage: "/brand/og-lsg.jpg",
     screenshots: shots("lsg"),
   },
 ];

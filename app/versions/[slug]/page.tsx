@@ -32,12 +32,12 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      images: ["/brand/og.jpg"],
+      images: [version.ogImage ?? "/brand/og.jpg"],
     },
     twitter: {
       title,
       description,
-      images: ["/brand/og.jpg"],
+      images: [version.ogImage ?? "/brand/og.jpg"],
     },
   };
 }
