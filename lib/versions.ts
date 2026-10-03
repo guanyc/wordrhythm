@@ -144,15 +144,20 @@ export const versions: BibleVersion[] = [
   {
     slug: "lsg",
     code: "LSG",
-    name: "Louis Segond 1910",
+    name: "Bible Louis Segond 1910",
     listing: "Word Rhythm: Louis Segond 1910",
-    storeTitle: "Louis Segond 1910 - Prière et lecture quotidienne",
+    brandName: "WordRhythm",
+    tagline: "la Parole au rythme de tes journées",
+    storeTitle: "Bible Louis Segond 1910",
     language: "Français",
     summary:
-      "Louis Segond 1910 pour le rythme de la vie quotidienne — French Scripture in a calm, daily flow.",
-    status: "planned",
+      "Une Bible Louis Segond gratuite et entièrement hors ligne, pour la méditation, la lecture et la prière au rythme de tes journées.",
+    status: "live",
     package: "com.gyc.ace.lsg",
+    playUrl:
+      "https://play.google.com/store/apps/details?id=com.gyc.ace.lsg",
     icon: "/apps/lsg/icon.png",
+    screenshots: shots("lsg"),
   },
 ];
 

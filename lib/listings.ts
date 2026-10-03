@@ -712,61 +712,143 @@ const aa: StoreListing = {
 
 const lsg: StoreListing = {
   intro: [
-    "Word Rhythm: Louis Segond 1910 brings the classic French translation into the rhythm of everyday life — read in the morning, pause during the day, rest in the evening.",
-    "For generations of French-speaking Christians, the Louis Segond has been the Bible read in church, in family worship, and in personal prayer. This app carries that familiar Scripture into every moment of your day.",
+    "Une Bible Louis Segond 1910 gratuite, rapide et entièrement hors ligne, pensée pour la lecture et pour la méditation quotidienne. Toutes les fonctions sont ouvertes, sans compte ni abonnement.",
+    "Plus qu’une app de lecture : un parcours guidé pour bâtir un rythme spirituel à travers l’Écriture, la réflexion et la prière.",
   ],
   sections: [
     {
-      heading: "Morning — begin with Scripture",
+      heading: "Méditation quotidienne",
       blocks: [
         {
           list: [
-            "Start the day with a verse and a short reflection",
-            "Open the chapter context whenever you want the whole picture",
+            "« Ton cœur aujourd’hui » : des versets qui parlent à ce que tu ressens",
+            "Par émotion (paix, force, espérance, patience, gratitude) ou par thème (foi, amour, pardon, sagesse)",
+            "Chaque méditation : verset, signification, réflexion et prière",
+            "« Pause avec Dieu » : une courte pause pour respirer, lire et prier",
+            "Une expérience qui s’adapte à ta progression",
           ],
         },
       ],
     },
     {
-      heading: "Day — Take a Break when you need one",
+      heading: "Bible Louis Segond 1910, hors ligne",
       blocks: [
         {
           list: [
-            "Step away for a quiet moment and return to God’s Word",
-            "Start from how you feel, or from what you are facing",
+            "Texte complet consultable sans internet : lire, chercher et méditer sans connexion",
+            "Lecture claire et sans distraction",
+            "Navigation instantanée vers livre, chapitre ou verset",
+            "Lecture fluide : défilement ou diaporama",
+            "Police, thèmes clair/sombre et largeur de colonne réglables",
           ],
         },
       ],
     },
     {
-      heading: "Evening — end the day in prayer",
+      heading: "Le rythme de ta journée",
       blocks: [
         {
           list: [
-            "Close the day in prayer with Scripture",
-            "Spend quiet moments with God throughout the day too",
+            "Matin : un verset, sa signification, une réflexion",
+            "Soir : prière, paix et repos",
+            "Nuit : prière pour le sommeil et audio apaisant",
           ],
         },
       ],
     },
     {
-      heading: "Read — the complete Louis Segond Bible",
+      heading: "WordRhythm : la Parole au rythme de tes journées",
+      blocks: [
+        {
+          text: [
+            "Word = la Parole, Rhythm = le rythme : la Bible donne le tempo de tes matins, de tes soirées et de tes nuits, au lieu d’être un livre qu’on ouvre de temps en temps.",
+            "Un verset pour commencer, une réflexion pour traverser, une prière pour terminer.",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Plans de lecture",
       blocks: [
         {
           list: [
-            "Read the complete Louis Segond 1910 Bible",
-            "Navigate quickly by book, chapter, and verse",
-            "Continue where you left off",
-            "Clean reading experience with dark mode support and works offline",
+            "Parcours guidés de 7 jours (foi, amour, pardon, sagesse, paix…), puis 21, 30, 40, 85 et 100 jours",
+            "Plans d’un an : 365 jours canonique, chronologique ou de méditation",
+            "Plan traditionnel sur 3 ans, avec suivi de progression et calendrier",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Recherche et étude",
+      blocks: [
+        {
+          list: [
+            "Recherche instantanée dans toute la Bible, par mot-clé ou expression",
+            "Localisateur de verset : va droit au passage voulu",
+            "Versets selon tes situations de vie et tes émotions",
+            "Éclairages bibliques pour approfondir",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Mémoriser",
+      blocks: [
+        {
+          list: [
+            "Enregistre tes versets : « En cours », puis « Maîtrisé »",
+            "Une pratique quotidienne simple, à ton rythme",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Audio",
+      blocks: [
+        {
+          list: [
+            "Écoute la Bible à voix haute, avec débit et hauteur de voix réglables",
+            "Enchaînement automatique chapitre puis livre, mode « voix seule »",
+            "Audio sommeil : lectures douces et sons de fond paisibles pour t’endormir",
+            "Idéal quand tu es stressé, submergé, ou que tu n’arrives pas à ralentir le soir",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Suivi",
+      blocks: [
+        {
+          list: [
+            "Statistiques de lecture et récapitulatif mensuel",
+            "Rappels en douceur pour garder la régularité",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Enregistrer et partager",
+      blocks: [
+        {
+          list: [
+            "Favoris, signets, notes et surlignages en plusieurs couleurs",
+            "Bibliothèque d’étiquettes pour classer tes versets",
+            "Partage de versets et création d’images bibliques",
+            "Méditations sauvegardées pour retrouver tes lectures",
+            "Widget du verset du jour sur ton écran d’accueil",
+            "Sauvegarde et restauration de tes favoris, notes, surlignages et préférences depuis un fichier",
           ],
         },
       ],
     },
   ],
   closing: [
-    "Read in the morning. Pause during the day. Reflect in the evening.",
-    "For French-speaking Christians everywhere, keep Scripture close every day.",
-    "Read. Reflect. Pray. Grow.",
+    "Tout est inclus, sans abonnement : méditations complètes, tous les plans de lecture, aucun compte à créer.",
+    "Confidentialité : rien n’est collecté sans ton accord. Tu choisis à la première ouverture et tu peux changer d’avis dans les Paramètres.",
+    "Reste dans la Parole. Trouve ton rythme.",
+    "WordRhythm — la Parole au rythme de tes journées.",
+    "Lis. Réfléchis. Prie. Grandis.",
   ],
 };
 
