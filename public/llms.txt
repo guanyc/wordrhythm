@@ -46,47 +46,50 @@ Only KJV Bible ships the dedicated Sleep Audio track.
 ## Bible verses by feeling
 
 KJV passages matched to a feeling, the same way the app's Take a Break picks a
-verse — emotion → themes → highest-weighted verses. 37 collections,
+verse — emotion → themes → highest-weighted verses. 40 collections,
 20 verses each. This is the site's highest-intent content: these are the
 questions people actually ask.
 
-- [Anxiety and fear](https://wordrhythm.app/bible-verses/anxiety) — 20 verses; starts at Isaiah 26:3
-- [Grief](https://wordrhythm.app/bible-verses/grieving) — 20 verses; starts at Isaiah 40:1
-- [Gratitude](https://wordrhythm.app/bible-verses/gratitude) — 20 verses; starts at Psalms 97:12
-- [Hope and hopelessness](https://wordrhythm.app/bible-verses/hope) — 20 verses; starts at 1 Thessalonians 5:8
-- [Loneliness](https://wordrhythm.app/bible-verses/lonely-strong) — 20 verses; starts at 2 Corinthians 10:15
-- [Anger](https://wordrhythm.app/bible-verses/angry) — 20 verses; starts at Ezekiel 33:15
-- [Guilt and shame](https://wordrhythm.app/bible-verses/guilt) — 20 verses; starts at Ezekiel 33:10
-- [Calm and peace](https://wordrhythm.app/bible-verses/peace) — 20 verses; starts at Isaiah 26:3
-- [Courage](https://wordrhythm.app/bible-verses/courage) — 20 verses; starts at Psalms 112:7
-- [Confusion](https://wordrhythm.app/bible-verses/confused) — 20 verses; starts at Proverbs 25:19
-- [Temptation](https://wordrhythm.app/bible-verses/tempted) — 20 verses; starts at 1 John 3:10
-- [Emptiness](https://wordrhythm.app/bible-verses/empty) — 20 verses; starts at Philemon 1:20
-- [Prayer](https://wordrhythm.app/bible-verses/prayerful) — 20 verses; starts at Psalms 16:7
-- [Persecution](https://wordrhythm.app/bible-verses/persecuted) — 20 verses; starts at 2 Corinthians 6:9
-- [Justice](https://wordrhythm.app/bible-verses/unjust) — 20 verses; starts at Proverbs 10:28
-- [Service](https://wordrhythm.app/bible-verses/serving) — 20 verses; starts at Galatians 6:2
-- [Bitterness](https://wordrhythm.app/bible-verses/bitter) — 20 verses; starts at Luke 15:20
-- [Blessing](https://wordrhythm.app/bible-verses/blessed) — 20 verses; starts at Psalms 97:12
-- [Contentment](https://wordrhythm.app/bible-verses/content) — 20 verses; starts at Galatians 5:22
-- [Disappointment](https://wordrhythm.app/bible-verses/disappointed) — 20 verses; starts at Habakkuk 2:3
-- [Discouragement](https://wordrhythm.app/bible-verses/discouraged) — 20 verses; starts at Micah 7:8
-- [Encouragement](https://wordrhythm.app/bible-verses/inspired) — 20 verses; starts at Matthew 28:9
-- [Growth](https://wordrhythm.app/bible-verses/growth) — 20 verses; starts at 1 Peter 2:12
-- [Joy](https://wordrhythm.app/bible-verses/joy) — 20 verses; starts at Psalms 97:12
-- [Joyful hope](https://wordrhythm.app/bible-verses/hopeful-joyful) — 20 verses; starts at Isaiah 30:29
-- [Longing for justice](https://wordrhythm.app/bible-verses/justice-longing) — 20 verses; starts at Ezekiel 33:13
-- [Love](https://wordrhythm.app/bible-verses/loving) — 20 verses; starts at Philippians 2:1
-- [Overwhelmed and weary](https://wordrhythm.app/bible-verses/overwhelmed) — 20 verses; starts at Daniel 10:19
-- [Refreshed](https://wordrhythm.app/bible-verses/refreshed) — 20 verses; starts at Daniel 10:19
-- [Sadness](https://wordrhythm.app/bible-verses/sad) — 20 verses; starts at Daniel 10:19
-- [Seeking in confusion](https://wordrhythm.app/bible-verses/confused-seeking) — 20 verses; starts at Proverbs 2:4
-- [Seeking truth](https://wordrhythm.app/bible-verses/seeking-truth) — 20 verses; starts at Proverbs 28:26
-- [Thanksgiving](https://wordrhythm.app/bible-verses/thankful-for-grace) — 20 verses; starts at 1 Corinthians 1:4
-- [Trust](https://wordrhythm.app/bible-verses/trusting-in-god) — 20 verses; starts at Jeremiah 17:7
-- [Uncertainty](https://wordrhythm.app/bible-verses/uncertain) — 20 verses; starts at Proverbs 28:26
-- [Unity](https://wordrhythm.app/bible-verses/unity-needed) — 20 verses; starts at 1 Corinthians 11:33
-- [Worship](https://wordrhythm.app/bible-verses/worshipful) — 20 verses; starts at Psalms 13:6
+- [Anxiety and fear](https://wordrhythm.app/bible-verses/anxiety) — 10 verses; starts at Isaiah 26:3
+- [Grief](https://wordrhythm.app/bible-verses/grieving) — 10 verses; starts at Isaiah 40:1
+- [Gratitude](https://wordrhythm.app/bible-verses/gratitude) — 10 verses; starts at Psalms 97:12
+- [Hope and hopelessness](https://wordrhythm.app/bible-verses/hope) — 10 verses; starts at 1 Thessalonians 5:8
+- [Loneliness, but holding on](https://wordrhythm.app/bible-verses/lonely-strong) — 10 verses; starts at 2 Corinthians 10:15
+- [Anger](https://wordrhythm.app/bible-verses/angry) — 10 verses; starts at Ezekiel 33:15
+- [Guilt and shame](https://wordrhythm.app/bible-verses/guilt) — 10 verses; starts at Ezekiel 33:10
+- [Calm and peace](https://wordrhythm.app/bible-verses/peace) — 10 verses; starts at Isaiah 26:3
+- [Courage](https://wordrhythm.app/bible-verses/courage) — 10 verses; starts at Psalms 112:7
+- [Confusion](https://wordrhythm.app/bible-verses/confused) — 10 verses; starts at Proverbs 25:19
+- [Temptation](https://wordrhythm.app/bible-verses/tempted) — 10 verses; starts at 1 John 3:10
+- [Emptiness](https://wordrhythm.app/bible-verses/empty) — 10 verses; starts at Philemon 1:20
+- [Prayer](https://wordrhythm.app/bible-verses/prayerful) — 10 verses; starts at Psalms 16:7
+- [Persecution](https://wordrhythm.app/bible-verses/persecuted) — 10 verses; starts at 2 Corinthians 6:9
+- [Justice](https://wordrhythm.app/bible-verses/unjust) — 10 verses; starts at Proverbs 10:28
+- [Service](https://wordrhythm.app/bible-verses/serving) — 10 verses; starts at Galatians 6:2
+- [Bitterness](https://wordrhythm.app/bible-verses/bitter) — 10 verses; starts at Luke 15:20
+- [Blessing](https://wordrhythm.app/bible-verses/blessed) — 10 verses; starts at Psalms 97:12
+- [Contentment](https://wordrhythm.app/bible-verses/content) — 10 verses; starts at Galatians 5:22
+- [Disappointment](https://wordrhythm.app/bible-verses/disappointed) — 10 verses; starts at Habakkuk 2:3
+- [Discouragement](https://wordrhythm.app/bible-verses/discouraged) — 10 verses; starts at Micah 7:8
+- [Encouragement](https://wordrhythm.app/bible-verses/inspired) — 10 verses; starts at Matthew 28:9
+- [Growth](https://wordrhythm.app/bible-verses/growth) — 10 verses; starts at 1 Peter 2:12
+- [Joy](https://wordrhythm.app/bible-verses/joy) — 10 verses; starts at Psalms 97:12
+- [Joyful hope](https://wordrhythm.app/bible-verses/hopeful-joyful) — 10 verses; starts at Isaiah 30:29
+- [Longing for justice](https://wordrhythm.app/bible-verses/justice-longing) — 10 verses; starts at Ezekiel 33:13
+- [Love](https://wordrhythm.app/bible-verses/loving) — 10 verses; starts at Philippians 2:1
+- [Overwhelmed and weary](https://wordrhythm.app/bible-verses/overwhelmed) — 10 verses; starts at Daniel 10:19
+- [Refreshed](https://wordrhythm.app/bible-verses/refreshed) — 10 verses; starts at Daniel 10:19
+- [Repentance](https://wordrhythm.app/bible-verses/repentant) — 10 verses; starts at Ezekiel 33:10
+- [Resolve](https://wordrhythm.app/bible-verses/determined) — 10 verses; starts at 2 Timothy 1:12
+- [Sadness](https://wordrhythm.app/bible-verses/sad) — 10 verses; starts at Daniel 10:19
+- [Seeking in confusion](https://wordrhythm.app/bible-verses/confused-seeking) — 10 verses; starts at Proverbs 2:4
+- [Seeking truth](https://wordrhythm.app/bible-verses/seeking-truth) — 10 verses; starts at Proverbs 28:26
+- [Stress](https://wordrhythm.app/bible-verses/stressed) — 10 verses; starts at Isaiah 26:3
+- [Thanksgiving](https://wordrhythm.app/bible-verses/thankful-for-grace) — 10 verses; starts at 1 Corinthians 1:4
+- [Trust](https://wordrhythm.app/bible-verses/trusting-in-god) — 10 verses; starts at Jeremiah 17:7
+- [Uncertainty](https://wordrhythm.app/bible-verses/uncertain) — 10 verses; starts at Proverbs 28:26
+- [Unity](https://wordrhythm.app/bible-verses/unity-needed) — 10 verses; starts at 1 Corinthians 11:33
+- [Worship](https://wordrhythm.app/bible-verses/worshipful) — 10 verses; starts at Psalms 13:6
 - [All collections](https://wordrhythm.app/bible-verses)
 
 ## KJV words

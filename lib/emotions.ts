@@ -18,6 +18,12 @@ export interface Verse {
   reference: string;
   /** KJV text. */
   text: string;
+  /** One-line takeaway, the app's micro message. */
+  micro: string;
+  /** Short reflection shown when the reader expands the entry. */
+  insight: string;
+  /** Short prayer shown when the reader expands the entry. */
+  prayer: string;
 }
 
 export interface EmotionVersePage {

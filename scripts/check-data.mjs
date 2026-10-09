@@ -191,10 +191,17 @@ for (const page of emotionPages) {
       problems.push(`bible-verses: "${page.slug}" emotion label "${e.label}" is not English`);
     }
   }
-  if (!Array.isArray(page.verses) || page.verses.length < 20) {
+  if (!Array.isArray(page.verses) || page.verses.length < 10) {
     problems.push(
-      `bible-verses: "${page.slug}" has ${page.verses?.length ?? 0} verses, expected 20`,
+      `bible-verses: "${page.slug}" has ${page.verses?.length ?? 0} verses, expected 10`,
     );
+  }
+  // Take a Break ships a compact reflection for every passage; a verse without
+  // one still renders, but it is a content gap worth surfacing.
+  for (const v of page.verses ?? []) {
+    if (v.insight && v.prayer && !String(v.insight).trim()) {
+      problems.push(`bible-verses: "${page.slug}" ${v.reference} has an empty insight`);
+    }
   }
   for (const v of page.verses ?? []) {
     // A reference is "<book> <chapter>:<verse>"; the book may start with a

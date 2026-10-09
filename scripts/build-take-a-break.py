@@ -33,13 +33,17 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-DB = Path(
-    "/Users/guanyc/StudioProjects/KJV_CUV/MyApplication/app/src/main/assets/"
-    "BibleData_template.db"
+ASSETS = Path(
+    "/Users/guanyc/StudioProjects/KJV_CUV/MyApplication/app/src/main/assets"
 )
+DB = ASSETS / "BibleData_template.db"
+# Take a Break shows these, not the longer devotionals.* Meaning/Reflection/Prayer
+# in BibleData_template.db are written for the daily reading flow and average 553
+# bytes per passage; the compact ones average 129 and read as a 60-second pause.
+COMPACT_DB = ASSETS / "devotional_compact.db"
 OUT = Path("/Users/guanyc/projects/wordrhythm/data/take-a-break.json")
 
-PER_EMOTION = 20
+PER_EMOTION = 10
 
 # How much each mapping priority contributes to a verse's score. Priority 3 is
 # the emotion's defining theme, 1 is something adjacent.
@@ -50,9 +54,19 @@ PRIORITY_WEIGHT = {3: 1.0, 2: 0.7, 1: 0.45}
 WEAK_THEMES = {"GOD", "GOD_SOVEREIGNTY", "GOD_CHARACTER", "LAST_THINGS"}
 
 # Two emotions join the same page when their verse lists overlap this much.
-# 50-60% produce identical grouping (37 buckets); beyond 65% real pairs split
-# apart, so the exact value is not delicate.
-OVERLAP_THRESHOLD = 0.6
+#
+# This value moved with PER_EMOTION. At 20 verses a 60% threshold gave 37
+# buckets, but dropping to 10 tightened every list: gratitude and blessed
+# started scoring identically and were merged at 60%, which is wrong —
+# giving thanks and being blessed are not the same. At 10 verses 85% keeps the
+# genuinely synonymous pairs (grateful/thankful, calm/peaceful/restless) and
+# separates the rest. 85% and 100% produce the same grouping.
+#
+# anxious and fearful land at 82% — nine of ten passages identical, differing
+# only on Psalms 116:7 vs 52:8 — and were flagged as duplicate titles because
+# they name themselves the same. Merged here rather than padding one with a
+# second title.
+OVERLAP_THRESHOLD = 0.8
 
 # The database stores emotion_name in Chinese because that is what the app
 # displays. The site is English-only, so every emotion needs an English label
@@ -135,7 +149,7 @@ COPY = {
     "peaceful": ("Calm and peace", "When you need to be still"),
     "restless": ("Calm and peace", "When you cannot settle"),
     "courageous": ("Courage", "When you need to act"),
-    "determined": ("Courage", "When you need to act"),
+    "determined": ("Resolve", "When you have decided and need to hold on"),
     "thankful": ("Gratitude", "When you want to give thanks"),
     "hopeless": ("Hope and hopelessness", "When the future looks uncertain"),
     "playful": ("Joy", "When you want to rejoice"),
@@ -157,7 +171,7 @@ COPY = {
     "inspired": ("Encouragement", "When you need a lift"),
     "refreshed": ("Refreshed", "When you feel worn out"),
     "lonely": ("Loneliness", "When nobody seems close"),
-    "lonely_strong": ("Loneliness", "When you are alone but holding on"),
+    "lonely_strong": ("Loneliness, but holding on", "When you are alone and still standing"),
     "loving": ("Love", "When you are thinking of others"),
     "persecuted": ("Persecution", "When you are under pressure for your faith"),
     "prayerful": ("Prayer", "When you want to pray"),
@@ -299,16 +313,35 @@ def main():
     for book_id, name in db.execute("SELECT id, name FROM bible_books"):
         books[book_id] = name
 
+    # Compact insight and prayer, the same three-part shape Take a Break shows.
+    # Joined on verse_id, which is bible_verses.id in both databases.
+    compact = {}
+    db.execute("ATTACH DATABASE ? AS compact", (str(COMPACT_DB),))
+    for verse_id, micro, insight, prayer in db.execute(
+        "SELECT verse_id, micro_message, compact_insight, compact_prayer "
+        "FROM compact.devotional_compact"
+    ):
+        compact[verse_id] = (micro or "", insight or "", prayer or "")
+
+    missing_compact = 0
     for page in pages:
-        page["verses"] = [
-            {
-                "reference": f"{books.get(texts[v]['book'], texts[v]['book'])} "
-                f"{texts[v]['chapter']}:{texts[v]['verse']}",
-                "text": texts[v]["text"],
-            }
-            for v in wanted[page["slug"]]
-            if v in texts
-        ]
+        page["verses"] = []
+        for v in wanted[page["slug"]]:
+            if v not in texts:
+                continue
+            micro, insight, prayer = compact.get(v, ("", "", ""))
+            if not (insight and prayer):
+                missing_compact += 1
+            page["verses"].append(
+                {
+                    "reference": f"{books.get(texts[v]['book'], texts[v]['book'])} "
+                    f"{texts[v]['chapter']}:{texts[v]['verse']}",
+                    "text": texts[v]["text"],
+                    "micro": micro,
+                    "insight": insight,
+                    "prayer": prayer,
+                }
+            )
 
     pages.sort(key=lambda p: p["title"])
 
@@ -321,10 +354,15 @@ def main():
     print(f"pages out:    {len(pages)}  ({merged} synonyms merged)")
     print(f"verses:       {sum(len(p['verses']) for p in pages)} "
           f"across {len({v['text'] for p in pages for v in p['verses']})} unique")
+    print(f"compact:      {len(compact):,} loaded, "
+          f"{missing_compact} passages without insight or prayer")
     print(f"size:         {OUT.stat().st_size / 1024:.0f} KB")
     if empty:
         print(f"EMPTY PAGES:  {empty}")
         return 1
+    if missing_compact:
+        print("\nSome verses have no compact content — the site renders those as a")
+        print("plain verse with no toggle. Re-run after the app ships an update.")
     print(f"\n-> {OUT}")
     return 0
 

@@ -22,7 +22,7 @@ export async function generateMetadata({
   const title = `Bible Verses for ${subject} — KJV`;
   const first = page.verses[0];
   const description =
-    `${page.verses.length} KJV Bible verses for ${subject}, ${page.subtitle.toLowerCase()}. ` +
+    `${page.verses.length} KJV Bible verses for ${subject}, each with a reflection and prayer. ` +
     `Start with ${first.reference}.` +
     (page.emotions.length > 1
       ? ` Also covers ${page.emotions.slice(1).map((e) => e.label).join(", ")}.`
@@ -52,7 +52,7 @@ export default async function EmotionPageRoute({
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: `Bible Verses for ${page.title}`,
-    description: `${page.verses.length} KJV passages for ${subject}.`,
+    description: `${page.verses.length} KJV passages for ${subject}, each with a short reflection and prayer.`,
     numberOfItems: page.verses.length,
     itemListElement: page.verses.map((v, i) => ({
       "@type": "ListItem",
@@ -61,6 +61,7 @@ export default async function EmotionPageRoute({
         "@type": "CreativeWork",
         name: v.reference,
         text: v.text,
+        abstract: [v.micro, v.insight, v.prayer].filter(Boolean).join(" "),
         inLanguage: "en",
       },
     })),
@@ -87,6 +88,11 @@ export default async function EmotionPageRoute({
       </h1>
       <p className="mt-4 text-lg text-muted">{page.subtitle}.</p>
 
+      <p className="mt-3 text-sm text-muted">
+        Open a passage to read its reflection and prayer. In the app, Take a
+        Break picks one of these at random each time you open it.
+      </p>
+
       {page.emotions.length > 1 && (
         <p className="mt-4 text-sm text-muted">
           Also covers {page.emotions.slice(1).map((e, i, arr) => (
@@ -106,6 +112,46 @@ export default async function EmotionPageRoute({
               {i + 1}. {v.reference}
             </p>
             <blockquote className="mt-2 leading-relaxed">{v.text}</blockquote>
+
+            {(v.insight || v.prayer) && (
+              <details className="group mt-4">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-3 rounded-xl bg-surface px-4 py-3 text-sm font-semibold transition-colors hover:bg-brand-soft">
+                  <span>Reflection and prayer</span>
+                  <span
+                    aria-hidden="true"
+                    className="text-brand transition-transform duration-200 group-open:rotate-180"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.75"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M4 6l4 4 4-4" />
+                    </svg>
+                  </span>
+                </summary>
+                <div className="mt-3 space-y-3 rounded-xl bg-surface px-4 py-4 text-sm leading-relaxed">
+                  {v.micro && <p className="font-semibold text-brand">{v.micro}</p>}
+                  {v.insight && (
+                    <p>
+                      <span className="font-semibold">Insight </span>
+                      {v.insight}
+                    </p>
+                  )}
+                  {v.prayer && (
+                    <p>
+                      <span className="font-semibold">Prayer </span>
+                      {v.prayer}
+                    </p>
+                  )}
+                </div>
+              </details>
+            )}
           </li>
         ))}
       </ol>
