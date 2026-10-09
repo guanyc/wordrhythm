@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { featuredWordSlugs } from "@/lib/archaic";
 import { getPublishedPosts } from "@/lib/blog";
+import { emotionPageSlugs } from "@/lib/emotions";
 import { publicPrivacyPolicies } from "@/lib/privacy";
 import { versions } from "@/lib/versions";
 
@@ -43,6 +44,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
+  // "bible verses for anxiety" and similar. These are the closest thing the
+  // site has to a high-intent query, so they rank above the glossary.
+  const versePages = emotionPageSlugs().map((slug) => ({
+    url: `${BASE}/bible-verses/${slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
   return [
     {
       url: BASE,
@@ -64,6 +74,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     ...postPages,
+    {
+      url: `${BASE}/bible-verses`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+    ...versePages,
     {
       url: `${BASE}/kjv-words`,
       lastModified: now,

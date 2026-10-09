@@ -83,6 +83,8 @@ Each speaks to worry a little differently.
 The aim is not to read page after page.
 It’s to land somewhere your heart can actually receive, even when it feels fragile.
 
+If you want more than the five above, we have collected 20 [bible verses for anxiety](/bible-verses/anxiety) in one place, sorted by the kind of anxiety they answer.
+
 ## Why starting small matters
 When anxiety spikes, most people don’t jump straight into long Bible studies.
 They need a gentle entry point.
@@ -106,6 +108,7 @@ We don’t all need the same kind of help when our emotions are unsteady.
 
 ## Try this softer starting place
 If you’re looking for a **KJV Bible app** that helps you meet anxiety with Scripture — not just verse lookup, but a full devotional flow:
+- Browse all 20 [bible verses for anxiety](/bible-verses/anxiety), with the reference for each
 - Read more about devotional features: [/blog/kjv-bible-app-daily-devotional-features](/blog/kjv-bible-app-daily-devotional-features)
 - Browse the KJV online: [/versions/kjv](/versions/kjv)
 - Google Play: https://play.google.com/store/apps/details?id=com.gyc.ace.kjv

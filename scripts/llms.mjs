@@ -43,6 +43,37 @@ const featuredSet = new Set(
 );
 const featured = allWords.filter((w) => featuredSet.has(w.word.toLowerCase()));
 
+/** Bible verses by feeling — the same emotion→theme→verse mapping the app uses. */
+const emotionPages = JSON.parse(
+  await readFile(path.join(process.cwd(), "data", "take-a-break.json"), "utf8"),
+);
+// Same problem as the word list above: alphabetical order is not what a reader
+// is looking for. Lead with the feelings people actually search for. Slugs must
+// match data/take-a-break.json — the filter below skips any that do not.
+const FEELING_FIRST = [
+  "anxiety", "grieving", "gratitude", "hope", "lonely-strong", "angry",
+  "guilt", "peace", "courage", "confused", "tempted", "empty",
+  "prayerful", "persecuted", "unjust", "serving",
+];
+const rankedFeelings = [
+  ...FEELING_FIRST.filter((s) => emotionPages.some((p) => p.slug === s)).map(
+    (s) => emotionPages.find((p) => p.slug === s),
+  ),
+  ...emotionPages.filter((p) => !FEELING_FIRST.includes(p.slug)),
+];
+
+// A misspelled slug here used to be skipped in silence, which quietly dropped
+// the entry from the list. Fail loudly instead.
+const unknown = FEELING_FIRST.filter(
+  (s) => !emotionPages.some((p) => p.slug === s),
+);
+if (unknown.length > 0) {
+  console.error(
+    `FEELING_FIRST references slugs that do not exist: ${unknown.join(", ")}`,
+  );
+  process.exit(1);
+}
+
 /**
  * Order the listed words by what people actually search for.
  *
@@ -127,6 +158,23 @@ Only ${list(byAudio("sleep"))} ships the dedicated Sleep Audio track.
 ${appLines.join("\n")}
 - [All versions](${HOST}/versions)
 
+## Bible verses by feeling
+
+KJV passages matched to a feeling, the same way the app's Take a Break picks a
+verse — emotion → themes → highest-weighted verses. ${emotionPages.length} collections,
+20 verses each. This is the site's highest-intent content: these are the
+questions people actually ask.
+
+${rankedFeelings
+  .map(
+    (p) =>
+      `- [${p.title}](${HOST}/bible-verses/${p.slug}) — ${p.verses.length} verses; ${
+        p.verses[0] ? `starts at ${p.verses[0].reference}` : "see page"
+      }`,
+  )
+  .join("\n")}
+- [All collections](${HOST}/bible-verses)
+
 ## KJV words
 
 ${ranked
@@ -173,5 +221,5 @@ await writeFile(path.join(OUT, "llms.txt"), md);
 await writeFile(path.join(PUBLIC, "llms.txt"), md);
 console.log(
   `llms.txt written: ${versions.length} apps, ${slots.length} slots, ` +
-    `${guides.length} guides, ${allWords.length} KJV words (${featured.length} listed)`,
+    `${guides.length} guides, ${allWords.length} KJV words, ${emotionPages.length} verse collections`,
 );

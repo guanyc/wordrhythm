@@ -8,6 +8,7 @@ import {
   postLinks,
   renderPost,
 } from "@/lib/blog";
+import { TOTAL_EMOTION_PAGES } from "@/lib/emotions";
 
 export function generateStaticParams() {
   return getPublishedPosts().map((p) => ({ slug: p.slug }));
@@ -156,6 +157,22 @@ export default async function BlogPostPage({
               </li>
             ))}
           </ul>
+        </div>
+      )}
+
+      {post.slug !== "what-bible-verses-help-when-you-feel-anxious" && (
+        <div className="mt-12 border-t border-black/5 pt-8">
+          <p className="text-sm text-muted">
+            Looking for a verse that fits how you feel right now? We have{" "}
+            <Link
+              href="/bible-verses"
+              className="font-semibold text-brand hover:underline"
+            >
+              Bible verses grouped by feeling
+            </Link>{" "}
+            — anxiety, grief, gratitude, anger and {TOTAL_EMOTION_PAGES - 4} more,
+            each with its reference.
+          </p>
         </div>
       )}
     </section>

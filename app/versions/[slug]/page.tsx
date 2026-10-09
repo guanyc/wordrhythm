@@ -352,7 +352,7 @@ export default async function VersionPage({
             glossary of 1,440 of them, each with a modern equivalent and a
             verbatim example from the text.
           </p>
-          <div className="mt-5 flex flex-wrap gap-2">
+          <div className="mt-6 flex flex-wrap gap-2">
             {["thee", "thou", "unto", "comforter", "verily", "wherefore"].map(
               (w) => (
                 <Link
@@ -364,6 +364,12 @@ export default async function VersionPage({
                 </Link>
               ),
             )}
+            <Link
+              href="/bible-verses"
+              className="rounded-full bg-brand-soft px-3 py-1.5 text-sm font-semibold text-brand transition-opacity hover:opacity-70"
+            >
+              Bible verses by feeling
+            </Link>
           </div>
           <Link
             href="/kjv-words"

@@ -3,7 +3,7 @@ import Link from "next/link";
 const nav = [
   { href: "/", label: "Home" },
   { href: "/versions", label: "Versions" },
-  { href: "/take-a-break", label: "Take a Break" },
+  { href: "/bible-verses", label: "Verses by feeling" },
   { href: "/kjv-words", label: "KJV Words" },
   { href: "/blog", label: "Guides" },
 ];

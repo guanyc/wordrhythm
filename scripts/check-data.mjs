@@ -156,6 +156,45 @@ for (const entry of glossary) {
   }
 }
 
+// Bible verses by feeling. Same reason as the glossary: two pages carrying the
+// same verses is duplicate content, and a page with no verses is useless.
+const EMOTIONS = path.join(process.cwd(), "data", "take-a-break.json");
+const emotionPages = JSON.parse(await readFile(EMOTIONS, "utf8"));
+const emotionSlugs = new Map();
+const emotionTitles = new Set();
+for (const page of emotionPages) {
+  for (const field of ["slug", "title", "subtitle"]) {
+    if (!String(page[field] ?? "").trim()) {
+      problems.push(`bible-verses: "${page.slug}" is missing ${field}`);
+    }
+  }
+  if (!Array.isArray(page.emotions) || page.emotions.length === 0) {
+    problems.push(`bible-verses: "${page.slug}" lists no emotions`);
+  }
+  if (!Array.isArray(page.verses) || page.verses.length < 20) {
+    problems.push(
+      `bible-verses: "${page.slug}" has ${page.verses?.length ?? 0} verses, expected 20`,
+    );
+  }
+  for (const v of page.verses ?? []) {
+    // A reference is "<book> <chapter>:<verse>"; the book may start with a
+    // digit ("1 Kings", "2 Corinthians"). A reference that is only a number
+    // means the book lookup failed upstream.
+    if (!/^(?:[1-3] )?[A-Za-z]+ \d+:\d+$/.test(v.reference ?? "")) {
+      problems.push(`bible-verses: "${page.slug}" has a malformed reference "${v.reference}"`);
+      break;
+    }
+  }
+  if (emotionSlugs.has(page.slug)) {
+    problems.push(`bible-verses: duplicate slug "${page.slug}"`);
+  }
+  emotionSlugs.set(page.slug, true);
+  if (emotionTitles.has(page.title)) {
+    problems.push(`bible-verses: duplicate title "${page.title}"`);
+  }
+  emotionTitles.add(page.title);
+}
+
 if (problems.length > 0) {
   console.error("data sources are out of sync:\n" + problems.map((p) => `  - ${p}`).join("\n"));
   process.exit(1);
@@ -163,5 +202,6 @@ if (problems.length > 0) {
 
 console.log(
   `data in sync: ${llmsVersions.length} translations, ${slots.length} slots, ` +
-    `${postFiles.length} guides, ${glossary.length} KJV words`,
+    `${postFiles.length} guides, ${glossary.length} KJV words, ` +
+    `${emotionPages.length} verse collections`,
 );

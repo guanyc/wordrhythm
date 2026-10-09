@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Screenshots from "@/components/Screenshots";
+import { TOTAL_EMOTION_PAGES, allEmotionPages } from "@/lib/emotions";
 import { takeABreak } from "@/lib/versions";
 
 export const metadata: Metadata = {
@@ -75,6 +76,37 @@ export default function TakeABreakPage() {
             label="Take a Break"
           />
         </div>
+      </div>
+
+      <div className="mt-14 rounded-2xl border border-black/5 bg-surface p-6">
+        <h2 className="text-xl font-semibold tracking-tight">
+          Verses for how you feel, on the web
+        </h2>
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
+          The same emotion-to-Scripture mapping Take a Break uses is published
+          as {TOTAL_EMOTION_PAGES} collections — browse the passages for
+          anxiety, grief, gratitude or anything else before you install
+          anything.
+        </p>
+        <div className="mt-5 flex flex-wrap gap-2">
+          {allEmotionPages()
+            .slice(0, 12)
+            .map((p) => (
+              <Link
+                key={p.slug}
+                href={`/bible-verses/${p.slug}`}
+                className="rounded-full bg-brand-soft px-3 py-1.5 text-sm font-semibold text-brand transition-opacity hover:opacity-70"
+              >
+                {p.title}
+              </Link>
+            ))}
+        </div>
+        <Link
+          href="/bible-verses"
+          className="mt-5 inline-flex items-center rounded-xl bg-brand px-5 py-2.5 font-semibold text-white transition-transform hover:-translate-y-0.5"
+        >
+          Browse all {TOTAL_EMOTION_PAGES}
+        </Link>
       </div>
 
       <div className="mt-12">
