@@ -7,6 +7,8 @@ import { getListing } from "@/lib/listings";
 import { getVersion, versions, audioNote } from "@/lib/versions";
 import { postsForVersion, getPublishedPosts } from "@/lib/blog";
 import { getAppRating, getReviews } from "@/lib/reviews";
+import { TOTAL_WORDS } from "@/lib/archaic";
+import { TOTAL_EMOTION_PAGES, featuredFeelings } from "@/lib/emotions";
 
 export function generateStaticParams() {
   return versions.map((v) => ({ slug: v.slug }));
@@ -88,6 +90,10 @@ export default async function VersionPage({
       : getPublishedPosts().slice(0, 3);
   const rating = getAppRating(version.slug);
   const reviewQuotes = getReviews(version.slug).slice(0, 3);
+  // KJV-only companion blocks: the glossary and the verse collections are
+  // specific to that translation's archaic spellings and to Take a Break's
+  // KJV content, so they must not appear on the other six pages.
+  const featured = version.slug === "kjv" ? featuredFeelings() : [];
 
   // Per-version SoftwareApplication: the detail page is what a Play search
   // query should land on, so it carries its own app markup rather than
@@ -340,44 +346,70 @@ export default async function VersionPage({
         </div>
       )}
 
-      {version.slug === "kjv" && (
-        <div className="mt-14 rounded-2xl bg-surface p-8 shadow-card">
-          <h2 className="text-xl font-semibold tracking-tight">
-            Reading the KJV?
-          </h2>
-          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
-            The King James Version was written in 1611. Its spellings —
-            <em>thee</em>, <em>thou</em>, <em>unto</em>, <em>comforter</em> —
-            stop a lot of readers before they reach the meaning. We have a
-            glossary of 1,440 of them, each with a modern equivalent and a
-            verbatim example from the text.
-          </p>
-          <div className="mt-6 flex flex-wrap gap-2">
-            {["thee", "thou", "unto", "comforter", "verily", "wherefore"].map(
-              (w) => (
-                <Link
-                  key={w}
-                  href={`/kjv-words/${w}`}
-                  className="rounded-full bg-brand-soft px-3 py-1.5 text-sm font-semibold text-brand transition-opacity hover:opacity-70"
-                >
-                  {w}
-                </Link>
-              ),
-            )}
+      {version.slug === "kjv" && featured.length > 0 && (
+        <>
+          <div className="mt-14 rounded-2xl bg-surface p-8 shadow-card">
+            <h2 className="text-xl font-semibold tracking-tight">
+              Reading the KJV?
+            </h2>
+            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
+              The King James Version was written in 1611. Its spellings —
+              <em>thee</em>, <em>thou</em>, <em>unto</em>, <em>comforter</em> —
+              stop a lot of readers before they reach the meaning. We have a
+              glossary of {TOTAL_WORDS.toLocaleString("en-US")} of them, each with
+              a modern equivalent and a verbatim example from the text.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-2">
+              {["thee", "thou", "unto", "comforter", "verily", "wherefore"].map(
+                (w) => (
+                  <Link
+                    key={w}
+                    href={`/kjv-words/${w}`}
+                    className="rounded-full bg-brand-soft px-3 py-1.5 text-sm font-semibold text-brand transition-opacity hover:opacity-70"
+                  >
+                    {w}
+                  </Link>
+                ),
+              )}
+            </div>
             <Link
-              href="/bible-verses"
-              className="rounded-full bg-brand-soft px-3 py-1.5 text-sm font-semibold text-brand transition-opacity hover:opacity-70"
+              href="/kjv-words"
+              className="mt-6 inline-flex items-center rounded-xl bg-brand px-5 py-2.5 font-semibold text-white transition-transform hover:-translate-y-0.5"
             >
-              Bible verses by feeling
+              Open the full glossary
             </Link>
           </div>
-          <Link
-            href="/kjv-words"
-            className="mt-6 inline-flex items-center rounded-xl bg-brand px-5 py-2.5 font-semibold text-white transition-transform hover:-translate-y-0.5"
-          >
-            Open the full glossary
-          </Link>
-        </div>
+
+          <div className="mt-8 rounded-2xl bg-surface p-8 shadow-card">
+            <h2 className="text-xl font-semibold tracking-tight">
+              Take a Break, on the web
+            </h2>
+            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
+              Not sure where to read? Pick what you are feeling and get ten KJV
+              passages matched to it, each with a short reflection and a prayer —
+              the same pairing the app shows.{" "}
+              {TOTAL_EMOTION_PAGES} collections in all, from anxiety and grief to
+              hope and gratitude.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-2">
+              {featured.map((page) => (
+                <Link
+                  key={page.slug}
+                  href={`/bible-verses/${page.slug}`}
+                  className="rounded-full bg-brand-soft px-3 py-1.5 text-sm font-semibold text-brand transition-opacity hover:opacity-70"
+                >
+                  {page.title}
+                </Link>
+              ))}
+            </div>
+            <Link
+              href="/bible-verses"
+              className="mt-6 inline-flex items-center rounded-xl border border-black/10 px-5 py-2.5 font-semibold transition-colors hover:border-brand/40 hover:text-brand"
+            >
+              All {TOTAL_EMOTION_PAGES} collections
+            </Link>
+          </div>
+        </>
       )}
 
       <div className="mt-14">

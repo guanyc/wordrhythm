@@ -246,6 +246,32 @@ for (const page of emotionPages) {
   emotionTitles.add(page.title);
 }
 
+// The feelings named on the KJV version page and in llms.txt. The list lives in
+// lib/emotions.ts because it is read by both the page and scripts/llms.mjs —
+// duplicating it here is how "grief" and "restless" ended up being skipped
+// without complaint. Every slug must resolve to a real page, or the page and
+// llms.txt both quietly lose that entry.
+const emotionsSrc = await readFile(
+  path.join(process.cwd(), "lib", "emotions.ts"),
+  "utf8",
+);
+const featuredSlugs = [
+  ...(emotionsSrc.match(/const FEATURED_FEELINGS = \[([\s\S]*?)\]/)?.[1] ?? "").matchAll(
+    /"([a-z-]+)"/g,
+  ),
+].map((m) => m[1]);
+
+if (featuredSlugs.length === 0) {
+  problems.push("emotions.ts: FEATURED_FEELINGS could not be read");
+}
+for (const slug of featuredSlugs) {
+  if (!emotionSlugs.has(slug)) {
+    problems.push(
+      `emotions.ts: FEATURED_FEELINGS lists "${slug}", which has no page`,
+    );
+  }
+}
+
 if (problems.length > 0) {
   console.error("data sources are out of sync:\n" + problems.map((p) => `  - ${p}`).join("\n"));
   process.exit(1);

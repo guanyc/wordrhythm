@@ -4,7 +4,7 @@
  * Built by scripts/build-take-a-break.py from the same SQLite tables the
  * Android app uses to answer "How are you feeling?" — emotion_theme_mapping
  * resolves an emotion to themes, verse_themes scores each verse for those
- * themes, and the top 20 per emotion become this list.
+ * themes, and the highest-scoring ten per emotion become this list.
  *
  * Emotions with near-identical verse lists share a page (see OVERLAP_THRESHOLD
  * in the script). Every emotion is still listed on the page, so "bible verses
@@ -66,3 +66,45 @@ export function findByEmotion(code: string): EmotionVersePage | undefined {
 }
 
 export const TOTAL_EMOTION_PAGES = all.length;
+
+/**
+ * The feelings worth naming on a page that links here, in the order people
+ * reach for them. These are slugs in data/take-a-break.json.
+ *
+ * Single source for the order, shared with scripts/llms.mjs, which reads the
+ * list straight out of this file. Writing a separate list there is how
+ * "grief" and "restless" — neither of which exists as a page — slipped
+ * through a filter that skipped silently instead of failing.
+ */
+const FEATURED_FEELINGS = [
+  "anxiety",
+  "grieving",
+  "gratitude",
+  "hope",
+  "lonely-strong",
+  "angry",
+  "guilt",
+  "peace",
+  "courage",
+  "confused",
+  "tempted",
+  "empty",
+  "prayerful",
+  "persecuted",
+  "unjust",
+  "serving",
+];
+
+/** Featured feelings that actually have a page, in the declared order. */
+export function featuredFeelings(): EmotionVersePage[] {
+  const bySlug = new Map(all.map((p) => [p.slug, p]));
+  return FEATURED_FEELINGS.map((slug) => bySlug.get(slug)).filter(
+    (p): p is EmotionVersePage => Boolean(p),
+  );
+}
+
+/** Slugs that were asked for but do not exist, so the caller can fail loudly. */
+export function missingFeelings(): string[] {
+  const known = new Set(all.map((p) => p.slug));
+  return FEATURED_FEELINGS.filter((slug) => !known.has(slug));
+}
