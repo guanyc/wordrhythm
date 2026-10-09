@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Take a Break",
   description:
     "When life feels heavy, Take a Break meets you in the moment with a verse, insight, and prayer.",
+  alternates: { canonical: "/take-a-break" },
 };
 
 const steps = [

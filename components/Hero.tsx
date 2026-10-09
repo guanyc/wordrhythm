@@ -19,7 +19,10 @@ export default function Hero() {
           God&apos;s Word, part of your daily rhythm.
         </span>
         <span className="block">
-          Read in the morning, pause during the day, reflect in the evening.
+          Read in the morning, pause during the day, reflect in the evening, settle in to sleep.
+        </span>
+        <span className="block">
+          Sleep Audio in the KJV app: Scripture read softly while you fall asleep.
         </span>
         <span className="block">
           One calm companion across every translation.

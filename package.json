@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node scripts/rss.mjs",
+    "build": "node scripts/check-data.mjs && next build && node scripts/rss.mjs && node scripts/llms.mjs",
     "deploy": "wrangler deploy",
     "indexnow": "node scripts/indexnow.mjs",
+    "check-data": "node scripts/check-data.mjs",
+    "llms": "node scripts/llms.mjs",
     "lint": "next lint"
   },
   "dependencies": {

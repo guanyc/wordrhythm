@@ -3,6 +3,7 @@ title: "What Is Take a Break in a Bible App?"
 description: "Take a Break is a daytime, emotion-led devotional entry inside this KJV Bible app. It pulls up a compact Scripture card matched to the feeling or context you select."
 date: 2026-07-16
 tags: ["kjv", "take-a-break", "bible-app", "devotional"]
+answer: "Take a Break is a daytime devotional entry inside the app, not something to set up. You pick how you feel or what situation you’re in — peace, strength, comfort, guidance, a hard day — and it returns a compact Scripture card: the verse, what it means, a reflection, and a short prayer. It exists for the days you have no time for a full reading."
 draft: false
 ---
 

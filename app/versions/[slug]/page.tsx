@@ -4,10 +4,28 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Screenshots from "@/components/Screenshots";
 import { getListing } from "@/lib/listings";
-import { getVersion, versions } from "@/lib/versions";
+import { getVersion, versions, audioNote } from "@/lib/versions";
+import { postsForVersion, getPublishedPosts } from "@/lib/blog";
+import { getAppRating, getReviews } from "@/lib/reviews";
 
 export function generateStaticParams() {
   return versions.map((v) => ({ slug: v.slug }));
+}
+
+/** Maps a BCP-47 tag from `versions.ts` onto an og:locale tag. */
+function ogLocale(lang: string): string {
+  switch (lang) {
+    case "zh-Hans":
+      return "zh_CN";
+    case "es":
+      return "es_ES";
+    case "pt-BR":
+      return "pt_BR";
+    case "fr":
+      return "fr_FR";
+    default:
+      return "en_US";
+  }
 }
 
 export async function generateMetadata({
@@ -29,9 +47,19 @@ export async function generateMetadata({
   return {
     title,
     description,
+    alternates: {
+      canonical: `/versions/${version.slug}`,
+      // Each translation answers to its own language, so point Google at the
+      // matching Play listing rather than making every page compete in English.
+      languages: {
+        ...(version.playUrl ? { "x-default": version.playUrl } : {}),
+      },
+    },
     openGraph: {
       title,
       description,
+      url: `/versions/${version.slug}`,
+      locale: ogLocale(version.lang),
       images: [version.ogImage ?? "/brand/og.jpg"],
     },
     twitter: {
@@ -53,9 +81,67 @@ export default async function VersionPage({
 
   const others = versions.filter((v) => v.slug !== version.slug);
   const listing = getListing(version.slug);
+  const guides = postsForVersion(version.slug, 3);
+  const fallbackGuides =
+    guides.length > 0
+      ? guides
+      : getPublishedPosts().slice(0, 3);
+  const rating = getAppRating(version.slug);
+  const reviewQuotes = getReviews(version.slug).slice(0, 3);
+
+  // Per-version SoftwareApplication: the detail page is what a Play search
+  // query should land on, so it carries its own app markup rather than
+  // relying on the homepage aggregate.
+  const appSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: version.listing,
+    url: `https://wordrhythm.app/versions/${version.slug}`,
+    applicationCategory: "LifestyleApplication",
+    operatingSystem: "Android",
+    inLanguage: version.lang,
+    description: version.summary,
+    image: version.icon ? `https://wordrhythm.app${version.icon}` : undefined,
+    ...(version.package ? { identifier: version.package } : {}),
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+    ...(version.playUrl ? { sameAs: version.playUrl } : {}),
+    ...(rating
+      ? {
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: rating.rating,
+            reviewCount: rating.reviewCount,
+            bestRating: 5,
+            worstRating: 1,
+          },
+        }
+      : {}),
+    ...(reviewQuotes.length > 0
+      ? {
+          review: reviewQuotes.map((r) => ({
+            "@type": "Review",
+            author: { "@type": "Person", name: r.author },
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue: r.rating ?? 5,
+              bestRating: 5,
+            },
+            reviewBody: r.quote,
+          })),
+        }
+      : {}),
+  };
 
   return (
     <section className="mx-auto max-w-5xl px-5 py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }}
+      />
       <Link
         href="/versions"
         className="text-sm font-semibold text-brand hover:underline"
@@ -94,12 +180,28 @@ export default async function VersionPage({
             <span className="rounded-lg border border-black/10 px-3 py-1 text-xs font-semibold text-muted">
               {version.language}
             </span>
+            {version.audio === "sleep" && (
+              <span className="rounded-lg bg-brand-soft px-3 py-1 text-xs font-bold text-brand">
+                Sleep Audio
+              </span>
+            )}
+            {version.audio === "tts" && (
+              <span className="rounded-lg bg-brand-soft px-3 py-1 text-xs font-bold text-brand">
+                Text-to-speech
+              </span>
+            )}
             <span className="text-xs font-semibold text-emerald-600">
               Available now
             </span>
           </div>
 
           <p className="mt-4 max-w-xl text-muted">{version.summary}</p>
+
+          <p className="mt-3 text-sm text-muted">
+            Four daily slots: morning, day, evening, and the before-bed
+            devotional.{" "}
+            {audioNote(version.slug) ?? "Reading and devotionals only."}
+          </p>
 
           {version.playUrl && (
             <div className="mt-6 flex flex-wrap items-center gap-4">
@@ -213,6 +315,63 @@ export default async function VersionPage({
             ))}
           </div>
         </>
+      )}
+
+      {fallbackGuides.length > 0 && (
+        <div className="mt-14 border-t border-black/5 pt-10">
+          <h2 className="text-xl font-semibold tracking-tight">
+            Read about {version.code}
+          </h2>
+          <ul className="mt-6 grid gap-4 sm:grid-cols-3">
+            {fallbackGuides.map((p) => (
+              <li key={p.slug}>
+                <Link
+                  href={`/blog/${p.slug}`}
+                  className="block h-full rounded-2xl border border-black/5 bg-surface p-5 shadow-card transition-colors hover:border-brand/40"
+                >
+                  <span className="font-semibold">{p.title}</span>
+                  <span className="mt-2 block text-sm text-muted">
+                    {p.description}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {version.slug === "kjv" && (
+        <div className="mt-14 rounded-2xl bg-surface p-8 shadow-card">
+          <h2 className="text-xl font-semibold tracking-tight">
+            Reading the KJV?
+          </h2>
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
+            The King James Version was written in 1611. Its spellings —
+            <em>thee</em>, <em>thou</em>, <em>unto</em>, <em>comforter</em> —
+            stop a lot of readers before they reach the meaning. We have a
+            glossary of 1,440 of them, each with a modern equivalent and a
+            verbatim example from the text.
+          </p>
+          <div className="mt-5 flex flex-wrap gap-2">
+            {["thee", "thou", "unto", "comforter", "verily", "wherefore"].map(
+              (w) => (
+                <Link
+                  key={w}
+                  href={`/kjv-words/${w}`}
+                  className="rounded-full bg-brand-soft px-3 py-1.5 text-sm font-semibold text-brand transition-opacity hover:opacity-70"
+                >
+                  {w}
+                </Link>
+              ),
+            )}
+          </div>
+          <Link
+            href="/kjv-words"
+            className="mt-6 inline-flex items-center rounded-xl bg-brand px-5 py-2.5 font-semibold text-white transition-transform hover:-translate-y-0.5"
+          >
+            Open the full glossary
+          </Link>
+        </div>
       )}
 
       <div className="mt-14">

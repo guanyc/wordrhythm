@@ -10,9 +10,10 @@ export const metadata: Metadata = {
     template: "%s · Word Rhythm",
   },
   description:
-    "Word Rhythm puts God's Word into the rhythm of everyday life — morning, day, and evening. Multiple Bible translations, one calm daily companion.",
+    "Word Rhythm puts God's Word into the rhythm of everyday life — morning, day, evening, and sleep. Multiple Bible translations, one calm daily companion.",
   metadataBase: new URL("https://wordrhythm.app"),
   alternates: {
+    canonical: "/",
     types: {
       "application/rss+xml": [{ url: "/rss.xml", title: "Word Rhythm Guides" }],
     },
@@ -43,6 +44,45 @@ export const metadata: Metadata = {
   },
 };
 
+/**
+ * Profiles that confirm the site belongs to the same publisher as the apps.
+ *
+ * This is the only signal an AI or a search engine has for "who is behind
+ * wordrhythm.app" — the apps on Play all point back here, but nothing here
+ * pointed back at them. Add YouTube, a publisher page or a contact profile as
+ * they exist; an empty array omits `sameAs` rather than shipping a guess.
+ */
+const SAME_AS: string[] = [
+  "https://play.google.com/store/apps/developer?id=right",
+];
+
+const siteSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://wordrhythm.app/#organization",
+      name: "Word Rhythm",
+      url: "https://wordrhythm.app",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://wordrhythm.app/brand/icon-512.png",
+      },
+      description:
+        "Publisher of a family of offline Android Bible apps built around a four-slot daily rhythm: morning, day, evening and sleep.",
+      ...(SAME_AS.length ? { sameAs: SAME_AS } : {}),
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://wordrhythm.app/#website",
+      url: "https://wordrhythm.app",
+      name: "Word Rhythm",
+      publisher: { "@id": "https://wordrhythm.app/#organization" },
+      inLanguage: "en",
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -51,6 +91,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }}
+        />
         <ConsentGate />
         <Header />
         <main>{children}</main>

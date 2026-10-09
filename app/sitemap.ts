@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { featuredWordSlugs } from "@/lib/archaic";
 import { getPublishedPosts } from "@/lib/blog";
 import { publicPrivacyPolicies } from "@/lib/privacy";
 import { versions } from "@/lib/versions";
@@ -33,6 +34,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.3,
   }));
 
+  // Each word answers one specific query ("thee meaning"), which is closer to
+  // how people search than the app pages are.
+  const wordPages = featuredWordSlugs().map((slug) => ({
+    url: `${BASE}/kjv-words/${slug}`,
+    lastModified: now,
+    changeFrequency: "yearly" as const,
+    priority: 0.5,
+  }));
+
   return [
     {
       url: BASE,
@@ -54,6 +64,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     ...postPages,
+    {
+      url: `${BASE}/kjv-words`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    ...wordPages,
     {
       url: `${BASE}/take-a-break`,
       lastModified: now,

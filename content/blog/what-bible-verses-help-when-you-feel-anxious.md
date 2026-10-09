@@ -3,6 +3,7 @@ title: "What Bible Verses Help When You Feel Anxious?"
 description: "Looking for Bible verses for anxiety? Here are several KJV passages that bring peace and reassurance, a soft place to start when worry feels overwhelming."
 date: 2026-07-16
 tags: ["kjv", "anxiety", "bible-verses", "devotional"]
+answer: "Five KJV passages are the ones people return to most: Philippians 4:6-7, Isaiah 41:10, Psalm 56:3, Matthew 11:28-30, and John 14:27. Each answers anxiety differently — quieting a racing mind, reminding you God is near, or exchanging anxiety for peace. The KJV app’s anxiety devotionals pair them with the feeling you pick rather than leaving you to search."
 draft: false
 ---
 

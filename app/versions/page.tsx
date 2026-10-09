@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import VersionCard from "@/components/VersionCard";
 import { versions } from "@/lib/versions";
 
@@ -6,6 +7,7 @@ export const metadata: Metadata = {
   title: "Versions",
   description:
     "Word Rhythm across every translation — KJV, ASV, WEB, Biblia RVR, 和合本, Bíblia AA.",
+  alternates: { canonical: "/versions" },
 };
 
 export default function VersionsPage() {
@@ -24,6 +26,25 @@ export default function VersionsPage() {
         {versions.map((v) => (
           <VersionCard key={v.slug} version={v} />
         ))}
+      </div>
+
+      <div className="mt-12 rounded-2xl border border-black/5 bg-surface p-6">
+        <p className="font-semibold">New to the King James Version?</p>
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
+          The KJV is written in 1611 English, and<span className="whitespace-nowrap">
+            {" "}
+            <em>thee</em>, <em>thou</em>, <em>unto</em>
+          </span>{" "}
+          can stop you before you reach the meaning. Our glossary explains 1,440
+          of these words, each with a modern equivalent and a verbatim example
+          from the text.
+        </p>
+        <Link
+          href="/kjv-words"
+          className="mt-4 inline-flex items-center rounded-xl border border-black/10 bg-bg px-4 py-2 text-sm font-semibold transition-colors hover:border-brand/40 hover:text-brand"
+        >
+          Look up a KJV word
+        </Link>
       </div>
     </section>
   );

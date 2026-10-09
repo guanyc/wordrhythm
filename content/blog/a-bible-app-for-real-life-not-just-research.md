@@ -1,3 +1,12 @@
+---
+title: "A Bible App for Real Life, Not Just Research"
+description: "Study tools matter, but most Bible reading happens on ordinary days. Here is what a daily Bible app needs beyond search: a devotional rhythm, Take a Break for hard moments, and a gentler way back after falling behind."
+date: 2026-06-15
+tags: ["kjv", "bible-app", "devotional", "daily-devotional"]
+answer: "Research tools answer ‘what can I look up?’ — but most people open a Bible app on days that aren’t study sessions. A daily Bible app has to meet them there. Word Rhythm’s KJV app pairs full KJV study tools with four devotional slots (morning, day, evening, sleep), Take a Break for hard moments, and reading plans sized to the time you actually have."
+draft: false
+---
+
 # A Bible App for Real Life, Not Just Research
 
 title: "A Bible App for Real Life, Not Just Research"

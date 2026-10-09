@@ -25,3 +25,6 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# agent workspace memory — local notes, not part of the site
+/.workbuddy/

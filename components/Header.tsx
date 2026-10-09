@@ -4,6 +4,7 @@ const nav = [
   { href: "/", label: "Home" },
   { href: "/versions", label: "Versions" },
   { href: "/take-a-break", label: "Take a Break" },
+  { href: "/kjv-words", label: "KJV Words" },
   { href: "/blog", label: "Guides" },
 ];
 

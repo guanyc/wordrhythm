@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { hasSleepAudio } from "@/lib/versions";
+
 const beats = [
   {
     time: "Morning",
@@ -11,10 +14,18 @@ const beats = [
   },
   {
     time: "Evening",
-    title: "Reflect & Rest",
-    body: "Wind down with evening reading and a quiet reflection — Scripture that helps you settle before sleep.",
+    title: "Reflect",
+    body: "Close the day with devotional reading — quiet reflection that settles the day behind you.",
+  },
+  {
+    time: "Sleep",
+    title: "Settle In",
+    body: "A fourth slot for the wind-down before bed, running from late evening past midnight.",
   },
 ];
+
+/** The one translation that ships the dedicated Sleep Audio track. */
+const sleepSlug = "kjv";
 
 export default function RhythmFlow() {
   return (
@@ -28,7 +39,7 @@ export default function RhythmFlow() {
         </p>
       </div>
 
-      <div className="grid gap-5 md:grid-cols-3">
+      <div className="grid gap-5 md:grid-cols-4">
         {beats.map((beat, i) => (
           <div
             key={beat.time}
@@ -47,6 +58,27 @@ export default function RhythmFlow() {
           </div>
         ))}
       </div>
+
+      {hasSleepAudio(sleepSlug) && (
+        <div className="mt-6 rounded-2xl border border-black/5 bg-brand-soft p-6 shadow-card sm:flex sm:items-center sm:justify-between sm:gap-6">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-wider text-brand">
+              Sleep Audio · KJV only
+            </p>
+            <p className="mt-2 text-sm text-ink">
+              The sleep slot read aloud with soft pacing, long pauses and peaceful
+              background sounds — so the last thing you hear before sleep is
+              Scripture, not a screen.
+            </p>
+          </div>
+          <Link
+            href={`/versions/${sleepSlug}`}
+            className="mt-4 inline-flex shrink-0 items-center rounded-xl bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5 sm:mt-0"
+          >
+            Get the KJV app
+          </Link>
+        </div>
+      )}
     </section>
   );
 }

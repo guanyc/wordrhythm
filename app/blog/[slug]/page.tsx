@@ -3,16 +3,14 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   formatDate,
-  getAllPosts,
+  getPublishedPosts,
   getPost,
   postLinks,
   renderPost,
 } from "@/lib/blog";
 
 export function generateStaticParams() {
-  return getAllPosts()
-    .filter((p) => !p.draft)
-    .map((p) => ({ slug: p.slug }));
+  return getPublishedPosts().map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({
@@ -50,9 +48,7 @@ export default async function BlogPostPage({
 
   const html = renderPost(post.slug);
   const links = postLinks(post);
-  const more = getAllPosts()
-    .filter((p) => !p.draft && p.slug !== post.slug)
-    .slice(0, 3);
+  const more = links.related;
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -84,7 +80,12 @@ export default async function BlogPostPage({
       <h1 className="mt-6 text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
         {post.title}
       </h1>
-      <p className="mt-3 text-sm text-muted">
+      {post.answer && (
+        <p className="mt-5 border-l-2 border-brand/40 pl-4 text-lg leading-relaxed text-ink">
+          {post.answer}
+        </p>
+      )}
+      <p className="mt-5 text-sm text-muted">
         {formatDate(post.date)} · {post.readingMinutes} min read
       </p>
 
@@ -106,19 +107,33 @@ export default async function BlogPostPage({
         dangerouslySetInnerHTML={{ __html: html }}
       />
 
-      {links.length > 0 && (
+      {links.version && (
         <div className="mt-12 rounded-2xl bg-surface p-6 shadow-card">
           <p className="font-semibold">Try it in the app</p>
+          <p className="mt-1 text-sm text-muted">{links.version.note}</p>
           <div className="mt-4 flex flex-wrap gap-3 text-sm">
-            {links.map((link) => (
+            <Link
+              href={links.version.href}
+              className="inline-flex items-center gap-2 rounded-xl bg-brand px-4 py-2 font-semibold text-white transition-transform hover:-translate-y-0.5"
+            >
+              {links.version.label}
+            </Link>
+            {links.takeABreak && (
               <Link
-                key={link.href}
-                href={link.href}
+                href={links.takeABreak.href}
                 className="rounded-xl border border-black/10 bg-bg px-4 py-2 font-semibold transition-colors hover:border-brand/40 hover:text-brand"
               >
-                {link.label}
+                {links.takeABreak.label}
               </Link>
-            ))}
+            )}
+            {links.version.playUrl && (
+              <a
+                href={links.version.playUrl}
+                className="inline-flex items-center gap-2 rounded-xl border border-black/10 bg-bg px-4 py-2 font-semibold transition-colors hover:border-brand/40 hover:text-brand"
+              >
+                Get on Google Play
+              </a>
+            )}
           </div>
         </div>
       )}

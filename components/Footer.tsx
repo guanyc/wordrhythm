@@ -18,8 +18,14 @@ export default function Footer() {
             <Link href="/versions" className="hover:text-ink">
               Versions
             </Link>
+            <Link href="/kjv-words" className="hover:text-ink">
+              KJV Words
+            </Link>
             <Link href="/take-a-break" className="hover:text-ink">
               Take a Break
+            </Link>
+            <Link href="/blog" className="hover:text-ink">
+              Guides
             </Link>
             <Link href="/privacy" className="hover:text-ink">
               Privacy

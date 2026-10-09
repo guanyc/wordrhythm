@@ -751,7 +751,7 @@ const lsg: StoreListing = {
           list: [
             "Matin : un verset, sa signification, une réflexion",
             "Soir : prière, paix et repos",
-            "Nuit : prière pour le sommeil et audio apaisant",
+            "Nuit : prière pour le sommeil",
           ],
         },
       ],
@@ -799,19 +799,6 @@ const lsg: StoreListing = {
           list: [
             "Enregistre tes versets : « En cours », puis « Maîtrisé »",
             "Une pratique quotidienne simple, à ton rythme",
-          ],
-        },
-      ],
-    },
-    {
-      heading: "Audio",
-      blocks: [
-        {
-          list: [
-            "Écoute la Bible à voix haute, avec débit et hauteur de voix réglables",
-            "Enchaînement automatique chapitre puis livre, mode « voix seule »",
-            "Audio sommeil : lectures douces et sons de fond paisibles pour t’endormir",
-            "Idéal quand tu es stressé, submergé, ou que tu n’arrives pas à ralentir le soir",
           ],
         },
       ],

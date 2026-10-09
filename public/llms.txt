@@ -1,0 +1,138 @@
+# Word Rhythm
+
+> Scripture for the rhythm of everyday life. A family of 7 Android Bible apps
+> — KJV Bible, ASV Bible, WEB Bible, Biblia RVR, 和合本圣经, Bíblia AA, Bible Louis Segond 1910 — each built around
+> 4 daily touchpoints: morning, day, evening, sleep.
+
+## Daily rhythm (every app)
+
+All 7 apps run the same 4 daily slots:
+
+1. **Morning** (early morning)
+2. **Day** (daytime)
+3. **Evening** (early evening)
+4. **Sleep** (21:00-04:59)
+
+The fourth slot is a real slot, not a synonym for the third: it opens in the
+evening and runs past midnight. Every app has before-bed devotional content —
+the label is localised (Sleep, Sleep, Sleep, Noche, 睡前, Noite, Nuit).
+
+Each devotional follows the same shape: time window, theme tag, the verse with
+its reference, what the verse says, how to reflect, and a short prayer.
+
+## Audio support (varies by translation)
+
+Audio is the feature that differs between apps:
+
+- **Sleep Audio — KJV Bible only.** Gentle nighttime Scripture
+  reading with soft pacing and quiet pauses, plus peaceful background sounds.
+- **Text-to-speech — WEB Bible, Biblia RVR, 和合本圣经, Bíblia AA.** Read-aloud Scripture playback.
+- **No audio — ASV Bible, Bible Louis Segond 1910.** Reading and devotionals only.
+
+Every app has all 4 devotional slots, including the sleep slot.
+Only KJV Bible ships the dedicated Sleep Audio track.
+
+## Apps
+
+- [Word Rhythm: KJV Bible](https://wordrhythm.app/versions/kjv) (English) — offline KJV with morning, day, evening and before-bed devotionals, reading plans and memorization, plus **Sleep Audio** — gentle nighttime Scripture reading with soft pacing and peaceful background sounds. [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.kjv)
+- [Word Rhythm: ASV Bible](https://wordrhythm.app/versions/asv) (English) — scholarly American Standard Version, reading and devotionals only. Text only, no audio. [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.asv)
+- [Word Rhythm: WEB Bible](https://wordrhythm.app/versions/web) (English) — modern-language public-domain World English Bible, text-to-speech audio. [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.webu)
+- [Word Rhythm: Biblia RVR](https://wordrhythm.app/versions/rvr) (Español) — Reina-Valera with four daily slots, text-to-speech audio. [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.esp)
+- [Word Rhythm: 和合本圣经](https://wordrhythm.app/versions/cuv) (中文) — 和合本圣经（中文），含清晨、白天、夜晚与睡前四个时段。支持 TTS 朗读 [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.bible)
+- [Word Rhythm: Bíblia AA](https://wordrhythm.app/versions/aa) (Português) — Almeida Atualizada with four daily slots, text-to-speech audio. [Google Play](https://play.google.com/store/apps/details?id=com.guanyc.ace.almeida)
+- [Word Rhythm: Louis Segond 1910](https://wordrhythm.app/versions/lsg) (Français) — LSG 1910 hors ligne, méditation, plans de lecture et recherche. Texte uniquement, sans audio. [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.lsg)
+- [All versions](https://wordrhythm.app/versions)
+
+## KJV words
+
+- [thee](https://wordrhythm.app/kjv-words/thee) — you (archaic objective form); Psalms 18:1
+- [thou](https://wordrhythm.app/kjv-words/thou) — you (archaic subject form); Psalms 92:8
+- [thy](https://wordrhythm.app/kjv-words/thy) — your (archaic possessive; Matthew 6:9
+- [thine](https://wordrhythm.app/kjv-words/thine) — your (archaic possessive; Luke 20:43
+- [ye](https://wordrhythm.app/kjv-words/ye) — you (archaic plural subject pronoun); Matthew 5:14
+- [unto](https://wordrhythm.app/kjv-words/unto) — to (archaic preposition); John 8:1
+- [hath](https://wordrhythm.app/kjv-words/hath) — has (third person singular); Luke 19:34
+- [doth](https://wordrhythm.app/kjv-words/doth) — does (third person singular); Luke 1:46
+- [didst](https://wordrhythm.app/kjv-words/didst) — did (second person singular); Psalms 39:9
+- [dost](https://wordrhythm.app/kjv-words/dost) — do (second person singular); Psalms 44:12
+- [shalt](https://wordrhythm.app/kjv-words/shalt) — shall (second person singular); Exodus 20:13
+- [wilt](https://wordrhythm.app/kjv-words/wilt) — will (second person singular); Acts 7:28
+- [saith](https://wordrhythm.app/kjv-words/saith) — says; Isaiah 40:1
+- [knowest](https://wordrhythm.app/kjv-words/knowest) — you know (second person singular); Psalms 69:5
+- [ought](https://wordrhythm.app/kjv-words/ought) — ought to; 1 John 4:11
+- [verily](https://wordrhythm.app/kjv-words/verily) — truly; Psalms 66:19
+- [wherefore](https://wordrhythm.app/kjv-words/wherefore) — why; for which reason; Matthew 6:30
+- [therefore](https://wordrhythm.app/kjv-words/therefore) — for that reason; Luke 23:16
+- [lo](https://wordrhythm.app/kjv-words/lo) — look; Song of Solomon 2:11
+- [Comforter](https://wordrhythm.app/kjv-words/comforter) — Comforter (the Holy Spirit; one who comforts); John 14:16
+- [Importunity](https://wordrhythm.app/kjv-words/importunity) — Importunity; persistent; Luke 11:8
+- [Backslider](https://wordrhythm.app/kjv-words/backslider) — Backslider; one who turns away from God; Proverbs 14:14
+- [bethink](https://wordrhythm.app/kjv-words/bethink) — reflect; 1 Kings 8:47
+- [Chasten](https://wordrhythm.app/kjv-words/chasten) — Chasten (to discipline or correct); Proverbs 19:18
+- [Comfortless](https://wordrhythm.app/kjv-words/comfortless) — Comfortless; without comfort or solace; John 14:18
+- [Concubine](https://wordrhythm.app/kjv-words/concubine) — Concubine; a secondary wife with lower status; 2 Samuel 21:11
+- [concupiscence](https://wordrhythm.app/kjv-words/concupiscence) — lust; Romans 7:8
+- [Consecrate](https://wordrhythm.app/kjv-words/consecrate) — Consecrate; to dedicate to sacred use; Exodus 32:29
+- [contrariwise](https://wordrhythm.app/kjv-words/contrariwise) — on the contrary; 2 Corinthians 2:7
+- [conversation](https://wordrhythm.app/kjv-words/conversation) — conduct; Philippians 3:20
+- [Covetous](https://wordrhythm.app/kjv-words/covetous) — Covetous; greedy for others’ property; Luke 16:14
+- [discomfited](https://wordrhythm.app/kjv-words/discomfited) — defeated; Psalms 18:14
+- [Dispossess](https://wordrhythm.app/kjv-words/dispossess) — Dispossess; to drive out or deprive of possession; Deuteronomy 7:17
+- [disquiet](https://wordrhythm.app/kjv-words/disquiet) — anxiety; Jeremiah 50:34
+- [Edify](https://wordrhythm.app/kjv-words/edify) — Edify; to instruct or build up (morally/spiritually); Romans 14:19
+- [ensample](https://wordrhythm.app/kjv-words/ensample) — example; Philippians 3:17
+- [Exhort](https://wordrhythm.app/kjv-words/exhort) — Exhort; to urge or advise strongly; Titus 2:9
+- [forasmuch](https://wordrhythm.app/kjv-words/forasmuch) — since; Acts 9:38
+- [forbare](https://wordrhythm.app/kjv-words/forbare) — refrained; 1 Samuel 23:13
+- [forbear](https://wordrhythm.app/kjv-words/forbear) — refrain; Proverbs 24:11
+- [Foreknow](https://wordrhythm.app/kjv-words/foreknow) — Foreknow; to know beforehand; Romans 8:29
+- [Forewarn](https://wordrhythm.app/kjv-words/forewarn) — Forewarn; to warn beforehand; Luke 12:5
+- [Fornicator](https://wordrhythm.app/kjv-words/fornicator) — Fornicator; one who commits fornication; Hebrews 12:16
+- [Forsaking](https://wordrhythm.app/kjv-words/forsaking) — Forsaking; the act of abandoning or leaving; Isaiah 6:12
+- [forsomuch](https://wordrhythm.app/kjv-words/forsomuch) — since; Luke 19:9
+- [gainsay](https://wordrhythm.app/kjv-words/gainsay) — deny; Luke 21:15
+- [Impenitent](https://wordrhythm.app/kjv-words/impenitent) — Not repenting of sin; unrepentant; Romans 2:5
+- [imperious](https://wordrhythm.app/kjv-words/imperious) — arrogant; Ezekiel 16:30
+- [impotent](https://wordrhythm.app/kjv-words/impotent) — powerless; Acts 4:9
+- [Impute](https://wordrhythm.app/kjv-words/impute) — To attribute or ascribe (especially sin or righteousness); Romans 4:8
+- [Persecute](https://wordrhythm.app/kjv-words/persecute) — To persecute; to harass or oppress (for beliefs); Lamentations 3:66
+- [Profaned](https://wordrhythm.app/kjv-words/profaned) — Profaned; desecrated or made unholy (past tense); Psalms 89:39
+- [Unequaled](https://wordrhythm.app/kjv-words/unequaled) — unparalleled; incomparable; Exodus 15:11
+- [unfeigned](https://wordrhythm.app/kjv-words/unfeigned) — sincere; 2 Corinthians 6:6
+- [unsatiable](https://wordrhythm.app/kjv-words/unsatiable) — insatiable; Ezekiel 16:28
+- [wanton](https://wordrhythm.app/kjv-words/wanton) — unruly; reckless; immoral; James 5:5
+- [wherein](https://wordrhythm.app/kjv-words/wherein) — in which; in what way; Ecclesiastes 3:9
+- [whereof](https://wordrhythm.app/kjv-words/whereof) — of which; Psalms 126:3
+- [whereunto](https://wordrhythm.app/kjv-words/whereunto) — unto which; to which (archaic form); Luke 13:18
+- [wherewithal](https://wordrhythm.app/kjv-words/wherewithal) — the means (money/resources) to do something; Psalms 119:9
+- [whilst](https://wordrhythm.app/kjv-words/whilst) — while; during (formal/archaic); Psalms 141:10
+- [whisperings](https://wordrhythm.app/kjv-words/whisperings) — whispers; gossip; secret talk; 2 Corinthians 12:20
+- [whosoever](https://wordrhythm.app/kjv-words/whosoever) — whoever; any person (emphatic); Luke 7:23
+- [wist](https://wordrhythm.app/kjv-words/wist) — knew (archaic past tense of 'wit'); Luke 2:49
+- [Full glossary of 1440 KJV words](https://wordrhythm.app/kjv-words)
+
+Every entry in the glossary carries a modern equivalent, a definition and a
+verbatim KJV example with its book, chapter and verse. The ones listed above
+are the words readers look up most; all 1440 are searchable at
+the link above.
+
+## Facts
+
+- Platform: Android only. Fully offline reading. No account required.
+- 4 daily slots in every app: morning, day, evening, sleep.
+- Reading plans, memorization and Take a Break are available in every app.
+- Audio varies: Sleep Audio (KJV Bible), text-to-speech (WEB Bible, Biblia RVR, 和合本圣经, Bíblia AA), or none (ASV Bible, Bible Louis Segond 1910).
+- Also available as a standalone app: [Take a Break](https://wordrhythm.app/take-a-break)
+- KJV archaic-word glossary: 1440 entries, examples verified against the full KJV text.
+
+## Guides
+
+- [What Do People Need From a Bible App Today?](https://wordrhythm.app/blog/what-do-people-need-from-a-bible-app-today)
+- [A Bible App for Real Life, Not Just Research](https://wordrhythm.app/blog/a-bible-app-for-real-life-not-just-research)
+- [What Is Take a Break in a Bible App?](https://wordrhythm.app/blog/what-is-take-a-break-in-a-bible-app)
+- [What Is the Best KJV Bible App for Offline Reading?](https://wordrhythm.app/blog/what-is-the-best-kjv-bible-app-for-offline-reading)
+- [How to Start a Bible Reading Plan Without the Guilt Loop](https://wordrhythm.app/blog/how-to-start-a-bible-reading-plan-without-the-guilt-loop)
+- [What Bible Verses Help When You Feel Anxious?](https://wordrhythm.app/blog/what-bible-verses-help-when-you-feel-anxious)
+- [Fell Behind on Your Bible Reading Plan? Here's a Gentler Way Back](https://wordrhythm.app/blog/fell-behind-bible-reading-plan-take-a-break)
+- [A Daily Devotional That Fits Real Life (KJV Bible App – Daily Devotional)](https://wordrhythm.app/blog/kjv-bible-app-daily-devotional-features)
+- [All guides](https://wordrhythm.app/blog)
