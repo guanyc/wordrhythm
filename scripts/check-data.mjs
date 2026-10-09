@@ -196,18 +196,42 @@ for (const page of emotionPages) {
       `bible-verses: "${page.slug}" has ${page.verses?.length ?? 0} verses, expected 10`,
     );
   }
-  // Take a Break ships a compact reflection for every passage; a verse without
-  // one still renders, but it is a content gap worth surfacing.
+  // Take a Break pairs every passage with a compact reflection and prayer. The
+  // build script only picks verses that have both, so a gap here means the data
+  // was edited by hand or an older build is being checked.
   for (const v of page.verses ?? []) {
-    if (v.insight && v.prayer && !String(v.insight).trim()) {
-      problems.push(`bible-verses: "${page.slug}" ${v.reference} has an empty insight`);
+    for (const field of ["insight", "prayer"]) {
+      if (!String(v[field] ?? "").trim()) {
+        problems.push(`bible-verses: "${page.slug}" ${v.reference} has no ${field}`);
+      }
     }
   }
+  // Ten passages drawn from one book is what the per-book cap exists to
+  // prevent; four means the cap silently stopped applying.
+  const perBook = new Map();
   for (const v of page.verses ?? []) {
-    // A reference is "<book> <chapter>:<verse>"; the book may start with a
-    // digit ("1 Kings", "2 Corinthians"). A reference that is only a number
-    // means the book lookup failed upstream.
-    if (!/^(?:[1-3] )?[A-Za-z]+ \d+:\d+$/.test(v.reference ?? "")) {
+    // Strip the chapter:verse tail, keeping any leading number in the name
+    // ("1 Kings" is one book, not "1").
+    const book = String(v.reference ?? "").replace(/ \d+:\d+$/, "");
+    perBook.set(book, (perBook.get(book) ?? 0) + 1);
+  }
+  const worst = [...perBook.entries()].sort((a, b) => b[1] - a[1])[0];
+  if (worst && worst[1] > 3) {
+    problems.push(
+      `bible-verses: "${page.slug}" draws ${worst[1]} passages from ${worst[0]}, cap is 3`,
+    );
+  }
+  if (perBook.size < 4) {
+    problems.push(
+      `bible-verses: "${page.slug}" draws from only ${perBook.size} book(s): ${[...perBook.keys()].join(", ")}`,
+    );
+  }
+  for (const v of page.verses ?? []) {
+    // "<book> <chapter>:<verse>". The book may carry a leading digit
+    // ("1 Kings") and one is three words long ("Song of Solomon"), so match on
+    // the chapter:verse tail plus a non-empty name rather than an enumeration.
+    // A reference that is only a number means the book lookup failed upstream.
+    if (!/^.+ \d+:\d+$/.test(String(v.reference ?? ""))) {
       problems.push(`bible-verses: "${page.slug}" has a malformed reference "${v.reference}"`);
       break;
     }

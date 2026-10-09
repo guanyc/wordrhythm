@@ -45,6 +45,22 @@ OUT = Path("/Users/guanyc/projects/wordrhythm/data/take-a-break.json")
 
 PER_EMOTION = 10
 
+# How deep the candidate pool goes before verses alternate in from the tail.
+# The two limits below only work together. MAX_PER_BOOK refuses a fourth passage
+# from the same book, which a page can only honour if the pool still holds
+# another book further down — at depth 32, joyful had 31 of its 32 candidates in
+# Psalms and fell back to an uncapped top-10, leaving that page all Psalms.
+# At 80 no emotion falls back, and the weakest passage still scores 1.48 against
+# a noise floor near zero.
+POOL_DEPTH = 80
+
+# No page takes more than this many passages from one book. Psalms dominates
+# several themes on weight alone — 429 of PRAISE's 716 candidates, 426 of
+# PRAYER's 895 — which left /joy and /prayerful as ten Psalms and nothing else.
+# Three per book keeps the strongest matches while forcing the rest of the page
+# out to other books: 6.4 books per page on average, at least 4 everywhere.
+MAX_PER_BOOK = 3
+
 # How much each mapping priority contributes to a verse's score. Priority 3 is
 # the emotion's defining theme, 1 is something adjacent.
 PRIORITY_WEIGHT = {3: 1.0, 2: 0.7, 1: 0.45}
@@ -55,18 +71,22 @@ WEAK_THEMES = {"GOD", "GOD_SOVEREIGNTY", "GOD_CHARACTER", "LAST_THINGS"}
 
 # Two emotions join the same page when their verse lists overlap this much.
 #
-# This value moved with PER_EMOTION. At 20 verses a 60% threshold gave 37
-# buckets, but dropping to 10 tightened every list: gratitude and blessed
-# started scoring identically and were merged at 60%, which is wrong —
-# giving thanks and being blessed are not the same. At 10 verses 85% keeps the
-# genuinely synonymous pairs (grateful/thankful, calm/peaceful/restless) and
-# separates the rest. 85% and 100% produce the same grouping.
+# This value moved twice, and it is coupled to both PER_EMOTION and how verses
+# are picked.
 #
-# anxious and fearful land at 82% — nine of ten passages identical, differing
-# only on Psalms 116:7 vs 52:8 — and were flagged as duplicate titles because
-# they name themselves the same. Merged here rather than padding one with a
-# second title.
-OVERLAP_THRESHOLD = 0.8
+# At 20 verses a 60% threshold gave 37 buckets. Dropping to 10 tightened every
+# list, and 60% then merged gratitude with blessed — giving thanks and being
+# blessed are not the same. 80% fixed that at 40 buckets.
+#
+# Alternating between the two ends of the pool (see POOL_DEPTH) spreads each
+# list across more books, which incidentally makes near-duplicates rarer: the
+# only pairs still overlapping by 70% are genuinely synonymous, and 70% through
+# 100% all produce the same 42 buckets, so the value is no longer delicate.
+#
+# anxious and fearful land just under the threshold and merge, which the
+# duplicate-title check confirmed is right — they name themselves the same and
+# would otherwise be two pages with the same title.
+OVERLAP_THRESHOLD = 0.7
 
 # The database stores emotion_name in Chinese because that is what the app
 # displays. The site is English-only, so every emotion needs an English label
@@ -144,7 +164,7 @@ COPY = {
     "overwhelmed": ("Overwhelmed and weary", "When you are carrying too much"),
     "seeking": ("Seeking God", "When you are looking for direction"),
     # members of the groups above, kept so the lookup never misses
-    "fearful": ("Anxiety and fear", "When your mind will not settle"),
+    "fearful": ("Fear", "When something you dread is close"),
     "guilty": ("Guilt and shame", "When you feel exposed"),
     "peaceful": ("Calm and peace", "When you need to be still"),
     "restless": ("Calm and peace", "When you cannot settle"),
@@ -197,6 +217,10 @@ def main():
         return 1
 
     db = sqlite3.connect(DB)
+    if not COMPACT_DB.exists():
+        print(f"compact database not found: {COMPACT_DB}")
+        return 1
+    db.execute("ATTACH DATABASE ? AS compact", (str(COMPACT_DB),))
 
     themes = defaultdict(list)
     for code, theme, priority in db.execute(
@@ -220,15 +244,85 @@ def main():
     ):
         names[code] = name
 
+    # Only verses Take a Break actually has material for. devotional_compact
+    # covers 15,777 of the 31,102 passages, so without this filter a page can
+    # list a verse that renders as bare text with no reflection — the gap is
+    # visible on the page and reads as an oversight.
+    has_compact = {
+        row[0]
+        for row in db.execute(
+            "SELECT verse_id FROM compact.devotional_compact "
+            "WHERE LENGTH(COALESCE(compact_insight, '')) > 0 "
+            "AND LENGTH(COALESCE(compact_prayer, '')) > 0"
+        )
+    }
+
+    # Keyed by book_id, not by display name: "1 Samuel" and "1 Kings" share a
+    # leading "1", so counting on anything else pools their quotas and lets a
+    # page exceed the cap.
+    book_of = {
+        verse_id: book_id
+        for verse_id, book_id in db.execute("SELECT id, book_id FROM bible_verses")
+    }
+
+    def pick(pool, limit):
+        """Walks the pool from both ends at once, skipping books already used up.
+
+        Taking the top N straight off collapses onto a handful of books, because
+        the highest-scoring verses for most emotions cluster in Psalms and
+        Philippians. So the order is 1st, last, 2nd, 2nd-last, and so on: the
+        strongest match still leads, and less obvious passages from the far end
+        of the same theme set fill the rest. Combined with MAX_PER_BOOK that
+        spreads a page across six books on average instead of five.
+
+        The book cap is enforced on both ends, not by relaxing later — a cap
+        that only applied to the tail would still let Psalms fill the front.
+        """
+        order = []
+        lo, hi = 0, len(pool) - 1
+        while lo <= hi:
+            order.append(pool[lo][0])
+            lo += 1
+            if lo <= hi:
+                order.append(pool[hi][0])
+                hi -= 1
+
+        picked = []
+        used = defaultdict(int)
+        for verse_id in order:
+            if len(picked) >= limit:
+                break
+            book = book_of[verse_id]
+            if used[book] >= MAX_PER_BOOK:
+                continue
+            picked.append(verse_id)
+            used[book] += 1
+        return picked
+
     verses = {}
     for code, mapping in themes.items():
         scores = defaultdict(float)
         for theme, priority in mapping:
             factor = PRIORITY_WEIGHT.get(priority, 0.3)
             for verse_id, weight in by_theme[theme]:
-                scores[verse_id] += factor * weight
-        ranked = sorted(scores.items(), key=lambda kv: -kv[1])[:PER_EMOTION]
-        verses[code] = [v for v, _ in ranked]
+                if verse_id in has_compact:
+                    scores[verse_id] += factor * weight
+        # verse_id breaks ties so the ordering is stable between runs — otherwise
+        # equal-scoring verses could reshuffle and change which ones get picked.
+        ranked = sorted(scores.items(), key=lambda kv: (-kv[1], kv[0]))
+        if len(ranked) < PER_EMOTION:
+            print(
+                f"only {len(ranked)} verses with a compact reflection for "
+                f"{code}, needed {PER_EMOTION}"
+            )
+            return 1
+        chosen = pick(ranked[:POOL_DEPTH], PER_EMOTION)
+        if len(chosen) < PER_EMOTION:
+            # MAX_PER_BOOK can starve a page whose pool is one book deep.
+            # Falling back to plain top-N keeps the page full; the guard in
+            # check-data.mjs will still hold the line on compact content.
+            chosen = [v for v, _ in ranked[:PER_EMOTION]]
+        verses[code] = chosen
 
     # Bucket the emotions. Each emotion joins the first bucket whose verse list
     # it overlaps enough; otherwise it starts a new one. Everything in a bucket
@@ -316,7 +410,6 @@ def main():
     # Compact insight and prayer, the same three-part shape Take a Break shows.
     # Joined on verse_id, which is bible_verses.id in both databases.
     compact = {}
-    db.execute("ATTACH DATABASE ? AS compact", (str(COMPACT_DB),))
     for verse_id, micro, insight, prayer in db.execute(
         "SELECT verse_id, micro_message, compact_insight, compact_prayer "
         "FROM compact.devotional_compact"
