@@ -135,7 +135,17 @@ for (const entry of glossary) {
   }
   slugs.set(slug, entry.word);
 
-  // The modern equivalent is rendered into llms.txt and meta descriptions.
+  // The glossary feeds an English-only site. The shared source carries a few
+  // Chinese glosses; IPA and "≈" are legitimate, so match Han only.
+  for (const field of ["modern", "definition"]) {
+    if (/[㐀-䶿一-鿿]/.test(entry[field] ?? "")) {
+      problems.push(`kjv-words: "${entry.word}" ${field} contains Chinese`);
+    }
+  }
+  if (!String(entry.phonetic ?? "").trim()) {
+    problems.push(`kjv-words: "${entry.word}" is missing phonetic`);
+  }
+
   // Definitions use "1) ... 2) ..." inline lists and some entries contain
   // "(120)", so raw bracket counting produces false positives. Only flag a "("
   // that is never closed anywhere in the string — an actual truncation.
@@ -144,7 +154,7 @@ for (const entry of glossary) {
     ["definition", entry.definition],
   ]) {
     let depth = 0;
-    for (const ch of text) {
+    for (const ch of text ?? "") {
       if (ch === "(") depth += 1;
       else if (ch === ")") depth = Math.max(0, depth - 1);
     }
@@ -170,6 +180,16 @@ for (const page of emotionPages) {
   }
   if (!Array.isArray(page.emotions) || page.emotions.length === 0) {
     problems.push(`bible-verses: "${page.slug}" lists no emotions`);
+  }
+  for (const e of page.emotions ?? []) {
+    if (!String(e.label ?? "").trim()) {
+      problems.push(`bible-verses: "${page.slug}" has an emotion with no label`);
+    }
+    // The site is English-only. The source database carries Chinese labels for
+    // the app, and one slipping through would be visible on the page.
+    if (/[^\x00-\x7F]/.test(e.label ?? "")) {
+      problems.push(`bible-verses: "${page.slug}" emotion label "${e.label}" is not English`);
+    }
   }
   if (!Array.isArray(page.verses) || page.verses.length < 20) {
     problems.push(

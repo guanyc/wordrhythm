@@ -54,6 +54,68 @@ WEAK_THEMES = {"GOD", "GOD_SOVEREIGNTY", "GOD_CHARACTER", "LAST_THINGS"}
 # apart, so the exact value is not delicate.
 OVERLAP_THRESHOLD = 0.6
 
+# The database stores emotion_name in Chinese because that is what the app
+# displays. The site is English-only, so every emotion needs an English label
+# written the way a reader would describe the feeling — not a transliteration
+# of the code, and not a bare topic label. Missing entries fail the build.
+EMOTION_LABELS = {
+    "anxious": "anxious",
+    "fearful": "fearful",
+    "stressed": "stressed",
+    "overwhelmed": "overwhelmed",
+    "weary": "weary",
+    "tired": "tired",
+    "calm": "calm",
+    "peaceful": "at peace",
+    "restless": "restless",
+    "sad": "sad",
+    "grieving": "grieving",
+    "hopeless": "hopeless",
+    "hopeful": "hopeful",
+    "hopeful_joyful": "hopeful",
+    "disappointed": "disappointed",
+    "discouraged": "discouraged",
+    "refreshed": "worn out",
+    "empty": "empty",
+    "lonely": "lonely",
+    "lonely_strong": "lonely but holding on",
+    "grateful": "grateful",
+    "thankful": "thankful",
+    "thankful_for_grace": "grateful for grace",
+    "joyful": "joyful",
+    "playful": "playful",
+    "blessed": "blessed",
+    "worshipful": "worshipful",
+    "inspired": "encouraged",
+    "confident": "confident",
+    "courageous": "courageous",
+    "determined": "determined",
+    "peace": "peaceful",
+    "ashamed": "ashamed",
+    "guilty": "guilty",
+    "repentant": "wanting to turn back",
+    "bitter": "bitter",
+    "angry": "angry",
+    "unjust": "treated unfairly",
+    "justice_longing": "longing for justice",
+    "persecuted": "persecuted for faith",
+    "confused": "confused",
+    "confused_seeking": "lost and looking",
+    "seeking": "seeking",
+    "seeking_guidance": "seeking direction",
+    "seeking_truth": "seeking truth",
+    "uncertain": "uncertain",
+    "trusting_in_god": "trusting",
+    "prayerful": "wanting to pray",
+    "tempted": "tempted",
+    "content": "content",
+    "serving": "serving others",
+    "growth": "wanting to grow",
+    "growing": "wanting to grow",
+    "unity_needed": "wanting unity",
+    "loving": "loving",
+}
+
 # Display copy. The database carries Chinese labels for the app; these are the
 # English equivalents, written to read as a page heading rather than a label.
 COPY = {
@@ -196,10 +258,22 @@ def main():
                 "slug": slug,
                 "title": title,
                 "subtitle": subtitle,
-                "emotions": [{"code": c, "label": names.get(c, c)} for c in members],
+                "emotions": [
+                    {"code": c, "label": EMOTION_LABELS.get(c, "")} for c in members
+                ],
                 "verses": [],
             }
         )
+
+    # Every emotion must have an English label; the Chinese one in the database
+    # is meaningless to this audience, and an empty label would render as a
+    # stray comma on the page.
+    unlabelled = [
+        e["code"] for p in pages for e in p["emotions"] if not e["label"]
+    ]
+    if unlabelled:
+        print(f"EMOTION_LABELS is missing: {', '.join(sorted(set(unlabelled)))}")
+        return 1
 
     # Attach verse text once, keyed by slug.
     wanted = {}

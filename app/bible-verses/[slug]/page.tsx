@@ -89,8 +89,7 @@ export default async function EmotionPageRoute({
 
       {page.emotions.length > 1 && (
         <p className="mt-4 text-sm text-muted">
-          Also answers searches for{" "}
-          {page.emotions.slice(1).map((e, i, arr) => (
+          Also covers {page.emotions.slice(1).map((e, i, arr) => (
             <span key={e.code}>
               {i > 0 && (i === arr.length - 1 ? " and " : ", ")}
               {e.label}

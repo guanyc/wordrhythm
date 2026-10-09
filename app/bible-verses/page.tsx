@@ -47,9 +47,9 @@ export default function BibleVersesIndex() {
               <span className="mt-3 block text-xs font-semibold text-brand">
                 {p.verses.length} verses
                 {p.emotions.length > 1 &&
-                  ` · also ${p.emotions
+                  ` · also covers ${p.emotions
                     .slice(1)
-                    .map((e) => e.label.toLowerCase())
+                    .map((e) => e.label)
                     .join(", ")}`}
               </span>
             </Link>

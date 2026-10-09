@@ -6,7 +6,7 @@
     "emotions": [
       {
         "code": "angry",
-        "label": "愤怒"
+        "label": "angry"
       }
     ],
     "verses": [
@@ -99,15 +99,15 @@
     "emotions": [
       {
         "code": "anxious",
-        "label": "焦虑"
+        "label": "anxious"
       },
       {
         "code": "fearful",
-        "label": "害怕"
+        "label": "fearful"
       },
       {
         "code": "stressed",
-        "label": "紧张"
+        "label": "stressed"
       }
     ],
     "verses": [
@@ -200,7 +200,7 @@
     "emotions": [
       {
         "code": "bitter",
-        "label": "苦毒"
+        "label": "bitter"
       }
     ],
     "verses": [
@@ -293,7 +293,7 @@
     "emotions": [
       {
         "code": "blessed",
-        "label": "蒙福"
+        "label": "blessed"
       }
     ],
     "verses": [
@@ -386,15 +386,15 @@
     "emotions": [
       {
         "code": "calm",
-        "label": "平静"
+        "label": "calm"
       },
       {
         "code": "peaceful",
-        "label": "平和"
+        "label": "at peace"
       },
       {
         "code": "restless",
-        "label": "不安"
+        "label": "restless"
       }
     ],
     "verses": [
@@ -487,7 +487,7 @@
     "emotions": [
       {
         "code": "confused",
-        "label": "困惑"
+        "label": "confused"
       }
     ],
     "verses": [
@@ -580,7 +580,7 @@
     "emotions": [
       {
         "code": "content",
-        "label": "满足"
+        "label": "content"
       }
     ],
     "verses": [
@@ -673,15 +673,15 @@
     "emotions": [
       {
         "code": "confident",
-        "label": "自信"
+        "label": "confident"
       },
       {
         "code": "courageous",
-        "label": "勇敢"
+        "label": "courageous"
       },
       {
         "code": "determined",
-        "label": "坚定"
+        "label": "determined"
       }
     ],
     "verses": [
@@ -774,7 +774,7 @@
     "emotions": [
       {
         "code": "disappointed",
-        "label": "失望"
+        "label": "disappointed"
       }
     ],
     "verses": [
@@ -867,7 +867,7 @@
     "emotions": [
       {
         "code": "discouraged",
-        "label": "沮丧"
+        "label": "discouraged"
       }
     ],
     "verses": [
@@ -960,11 +960,11 @@
     "emotions": [
       {
         "code": "empty",
-        "label": "空虚"
+        "label": "empty"
       },
       {
         "code": "lonely",
-        "label": "孤独"
+        "label": "lonely"
       }
     ],
     "verses": [
@@ -1057,7 +1057,7 @@
     "emotions": [
       {
         "code": "inspired",
-        "label": "被激励"
+        "label": "encouraged"
       }
     ],
     "verses": [
@@ -1150,11 +1150,11 @@
     "emotions": [
       {
         "code": "grateful",
-        "label": "感激"
+        "label": "grateful"
       },
       {
         "code": "thankful",
-        "label": "感恩"
+        "label": "thankful"
       }
     ],
     "verses": [
@@ -1247,7 +1247,7 @@
     "emotions": [
       {
         "code": "grieving",
-        "label": "哀伤"
+        "label": "grieving"
       }
     ],
     "verses": [
@@ -1340,7 +1340,7 @@
     "emotions": [
       {
         "code": "growth",
-        "label": "灵命增长"
+        "label": "wanting to grow"
       }
     ],
     "verses": [
@@ -1433,15 +1433,15 @@
     "emotions": [
       {
         "code": "ashamed",
-        "label": "羞愧"
+        "label": "ashamed"
       },
       {
         "code": "guilty",
-        "label": "内疚"
+        "label": "guilty"
       },
       {
         "code": "repentant",
-        "label": "悔改"
+        "label": "wanting to turn back"
       }
     ],
     "verses": [
@@ -1534,11 +1534,11 @@
     "emotions": [
       {
         "code": "hopeful",
-        "label": "有希望"
+        "label": "hopeful"
       },
       {
         "code": "hopeless",
-        "label": "绝望"
+        "label": "hopeless"
       }
     ],
     "verses": [
@@ -1631,11 +1631,11 @@
     "emotions": [
       {
         "code": "joyful",
-        "label": "喜乐"
+        "label": "joyful"
       },
       {
         "code": "playful",
-        "label": "调皮"
+        "label": "playful"
       }
     ],
     "verses": [
@@ -1728,7 +1728,7 @@
     "emotions": [
       {
         "code": "hopeful_joyful",
-        "label": "希望喜乐"
+        "label": "hopeful"
       }
     ],
     "verses": [
@@ -1821,7 +1821,7 @@
     "emotions": [
       {
         "code": "unjust",
-        "label": "被冤枉/不公"
+        "label": "treated unfairly"
       }
     ],
     "verses": [
@@ -1914,7 +1914,7 @@
     "emotions": [
       {
         "code": "lonely_strong",
-        "label": "孤独坚强"
+        "label": "lonely but holding on"
       }
     ],
     "verses": [
@@ -2007,7 +2007,7 @@
     "emotions": [
       {
         "code": "justice_longing",
-        "label": "渴望公义"
+        "label": "longing for justice"
       }
     ],
     "verses": [
@@ -2100,7 +2100,7 @@
     "emotions": [
       {
         "code": "loving",
-        "label": "爱心"
+        "label": "loving"
       }
     ],
     "verses": [
@@ -2193,11 +2193,11 @@
     "emotions": [
       {
         "code": "overwhelmed",
-        "label": "压力大"
+        "label": "overwhelmed"
       },
       {
         "code": "weary",
-        "label": "疲惫"
+        "label": "weary"
       }
     ],
     "verses": [
@@ -2290,7 +2290,7 @@
     "emotions": [
       {
         "code": "persecuted",
-        "label": "受逼迫"
+        "label": "persecuted for faith"
       }
     ],
     "verses": [
@@ -2383,7 +2383,7 @@
     "emotions": [
       {
         "code": "prayerful",
-        "label": "祷告渴慕"
+        "label": "wanting to pray"
       }
     ],
     "verses": [
@@ -2476,7 +2476,7 @@
     "emotions": [
       {
         "code": "refreshed",
-        "label": "轻松"
+        "label": "worn out"
       }
     ],
     "verses": [
@@ -2569,7 +2569,7 @@
     "emotions": [
       {
         "code": "sad",
-        "label": "忧郁"
+        "label": "sad"
       }
     ],
     "verses": [
@@ -2662,15 +2662,15 @@
     "emotions": [
       {
         "code": "confused_seeking",
-        "label": "迷茫探索"
+        "label": "lost and looking"
       },
       {
         "code": "seeking",
-        "label": "寻求"
+        "label": "seeking"
       },
       {
         "code": "seeking_guidance",
-        "label": "寻求指引"
+        "label": "seeking direction"
       }
     ],
     "verses": [
@@ -2763,7 +2763,7 @@
     "emotions": [
       {
         "code": "seeking_truth",
-        "label": "寻求真理"
+        "label": "seeking truth"
       }
     ],
     "verses": [
@@ -2856,7 +2856,7 @@
     "emotions": [
       {
         "code": "serving",
-        "label": "服事他人"
+        "label": "serving others"
       }
     ],
     "verses": [
@@ -2949,7 +2949,7 @@
     "emotions": [
       {
         "code": "tempted",
-        "label": "受诱惑"
+        "label": "tempted"
       }
     ],
     "verses": [
@@ -3042,7 +3042,7 @@
     "emotions": [
       {
         "code": "thankful_for_grace",
-        "label": "因恩典感恩"
+        "label": "grateful for grace"
       }
     ],
     "verses": [
@@ -3135,7 +3135,7 @@
     "emotions": [
       {
         "code": "trusting_in_god",
-        "label": "信靠神"
+        "label": "trusting"
       }
     ],
     "verses": [
@@ -3228,7 +3228,7 @@
     "emotions": [
       {
         "code": "uncertain",
-        "label": "不确定"
+        "label": "uncertain"
       }
     ],
     "verses": [
@@ -3321,7 +3321,7 @@
     "emotions": [
       {
         "code": "unity_needed",
-        "label": "渴望合一"
+        "label": "wanting unity"
       }
     ],
     "verses": [
@@ -3414,7 +3414,7 @@
     "emotions": [
       {
         "code": "worshipful",
-        "label": "敬拜"
+        "label": "worshipful"
       }
     ],
     "verses": [

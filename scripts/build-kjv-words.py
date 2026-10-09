@@ -43,6 +43,28 @@ TAIL = re.compile(rf"\s*\((?P<book>{BOOKS})\s+(?P<chapter>\d+):(?P<verse>\d+)\)\
 # The dataset writes "Psalm", the Bible JSON stores "Psalms".
 ALIAS = {"Psalm": "Psalms"}
 
+# Four entries in the shared file carry a Chinese gloss or clause someone added
+# while filling gaps. The English is already there, so the Chinese is redundant
+# on an English-only site — and mixed inside a sentence it reads as broken.
+CN_GLOSSES = {
+    "messenger,驿站 (relay station)": "messenger, relay station",
+    "internal organs (of animals),附属物": "internal organs (of animals), offal",
+    "turtle, turtledove (archaic简称)": "turtle, turtledove (archaic abbreviation)",
+    "The internal organs (e.g., liver, kidneys) of animals, especially those "
+    "used in sacrifices; or附属 parts of something":
+        "The internal organs (e.g., liver, kidneys) of animals, especially those "
+        "used in sacrifices; or the accessory parts of something",
+    "People who engage in trade or commerce; merchants (not limited to modern "
+    "'illegal trafficking'含义)":
+        "People who engage in trade or commerce; merchants (not limited to the "
+        "modern sense of illegal trafficking)",
+}
+
+# Only Han characters count as a problem here. The phonetic field legitimately
+# carries IPA and the modern equivalents use ≈, so an ASCII-only check would
+# report dozens of false positives.
+HAN = re.compile(r"[㐀-䶿一-鿿]")
+
 # Entries whose example does not end in a parseable citation. Each quote was
 # located in kjv_bible.json by full-text search.
 MISSING_REFERENCE = {
@@ -89,8 +111,12 @@ def main():
             {
                 "word": entry["archaic_word"],
                 "phonetic": entry["phonetic"],
-                "modern": entry["modern_equivalent"],
-                "definition": entry["definition"],
+                "modern": CN_GLOSSES.get(
+                    entry["modern_equivalent"], entry["modern_equivalent"]
+                ),
+                "definition": CN_GLOSSES.get(
+                    entry["definition"], entry["definition"]
+                ),
                 "quote": quote.strip(),
                 "reference": reference,
             }
@@ -101,6 +127,10 @@ def main():
     OUT.write_text(
         json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8"
     )
+
+    non_ascii = [
+        e["word"] for e in out if HAN.search(e["definition"] + e["modern"])
+    ]
 
     # Slugs must be unique or two entries fight over one page.
     slugs = {}
@@ -121,8 +151,10 @@ def main():
         print(f"  {c}")
     for m in missing:
         print(f"  no reference: {m}")
+    if non_ascii:
+        print(f"NON-ENGLISH GLOSSES ({len(non_ascii)}): {', '.join(non_ascii)}")
     print(f"\n-> {OUT}")
-    return 1 if clashes or missing else 0
+    return 1 if clashes or missing or non_ascii else 0
 
 
 if __name__ == "__main__":
