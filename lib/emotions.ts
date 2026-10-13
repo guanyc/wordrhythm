@@ -39,6 +39,88 @@ export interface EmotionVersePage {
 
 const all = pages as EmotionVersePage[];
 
+/**
+ * Editorial grouping for the feeling lists.
+ *
+ * Forty-one flat chips are hard to scan, so /bible-verses and /take-a-break
+ * list them under four headings. This lives here rather than in the generated
+ * data because it is a reading decision, not data — and the headings give
+ * each collection page a themed neighbour to link from.
+ */
+export interface EmotionGroup {
+  title: string;
+  blurb: string;
+  slugs: string[];
+}
+
+export const emotionGroups: EmotionGroup[] = [
+  {
+    title: "Hard moments",
+    blurb: "When the day is heavy, or something has gone wrong.",
+    slugs: [
+      "angry",
+      "anxiety",
+      "bitter",
+      "disappointed",
+      "discouraged",
+      "empty",
+      "fearful",
+      "grieving",
+      "guilt",
+      "lonely-strong",
+      "overwhelmed",
+      "persecuted",
+      "sad",
+      "stressed",
+      "tempted",
+      "uncertain",
+    ],
+  },
+  {
+    title: "Seeking",
+    blurb: "Looking for direction, truth, or the will to keep going.",
+    slugs: [
+      "confused",
+      "confused-seeking",
+      "seeking-truth",
+      "unjust",
+      "justice-longing",
+      "growth",
+      "determined",
+    ],
+  },
+  {
+    title: "Rest and trust",
+    blurb: "Quiet ground — peace, courage, hope, and holding on.",
+    slugs: [
+      "peace",
+      "content",
+      "courage",
+      "inspired",
+      "hope",
+      "refreshed",
+      "trusting-in-god",
+      "unity-needed",
+    ],
+  },
+  {
+    title: "Worship and gratitude",
+    blurb: "Turning toward God with thanks, love, and praise.",
+    slugs: [
+      "blessed",
+      "gratitude",
+      "joy",
+      "hopeful-joyful",
+      "loving",
+      "prayerful",
+      "repentant",
+      "serving",
+      "thankful-for-grace",
+      "worshipful",
+    ],
+  },
+];
+
 const bySlug = new Map(all.map((p) => [p.slug, p]));
 
 export function getEmotionPage(slug: string): EmotionVersePage | undefined {
@@ -51,6 +133,21 @@ export function allEmotionPages(): EmotionVersePage[] {
 
 export function emotionPageSlugs(): string[] {
   return all.map((p) => p.slug);
+}
+
+/** The feeling lists, under their editorial headings. */
+export function groupedEmotionPages(): {
+  title: string;
+  blurb: string;
+  pages: EmotionVersePage[];
+}[] {
+  return emotionGroups.map((group) => ({
+    title: group.title,
+    blurb: group.blurb,
+    pages: group.slugs
+      .map((slug) => bySlug.get(slug))
+      .filter((p): p is EmotionVersePage => Boolean(p)),
+  }));
 }
 
 /**

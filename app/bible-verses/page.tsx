@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import {
-  TOTAL_EMOTION_PAGES,
-  allEmotionPages,
-} from "@/lib/emotions";
+import { TOTAL_EMOTION_PAGES, groupedEmotionPages } from "@/lib/emotions";
 
 const title = `Bible Verses for Every Feeling — ${TOTAL_EMOTION_PAGES} KJV passages`;
 const description =
@@ -19,7 +16,7 @@ export const metadata: Metadata = {
 };
 
 export default function BibleVersesIndex() {
-  const pages = allEmotionPages();
+  const groups = groupedEmotionPages();
 
   return (
     <section className="mx-auto max-w-4xl px-5 py-16">
@@ -33,29 +30,37 @@ export default function BibleVersesIndex() {
         reference, so you can read it in context.
       </p>
 
-      <ul className="mt-10 grid gap-3 sm:grid-cols-2">
-        {pages.map((p) => (
-          <li key={p.slug}>
-            <Link
-              href={`/bible-verses/${p.slug}`}
-              className="block h-full rounded-2xl border border-black/5 bg-surface p-5 shadow-card transition-colors hover:border-brand/40"
-            >
-              <span className="font-semibold">{p.title}</span>
-              <span className="mt-1 block text-sm text-muted">
-                {p.subtitle}
-              </span>
-              <span className="mt-3 block text-xs font-semibold text-brand">
-                {p.verses.length} verses
-                {p.emotions.length > 1 &&
-                  ` · also covers ${p.emotions
-                    .slice(1)
-                    .map((e) => e.label)
-                    .join(", ")}`}
-              </span>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      {groups.map((group) => (
+        <div key={group.title} className="mt-12">
+          <h2 className="text-xl font-semibold tracking-tight">
+            {group.title}
+          </h2>
+          <p className="mt-1 text-sm text-muted">{group.blurb}</p>
+          <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+            {group.pages.map((p) => (
+              <li key={p.slug}>
+                <Link
+                  href={`/bible-verses/${p.slug}`}
+                  className="block h-full rounded-2xl border border-black/5 bg-surface p-5 shadow-card transition-colors hover:border-brand/40"
+                >
+                  <span className="font-semibold">{p.title}</span>
+                  <span className="mt-1 block text-sm text-muted">
+                    {p.subtitle}
+                  </span>
+                  <span className="mt-3 block text-xs font-semibold text-brand">
+                    {p.verses.length} verses
+                    {p.emotions.length > 1 &&
+                      ` · also covers ${p.emotions
+                        .slice(1)
+                        .map((e) => e.label)
+                        .join(", ")}`}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
 
       <div className="mt-14 rounded-2xl bg-surface p-6 shadow-card">
         <h2 className="text-lg font-semibold tracking-tight">

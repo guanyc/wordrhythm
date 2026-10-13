@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { TOTAL_EMOTION_PAGES, allEmotionPages } from "@/lib/emotions";
+import {
+  TOTAL_EMOTION_PAGES,
+  allEmotionPages,
+  groupedEmotionPages,
+} from "@/lib/emotions";
 import { takeABreak } from "@/lib/versions";
 
 export const metadata: Metadata = {
@@ -70,17 +74,25 @@ export default function TakeABreakPage() {
           an insight and a prayer for each — the same passages Take a Break
           draws from, with nothing to install.
         </p>
-        <div className="mt-6 flex flex-wrap gap-2">
-          {allEmotionPages().map((entry) => (
-            <Link
-              key={entry.slug}
-              href={`/bible-verses/${entry.slug}`}
-              className="rounded-full bg-brand-soft px-3 py-1.5 text-sm font-semibold text-brand transition-opacity hover:opacity-70"
-            >
-              {entry.title}
-            </Link>
-          ))}
-        </div>
+        {groupedEmotionPages().map((group) => (
+          <div key={group.title} className="mt-6">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-brand">
+              {group.title}
+            </h3>
+            <p className="mt-1 text-sm text-muted">{group.blurb}</p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {group.pages.map((entry) => (
+                <Link
+                  key={entry.slug}
+                  href={`/bible-verses/${entry.slug}`}
+                  className="rounded-full bg-brand-soft px-3 py-1.5 text-sm font-semibold text-brand transition-opacity hover:opacity-70"
+                >
+                  {entry.title}
+                </Link>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
 
       <div className="mt-14 rounded-2xl border border-black/5 bg-surface p-6">
