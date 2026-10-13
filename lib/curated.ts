@@ -7,8 +7,9 @@
  * longer devotional (meaning / reflection / prayer) for readers who want
  * more than a 60-second pause.
  *
- * The app holds 15,777 rows. The site keeps three passages per feeling,
- * stored one file per feeling so a page never loads the whole set.
+ * The app holds 15,777 rows. The site keeps the ten passages each feeling
+ * page lists, stored one file per feeling so a page never loads the whole
+ * set.
  * The same directory layout is meant to hold situations/ and topics/ next.
  */
 import fs from "node:fs";
@@ -51,9 +52,6 @@ export interface CuratedIndexEntry {
 }
 
 const DIR = path.join(process.cwd(), "data/curated/emotions");
-
-/** How many passages Take a Break cycles through. The rest are list-only. */
-export const CURATED_COUNT = 3;
 
 export function curatedIndex(): CuratedIndexEntry[] {
   return index as CuratedIndexEntry[];

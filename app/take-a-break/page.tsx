@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { TOTAL_EMOTION_PAGES, allEmotionPages } from "@/lib/emotions";
-import { curatedIndex } from "@/lib/curated";
 import { takeABreak } from "@/lib/versions";
 
 export const metadata: Metadata = {
@@ -67,14 +66,15 @@ export default function TakeABreakPage() {
           Take a break right here
         </h2>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
-          Pick what you are feeling. You get one passage, a short insight and a
-          prayer — the same flow as the app, with nothing to install.
+          Pick what you are feeling. You get a short passage of KJV verses with
+          an insight and a prayer for each — the same passages Take a Break
+          draws from, with nothing to install.
         </p>
         <div className="mt-6 flex flex-wrap gap-2">
-          {curatedIndex().map((entry) => (
+          {allEmotionPages().map((entry) => (
             <Link
               key={entry.slug}
-              href={`/take-a-break/${entry.slug}`}
+              href={`/bible-verses/${entry.slug}`}
               className="rounded-full bg-brand-soft px-3 py-1.5 text-sm font-semibold text-brand transition-opacity hover:opacity-70"
             >
               {entry.title}
