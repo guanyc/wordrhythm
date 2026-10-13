@@ -21,12 +21,12 @@ export default function TakeABreakCard({ verses }: { verses: CuratedVerse[] }) {
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand">
           {v.reference}
         </p>
-        <blockquote className="mt-3 text-xl leading-relaxed sm:text-2xl">
+        {v.micro && (
+          <p className="mt-3 text-lg font-semibold text-brand">{v.micro}</p>
+        )}
+        <blockquote className="mt-4 text-xl leading-relaxed sm:text-2xl">
           {v.text}
         </blockquote>
-        {v.micro && (
-          <p className="mt-4 font-semibold text-brand">{v.micro}</p>
-        )}
 
         <div className="mt-6 space-y-4">
           {v.insight && (

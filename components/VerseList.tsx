@@ -50,6 +50,9 @@ export default function VerseList({ verses }: { verses: CuratedVerse[] }) {
             <p className="font-semibold text-brand">
               {i + 1}. {v.reference}
             </p>
+            {v.micro && (
+              <p className="mt-2 font-semibold text-brand">{v.micro}</p>
+            )}
             <blockquote className="mt-2 leading-relaxed">{v.text}</blockquote>
 
             <div
@@ -57,7 +60,6 @@ export default function VerseList({ verses }: { verses: CuratedVerse[] }) {
                 full ? "hidden" : ""
               }`}
             >
-              {v.micro && <p className="font-semibold text-brand">{v.micro}</p>}
               {v.insight && (
                 <p>
                   <span className="font-semibold">Insight </span>
