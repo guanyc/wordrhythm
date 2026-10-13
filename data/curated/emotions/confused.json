@@ -1,0 +1,113 @@
+{
+ "slug": "confused",
+ "title": "Confusion",
+ "subtitle": "When nothing makes sense",
+ "emotions": [
+  {
+   "code": "confused",
+   "label": "confused"
+  }
+ ],
+ "verses": [
+  {
+   "reference": "Proverbs 25:19",
+   "text": "Confidence in an unfaithful man in time of trouble is like a broken tooth, and a foot out of joint.",
+   "micro": "Misplaced trust leaves me helpless.",
+   "insight": "I feel helpless when I trust in the wrong things.",
+   "prayer": "Lord, guard my trust from unfaithful places.",
+   "meaning": "This proverb warns that relying on someone who proves untrustworthy during a crisis is as painful and disabling as a broken tooth or a dislocated foot, leaving one helpless when help is most needed.",
+   "reflection": "This verse reveals how spiritual vulnerability comes not just from external trouble, but from misplaced trust that fails when tested, exposing our need for discernment in relationships.",
+   "fullPrayer": "Lord, guard me from placing my confidence in what is unfaithful, and keep me from becoming like a broken tooth that fails others in their time of trouble."
+  },
+  {
+   "reference": "Ecclesiastes 7:4",
+   "text": "The heart of the wise is in the house of mourning; but the heart of fools is in the house of mirth.",
+   "micro": "I gain wisdom in sorrow",
+   "insight": "When I face life's sobering moments, I find true wisdom.",
+   "prayer": "Lord, teach me wisdom through life's realities.",
+   "meaning": "The Teacher (Qoheleth) contrasts two responses to life's reality: the wise person chooses to contemplate mortality and life's brevity in the house of mourning, while the fool seeks constant distraction and superficial pleasure in the house of mirth.",
+   "reflection": "True wisdom begins when I stop fleeing life's sobering realities and instead let the awareness of my own finitude shape my priorities and values.",
+   "fullPrayer": "Lord, turn my heart toward the house of mourning, that I might gain the wisdom that sees beyond fleeting pleasure to what truly endures."
+  },
+  {
+   "reference": "Proverbs 28:26",
+   "text": "He that trusteth in his own heart is a fool: but whoso walketh wisely, he shall be delivered.",
+   "micro": "My heart is not a safe guide",
+   "insight": "I often think I know what's best, but my own understanding can lead me astray.",
+   "prayer": "Lord, help me to trust Your wisdom over my own.",
+   "meaning": "In the wisdom tradition of Proverbs, this verse contrasts two paths: the fool who relies on his own flawed and self-deceived inner counsel, and the wise person whose life is guided by God's instruction and thus finds safety.",
+   "reflection": "My own heart is an unreliable guide, prone to justify my fears and desires; true wisdom comes from humbly seeking the Lord's direction in every step.",
+   "fullPrayer": "Lord, deliver me from the foolishness of trusting my own understanding; teach me to walk wisely in the light of your truth."
+  },
+  {
+   "reference": "Ecclesiastes 3:16",
+   "text": "And moreover I saw under the sun the place of judgment, that wickedness was there; and the place of righteousness, that iniquity was there.",
+   "micro": "I trust God's grace more than human systems",
+   "insight": "Human systems fail, so trust God's justice alone.",
+   "prayer": "Lord, anchor my hope in Your perfect justice.",
+   "meaning": "The Teacher observes that even the institutions designed for justice—the courts—are corrupted by wickedness, and places meant for righteousness are filled with iniquity, revealing a world where God's order is systematically perverted.",
+   "reflection": "This stark observation exposes how deeply sin can infiltrate the very systems we trust to uphold goodness, reminding us that no human institution is immune to corruption apart from God's grace.",
+   "fullPrayer": "Lord, when I see iniquity in the place of righteousness, keep my hope anchored not in human systems but in Your perfect justice that will ultimately set all things right."
+  },
+  {
+   "reference": "Ecclesiastes 3:8",
+   "text": "A time to love, and a time to hate; a time of war, and a time of peace.",
+   "micro": "I hate evil in its season",
+   "insight": "Wisdom discerns when to oppose evil in its appointed season.",
+   "prayer": "Give me courage to confront evil in its season.",
+   "meaning": "The Teacher (Qoheleth) observes that human experience includes divinely appointed seasons for opposing emotions and actions, with love and hate, war and peace each having their proper time under heaven.",
+   "reflection": "This verse reveals that even difficult emotions like righteous hatred of evil and necessary conflicts have their place in God's sovereign ordering of time, challenging simplistic views of godliness.",
+   "fullPrayer": "Lord, grant me discernment to know when to embrace peace and when to confront what you hate, trusting your timing in all seasons of life."
+  },
+  {
+   "reference": "Luke 14:32",
+   "text": "Or else, while the other is yet a great way off, he sendeth an ambassage, and desireth conditions of peace.",
+   "micro": "I come to God with open hands",
+   "insight": "Instead of negotiating with God, I surrender my terms and accept His peace.",
+   "prayer": "Lord, I surrender my bargaining for Your peace.",
+   "meaning": "Jesus continues His parable about counting the cost of discipleship, illustrating that a king facing a stronger army would wisely seek peace terms before being defeated. This serves as a metaphor for the serious commitment required to follow Him.",
+   "reflection": "Just as the king realistically assessed his weakness, I must honestly confront my spiritual inadequacy before approaching God, not with bargaining but with surrender.",
+   "fullPrayer": "Lord, before You are yet a great way off, let me send the ambassage of a humble heart, desiring Your terms of peace through Christ alone."
+  },
+  {
+   "reference": "1 Kings 22:25",
+   "text": "And Micaiah said, Behold, thou shalt see in that day, when thou shalt go into an inner chamber to hide thyself.",
+   "micro": "I cannot hide from the truth.",
+   "insight": "God's truth will find those who try to hide from it.",
+   "prayer": "Lord, give me courage to face Your truth.",
+   "meaning": "The prophet Micaiah is speaking to Zedekiah, a false prophet who struck him, declaring that Zedekiah will one day flee to hide in an inner chamber, proving Micaiah's prophecy of disaster true.",
+   "reflection": "This confronts the temptation to hide from the consequences of our spiritual choices, reminding us that truth cannot be escaped by retreating into secrecy.",
+   "fullPrayer": "Lord, when I am tempted to hide in my own inner chamber from your truth, give me courage to face it instead."
+  },
+  {
+   "reference": "Proverbs 14:15",
+   "text": "The simple believeth every word: but the prudent man looketh well to his going.",
+   "micro": "I examine my path before proceeding",
+   "insight": "Before I move forward, I carefully examine the way.",
+   "prayer": "Lord, give me prudence to watch my steps and follow You.",
+   "meaning": "This proverb contrasts two types of people: the naive person who accepts every statement without discernment, and the wise person who carefully considers their path before proceeding.",
+   "reflection": "True faith is not gullibility but requires thoughtful engagement with truth, testing what we hear against God's revealed wisdom.",
+   "fullPrayer": "Lord, guard me from simple belief in every word I hear; give me prudence to look well to my going as I follow you."
+  },
+  {
+   "reference": "Isaiah 9:15",
+   "text": "The ancient and honourable, he is the head; and the prophet that teacheth lies, he is the tail.",
+   "micro": "I am fragile under false leaders",
+   "insight": "False leaders bring God's judgment on the people.",
+   "prayer": "Lord, protect me from leaders who deceive.",
+   "meaning": "In Isaiah's prophecy against Israel's leaders, this verse declares that God will reverse the proper social order as judgment; the respected elders, who should lead, will be humbled, while false prophets, who deceive the people, will be exposed as worthless.",
+   "reflection": "This verse reveals how spiritual corruption in leadership inverts God's design, turning honor into shame and truth into a lie.",
+   "fullPrayer": "Lord, guard our hearts from the deception of lies, and establish your truth as the head over all our thoughts and teachings."
+  },
+  {
+   "reference": "Matthew 23:17",
+   "text": "Ye fools and blind: for whether is greater, the gold, or the temple that sanctifieth the gold?",
+   "micro": "I mistake the container for the treasure.",
+   "insight": "I often get caught up in the outward symbol and forget the holy reality behind it.",
+   "prayer": "Lord, let me not mistake the container for the treasure.",
+   "meaning": "Jesus confronts the religious leaders who prioritize the gold in the temple over the temple itself, which gives the gold its sacred purpose, exposing their spiritual blindness to true value.",
+   "reflection": "This verse reveals how easily I can confuse the means with the end, valuing religious symbols more than the sacred reality they point toward.",
+   "fullPrayer": "Lord, open my eyes to see what truly sanctifies, that I may never mistake the container for the treasure it holds."
+  }
+ ]
+}

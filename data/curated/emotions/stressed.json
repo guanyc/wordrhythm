@@ -1,0 +1,113 @@
+{
+ "slug": "stressed",
+ "title": "Stress",
+ "subtitle": "When you are under strain",
+ "emotions": [
+  {
+   "code": "stressed",
+   "label": "stressed"
+  }
+ ],
+ "verses": [
+  {
+   "reference": "Psalms 4:8",
+   "text": "I will both lay me down in peace, and sleep: for thou, LORD, only makest me dwell in safety.",
+   "micro": "I sleep in God's peace",
+   "insight": "I can rest because God keeps me safe, not because everything is calm.",
+   "prayer": "Let me lay down my burdens and trust Your care.",
+   "meaning": "David declares his confident trust in God's protection, stating that he can sleep peacefully because the Lord alone provides true security. This follows his plea for God's favor and expresses quiet assurance despite surrounding distress.",
+   "reflection": "True rest comes not from the absence of trouble but from the presence of God who alone establishes our dwelling in safety. This verse invites us to exchange our anxious vigilance for the quiet trust that God is keeping watch.",
+   "fullPrayer": "Lord, you alone make me dwell in safety; grant me the grace to lay down my burdens and receive the gift of peaceful sleep that flows from trusting your faithful care."
+  },
+  {
+   "reference": "Psalms 49:5",
+   "text": "Wherefore should I fear in the days of evil, when the iniquity of my heels shall compass me about?",
+   "micro": "My courage rests on God, not my righteousness.",
+   "insight": "I find my courage in God's grace, not my own record.",
+   "prayer": "Lord, anchor my heart in Your grace.",
+   "meaning": "In Psalm 49, the psalmist questions why he should fear times of trouble, even when surrounded by the 'iniquity of my heels'—a Hebrew idiom meaning the consequences of past sins or the treachery of others that follows closely behind. This rhetorical question introduces the psalm's central teaching ab...",
+   "reflection": "The verse invites me to examine what truly causes my anxiety—not merely external threats, but the haunting weight of my own failings and the persistent consequences of wrong choices. It challenges me to find a foundation for courage that lies deeper than my personal righteousness or circumstances.",
+   "fullPrayer": "Lord, when the consequences of my past compass me about, remind me that my security rests not in my own record but in Your redeeming grace. Free me from the fear that clings to my heels, and anchor my heart in Your eternal purposes."
+  },
+  {
+   "reference": "Psalms 3:5",
+   "text": "I laid me down and slept; I awaked; for the LORD sustained me.",
+   "micro": "God watches over me while I sleep",
+   "insight": "I can sleep peacefully knowing God is watching over me.",
+   "prayer": "Lord, give me confidence that You watch over my rest.",
+   "meaning": "David declares his ability to sleep peacefully despite being surrounded by enemies, because he trusts that God alone preserves his life through the night.",
+   "reflection": "True rest comes not from the absence of danger, but from the conscious presence of the One who watches over us while we are unaware.",
+   "fullPrayer": "Lord, as you sustained David through the night watches, sustain me now with the quiet confidence that my waking and resting are in your hands."
+  },
+  {
+   "reference": "Proverbs 3:24",
+   "text": "When thou liest down, thou shalt not be afraid: yea, thou shalt lie down, and thy sleep shall be sweet.",
+   "micro": "I sleep well trusting God",
+   "insight": "Trusting God's wisdom settles my soul.",
+   "prayer": "Lord, give me sweet sleep from trusting Your care.",
+   "meaning": "In the context of Proverbs 3, where a father instructs his son in wisdom, this verse presents the tangible blessing of a secure and peaceful life that results from trusting in God's wisdom and guidance, rather than one's own understanding.",
+   "reflection": "True wisdom from God does not merely inform the mind; it settles the soul, offering a rest that is deeper than the absence of trouble.",
+   "fullPrayer": "Lord, as I commit my ways to You, grant me the sweet sleep that comes from trusting not in my own vigilance, but in Your faithful care."
+  },
+  {
+   "reference": "2 Chronicles 32:7",
+   "text": "Be strong and courageous, be not afraid nor dismayed for the king of Assyria, nor for all the multitude that is with him: for there be more with us than with him:",
+   "micro": "I trust God's unseen army",
+   "insight": "When threats are visible, I choose to trust in God's hidden presence.",
+   "prayer": "Lord, help me see Your army around me.",
+   "meaning": "King Hezekiah speaks these words to his people as the Assyrian army surrounds Jerusalem, reminding them that God's unseen heavenly forces outnumber the visible enemy forces.",
+   "reflection": "When facing overwhelming opposition, faith perceives the greater reality of God's presence that remains unseen to physical eyes.",
+   "fullPrayer": "Lord, when I feel surrounded by troubles, help me remember that more are with me in your unseen army than stand against me."
+  },
+  {
+   "reference": "Philippians 4:7",
+   "text": "And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus.",
+   "micro": "God's peace guards my soul beyond understanding.",
+   "insight": "I experience a peace that doesn't make sense, protecting my heart from anxiety.",
+   "prayer": "Lord, let Your peace guard my heart today.",
+   "meaning": "Paul concludes his teaching on prayer and anxiety by promising that God's own peace, which surpasses human comprehension, will actively guard the inner person—both emotions and thoughts—because of our union with Christ Jesus.",
+   "reflection": "This peace is not the absence of trouble but God's own presence standing sentry over my soul, a reality so profound it defies my attempts to fully grasp it.",
+   "fullPrayer": "Lord Jesus, let your peace that passes understanding stand guard over my heart today, protecting it from the anxieties that seek to invade."
+  },
+  {
+   "reference": "Isaiah 57:19",
+   "text": "I create the fruit of the lips; Peace, peace to him that is far off, and to him that is near, saith the LORD; and I will heal him.",
+   "micro": "I am never far from God's peace.",
+   "insight": "No matter how far I feel, God's peace finds me.",
+   "prayer": "Lord, speak Your peace over me.",
+   "meaning": "In Isaiah 57, God speaks through the prophet to contrast His holiness with Israel's idolatry, promising to revive the humble. Here, God declares He is the source of true praise ('fruit of the lips') and extends His peace and healing to all, both the distant Gentiles and the near Israelites.",
+   "reflection": "God's peace is not a passive wish but an active creation He speaks into being, reaching across every distance our rebellion creates to offer healing.",
+   "fullPrayer": "Lord, you create the fruit of praise. Speak your healing peace over me, whether I feel far off or near, for my wholeness comes only from you."
+  },
+  {
+   "reference": "Matthew 6:34",
+   "text": "Take therefore no thought for the morrow: for the morrow shall take thought for the things of itself. Sufficient unto the day is the evil thereof.",
+   "micro": "I trust God for today.",
+   "insight": "I don't need to carry tomorrow's worries because I trust God for today.",
+   "prayer": "Help me trust You for today, not tomorrow.",
+   "meaning": "Jesus concludes His teaching on anxiety by instructing His disciples not to be preoccupied with future needs, since each day brings its own concerns that require present trust in God's provision.",
+   "reflection": "This verse reveals how my anxious planning for tomorrow often stems from a failure to trust God's sufficiency for today's actual challenges.",
+   "fullPrayer": "Lord, help me to receive the grace sufficient for today's troubles, and to release tomorrow's imagined burdens into Your care."
+  },
+  {
+   "reference": "Acts 27:34",
+   "text": "Wherefore I pray you to take some meat: for this is for your health: for there shall not an hair fall from the head of any of you.",
+   "micro": "I need physical strength to endure.",
+   "insight": "God's deliverance does not remove the need for daily care.",
+   "prayer": "Help me take the nourishment I need today.",
+   "meaning": "Paul, a prisoner on a storm-wrecked ship, urges the terrified crew to eat for strength, grounding his practical command in God's prophetic promise that all will survive unharmed.",
+   "reflection": "God's sovereign promise of ultimate deliverance does not negate our need for ordinary means of sustenance and strength along the journey.",
+   "fullPrayer": "Lord, when I am fearful, help me to trust your promise of preservation while still taking the practical nourishment I need for today."
+  },
+  {
+   "reference": "2 Corinthians 11:10",
+   "text": "As the truth of Christ is in me, no man shall stop me of this boasting in the regions of Achaia.",
+   "micro": "Christ's truth anchors my actions",
+   "insight": "When Christ's truth is my foundation, my actions become steady and sure.",
+   "prayer": "Lord, anchor my choices in Your reality.",
+   "meaning": "Paul swears by the truth of Christ within him that he will continue boasting about his refusal to accept financial support from the Corinthian church, ensuring this practice remains unchallenged throughout Achaia. This bold declaration defends his apostolic integrity against false teachers who quest...",
+   "reflection": "When Christ's truth dwells within us, it compels a courageous consistency between our convictions and our conduct, even when misunderstood. This inner reality anchors our actions more firmly than any external approval or criticism.",
+   "fullPrayer": "Lord, as the truth of Christ was in Paul, let it so dwell in me that my life becomes a clear testimony to your grace. Anchor my choices in your reality, not in the shifting opinions of others."
+  }
+ ]
+}

@@ -1,0 +1,113 @@
+{
+ "slug": "thankful-for-grace",
+ "title": "Thanksgiving",
+ "subtitle": "When you are grateful",
+ "emotions": [
+  {
+   "code": "thankful_for_grace",
+   "label": "grateful for grace"
+  }
+ ],
+ "verses": [
+  {
+   "reference": "1 Corinthians 1:4",
+   "text": "I thank my God always on your behalf, for the grace of God which is given you by Jesus Christ;",
+   "micro": "My gifts come from His grace",
+   "insight": "Every good thing in my life is a gift from Christ's grace.",
+   "prayer": "Thank You for the grace that gives me every good thing.",
+   "meaning": "Paul begins his letter to the Corinthian church by expressing his constant gratitude to God for the spiritual gifts and salvation they have received through Jesus Christ, establishing that their identity and abilities come from divine grace rather than human achievement.",
+   "reflection": "True spiritual gifts are never self-generated but are always received as grace through Christ, reminding us that our capacity to serve God originates in His generous giving.",
+   "fullPrayer": "Lord, I thank you for the grace given through Jesus Christ, which is the true source of any good thing in my life; keep me mindful that all I have comes from your generous hand."
+  },
+  {
+   "reference": "Psalms 107:1",
+   "text": "O give thanks unto the LORD, for he is good: for his mercy endureth for ever.",
+   "micro": "I anchor my gratitude in God's unchanging goodness",
+   "insight": "I find my thanks rooted in the fact that God is always good.",
+   "prayer": "Lord, I thank You for Your enduring mercy.",
+   "meaning": "This verse opens a psalm calling God's redeemed people to give thanks, grounding their gratitude in two unchanging truths about God's character: His essential goodness and His everlasting covenant faithfulness.",
+   "reflection": "When my heart struggles to find reasons for gratitude, I can anchor it not in my shifting circumstances, but in the bedrock of who God is—good and faithful without end.",
+   "fullPrayer": "Lord, because your mercy endures forever, I give you thanks today; let my life reflect the goodness I have received from you."
+  },
+  {
+   "reference": "1 Timothy 1:12",
+   "text": "And I thank Christ Jesus our Lord, who hath enabled me, for that he counted me faithful, putting me into the ministry;",
+   "micro": "God grows my faithfulness as I serve.",
+   "insight": "As I serve God, He strengthens my trust in Him.",
+   "prayer": "Lord, increase my faithfulness as I serve You.",
+   "meaning": "Paul expresses gratitude to Christ Jesus for empowering him and appointing him to apostolic service, recognizing this appointment as an act of divine trust despite his past as a persecutor of the church.",
+   "reflection": "God's call to serve often comes not as a reward for our faithfulness, but as the very means through which He develops it within us.",
+   "fullPrayer": "Lord Jesus, thank you for counting me faithful enough to entrust me with your work; enable me today to fulfill the ministry you have given."
+  },
+  {
+   "reference": "Ezra 9:8",
+   "text": "And now for a little space grace hath been shewed from the LORD our God, to leave us a remnant to escape, and to give us a nail in his holy place, that our God may lighten our eyes, and give us a little reviving in our bondage.",
+   "micro": "God gives me a foothold.",
+   "insight": "God's grace secures a foothold when all seems lost.",
+   "prayer": "Thank You for being my secure place.",
+   "meaning": "Ezra, praying after the return from exile, acknowledges that God's grace has preserved a remnant of His people and given them a secure foothold ('a nail') in Jerusalem, allowing them to rebuild the temple and experience spiritual renewal despite their ongoing subjugation.",
+   "reflection": "Even in seasons of limitation or ongoing difficulty, God's grace provides a point of stability and a spark of hope that revives our spiritual vision, reminding us He is actively present in our circumstances.",
+   "fullPrayer": "Lord, in my own times of constraint, thank you for being my secure nail, a fixed point of your grace that revives my spirit and lightens my eyes to see your faithful work."
+  },
+  {
+   "reference": "Psalms 116:12",
+   "text": "What shall I render unto the LORD for all his benefits toward me?",
+   "micro": "I long to respond to His goodness.",
+   "insight": "God's goodness stirs a longing in me to respond.",
+   "prayer": "Lord, help me respond to Your goodness.",
+   "meaning": "The psalmist, having been delivered from death and distress, asks a heartfelt question: How can I possibly repay the LORD for all the good He has poured out on me? This rhetorical question expresses overwhelming gratitude for God's tangible acts of rescue and blessing.",
+   "reflection": "God's benefits are not a debt I must repay, but a gift that compels my heart to ask how I might respond with my whole life. This question turns my focus from what I want from God to what I can offer back in love.",
+   "fullPrayer": "Lord, for all Your benefits toward me—Your rescue, Your daily grace—I offer You my grateful heart and willing obedience as my only fitting response."
+  },
+  {
+   "reference": "Psalms 145:10",
+   "text": "All thy works shall praise thee, O LORD; and thy saints shall bless thee.",
+   "micro": "My praise joins creation's song.",
+   "insight": "I join creation's song by blessing God with my voice.",
+   "prayer": "Lord, let my life add my voice to Your world's praise.",
+   "meaning": "In this psalm of praise, David declares that all of God's creation will acknowledge His greatness, and His faithful people will speak well of Him. The verse presents two distinct but harmonious responses: creation's general praise and the saints' specific, covenantal blessing.",
+   "reflection": "When I consider that even the silent mountains and stars declare God's glory, my own voice should not remain silent. My blessing of God is not an isolated act but joins a chorus that includes all He has made.",
+   "fullPrayer": "Lord, as one of your saints, let my life bless you today, adding my specific voice of gratitude to the universal praise rising from all your works."
+  },
+  {
+   "reference": "2 Corinthians 9:15",
+   "text": "Thanks be unto God for his unspeakable gift.",
+   "micro": "I give because God gave first.",
+   "insight": "The gift of Jesus is so overwhelming that I want to give generously.",
+   "prayer": "Thank You for Your indescribable gift.",
+   "meaning": "Paul concludes his teaching on generous giving by bursting into praise, declaring that God's ultimate gift—the gift of Jesus Christ—is so magnificent it defies full description.",
+   "reflection": "When I consider the generosity God has shown me, my own attempts to give to others become a natural response of gratitude rather than a burdensome duty.",
+   "fullPrayer": "Thank you, God, for your unspeakable gift of Jesus, which overwhelms my heart and compels me to live generously toward others."
+  },
+  {
+   "reference": "1 Chronicles 29:10",
+   "text": "Wherefore David blessed the LORD before all the congregation: and David said, Blessed be thou, LORD God of Israel our father, for ever and ever.",
+   "micro": "I worship when I see God's story.",
+   "insight": "Seeing the bigger picture of God's work leads me to worship.",
+   "prayer": "Lord, help me bless You for Your eternal goodness.",
+   "meaning": "After the people generously gave offerings for the temple, King David publicly praised God, acknowledging Him as the eternal God of their ancestors and the source of all they had contributed.",
+   "reflection": "True worship begins with recognizing God's eternal nature and our place within His ongoing story, not with our own momentary feelings or circumstances.",
+   "fullPrayer": "Lord God, blessed be Your name forever and ever. Like David, help me to bless You publicly, acknowledging You as the source of all good things in my life."
+  },
+  {
+   "reference": "Judges 5:11",
+   "text": "They that are delivered from the noise of archers in the places of drawing water, there shall they rehearse the righteous acts of the LORD, even the righteous acts toward the inhabitants of his villages in Israel: then shall the people of the LORD go down to the gates.",
+   "micro": "Sharing God's works brings me peace",
+   "insight": "When I recount God's faithfulness, my heart settles.",
+   "prayer": "Lord, let me share Your deeds and find peace.",
+   "meaning": "In Deborah's victory song, she describes how after God delivers Israel from enemy oppression (the 'noise of archers'), the people will gather safely at the village wells to recount God's saving acts, then return to normal civic life at the city gates.",
+   "reflection": "God's deliverance creates space for communal remembrance; our testimonies of His righteousness are most powerful when shared in places of restored peace and provision.",
+   "fullPrayer": "Lord, deliver me from life's battles so I can gather at the wells of Your provision and rehearse Your righteous acts to others, restoring Your peace to my community."
+  },
+  {
+   "reference": "2 Corinthians 9:11",
+   "text": "Being enriched in every thing to all bountifulness, which causeth through us thanksgiving to God.",
+   "micro": "My giving leads others to thank God.",
+   "insight": "I see how my generosity becomes a reason for others to praise God.",
+   "prayer": "Lord, use my giving to draw thanks to you.",
+   "meaning": "Paul explains that God's generous provision to the Corinthians enables their generous giving, which ultimately results in thanksgiving being offered to God through the ministry of Paul and his companions.",
+   "reflection": "True generosity is not an end in itself but a channel that redirects gratitude from the recipient back to the ultimate Giver, God.",
+   "fullPrayer": "Lord, as you enrich me, let my bountifulness become a conduit that causes others to offer genuine thanksgiving to you."
+  }
+ ]
+}

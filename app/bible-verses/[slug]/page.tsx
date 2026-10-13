@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import VerseList from "@/components/VerseList";
 import { emotionPageSlugs, getEmotionPage } from "@/lib/emotions";
+import { getCurated, type CuratedVerse } from "@/lib/curated";
 
 export function generateStaticParams() {
   return emotionPageSlugs().map((slug) => ({ slug }));
@@ -47,6 +49,17 @@ export default async function EmotionPageRoute({
 
   const subject = page.title.toLowerCase();
 
+  // The curated file carries the full devotional next to the compact lines the
+  // app shows; fall back to the plain list if it is ever missing.
+  const verses: CuratedVerse[] =
+    getCurated(page.slug)?.verses ??
+    page.verses.map((v) => ({
+      ...v,
+      meaning: "",
+      reflection: "",
+      fullPrayer: "",
+    }));
+
   // Mark the page as a collection of passages, not an article about one.
   const schema = {
     "@context": "https://schema.org",
@@ -89,8 +102,10 @@ export default async function EmotionPageRoute({
       <p className="mt-4 text-lg text-muted">{page.subtitle}.</p>
 
       <p className="mt-3 text-sm text-muted">
-        Open a passage to read its reflection and prayer. In the app, Take a
-        Break picks one of these at random each time you open it.
+        Every passage comes with a short insight and prayer, and a full
+        devotional — what it means, a reflection, a prayer. Switch between them
+        above the list. In the app, Take a Break picks one of these at random
+        each time you open it.
       </p>
 
       {page.emotions.length > 1 && (
@@ -105,56 +120,9 @@ export default async function EmotionPageRoute({
         </p>
       )}
 
-      <ol className="mt-10 space-y-6">
-        {page.verses.map((v, i) => (
-          <li key={v.reference} className="border-t border-black/5 pt-6">
-            <p className="font-semibold text-brand">
-              {i + 1}. {v.reference}
-            </p>
-            <blockquote className="mt-2 leading-relaxed">{v.text}</blockquote>
-
-            {(v.insight || v.prayer) && (
-              <details className="group mt-4">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-3 rounded-xl bg-surface px-4 py-3 text-sm font-semibold transition-colors hover:bg-brand-soft">
-                  <span>Reflection and prayer</span>
-                  <span
-                    aria-hidden="true"
-                    className="text-brand transition-transform duration-200 group-open:rotate-180"
-                  >
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.75"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M4 6l4 4 4-4" />
-                    </svg>
-                  </span>
-                </summary>
-                <div className="mt-3 space-y-3 rounded-xl bg-surface px-4 py-4 text-sm leading-relaxed">
-                  {v.micro && <p className="font-semibold text-brand">{v.micro}</p>}
-                  {v.insight && (
-                    <p>
-                      <span className="font-semibold">Insight </span>
-                      {v.insight}
-                    </p>
-                  )}
-                  {v.prayer && (
-                    <p>
-                      <span className="font-semibold">Prayer </span>
-                      {v.prayer}
-                    </p>
-                  )}
-                </div>
-              </details>
-            )}
-          </li>
-        ))}
-      </ol>
+      <div className="mt-10">
+        <VerseList verses={verses} />
+      </div>
 
       <div className="mt-14 rounded-2xl bg-surface p-6 shadow-card">
         <h2 className="text-lg font-semibold tracking-tight">

@@ -1,0 +1,382 @@
+[
+ {
+  "slug": "angry",
+  "title": "Anger",
+  "subtitle": "When you are frustrated",
+  "labels": [
+   "angry"
+  ],
+  "preview": "Ezekiel 33:15"
+ },
+ {
+  "slug": "anxiety",
+  "title": "Anxiety and fear",
+  "subtitle": "When your mind will not settle",
+  "labels": [
+   "anxious"
+  ],
+  "preview": "Psalms 4:8"
+ },
+ {
+  "slug": "bitter",
+  "title": "Bitterness",
+  "subtitle": "When resentment sits in you",
+  "labels": [
+   "bitter"
+  ],
+  "preview": "Luke 7:44"
+ },
+ {
+  "slug": "blessed",
+  "title": "Blessing",
+  "subtitle": "When you want to remember what is good",
+  "labels": [
+   "blessed"
+  ],
+  "preview": "Psalms 97:12"
+ },
+ {
+  "slug": "peace",
+  "title": "Calm and peace",
+  "subtitle": "When you need to be still",
+  "labels": [
+   "calm",
+   "at peace",
+   "restless"
+  ],
+  "preview": "Psalms 3:5"
+ },
+ {
+  "slug": "confused",
+  "title": "Confusion",
+  "subtitle": "When nothing makes sense",
+  "labels": [
+   "confused"
+  ],
+  "preview": "Proverbs 25:19"
+ },
+ {
+  "slug": "content",
+  "title": "Contentment",
+  "subtitle": "When you want to be satisfied",
+  "labels": [
+   "content"
+  ],
+  "preview": "Galatians 5:22"
+ },
+ {
+  "slug": "courage",
+  "title": "Courage",
+  "subtitle": "When you need to act",
+  "labels": [
+   "confident",
+   "courageous"
+  ],
+  "preview": "Psalms 112:7"
+ },
+ {
+  "slug": "disappointed",
+  "title": "Disappointment",
+  "subtitle": "When things did not turn out",
+  "labels": [
+   "disappointed"
+  ],
+  "preview": "Habakkuk 2:3"
+ },
+ {
+  "slug": "discouraged",
+  "title": "Discouragement",
+  "subtitle": "When effort feels pointless",
+  "labels": [
+   "discouraged"
+  ],
+  "preview": "Micah 7:8"
+ },
+ {
+  "slug": "empty",
+  "title": "Emptiness",
+  "subtitle": "When you feel hollow",
+  "labels": [
+   "empty",
+   "lonely"
+  ],
+  "preview": "Philemon 1:20"
+ },
+ {
+  "slug": "inspired",
+  "title": "Encouragement",
+  "subtitle": "When you need a lift",
+  "labels": [
+   "encouraged"
+  ],
+  "preview": "Matthew 28:9"
+ },
+ {
+  "slug": "fearful",
+  "title": "Fear",
+  "subtitle": "When something you dread is close",
+  "labels": [
+   "fearful"
+  ],
+  "preview": "Psalms 4:8"
+ },
+ {
+  "slug": "gratitude",
+  "title": "Gratitude",
+  "subtitle": "When you want to give thanks",
+  "labels": [
+   "grateful",
+   "thankful"
+  ],
+  "preview": "Psalms 97:12"
+ },
+ {
+  "slug": "grieving",
+  "title": "Grief",
+  "subtitle": "When you are mourning",
+  "labels": [
+   "grieving"
+  ],
+  "preview": "Isaiah 40:1"
+ },
+ {
+  "slug": "growth",
+  "title": "Growth",
+  "subtitle": "When you want to go deeper",
+  "labels": [
+   "wanting to grow"
+  ],
+  "preview": "Psalms 15:4"
+ },
+ {
+  "slug": "guilt",
+  "title": "Guilt and shame",
+  "subtitle": "When you feel exposed",
+  "labels": [
+   "ashamed",
+   "guilty"
+  ],
+  "preview": "Ezekiel 33:10"
+ },
+ {
+  "slug": "hope",
+  "title": "Hope and hopelessness",
+  "subtitle": "When the future looks uncertain",
+  "labels": [
+   "hopeful",
+   "hopeless"
+  ],
+  "preview": "Romans 4:18"
+ },
+ {
+  "slug": "joy",
+  "title": "Joy",
+  "subtitle": "When you want to rejoice",
+  "labels": [
+   "joyful",
+   "playful"
+  ],
+  "preview": "Psalms 97:12"
+ },
+ {
+  "slug": "hopeful-joyful",
+  "title": "Joyful hope",
+  "subtitle": "When you are glad about what is coming",
+  "labels": [
+   "hopeful"
+  ],
+  "preview": "Isaiah 30:29"
+ },
+ {
+  "slug": "unjust",
+  "title": "Justice",
+  "subtitle": "When you have been treated unfairly",
+  "labels": [
+   "treated unfairly"
+  ],
+  "preview": "Proverbs 10:28"
+ },
+ {
+  "slug": "lonely-strong",
+  "title": "Loneliness, but holding on",
+  "subtitle": "When you are alone and still standing",
+  "labels": [
+   "lonely but holding on"
+  ],
+  "preview": "2 Corinthians 10:15"
+ },
+ {
+  "slug": "justice-longing",
+  "title": "Longing for justice",
+  "subtitle": "When you want things made right",
+  "labels": [
+   "longing for justice"
+  ],
+  "preview": "Ezekiel 33:13"
+ },
+ {
+  "slug": "loving",
+  "title": "Love",
+  "subtitle": "When you are thinking of others",
+  "labels": [
+   "loving"
+  ],
+  "preview": "Philippians 2:1"
+ },
+ {
+  "slug": "overwhelmed",
+  "title": "Overwhelmed and weary",
+  "subtitle": "When you are carrying too much",
+  "labels": [
+   "overwhelmed",
+   "weary"
+  ],
+  "preview": "Daniel 10:19"
+ },
+ {
+  "slug": "persecuted",
+  "title": "Persecution",
+  "subtitle": "When you are under pressure for your faith",
+  "labels": [
+   "persecuted for faith"
+  ],
+  "preview": "2 Corinthians 6:9"
+ },
+ {
+  "slug": "prayerful",
+  "title": "Prayer",
+  "subtitle": "When you want to pray",
+  "labels": [
+   "wanting to pray"
+  ],
+  "preview": "Psalms 16:7"
+ },
+ {
+  "slug": "refreshed",
+  "title": "Refreshed",
+  "subtitle": "When you feel worn out",
+  "labels": [
+   "worn out"
+  ],
+  "preview": "Daniel 10:19"
+ },
+ {
+  "slug": "repentant",
+  "title": "Repentance",
+  "subtitle": "When you want to turn back",
+  "labels": [
+   "wanting to turn back"
+  ],
+  "preview": "Ezekiel 33:10"
+ },
+ {
+  "slug": "determined",
+  "title": "Resolve",
+  "subtitle": "When you have decided and need to hold on",
+  "labels": [
+   "determined"
+  ],
+  "preview": "Psalms 3:6"
+ },
+ {
+  "slug": "sad",
+  "title": "Sadness",
+  "subtitle": "When you are low",
+  "labels": [
+   "sad"
+  ],
+  "preview": "Daniel 10:19"
+ },
+ {
+  "slug": "confused-seeking",
+  "title": "Seeking in confusion",
+  "subtitle": "When you are lost and looking",
+  "labels": [
+   "lost and looking",
+   "seeking",
+   "seeking direction"
+  ],
+  "preview": "Proverbs 2:4"
+ },
+ {
+  "slug": "seeking-truth",
+  "title": "Seeking truth",
+  "subtitle": "When you want to know what is real",
+  "labels": [
+   "seeking truth"
+  ],
+  "preview": "Proverbs 28:26"
+ },
+ {
+  "slug": "serving",
+  "title": "Service",
+  "subtitle": "When you are caring for others",
+  "labels": [
+   "serving others"
+  ],
+  "preview": "Galatians 6:2"
+ },
+ {
+  "slug": "stressed",
+  "title": "Stress",
+  "subtitle": "When you are under strain",
+  "labels": [
+   "stressed"
+  ],
+  "preview": "Psalms 4:8"
+ },
+ {
+  "slug": "tempted",
+  "title": "Temptation",
+  "subtitle": "When you are being pulled away",
+  "labels": [
+   "tempted"
+  ],
+  "preview": "1 Timothy 4:8"
+ },
+ {
+  "slug": "thankful-for-grace",
+  "title": "Thanksgiving",
+  "subtitle": "When you are grateful",
+  "labels": [
+   "grateful for grace"
+  ],
+  "preview": "1 Corinthians 1:4"
+ },
+ {
+  "slug": "trusting-in-god",
+  "title": "Trust",
+  "subtitle": "When you are not sure what comes next",
+  "labels": [
+   "trusting"
+  ],
+  "preview": "Jeremiah 17:7"
+ },
+ {
+  "slug": "uncertain",
+  "title": "Uncertainty",
+  "subtitle": "When the way is not clear",
+  "labels": [
+   "uncertain"
+  ],
+  "preview": "Proverbs 28:26"
+ },
+ {
+  "slug": "unity-needed",
+  "title": "Unity",
+  "subtitle": "When people are divided",
+  "labels": [
+   "wanting unity"
+  ],
+  "preview": "Matthew 12:49"
+ },
+ {
+  "slug": "worshipful",
+  "title": "Worship",
+  "subtitle": "When you want to praise God",
+  "labels": [
+   "worshipful"
+  ],
+  "preview": "Psalms 13:6"
+ }
+]

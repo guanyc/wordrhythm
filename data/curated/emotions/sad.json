@@ -1,0 +1,113 @@
+{
+ "slug": "sad",
+ "title": "Sadness",
+ "subtitle": "When you are low",
+ "emotions": [
+  {
+   "code": "sad",
+   "label": "sad"
+  }
+ ],
+ "verses": [
+  {
+   "reference": "Daniel 10:19",
+   "text": "And said, O man greatly beloved, fear not: peace be unto thee, be strong, yea, be strong. And when he had spoken unto me, I was strengthened, and said, Let my lord speak; for thou hast strengthened me.",
+   "micro": "God's word gives me strength",
+   "insight": "God's word imparts the strength it commands.",
+   "prayer": "Lord, speak peace and strength to my heart.",
+   "meaning": "In a vision, a heavenly being comforts Daniel, who is overwhelmed, by addressing him as 'greatly beloved,' commanding him not to fear, and imparting divine strength directly through spoken words, which immediately fortifies the prophet.",
+   "reflection": "God's word does not merely inform us; it has the power to impart the very strength it commands, transforming our weakness from the inside out.",
+   "fullPrayer": "Lord, when I am overwhelmed, speak your word of peace to my heart, and by your command, 'be strong,' impart the strength I lack."
+  },
+  {
+   "reference": "Psalms 72:3",
+   "text": "The mountains shall bring peace to the people, and the little hills, by righteousness.",
+   "micro": "I find peace in God's righteousness.",
+   "insight": "God's righteous rule will bring lasting peace to all the land.",
+   "prayer": "Lord, let Your righteousness bring me peace.",
+   "meaning": "In this prophetic psalm for a king, the mountains and hills represent the entire landscape of the kingdom, which will experience profound peace and stability because the ruler governs with justice and righteousness.",
+   "reflection": "Just as a stable landscape provides security, God's righteous rule establishes a foundation where true peace can flourish, not as mere absence of conflict but as the fruit of divine order.",
+   "fullPrayer": "Lord, establish your righteousness in our world so that even the mountains and hills might bear witness to the lasting peace that flows from your just governance."
+  },
+  {
+   "reference": "Isaiah 40:1",
+   "text": "Comfort ye, comfort ye my people, saith your God.",
+   "micro": "God comforts me in my sorrow",
+   "insight": "God commands comfort for His people after judgment ends.",
+   "prayer": "Comfort me, Lord, in my sorrow.",
+   "meaning": "In the context of prophecy, God directly commands heavenly messengers to bring comfort to His people, Israel, who have endured the judgment of exile, signaling a decisive turn from punishment to restoration.",
+   "reflection": "God's comfort is not a passive sentiment but an active, commanded word that breaks into our deepest desolation, assuring us that His judgment has a limit and His compassion is certain.",
+   "fullPrayer": "God who commands comfort, speak your word of consolation into our weariness, for we are your people in need of your promised restoration."
+  },
+  {
+   "reference": "Job 11:19",
+   "text": "Also thou shalt lie down, and none shall make thee afraid; yea, many shall make suit unto thee.",
+   "micro": "I rest fearlessly in God",
+   "insight": "In God, I find a rest that no fear can touch.",
+   "prayer": "Lord, grant me Your fearless peace.",
+   "meaning": "Zophar, one of Job's friends, is describing the future restoration and honor he believes Job will receive if he repents of his presumed hidden sin. He paints a picture of secure rest, free from fear, and a position of such respect that others will seek Job's favor.",
+   "reflection": "This promise of divinely granted security and honor, even when misapplied by Zophar, points to the profound peace and restored dignity that God alone can ultimately provide, which surpasses any earthly comfort or status.",
+   "fullPrayer": "Lord, you are the source of true peace; grant me the rest where none can make me afraid, a security found only in your sovereign care and forgiveness."
+  },
+  {
+   "reference": "Psalms 30:5",
+   "text": "For his anger endureth but a moment; in his favour is life: weeping may endure for a night, but joy cometh in the morning.",
+   "micro": "My sorrow ends in God's joy.",
+   "insight": "My sorrow is temporary, and God's joy is on the way.",
+   "prayer": "Lord, anchor my heart in the joy You promise.",
+   "meaning": "David contrasts God's brief discipline with His enduring favor, using the imagery of a night of weeping followed by morning joy to express confidence in God's faithful restoration after a time of suffering.",
+   "reflection": "God's discipline is measured and purposeful, never His final word; His favor is the permanent reality in which our lives are rooted, assuring us that seasons of grief are temporary passages, not destinations.",
+   "fullPrayer": "Lord, when I walk through the night of weeping, anchor my heart in your enduring favor, and give me patience to wait for the joy you promise with the morning."
+  },
+  {
+   "reference": "Job 11:18",
+   "text": "And thou shalt be secure, because there is hope; yea, thou shalt dig about thee, and thou shalt take thy rest in safety.",
+   "micro": "I rest in secure hope",
+   "insight": "When I place my hope in God, I find true rest.",
+   "prayer": "Lord, anchor my hope in You.",
+   "meaning": "Zophar, one of Job's friends, is speaking, promising that if Job repents, he will find security and rest because hope will be restored to him; the imagery of digging suggests establishing a secure dwelling place where one can rest without fear.",
+   "reflection": "True security is not found in the absence of trouble, but in the presence of a hope that allows us to settle our souls and rest, even when circumstances remain difficult.",
+   "fullPrayer": "Lord, when my situation feels unstable, plant the hope of your faithfulness in me, that I might find a place of safety and rest in you alone."
+  },
+  {
+   "reference": "2 Corinthians 1:7",
+   "text": "And our hope of you is stedfast, knowing, that as ye are partakers of the sufferings, so shall ye be also of the consolation.",
+   "micro": "I am comforted even in suffering.",
+   "insight": "When I suffer, I know God's comfort is near.",
+   "prayer": "Lord, make my hope steady in suffering.",
+   "meaning": "Paul expresses his confident hope for the Corinthian believers, grounded in the principle that their shared experience of suffering for Christ will inevitably lead to a shared experience of God's comfort.",
+   "reflection": "This verse teaches that our present hardships in faith are not isolated events but are inseparably linked to the future comfort God will provide, creating a divine symmetry in the Christian life.",
+   "fullPrayer": "Lord, make my hope steadfast like Paul's, trusting that as I partake in sufferings for your sake, I will also partake fully in your consolation."
+  },
+  {
+   "reference": "Job 5:24",
+   "text": "And thou shalt know that thy tabernacle shall be in peace; and thou shalt visit thy habitation, and shalt not sin.",
+   "micro": "I am secure when I live with God",
+   "insight": "When I examine my life, I find peace because I've built it on God's ways.",
+   "prayer": "Establish my life in Your peace, Lord.",
+   "meaning": "Eliphaz, one of Job's friends, is speaking, promising that if Job accepts God's correction, he will experience security and peace in his home, and his inspection of his household will find no fault requiring punishment.",
+   "reflection": "True peace from God is not merely the absence of trouble, but a settled security where our lives and homes are aligned with His ways, free from hidden corruption.",
+   "fullPrayer": "Lord, establish my habitation in Your peace, so that when I examine my life, I find it built on Your righteousness and not on sin."
+  },
+  {
+   "reference": "Deuteronomy 33:25",
+   "text": "Thy shoes shall be iron and brass; and as thy days, so shall thy strength be.",
+   "micro": "Each day God renews my strength.",
+   "insight": "God promises strength perfectly matched to each day's demands.",
+   "prayer": "Give me strength for each new day.",
+   "meaning": "In Moses's final prophetic blessing over the tribe of Asher, this verse promises enduring provision and protection for their journey, using the imagery of durable footwear and daily-renewed vitality.",
+   "reflection": "Just as God promised Asher strength that matched each day's demands, His grace is not a general reservoir but a specific provision, perfectly measured for what I will actually face.",
+   "fullPrayer": "Lord, as my days unfold, be my strength; let my endurance be like iron and brass, trusting that You will supply exactly what is needed for the path ahead."
+  },
+  {
+   "reference": "Psalms 31:24",
+   "text": "Be of good courage, and he shall strengthen your heart, all ye that hope in the LORD.",
+   "micro": "My strength comes from my hope in God.",
+   "insight": "Hoping in God gives me the courage I need.",
+   "prayer": "Lord, strengthen my heart as I hope in You.",
+   "meaning": "In this psalm of lament and trust, David concludes by addressing fellow believers, declaring that God Himself will fortify the inner person of those who courageously wait for Him.",
+   "reflection": "My hope is not a passive wish but an active, courageous stance; in taking it, I find the Lord is the one who supplies the very strength I need to maintain it.",
+   "fullPrayer": "Lord, as I hope in You, strengthen my heart with Your courage, for my own resolve is weak but Yours is everlasting."
+  }
+ ]
+}

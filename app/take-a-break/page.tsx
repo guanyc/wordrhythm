@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Screenshots from "@/components/Screenshots";
 import { TOTAL_EMOTION_PAGES, allEmotionPages } from "@/lib/emotions";
+import { curatedIndex } from "@/lib/curated";
 import { takeABreak } from "@/lib/versions";
 
 export const metadata: Metadata = {
@@ -64,17 +64,22 @@ export default function TakeABreakPage() {
 
       <div className="mt-14">
         <h2 className="text-xl font-semibold tracking-tight">
-          Inside Take a Break
+          Take a break right here
         </h2>
-        <p className="mt-2 text-sm text-muted">
-          Screenshots from the Google Play listing.
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
+          Pick what you are feeling. You get one passage, a short insight and a
+          prayer — the same flow as the app, with nothing to install.
         </p>
-        <div className="mt-6">
-          <Screenshots
-            variant="strip"
-            shots={takeABreak.screenshots}
-            label="Take a Break"
-          />
+        <div className="mt-6 flex flex-wrap gap-2">
+          {curatedIndex().map((entry) => (
+            <Link
+              key={entry.slug}
+              href={`/take-a-break/${entry.slug}`}
+              className="rounded-full bg-brand-soft px-3 py-1.5 text-sm font-semibold text-brand transition-opacity hover:opacity-70"
+            >
+              {entry.title}
+            </Link>
+          ))}
         </div>
       </div>
 

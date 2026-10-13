@@ -1,0 +1,113 @@
+{
+ "slug": "prayerful",
+ "title": "Prayer",
+ "subtitle": "When you want to pray",
+ "emotions": [
+  {
+   "code": "prayerful",
+   "label": "wanting to pray"
+  }
+ ],
+ "verses": [
+  {
+   "reference": "Psalms 16:7",
+   "text": "I will bless the LORD, who hath given me counsel: my reins also instruct me in the night seasons.",
+   "micro": "I hear God's counsel in the night",
+   "insight": "Even in stillness, God speaks to my heart and guides me.",
+   "prayer": "Speak to me in the quiet hours.",
+   "meaning": "David declares his praise to God for providing divine guidance, and he describes how his innermost being (his 'reins' or kidneys, representing his deepest thoughts) continues to receive instruction even during dark or quiet times.",
+   "reflection": "God's counsel is not limited to moments of clarity but continues to shape our inner life even when we are still, teaching us through the quiet hours.",
+   "fullPrayer": "Lord, thank you for giving me your counsel; instruct my heart in the night seasons, that I may learn from you even in stillness."
+  },
+  {
+   "reference": "Luke 18:6",
+   "text": "And the Lord said, Hear what the unjust judge saith.",
+   "micro": "I trust God hears my persistent cries.",
+   "insight": "I trust that when I keep crying out, God hears me.",
+   "prayer": "God, hear my persistent cries and respond.",
+   "meaning": "In this parable, Jesus introduces the unjust judge as a character who reluctantly grants justice to a persistent widow, not out of virtue but to end her constant appeals. The Lord directs His disciples to listen carefully to the judge's own reasoning, setting up a contrast with how God responds to H...",
+   "reflection": "If even a corrupt human authority eventually yields to persistent pleading, how much more can we trust the character of our righteous Father, who is eager to grant justice to His chosen ones who cry out to Him day and night.",
+   "fullPrayer": "Lord, help me to hear and understand the contrast between human reluctance and Your faithful character, so that I might persist in prayer with confident hope in Your justice and timing."
+  },
+  {
+   "reference": "Psalms 25:4",
+   "text": "Shew me thy ways, O LORD; teach me thy paths.",
+   "micro": "I ask God to show me His ways",
+   "insight": "Humble hearts ask God to reveal His paths.",
+   "prayer": "Lord, show me Your ways and teach me Your paths.",
+   "meaning": "In this psalm of David, the speaker humbly asks God to reveal His divine ways and instruct him in His righteous paths, acknowledging God as the ultimate source of guidance for life.",
+   "reflection": "True spiritual direction begins not with my own plans, but with a heart that asks to be shown God's ways first, trusting that His paths lead to life.",
+   "fullPrayer": "Lord, I ask You to show me Your ways today; teach me to walk in Your paths rather than relying on my own understanding."
+  },
+  {
+   "reference": "Luke 11:9",
+   "text": "And I say unto you, Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you.",
+   "micro": "I draw closer as I knock",
+   "insight": "As I persist in prayer, I feel myself drawing nearer to God.",
+   "prayer": "Father, teach me to knock with persistent trust.",
+   "meaning": "Jesus speaks these words after teaching the Lord's Prayer, emphasizing that God responds to persistent, trusting prayer. The threefold command—ask, seek, knock—pictures increasing intensity in approaching the Father who gives good gifts.",
+   "reflection": "The progression from asking to seeking to knocking reveals that prayer is not passive but involves my whole being engaging with God's presence. Each step requires more of my attention and draws me deeper into relationship with Him.",
+   "fullPrayer": "Father, teach me to knock with persistence, trusting that You open doors according to Your wisdom. Let my seeking always lead me closer to Your heart and purposes."
+  },
+  {
+   "reference": "Psalms 85:8",
+   "text": "I will hear what God the LORD will speak: for he will speak peace unto his people, and to his saints: but let them not turn again to folly.",
+   "micro": "I listen for God's peace",
+   "insight": "When I quiet my heart to listen, I find God's peace.",
+   "prayer": "Quiet my soul to hear Your peace.",
+   "meaning": "The psalmist, likely a community leader, declares his intention to listen attentively for God's word, trusting that God's message will bring restoration and wholeness to His faithful covenant people, while also warning them against returning to their former foolish ways.",
+   "reflection": "True peace is not found in my circumstances but in the attentive posture of my heart, waiting to receive what only God can speak into the silence.",
+   "fullPrayer": "Lord, quiet my soul to hear your voice of peace today, and guard my heart from turning back to the folly from which you have rescued me."
+  },
+  {
+   "reference": "Luke 6:12",
+   "text": "And it came to pass in those days, that he went out into a mountain to pray, and continued all night in prayer to God.",
+   "micro": "I seek God in prayer before decisions.",
+   "insight": "I am learning to value prayer as the foundation for my important decisions.",
+   "prayer": "Lord, teach me to pray before I act.",
+   "meaning": "This verse describes Jesus withdrawing from the crowds to a solitary mountain before making the crucial decision of choosing his twelve apostles, demonstrating that he sought his Father's guidance through extended prayer before major decisions.",
+   "reflection": "If the Son of God needed to spend a whole night in prayer before an important choice, how much more do I need to seek God's wisdom rather than relying on my own understanding.",
+   "fullPrayer": "Lord, teach me to follow Jesus' example by withdrawing to seek you in prayer, especially when facing important decisions that require your wisdom."
+  },
+  {
+   "reference": "Matthew 14:23",
+   "text": "And when he had sent the multitudes away, he went up into a mountain apart to pray: and when the evening was come, he was there alone.",
+   "micro": "I find strength in quiet prayer.",
+   "insight": "I need time alone with God to regain my strength.",
+   "prayer": "Lord, draw me away to pray and renew my heart.",
+   "meaning": "After miraculously feeding the five thousand and dismissing the crowd, Jesus intentionally withdrew from both the demanding multitudes and his disciples to seek solitary communion with the Father on a mountainside, demonstrating his dependence on prayer even after a day of powerful ministry.",
+   "reflection": "Jesus models that spiritual power for public service flows from private prayer, showing that the most effective moments in ministry often follow intentional withdrawal into God's presence.",
+   "fullPrayer": "Lord, teach me to follow your example of withdrawing to the mountain apart, that I might find strength in solitary prayer before returning to serve others."
+  },
+  {
+   "reference": "Matthew 7:7",
+   "text": "Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you:",
+   "micro": "I keep asking, seeking, knocking.",
+   "insight": "When I persist in asking, I find God is listening.",
+   "prayer": "Lord, I keep knocking on Your door.",
+   "meaning": "In Jesus' Sermon on the Mount, this verse presents three escalating actions—asking, seeking, knocking—to illustrate persistent prayer to a generous Father who responds to His children.",
+   "reflection": "The progression from asking to seeking to knocking reveals that God invites not just occasional requests but an engaged, ongoing pursuit of His presence and provision.",
+   "fullPrayer": "Father, I come knocking at Your door today, trusting that You hear and will open to me as You promised."
+  },
+  {
+   "reference": "Matthew 6:6",
+   "text": "But thou, when thou prayest, enter into thy closet, and when thou hast shut thy door, pray to thy Father which is in secret; and thy Father which seeth in secret shall reward thee openly.",
+   "micro": "God honors my hidden prayers.",
+   "insight": "When I pray in secret, God hears and responds.",
+   "prayer": "Father, draw me to pray in secret with You.",
+   "meaning": "In Jesus' Sermon on the Mount, He contrasts genuine prayer with the showy prayers of hypocrites, using the imagery of a private room to emphasize that prayer is a direct, intimate conversation with God, not a public performance.",
+   "reflection": "This verse reveals that God values the authenticity of a hidden conversation over the eloquence of a public display, inviting us to trust that He attends to what is unseen.",
+   "fullPrayer": "Father who sees in secret, draw me into the quiet place where I can speak to You honestly, trusting that You hear and will respond."
+  },
+  {
+   "reference": "Zechariah 8:22",
+   "text": "Yea, many people and strong nations shall come to seek the LORD of hosts in Jerusalem, and to pray before the LORD.",
+   "micro": "God draws me and all nations close.",
+   "insight": "God will draw many nations to seek Him in Jerusalem.",
+   "prayer": "Lord, draw the nations to seek you and turn their strength into worship.",
+   "meaning": "The prophet Zechariah declares God's promise that in the future restoration, not just Israel but many powerful nations will journey to Jerusalem to worship the true God, reversing the pattern of exile and scattering.",
+   "reflection": "God's glory is not meant to be hoarded by one people but to draw all nations into His presence, transforming global power into humble pilgrimage.",
+   "fullPrayer": "Lord of hosts, draw the nations to seek you, turning their strength into worship and their journeys into prayer before you."
+  }
+ ]
+}

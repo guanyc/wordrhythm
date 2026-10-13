@@ -1,0 +1,121 @@
+{
+ "slug": "confused-seeking",
+ "title": "Seeking in confusion",
+ "subtitle": "When you are lost and looking",
+ "emotions": [
+  {
+   "code": "confused_seeking",
+   "label": "lost and looking"
+  },
+  {
+   "code": "seeking",
+   "label": "seeking"
+  },
+  {
+   "code": "seeking_guidance",
+   "label": "seeking direction"
+  }
+ ],
+ "verses": [
+  {
+   "reference": "Proverbs 2:4",
+   "text": "If thou seekest her as silver, and searchest for her as for hid treasures;",
+   "micro": "I seek wisdom like hidden treasure.",
+   "insight": "When I pursue wisdom with passion, I see what my heart truly wants.",
+   "prayer": "Lord, give me a passionate search for Your wisdom.",
+   "meaning": "In Proverbs 2, a father instructs his son to pursue wisdom with the same intense effort and desire that people expend when seeking valuable silver or searching for hidden treasures.",
+   "reflection": "True wisdom from God is not casually found but requires my wholehearted pursuit, revealing that what I diligently seek shows what I truly value.",
+   "fullPrayer": "Lord, teach me to search for Your wisdom with the same passion and persistence I would give to finding a hidden treasure, knowing its worth surpasses all earthly gain."
+  },
+  {
+   "reference": "Proverbs 26:26",
+   "text": "Whose hatred is covered by deceit, his wickedness shall be shewed before the whole congregation.",
+   "micro": "God sees through my hidden hatred",
+   "insight": "Deceit cannot hide hatred from God's public exposure.",
+   "prayer": "Lord, expose my hidden hatred and replace it with love.",
+   "meaning": "This proverb warns that a person who hides malice behind a mask of friendliness will eventually be exposed publicly. The imagery contrasts concealed hatred with the ultimate revelation of wickedness before the entire community.",
+   "reflection": "This verse confronts the deep human tendency to cloak destructive intentions with pleasant appearances, reminding us that God sees through all deception to the heart's true condition.",
+   "fullPrayer": "Lord, expose any deceit in my heart before it is shown before others, and replace hidden hatred with genuine love that needs no covering."
+  },
+  {
+   "reference": "Proverbs 28:5",
+   "text": "Evil men understand not judgment: but they that seek the LORD understand all things.",
+   "micro": "I find understanding by seeking God",
+   "insight": "The more I seek God, the more I understand His ways.",
+   "prayer": "Lord, help me seek You for understanding.",
+   "meaning": "This proverb contrasts two types of people: those who do evil cannot comprehend true justice or God's righteous standards, while those who earnestly seek the Lord gain spiritual understanding and discernment.",
+   "reflection": "True understanding flows not from intellectual pursuit alone but from a heart oriented toward God, revealing that spiritual blindness stems from moral rebellion rather than mental deficiency.",
+   "fullPrayer": "Lord, turn my heart to seek you daily, that I might understand your ways and perceive your justice where others see only confusion."
+  },
+  {
+   "reference": "Job 28:12",
+   "text": "But where shall wisdom be found? and where is the place of understanding?",
+   "micro": "God alone knows wisdom's dwelling",
+   "insight": "I cannot find wisdom on my own; only God knows where it is.",
+   "prayer": "Lord, teach me to seek wisdom in reverence of You.",
+   "meaning": "In Job 28, the speaker (the narrator) asks a rhetorical question after describing humanity's ability to mine precious metals from the earth, contrasting it with our inability to locate wisdom through human effort alone. The verse introduces a search for something of supreme value that cannot be disc...",
+   "reflection": "True wisdom is not a commodity to be excavated or a destination to be mapped; it is a hidden treasure whose place is known only to God, requiring a different kind of seeking that begins with reverence.",
+   "fullPrayer": "Lord, you alone know the place of understanding; teach my heart to seek wisdom not in human achievement, but in the fear of your name."
+  },
+  {
+   "reference": "Zechariah 4:13",
+   "text": "And he answered me and said, Knowest thou not what these be? And I said, No, my lord.",
+   "micro": "I admit I do not know.",
+   "insight": "Admitting my ignorance opens me to truth and God's instruction.",
+   "prayer": "Lord, give me humility to say 'I do not know.'",
+   "meaning": "In Zechariah's vision of the golden lampstand and two olive trees, the interpreting angel asks if the prophet understands the symbols, and Zechariah humbly admits his ignorance, seeking divine explanation.",
+   "reflection": "This moment reminds me that spiritual understanding often begins with the honest confession that I do not know, creating space for God's revelation.",
+   "fullPrayer": "Lord, when I encounter mysteries in your word and world, give me Zechariah's humility to say 'I do not know' and wait for your instruction."
+  },
+  {
+   "reference": "Psalms 39:4",
+   "text": "LORD, make me to know mine end, and the measure of my days, what it is: that I may know how frail I am.",
+   "micro": "I receive my few days humbly",
+   "insight": "I humbly accept my short days, and that draws my heart to God.",
+   "prayer": "Lord, help me live my short days depending on your strength.",
+   "meaning": "In this psalm, David, facing suffering and the brevity of life, asks God to reveal the true, limited length of his earthly existence. He seeks this sobering knowledge to confront the reality of his human frailty and mortality.",
+   "reflection": "True wisdom begins not with grasping for permanence, but with receiving from God the humbling gift of seeing my life's brief measure, which reorders all my priorities.",
+   "fullPrayer": "Lord, make me know the measure of my days, not to despair, but to live each one with the weight of eternity, fully dependent on Your enduring strength."
+  },
+  {
+   "reference": "Psalms 73:17",
+   "text": "Until I went into the sanctuary of God; then understood I their end.",
+   "micro": "In God's presence I see clearly.",
+   "insight": "I understand things differently when I draw near to God.",
+   "prayer": "Draw me into your presence, Lord.",
+   "meaning": "The psalmist Asaph, struggling with envy toward the prosperous wicked, finds clarity only when he enters God's sanctuary—the place of worship and divine presence—where he gains God's perspective on their ultimate destiny.",
+   "reflection": "True understanding of life's apparent injustices comes not from human reasoning but from encountering God's presence, where eternal realities eclipse temporary circumstances.",
+   "fullPrayer": "Lord, when I am confused by the world's ways, draw me into your sanctuary presence so I may understand things from your eternal perspective."
+  },
+  {
+   "reference": "Psalms 119:34",
+   "text": "Give me understanding, and I shall keep thy law; yea, I shall observe it with my whole heart.",
+   "micro": "Understanding leads my heart to obey",
+   "insight": "When I truly understand God's ways, obedience becomes my heart's desire.",
+   "prayer": "Give me understanding, Lord, so I obey with my whole heart.",
+   "meaning": "The psalmist, likely a faithful Israelite, prays for divine understanding as the necessary foundation for obedience, acknowledging that true keeping of God's law flows from a heart transformed by God's own instruction.",
+   "reflection": "This verse reveals that obedience is not a mechanical duty but a relational response; God must first give the understanding that awakens the heart's desire to follow Him.",
+   "fullPrayer": "Lord, give me understanding of Your ways, that my obedience may spring from a whole heart devoted to You, not merely from external compliance."
+  },
+  {
+   "reference": "Zechariah 4:5",
+   "text": "Then the angel that talked with me answered and said unto me, Knowest thou not what these be? And I said, No, my lord.",
+   "micro": "Admitting I don't know is the first step.",
+   "insight": "Admitting ignorance opens the door to heavenly insight.",
+   "prayer": "Lord, give me humility to admit I don't know.",
+   "meaning": "In Zechariah's prophetic vision, the interpreting angel responds to the prophet's confusion about the symbolic lampstand and olive trees by asking if he understands their meaning, to which Zechariah honestly admits his ignorance.",
+   "reflection": "This moment reminds me that divine mysteries often require patient guidance, and humble admission of our lack of understanding is the first step toward receiving heavenly insight.",
+   "fullPrayer": "Lord, when I do not understand your ways, give me Zechariah's humility to say 'No, my lord' and wait for your clarifying word."
+  },
+  {
+   "reference": "Luke 12:41",
+   "text": "Then Peter said unto him, Lord, speakest thou this parable unto us, or even to all?",
+   "micro": "I receive God's word for me.",
+   "insight": "I receive His word as spoken directly to me.",
+   "prayer": "Lord, help me receive Your word as spoken to me.",
+   "meaning": "Peter asks Jesus whether the preceding parable about watchful servants was intended specifically for the disciples or for everyone. This question reveals Peter's desire to understand the scope of Jesus' teaching and his own role within it.",
+   "reflection": "Like Peter, I can become preoccupied with determining who a teaching is for, rather than humbly receiving it as a word for me. True listening begins when I stop categorizing God's word and let it address my own heart first.",
+   "fullPrayer": "Lord, when you speak, help me not to ask 'for whom?' but to receive your word as spoken to me. Make me a faithful servant who listens for your voice."
+  }
+ ]
+}
