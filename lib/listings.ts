@@ -839,6 +839,66 @@ const lsg: StoreListing = {
   ],
 };
 
+const luther: StoreListing = {
+  intro: [
+    "Word Rhythm: Lutherbibel 1912 ist eine kostenlose, vollständig offline nutzbare Lutherbibel für den Alltag — lesen am Morgen, innehalten am Tag, zur Ruhe kommen am Abend.",
+    "Mehr als eine Lese-App: ein geführter Weg, um mit der Schrift, dem Nachdenken und dem Gebet einen geistlichen Rhythmus zu finden.",
+  ],
+  sections: [
+    {
+      heading: "Morgen — mit dem Wort beginnen",
+      blocks: [
+        {
+          list: [
+            "Ein Vers mit kurzer Bedeutung und einem Gedanken für den Tag",
+            "Auf Wunsch den ganzen Zusammenhang des Kapitels lesen",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Tag — eine Pause, wenn du sie brauchst",
+      blocks: [
+        {
+          list: [
+            "Kurze Auszeit zum Durchatmen, Lesen und Beten",
+            "Vom Gefühl oder von der Situation aus starten",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Abend — den Tag im Gebet beschließen",
+      blocks: [
+        {
+          list: [
+            "Gebet, Frieden und Ruhe für die Nacht",
+            "Auch tagsüber ein stiller Moment mit Gott",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Die ganze Lutherbibel 1912",
+      blocks: [
+        {
+          list: [
+            "Vollständiger Text der Lutherbibel 1912",
+            "Schnelle Navigation nach Buch, Kapitel und Vers",
+            "Weiterlesen an der letzten Stelle",
+            "Klares Lesen mit Dunkelmodus, offline nutzbar",
+          ],
+        },
+      ],
+    },
+  ],
+  closing: [
+    "Lesen am Morgen. Innehalten am Tag. Nachdenken am Abend.",
+    "Für deutschsprachige Christen: Gottes Wort jeden Tag in der Nähe.",
+    "Lesen. Nachdenken. Beten. Wachsen.",
+  ],
+};
+
 export const listings: Record<string, StoreListing> = {
   kjv,
   asv,
@@ -847,6 +907,7 @@ export const listings: Record<string, StoreListing> = {
   cuv,
   aa,
   lsg,
+  luther,
 };
 
 export function getListing(slug: string): StoreListing | undefined {

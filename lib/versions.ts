@@ -229,6 +229,24 @@ export const versions: BibleVersion[] = [
     ogImage: "/brand/og-lsg.jpg",
     screenshots: shots("lsg"),
   },
+  {
+    slug: "luther",
+    code: "LUT",
+    name: "Lutherbibel 1912",
+    listing: "Word Rhythm: Lutherbibel 1912",
+    storeTitle: "Lutherbibel 1912",
+    language: "Deutsch",
+    lang: "de",
+    summary:
+      "Lutherbibel 1912 für den Rhythmus des Alltags — Gottes Wort am Morgen, eine Pause am Tag, ein Gebet am Abend.",
+    status: "planned",
+    audio: "none",
+    sleepSlotLabel: "Nacht",
+    package: "com.gyc.ace.luther",
+    icon: "/apps/luther/icon.png",
+    ogImage: "/brand/og-luther.jpg",
+    screenshots: shots("luther"),
+  },
 ];
 
 export function getVersion(slug: string): BibleVersion | undefined {

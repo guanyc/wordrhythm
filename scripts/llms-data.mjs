@@ -100,6 +100,19 @@ export const versions = [
     sleepLabel: "Nuit",
     package: "com.gyc.ace.lsg",
   },
+  {
+    slug: "luther",
+    name: "Lutherbibel 1912",
+    listing: "Word Rhythm: Lutherbibel 1912",
+    summary:
+      "Lutherbibel 1912 offline: Lesen, Andacht, Innehalten und Gebet",
+    language: "Deutsch",
+    lang: "de",
+    audio: "none",
+    audioNote: "Nur Text, ohne Audio",
+    sleepLabel: "Nacht",
+    package: "com.gyc.ace.luther",
+  },
 ];
 
 /** The four daily slots, matching `DAILY_SLOTS` in lib/versions.ts. */
