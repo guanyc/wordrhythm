@@ -880,7 +880,7 @@ const luther: StoreListing = {
           list: [
             "Morgen: ein Vers, seine Bedeutung, eine Besinnung",
             "Abend: Gebet, Frieden und Ruhe",
-            "Nacht: Gebet für den Schlaf und beruhigende Audio",
+            "Nacht: Gebet für den Schlaf und ruhige Lesung",
           ],
         },
       ],
@@ -939,7 +939,6 @@ const luther: StoreListing = {
           list: [
             "Hören Sie die Bibel vorgelesen",
             "Automatische Wiedergabe: Kapitel für Kapitel, Buch für Buch, im Einzelstimmen-Modus",
-            "Schlaf-Audio: sanfte Lesungen und ruhige Hintergrundklänge zum Einschlafen",
             "Ideal, wenn Sie gestresst sind, überfordert wirken oder abends nicht zur Ruhe finden",
           ],
         },

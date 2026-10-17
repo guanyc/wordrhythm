@@ -240,7 +240,7 @@ export const versions: BibleVersion[] = [
     summary:
       "Lutherbibel 1912 für den Rhythmus des Alltags — Gottes Wort am Morgen, eine Pause am Tag, ein Gebet am Abend.",
     status: "live",
-    audio: "sleep",
+    audio: "tts",
     sleepSlotLabel: "Nacht",
     package: "com.gyc.ace.luther",
     playUrl:
