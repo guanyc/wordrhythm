@@ -24,13 +24,13 @@ its reference, what the verse says, how to reflect, and a short prayer.
 
 Audio is the feature that differs between apps:
 
-- **Sleep Audio — KJV Bible only.** Gentle nighttime Scripture
+- **Sleep Audio — KJV Bible, Lutherbibel 1912 only.** Gentle nighttime Scripture
   reading with soft pacing and quiet pauses, plus peaceful background sounds.
 - **Text-to-speech — WEB Bible, Biblia RVR, 和合本圣经, Bíblia AA.** Read-aloud Scripture playback.
-- **No audio — ASV Bible, Bible Louis Segond 1910, Lutherbibel 1912.** Reading and devotionals only.
+- **No audio — ASV Bible, Bible Louis Segond 1910.** Reading and devotionals only.
 
 Every app has all 4 devotional slots, including the sleep slot.
-Only KJV Bible ships the dedicated Sleep Audio track.
+Only KJV Bible, Lutherbibel 1912 ships the dedicated Sleep Audio track.
 
 ## Apps
 
@@ -41,7 +41,7 @@ Only KJV Bible ships the dedicated Sleep Audio track.
 - [Word Rhythm: 和合本圣经](https://wordrhythm.app/versions/cuv) (中文) — 和合本圣经（中文），含清晨、白天、夜晚与睡前四个时段。支持 TTS 朗读 [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.bible)
 - [Word Rhythm: Bíblia AA](https://wordrhythm.app/versions/aa) (Português) — Almeida Atualizada with four daily slots, text-to-speech audio. [Google Play](https://play.google.com/store/apps/details?id=com.guanyc.ace.almeida)
 - [Word Rhythm: Louis Segond 1910](https://wordrhythm.app/versions/lsg) (Français) — LSG 1910 hors ligne, méditation, plans de lecture et recherche. Texte uniquement, sans audio. [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.lsg)
-- [Word Rhythm: Lutherbibel 1912](https://wordrhythm.app/versions/luther) (Deutsch) — Lutherbibel 1912 offline: Lesen, Andacht, Innehalten und Gebet. Nur Text, ohne Audio. [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.luther)
+- [Word Rhythm: Lutherbibel 1912](https://wordrhythm.app/versions/luther) (Deutsch) — Lutherbibel 1912 offline: Lesen, Andacht, Innehalten und Gebet, plus **Sleep Audio** — gentle nighttime Scripture reading with soft pacing and peaceful background sounds. [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.luther)
 - [All versions](https://wordrhythm.app/versions)
 
 ## Bible verses by feeling
@@ -172,7 +172,7 @@ the link above.
 - Platform: Android only. Fully offline reading. No account required.
 - 4 daily slots in every app: morning, day, evening, sleep.
 - Reading plans, memorization and Take a Break are available in every app.
-- Audio varies: Sleep Audio (KJV Bible), text-to-speech (WEB Bible, Biblia RVR, 和合本圣经, Bíblia AA), or none (ASV Bible, Bible Louis Segond 1910, Lutherbibel 1912).
+- Audio varies: Sleep Audio (KJV Bible, Lutherbibel 1912), text-to-speech (WEB Bible, Biblia RVR, 和合本圣经, Bíblia AA), or none (ASV Bible, Bible Louis Segond 1910).
 - Also available as a standalone app: [Take a Break](https://wordrhythm.app/take-a-break)
 - KJV archaic-word glossary: 1440 entries, examples verified against the full KJV text.
 

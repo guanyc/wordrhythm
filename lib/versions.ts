@@ -234,13 +234,13 @@ export const versions: BibleVersion[] = [
     code: "LUT",
     name: "Lutherbibel 1912",
     listing: "Word Rhythm: Lutherbibel 1912",
-    storeTitle: "Lutherbibel 1912",
+    storeTitle: "Luther bibel 1912 offline",
     language: "Deutsch",
     lang: "de",
     summary:
       "Lutherbibel 1912 für den Rhythmus des Alltags — Gottes Wort am Morgen, eine Pause am Tag, ein Gebet am Abend.",
     status: "live",
-    audio: "none",
+    audio: "sleep",
     sleepSlotLabel: "Nacht",
     package: "com.gyc.ace.luther",
     playUrl:

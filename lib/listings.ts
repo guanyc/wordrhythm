@@ -841,63 +841,147 @@ const lsg: StoreListing = {
 
 const luther: StoreListing = {
   intro: [
-    "Word Rhythm: Lutherbibel 1912 ist eine kostenlose, vollständig offline nutzbare Lutherbibel für den Alltag — lesen am Morgen, innehalten am Tag, zur Ruhe kommen am Abend.",
-    "Mehr als eine Lese-App: ein geführter Weg, um mit der Schrift, dem Nachdenken und dem Gebet einen geistlichen Rhythmus zu finden.",
+    "Eine kostenlose, schnelle und vollständig offline nutzbare Bibel – gemacht für die Lesung und die tägliche Andacht. Alle Funktionen sind offen, ohne Konto und ohne Abonnement.",
+    "Mehr als eine Lese-App: ein geführter Weg, durch die Schrift, die Besinnung und das Gebet einen geistlichen Rhythmus aufzubauen.",
   ],
   sections: [
     {
-      heading: "Morgen — mit dem Wort beginnen",
+      heading: "Tägliche Andacht",
       blocks: [
         {
           list: [
-            "Ein Vers mit kurzer Bedeutung und einem Gedanken für den Tag",
-            "Auf Wunsch den ganzen Zusammenhang des Kapitels lesen",
+            "„Ihr Herz heute“: Verse, die sprechen, was Sie gerade empfinden",
+            "Nach Emotion (Frieden, Kraft, Hoffnung, Geduld, Dankbarkeit) oder nach Thema (Glaube, Liebe, Vergebung, Weisheit)",
+            "Jede Andacht: Vers + Bedeutung + Besinnung + Gebet",
+            "„Pause mit Gott“: eine kurze Pause zum Durchatmen, Lesen und Beten",
+            "Eine Erfahrung, die sich Ihrem Fortschritt anpasst",
           ],
         },
       ],
     },
     {
-      heading: "Tag — eine Pause, wenn du sie brauchst",
+      heading: "Lutherbibel 1912, offline",
       blocks: [
         {
           list: [
-            "Kurze Auszeit zum Durchatmen, Lesen und Beten",
-            "Vom Gefühl oder von der Situation aus starten",
+            "Der vollständige Text ohne Internet: lesen, suchen und meditieren ohne Verbindung",
+            "Klares, ungestörtes Lesen",
+            "Sofortiger Zugriff auf Buch, Kapitel oder Vers",
+            "Flüssige Lektüre: Bildlauf oder Diashow",
+            "Schriftart, helles/dunkles Thema und Spaltenbreite einstellbar",
           ],
         },
       ],
     },
     {
-      heading: "Abend — den Tag im Gebet beschließen",
+      heading: "Der Rhythmus Ihres Tages",
       blocks: [
         {
           list: [
-            "Gebet, Frieden und Ruhe für die Nacht",
-            "Auch tagsüber ein stiller Moment mit Gott",
+            "Morgen: ein Vers, seine Bedeutung, eine Besinnung",
+            "Abend: Gebet, Frieden und Ruhe",
+            "Nacht: Gebet für den Schlaf und beruhigende Audio",
           ],
         },
       ],
     },
     {
-      heading: "Die ganze Lutherbibel 1912",
+      heading: "WordRhythm: das Wort im Rhythmus Ihres Tages",
+      blocks: [
+        {
+          text: [
+            "Word = das Wort, Rhythm = der Rhythmus: Die Bibel gibt den Takt Ihrer Morgen, Ihrer Abende und Ihrer Nächte vor – statt ein Buch zu sein, das man nur gelegentlich aufschlägt.",
+            "Ein Vers zum Beginnen, eine Besinnung zum Durchhalten, ein Gebet zum Abschluss.",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Lesepläne",
       blocks: [
         {
           list: [
-            "Vollständiger Text der Lutherbibel 1912",
-            "Schnelle Navigation nach Buch, Kapitel und Vers",
-            "Weiterlesen an der letzten Stelle",
-            "Klares Lesen mit Dunkelmodus, offline nutzbar",
+            "Geführte Wege über 7 Tage (Glaube, Liebe, Vergebung, Weisheit, Frieden …), dann 21, 30, 40, 85 und 100 Tage",
+            "Jahrespläne: 365 Tage kanonisch, chronologisch oder als Meditationsplan",
+            "Traditioneller 3-Jahres-Plan mit Fortschrittsverfolgung und Kalender",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Suchen und Studieren",
+      blocks: [
+        {
+          list: [
+            "Sofortige Suche in der ganzen Bibel, nach Stichwort oder Ausdruck",
+            "Vers-Sucher: direkt zur gewünschten Stelle",
+            "Verse nach Ihren Lebenssituationen und Emotionen",
+            "Bibelliche Erläuterungen zur Vertiefung",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Auswendiglernen",
+      blocks: [
+        {
+          list: [
+            "Merken Sie sich Verse: erst „In Bearbeitung“, dann „Gemeistert“",
+            "Eine einfache tägliche Praxis, in Ihrem Tempo",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Audio",
+      blocks: [
+        {
+          list: [
+            "Hören Sie die Bibel vorgelesen",
+            "Automatische Wiedergabe: Kapitel für Kapitel, Buch für Buch, im Einzelstimmen-Modus",
+            "Schlaf-Audio: sanfte Lesungen und ruhige Hintergrundklänge zum Einschlafen",
+            "Ideal, wenn Sie gestresst sind, überfordert wirken oder abends nicht zur Ruhe finden",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Fortschritt und Erinnerungen",
+      blocks: [
+        {
+          list: [
+            "Verfolgen Sie Ihren Leseweg: Tagesübersicht und Fortschritt im Leseplan",
+            "Der traditionelle 3-Jahres-Plan mit Leseplan-Kalender",
+            "Sanfte Erinnerungen, damit Sie dranbleiben – täglich und für Ihre Pausen mit Gott",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Speichern und Teilen",
+      blocks: [
+        {
+          list: [
+            "Favoriten, Lesezeichen, Notizen und Markierungen in mehreren Farben",
+            "Etiketten-Bibliothek mit 96 vordefinierten biblischen Etiketten zum Ordnen Ihrer Verse",
+            "Verse teilen und biblische Bildkarten erstellen",
+            "Gespeicherte Andachten – finden Sie Ihre Lesungen wieder",
+            "Widget mit dem Vers des Tages auf Ihrem Startbildschirm",
+            "Sichern und Wiederherstellen Ihrer Favoriten, Notizen, Markierungen und Einstellungen aus einer Datei",
           ],
         },
       ],
     },
   ],
   closing: [
-    "Lesen am Morgen. Innehalten am Tag. Nachdenken am Abend.",
-    "Für deutschsprachige Christen: Gottes Wort jeden Tag in der Nähe.",
-    "Lesen. Nachdenken. Beten. Wachsen.",
+    "Alles inklusive, ohne Abonnement: vollständige Andachten, alle Lesepläne, kein Konto nötigt.",
+    "Datenschutz: Es werden ohne Ihre Zustimmung keine Daten erhoben. Sie entscheiden beim ersten Öffnen und können Ihre Wahl jederzeit in den Einstellungen ändern.",
+    "Bleiben Sie im Wort. Finden Sie Ihren Rhythmus.",
+    "WordRhythm — das Wort im Rhythmus Ihres Tages.",
+    "Lesen. Sinnen. Beten. Wachsen.",
   ],
 };
+
 
 export const listings: Record<string, StoreListing> = {
   kjv,
