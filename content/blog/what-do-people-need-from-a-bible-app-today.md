@@ -168,7 +168,7 @@ It has to be answered with real use.
 If you want a **KJV Bible app** that supports both **Bible reading** and **daily devotional life**:
 
 - Read more about devotional features: [/blog/kjv-bible-app-daily-devotional-features](/blog/kjv-bible-app-daily-devotional-features)
-- Read about gentler re-entry: /posts/kjv-marketing/a-bible-app-should-help-you-come-back-after-missing-days/
+- Read about gentler re-entry: /blog/fell-behind-bible-reading-plan-take-a-break
 - Browse the KJV online: [/versions/kjv](/versions/kjv)
 - Google Play: https://play.google.com/store/apps/details?id=com.gyc.ace.kjv
 
