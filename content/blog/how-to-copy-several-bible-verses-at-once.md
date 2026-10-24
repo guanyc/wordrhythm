@@ -29,6 +29,11 @@ Twelve hits in John, sitting at positions 1 to 12 in the list. That is more info
 
 Tap the header itself and the group folds. The little arrow flips from ▾ to ▸, and there is a single control that expands or collapses every group at once, which is the fastest way to survey the shape of a 200-result list: collapse all, look at the counts, then open the two books worth reading.
 
+<div style="margin:16px 0 20px;">
+  <img src="/images/blog/search-results-grouped-by-book.webp" width="720" height="1616" alt="KJV search results for wilderness grouped by book, with the Genesis group folded to its seven hits and the Exodus group opened to twenty-two" loading="lazy" decoding="async" style="width:min(100%,360px);height:auto;border-radius:16px;" />
+</div>
+<p style="margin:-4px 0 20px;color:#64748b;font-size:0.95rem;">A search for <em>wilderness</em>: 293 hits, Genesis folded down to seven, Exodus opened to twenty-two. The count and the position range sit on the header, the checkbox beside them takes the whole book, and the matched word is marked where it falls.</p>
+
 If the grouping is not helping — a query where you want one continuous list in order — the overflow menu has a toggle that flattens it. It reads `Hide Grouping` when you are in the grouped view and `Show Grouping` when you are in the flat one, and it is remembered for your next search, not just this one.
 
 ## Selecting: one verse, one book, or everything
@@ -68,6 +73,11 @@ One detail that saves a lot of retyping: copying **keeps** your selection. Copy,
 ## Bible order, or the order you tapped
 
 This is the setting that decides whether a list is a set of verses or a sequence, and it is one checkbox in the results overflow menu: **Preserve selection order**. It is off by default.
+
+<div style="margin:16px 0 20px;">
+  <img src="/images/blog/search-results-preserve-order-menu.webp" width="720" height="1616" alt="Search results overflow menu in the KJV app: Keep Search Results ticked, Preserve selection order unticked" loading="lazy" decoding="async" style="width:min(100%,360px);height:auto;border-radius:16px;" />
+</div>
+<p style="margin:-4px 0 20px;color:#64748b;font-size:0.95rem;">The results overflow menu as it arrives out of the box: <em>Keep Search Results</em> ticked, <em>Preserve selection order</em> not. Both are plain checkboxes — no Apply button, no restart, and the next copy follows the new state.</p>
 
 **Off** — verses come out in canonical order: Genesis before Psalms, Matthew before John, chapter and verse ascending. Twelve scattered taps become a tidy reference list. This is what you want for a handout, a footnote, or anything someone else will read.
 
