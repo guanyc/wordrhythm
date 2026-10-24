@@ -58,7 +58,7 @@ questions people actually ask.
 - [Loneliness, but holding on](https://wordrhythm.app/bible-verses/lonely-strong) — 10 verses; starts at 2 Corinthians 10:15
 - [Anger](https://wordrhythm.app/bible-verses/angry) — 10 verses; starts at Ezekiel 33:15
 - [Guilt and shame](https://wordrhythm.app/bible-verses/guilt) — 10 verses; starts at Ezekiel 33:10
-- [Calm and peace](https://wordrhythm.app/bible-verses/peace) — 10 verses; starts at Psalms 3:5
+- [Calm and peace](https://wordrhythm.app/bible-verses/peace) — 10 verses; starts at Isaiah 26:3
 - [Courage](https://wordrhythm.app/bible-verses/courage) — 10 verses; starts at Psalms 112:7
 - [Confusion](https://wordrhythm.app/bible-verses/confused) — 10 verses; starts at Proverbs 25:19
 - [Temptation](https://wordrhythm.app/bible-verses/tempted) — 10 verses; starts at 1 Timothy 4:8
@@ -73,7 +73,7 @@ questions people actually ask.
 - [Disappointment](https://wordrhythm.app/bible-verses/disappointed) — 10 verses; starts at Habakkuk 2:3
 - [Discouragement](https://wordrhythm.app/bible-verses/discouraged) — 10 verses; starts at Micah 7:8
 - [Encouragement](https://wordrhythm.app/bible-verses/inspired) — 10 verses; starts at Matthew 28:9
-- [Fear](https://wordrhythm.app/bible-verses/fearful) — 10 verses; starts at Psalms 4:8
+- [Fear](https://wordrhythm.app/bible-verses/fearful) — 10 verses; starts at Psalms 27:1
 - [Growth](https://wordrhythm.app/bible-verses/growth) — 10 verses; starts at Psalms 15:4
 - [Joy](https://wordrhythm.app/bible-verses/joy) — 10 verses; starts at Psalms 97:12
 - [Joyful hope](https://wordrhythm.app/bible-verses/hopeful-joyful) — 10 verses; starts at Isaiah 30:29
@@ -90,7 +90,7 @@ questions people actually ask.
 - [Thanksgiving](https://wordrhythm.app/bible-verses/thankful-for-grace) — 10 verses; starts at 1 Corinthians 1:4
 - [Trust](https://wordrhythm.app/bible-verses/trusting-in-god) — 10 verses; starts at Jeremiah 17:7
 - [Uncertainty](https://wordrhythm.app/bible-verses/uncertain) — 10 verses; starts at Proverbs 28:26
-- [Unity](https://wordrhythm.app/bible-verses/unity-needed) — 10 verses; starts at Matthew 12:49
+- [Unity](https://wordrhythm.app/bible-verses/unity-needed) — 10 verses; starts at Psalms 133:1
 - [Worship](https://wordrhythm.app/bible-verses/worshipful) — 10 verses; starts at Psalms 13:6
 - [All collections](https://wordrhythm.app/bible-verses)
 
