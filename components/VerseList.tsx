@@ -55,28 +55,30 @@ export default function VerseList({ verses }: { verses: CuratedVerse[] }) {
             )}
             <blockquote className="mt-2 leading-relaxed">{v.text}</blockquote>
 
-            <div
-              className={`mt-3 space-y-3 rounded-xl bg-surface px-4 py-4 text-sm leading-relaxed ${
-                full ? "hidden" : ""
-              }`}
-            >
-              {v.insight && (
-                <p>
-                  <span className="font-semibold">Insight </span>
-                  {v.insight}
-                </p>
-              )}
-              {v.prayer && (
-                <p>
-                  <span className="font-semibold">Prayer </span>
-                  {v.prayer}
-                </p>
-              )}
-            </div>
+            {hasShort(v) && (
+              <div
+                className={`mt-3 space-y-3 rounded-xl bg-surface px-4 py-4 text-sm leading-relaxed ${
+                  full ? "hidden" : ""
+                }`}
+              >
+                {v.insight && (
+                  <p>
+                    <span className="font-semibold">Insight </span>
+                    {v.insight}
+                  </p>
+                )}
+                {v.prayer && (
+                  <p>
+                    <span className="font-semibold">Prayer </span>
+                    {v.prayer}
+                  </p>
+                )}
+              </div>
+            )}
 
             <div
               className={`mt-3 space-y-3 rounded-xl bg-surface px-4 py-4 text-sm leading-relaxed ${
-                full ? "" : "hidden"
+                full || !hasShort(v) ? "" : "hidden"
               }`}
             >
               {v.meaning && (
@@ -103,4 +105,17 @@ export default function VerseList({ verses }: { verses: CuratedVerse[] }) {
       </ol>
     </div>
   );
+}
+
+/**
+ * A passage can carry the longer devotional and no compact lines.
+ *
+ * Not every row in the app's `devotionals` table has a matching
+ * `devotional_compact` one — Isaiah 26:3, the verse the peace page leads
+ * with, is one. The empty Short panel is skipped rather than rendered as a
+ * grey box, and Short mode falls through to the full devotional so the entry
+ * never reads as a bare verse.
+ */
+function hasShort(v: CuratedVerse): boolean {
+  return Boolean(v.insight || v.prayer);
 }

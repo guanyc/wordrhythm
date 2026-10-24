@@ -351,32 +351,60 @@
     ],
     "verses": [
       {
-        "reference": "Psalms 3:5",
-        "text": "I laid me down and slept; I awaked; for the LORD sustained me.",
-        "micro": "God watches over me while I sleep",
-        "insight": "I can sleep peacefully knowing God is watching over me.",
-        "prayer": "Lord, give me confidence that You watch over my rest."
+        "reference": "Isaiah 26:3",
+        "text": "Thou wilt keep him in perfect peace, whose mind is stayed on thee: because he trusteth in thee.",
+        "micro": "",
+        "insight": "",
+        "prayer": ""
       },
       {
-        "reference": "Isaiah 54:14",
-        "text": "In righteousness shalt thou be established: thou shalt be far from oppression; for thou shalt not fear: and from terror; for it shall not come near thee.",
-        "micro": "I am secure in God's righteousness",
-        "insight": "My security comes from God's righteousness, not my own efforts.",
-        "prayer": "Lord, let Your righteousness be my foundation."
+        "reference": "John 14:27",
+        "text": "Peace I leave with you, my peace I give unto you: not as the world giveth, give I unto you. Let not your heart be troubled, neither let it be afraid.",
+        "micro": "I rest in His perfect peace.",
+        "insight": "When I let His peace in, my heart stops racing and finds stillness.",
+        "prayer": "Lord, let Your peace quiet my heart today."
       },
       {
-        "reference": "Proverbs 3:24",
-        "text": "When thou liest down, thou shalt not be afraid: yea, thou shalt lie down, and thy sleep shall be sweet.",
-        "micro": "I sleep well trusting God",
-        "insight": "Trusting God's wisdom settles my soul.",
-        "prayer": "Lord, give me sweet sleep from trusting Your care."
+        "reference": "Philippians 4:7",
+        "text": "And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus.",
+        "micro": "God's peace guards my soul beyond understanding.",
+        "insight": "I experience a peace that doesn't make sense, protecting my heart from anxiety.",
+        "prayer": "Lord, let Your peace guard my heart today."
       },
       {
-        "reference": "Isaiah 10:20",
-        "text": "And it shall come to pass in that day, that the remnant of Israel, and such as are escaped of the house of Jacob, shall no more again stay upon him that smote them; but shall stay upon the LORD, the Holy One of Israel, in truth.",
-        "micro": "I rely only on the Lord",
-        "insight": "I've learned to depend only on God, not on anything else.",
-        "prayer": "Lord, help me rely only on You."
+        "reference": "Colossians 3:15",
+        "text": "And let the peace of God rule in your hearts, to the which also ye are called in one body; and be ye thankful.",
+        "micro": "Christ's peace settles my conflicts.",
+        "insight": "Christ's peace settles the battles within me.",
+        "prayer": "Lord, let Your peace reign in my heart today."
+      },
+      {
+        "reference": "2 Thessalonians 3:16",
+        "text": "Now the Lord of peace himself give you peace always by all means. The Lord be with you all.",
+        "micro": "My peace comes from the Lord",
+        "insight": "I find my peace not in circumstances, but in the Lord's presence with me.",
+        "prayer": "Lord of peace, be with me and give me your peace."
+      },
+      {
+        "reference": "Psalms 23:2",
+        "text": "He maketh me to lie down in green pastures: he leadeth me beside the still waters.",
+        "micro": "My soul rests in still waters.",
+        "insight": "I find quiet rest when I let God lead me to peace.",
+        "prayer": "Lead me to Your peace today, Shepherd."
+      },
+      {
+        "reference": "Isaiah 32:18",
+        "text": "And my people shall dwell in a peaceable habitation, and in sure dwellings, and in quiet resting places;",
+        "micro": "My soul rests in God's peace.",
+        "insight": "God promises His people secure and peaceful dwelling places.",
+        "prayer": "Lord, settle my heart in Your peaceful presence."
+      },
+      {
+        "reference": "Psalms 116:7",
+        "text": "Return unto thy rest, O my soul; for the LORD hath dealt bountifully with thee.",
+        "micro": "My soul rests in God's goodness",
+        "insight": "I find rest not in circumstances, but in remembering how good God has been.",
+        "prayer": "Lord, help my soul find rest in Your goodness."
       },
       {
         "reference": "Psalms 4:8",
@@ -386,39 +414,11 @@
         "prayer": "Let me lay down my burdens and trust Your care."
       },
       {
-        "reference": "Proverbs 30:5",
-        "text": "Every word of God is pure: he is a shield unto them that put their trust in him.",
-        "micro": "God's word is my shield.",
-        "insight": "I find safety in the purity of what God has spoken.",
-        "prayer": "Lord, protect me as I lean on Your true promises."
-      },
-      {
-        "reference": "Matthew 6:34",
-        "text": "Take therefore no thought for the morrow: for the morrow shall take thought for the things of itself. Sufficient unto the day is the evil thereof.",
-        "micro": "I trust God for today.",
-        "insight": "I don't need to carry tomorrow's worries because I trust God for today.",
-        "prayer": "Help me trust You for today, not tomorrow."
-      },
-      {
-        "reference": "Psalms 122:8",
-        "text": "For my brethren and companions' sakes, I will now say, Peace be within thee.",
-        "micro": "I pray for my companions' well-being",
-        "insight": "My heart is drawn to pray for the good of those I walk with.",
-        "prayer": "Lord, bless my brothers and sisters."
-      },
-      {
-        "reference": "Isaiah 30:15",
-        "text": "For thus saith the Lord GOD, the Holy One of Israel; In returning and rest shall ye be saved; in quietness and in confidence shall be your strength: and ye would not.",
-        "micro": "I find strength in quiet trust.",
-        "insight": "God promises strength to those who rest in quiet trust.",
-        "prayer": "Lord, teach me to rest and trust in You."
-      },
-      {
-        "reference": "Philippians 4:11",
-        "text": "Not that I speak in respect of want: for I have learned, in whatsoever state I am, therewith to be content.",
-        "micro": "I learn contentment through trusting Christ.",
-        "insight": "I find that trusting Christ teaches me contentment.",
-        "prayer": "Lord, teach me contentment through trust in You."
+        "reference": "Proverbs 3:24",
+        "text": "When thou liest down, thou shalt not be afraid: yea, thou shalt lie down, and thy sleep shall be sweet.",
+        "micro": "I sleep well trusting God",
+        "insight": "Trusting God's wisdom settles my soul.",
+        "prayer": "Lord, give me sweet sleep from trusting Your care."
       }
     ]
   },
@@ -1023,11 +1023,67 @@
     ],
     "verses": [
       {
-        "reference": "Psalms 4:8",
-        "text": "I will both lay me down in peace, and sleep: for thou, LORD, only makest me dwell in safety.",
-        "micro": "I sleep in God's peace",
-        "insight": "I can rest because God keeps me safe, not because everything is calm.",
-        "prayer": "Let me lay down my burdens and trust Your care."
+        "reference": "Psalms 27:1",
+        "text": "The LORD is my light and my salvation; whom shall I fear? the LORD is the strength of my life; of whom shall I be afraid?",
+        "micro": "My fear fades with God's strength",
+        "insight": "When I remember that God is my strength, I can face anything without fear.",
+        "prayer": "Lord, with You I am not afraid."
+      },
+      {
+        "reference": "Psalms 56:4",
+        "text": "In God I will praise his word, in God I have put my trust; I will not fear what flesh can do unto me.",
+        "micro": "I trust God, so fear fades.",
+        "insight": "Trusting God shrinks human threats to their proper size.",
+        "prayer": "Lord, let my trust in You silence my fears."
+      },
+      {
+        "reference": "Psalms 34:4",
+        "text": "I sought the LORD, and he heard me, and delivered me from all my fears.",
+        "micro": "God hears me when I seek Him.",
+        "insight": "I know that when I seek God, He listens to my cry.",
+        "prayer": "Lord, I seek You now; hear my cry."
+      },
+      {
+        "reference": "Isaiah 12:2",
+        "text": "Behold, God is my salvation; I will trust, and not be afraid: for the LORD JEHOVAH is my strength and my song; he also is become my salvation.",
+        "micro": "My trust in God removes fear",
+        "insight": "When I trust God completely, fear has no place in my heart.",
+        "prayer": "Lord, be my strength and song; I trust You without fear."
+      },
+      {
+        "reference": "Isaiah 26:4",
+        "text": "Trust ye in the LORD for ever: for in the LORD JEHOVAH is everlasting strength:",
+        "micro": "God is my everlasting strength.",
+        "insight": "I place my trust in God forever because He never changes.",
+        "prayer": "Lord, You are my strength forever."
+      },
+      {
+        "reference": "Isaiah 43:1",
+        "text": "But now thus saith the LORD that created thee, O Jacob, and he that formed thee, O Israel, Fear not: for I have redeemed thee, I have called thee by thy name; thou art mine.",
+        "micro": "I am called by name",
+        "insight": "The Lord who created and redeems calls His people His own.",
+        "prayer": "Help me live today knowing I am Yours."
+      },
+      {
+        "reference": "Joshua 1:9",
+        "text": "Have not I commanded thee? Be strong and of a good courage; be not afraid, neither be thou dismayed: for the LORD thy God is with thee whithersoever thou goest.",
+        "micro": "God's presence gives me courage.",
+        "insight": "When I remember God is with me, I find the strength to be brave.",
+        "prayer": "Lord, stay close and make me strong."
+      },
+      {
+        "reference": "2 Timothy 1:7",
+        "text": "For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind.",
+        "micro": "God gives me power love and self-control.",
+        "insight": "God's Spirit equips believers with power, love, and self-discipline.",
+        "prayer": "Lord, replace fear with Your power, love, and sound mind."
+      },
+      {
+        "reference": "Job 13:15",
+        "text": "Though he slay me, yet will I trust in him: but I will maintain mine own ways before him.",
+        "micro": "I trust God even when I doubt",
+        "insight": "I can question God and still hold onto trust in Him.",
+        "prayer": "Keep my trust steady through my doubts."
       },
       {
         "reference": "2 Samuel 22:3",
@@ -1035,62 +1091,6 @@
         "micro": "I am safe in God's fortress",
         "insight": "When I think of God as my rock and shield, I feel secure.",
         "prayer": "God, be my refuge today."
-      },
-      {
-        "reference": "Psalms 3:5",
-        "text": "I laid me down and slept; I awaked; for the LORD sustained me.",
-        "micro": "God watches over me while I sleep",
-        "insight": "I can sleep peacefully knowing God is watching over me.",
-        "prayer": "Lord, give me confidence that You watch over my rest."
-      },
-      {
-        "reference": "Acts 27:34",
-        "text": "Wherefore I pray you to take some meat: for this is for your health: for there shall not an hair fall from the head of any of you.",
-        "micro": "I need physical strength to endure.",
-        "insight": "God's deliverance does not remove the need for daily care.",
-        "prayer": "Help me take the nourishment I need today."
-      },
-      {
-        "reference": "Philippians 4:11",
-        "text": "Not that I speak in respect of want: for I have learned, in whatsoever state I am, therewith to be content.",
-        "micro": "I learn contentment through trusting Christ.",
-        "insight": "I find that trusting Christ teaches me contentment.",
-        "prayer": "Lord, teach me contentment through trust in You."
-      },
-      {
-        "reference": "Lamentations 3:23",
-        "text": "They are new every morning: great is thy faithfulness.",
-        "micro": "Each morning, God's mercy is new",
-        "insight": "Each dawn renews God's unfailing compassion for us.",
-        "prayer": "Lord, remind me that Your mercies are new each morning."
-      },
-      {
-        "reference": "Proverbs 3:24",
-        "text": "When thou liest down, thou shalt not be afraid: yea, thou shalt lie down, and thy sleep shall be sweet.",
-        "micro": "I sleep well trusting God",
-        "insight": "Trusting God's wisdom settles my soul.",
-        "prayer": "Lord, give me sweet sleep from trusting Your care."
-      },
-      {
-        "reference": "Psalms 31:24",
-        "text": "Be of good courage, and he shall strengthen your heart, all ye that hope in the LORD.",
-        "micro": "My strength comes from my hope in God.",
-        "insight": "Hoping in God gives me the courage I need.",
-        "prayer": "Lord, strengthen my heart as I hope in You."
-      },
-      {
-        "reference": "Genesis 15:15",
-        "text": "And thou shalt go to thy fathers in peace; thou shalt be buried in a good old age.",
-        "micro": "My life is secure in God's hands.",
-        "insight": "God promises His faithful a peaceful end and secure rest.",
-        "prayer": "Lord, grant me peace knowing my days are in Your hands."
-      },
-      {
-        "reference": "Isaiah 54:14",
-        "text": "In righteousness shalt thou be established: thou shalt be far from oppression; for thou shalt not fear: and from terror; for it shall not come near thee.",
-        "micro": "I am secure in God's righteousness",
-        "insight": "My security comes from God's righteousness, not my own efforts.",
-        "prayer": "Lord, let Your righteousness be my foundation."
       }
     ]
   },
@@ -3292,74 +3292,74 @@
     ],
     "verses": [
       {
-        "reference": "Matthew 12:49",
-        "text": "And he stretched forth his hand toward his disciples, and said, Behold my mother and my brethren!",
-        "micro": "I belong with those who follow God.",
-        "insight": "I realize my true community is with everyone who seeks to obey God.",
-        "prayer": "Lord, help me embrace your spiritual family."
+        "reference": "Psalms 133:1",
+        "text": "Behold, how good and how pleasant it is for brethren to dwell together in unity!",
+        "micro": "My unity is a fragrance to God.",
+        "insight": "When I live in unity, my life becomes something beautiful to God.",
+        "prayer": "Lord, let our unity be pleasing to You."
       },
       {
-        "reference": "Psalms 16:3",
-        "text": "But to the saints that are in the earth, and to the excellent, in whom is all my delight.",
-        "micro": "I delight in God's people",
-        "insight": "I find joy when I see God's work in His faithful ones.",
-        "prayer": "Lord, teach me to love Your people."
+        "reference": "Ephesians 4:3",
+        "text": "Endeavouring to keep the unity of the Spirit in the bond of peace.",
+        "micro": "I protect the Spirit's unity",
+        "insight": "I am called to actively preserve the peace the Spirit has already made among us.",
+        "prayer": "Help me keep the unity of your Spirit."
       },
       {
-        "reference": "Mark 3:34",
-        "text": "And he looked round about on them which sat about him, and said, Behold my mother and my brethren!",
-        "micro": "My kin are those who follow God.",
-        "insight": "I find my true family among those who share God's path with me.",
-        "prayer": "Lord Jesus, help me see my family in those who follow You."
+        "reference": "Philippians 2:2",
+        "text": "Fulfil ye my joy, that ye be likeminded, having the same love, being of one accord, of one mind.",
+        "micro": "My joy grows in unity",
+        "insight": "When we are united in love and purpose, my joy deepens naturally.",
+        "prayer": "Lord, unite our hearts in love."
       },
       {
-        "reference": "Philippians 4:17",
-        "text": "Not because I desire a gift: but I desire fruit that may abound to your account.",
-        "micro": "My generosity grows fruit I cannot see.",
-        "insight": "Generosity without visible results still yields eternal dividends.",
-        "prayer": "Lord, help me give with eternal perspective."
+        "reference": "Romans 15:5",
+        "text": "Now the God of patience and consolation grant you to be likeminded one toward another according to Christ Jesus:",
+        "micro": "God patiently gifts me unity",
+        "insight": "I experience unity because God patiently bears with me.",
+        "prayer": "God, fill us with your patience for unity."
       },
       {
-        "reference": "1 Corinthians 11:33",
-        "text": "Wherefore, my brethren, when ye come together to eat, tarry one for another.",
-        "micro": "My patience builds unity with others",
-        "insight": "When I am patient with others, I see unity grow among us.",
-        "prayer": "Lord, teach me to wait for others with patience."
+        "reference": "Romans 15:7",
+        "text": "Wherefore receive ye one another, as Christ also received us to the glory of God.",
+        "micro": "Christ's welcome frees me to welcome others",
+        "insight": "I can welcome others because Christ first welcomed me.",
+        "prayer": "Lord, help me welcome others as you welcomed me."
       },
       {
-        "reference": "Romans 14:2",
-        "text": "For one believeth that he may eat all things: another, who is weak, eateth herbs.",
-        "micro": "My faith does not despise weakness.",
-        "insight": "Even when my faith feels strong, I don't look down on those with different convictions.",
-        "prayer": "Lord, keep me from pride in my freedom."
+        "reference": "1 Corinthians 1:10",
+        "text": "Now I beseech you, brethren, by the name of our Lord Jesus Christ, that ye all speak the same thing, and that there be no divisions among you; but that ye be perfectly joined together in the same mind and in the same judgment.",
+        "micro": "My unity comes from Christ",
+        "insight": "Divisions among believers undermine the unity Christ commands.",
+        "prayer": "Lord, unite our hearts in Your name."
       },
       {
-        "reference": "1 Thessalonians 5:26",
-        "text": "Greet all the brethren with an holy kiss.",
-        "micro": "My faith comes alive in love",
-        "insight": "When I show simple love to others, my faith feels real.",
-        "prayer": "Lord, let my love make my faith visible."
+        "reference": "1 Corinthians 12:26",
+        "text": "And whether one member suffer, all the members suffer with it; or one member be honoured, all the members rejoice with it.",
+        "micro": "I am never alone in pain or joy",
+        "insight": "Because we are one body, no one suffers or rejoices alone.",
+        "prayer": "Lord, help me feel what others feel."
       },
       {
-        "reference": "Ezekiel 47:22",
-        "text": "And it shall come to pass, that ye shall divide it by lot for an inheritance unto you, and to the strangers that sojourn among you, which shall beget children among you: and they shall be unto you as born in the country among the children of Israel; they shall have inheritance with you among the tribes of Israel.",
-        "micro": "I belong in God's family",
-        "insight": "No matter my origin, God's family includes me.",
-        "prayer": "Lord, shape my heart to welcome the stranger."
+        "reference": "Colossians 3:14",
+        "text": "And above all these things put on charity, which is the bond of perfectness.",
+        "micro": "Love is what completes me.",
+        "insight": "I see that love is what makes me truly whole.",
+        "prayer": "Lord, let love be the bond that makes me whole."
       },
       {
-        "reference": "1 Corinthians 16:19",
-        "text": "The churches of Asia salute you. Aquila and Priscilla salute you much in the Lord, with the church that is in their house.",
-        "micro": "I belong to a worldwide family.",
-        "insight": "Even far away, I am connected to God's people everywhere.",
-        "prayer": "Unite us as one family, Lord."
+        "reference": "Galatians 3:28",
+        "text": "There is neither Jew nor Greek, there is neither bond nor free, there is neither male nor female: for ye are all one in Christ Jesus.",
+        "micro": "In Christ, we are all one",
+        "insight": "I am united with Christ and with every believer.",
+        "prayer": "Unite me with my brothers and sisters."
       },
       {
-        "reference": "John 17:22",
-        "text": "And the glory which thou gavest me I have given them; that they may be one, even as we are one:",
-        "micro": "I share glory to be one.",
-        "insight": "The glory Jesus gave me is meant to make me one with others like them.",
-        "prayer": "Jesus, let Your glory unite us as one."
+        "reference": "John 17:21",
+        "text": "That they all may be one; as thou, Father, art in me, and I in thee, that they also may be one in us: that the world may believe that thou hast sent me.",
+        "micro": "I am one in their love.",
+        "insight": "When I see the love between Father and Son, I feel drawn into their unity.",
+        "prayer": "Father, draw me into Your oneness with Jesus."
       }
     ]
   },

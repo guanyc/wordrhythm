@@ -210,6 +210,63 @@ COPY = {
     "justice_longing": ("Longing for justice", "When you want things made right"),
 }
 
+# Editorial passages, by page slug.
+#
+# The scoring above answers "which verses carry this emotion's themes". For a
+# few pages that is not the same question as "which verses do people search
+# for", and where they disagree the searchable answer wins:
+#
+#   unity-needed  the theme set pulls "one another" verses about hospitality and
+#                 food laws (Matthew 12:49, Romans 14:2) and misses Psalm 133:1.
+#                 Psalm 133:1 and John 17:21 are the two verses the query means.
+#   fearful       overlapped /peace on half its list and drew sleep verses
+#                 (Psalms 4:8, Proverbs 3:24) that answer "cannot sleep", not
+#                 "afraid of what is coming".
+#   peace         keeps the rest verses, so the two pages stop competing for the
+#                 same five passages.
+#
+# Order is the page order. A reference that does not resolve fails the build
+# rather than quietly shrinking the page, and anything short of PER_EMOTION is
+# topped up from the scored list.
+PAGE_VERSE_OVERRIDES: dict[str, list[str]] = {
+    "unity-needed": [
+        "Psalms 133:1",
+        "Ephesians 4:3",
+        "Philippians 2:2",
+        "Romans 15:5",
+        "Romans 15:7",
+        "1 Corinthians 1:10",
+        "1 Corinthians 12:26",
+        "Colossians 3:14",
+        "Galatians 3:28",
+        "John 17:21",
+    ],
+    "fearful": [
+        "Psalms 27:1",
+        "Psalms 56:4",
+        "Psalms 34:4",
+        "Isaiah 12:2",
+        "Isaiah 26:4",
+        "Isaiah 43:1",
+        "Joshua 1:9",
+        "2 Timothy 1:7",
+        "Job 13:15",
+        "2 Samuel 22:3",
+    ],
+    "peace": [
+        "Isaiah 26:3",
+        "John 14:27",
+        "Philippians 4:7",
+        "Colossians 3:15",
+        "2 Thessalonians 3:16",
+        "Psalms 23:2",
+        "Isaiah 32:18",
+        "Psalms 116:7",
+        "Psalms 4:8",
+        "Proverbs 3:24",
+    ],
+}
+
 
 def main():
     if not DB.exists():
@@ -407,6 +464,35 @@ def main():
     for book_id, name in db.execute("SELECT id, name FROM bible_books"):
         books[book_id] = name
 
+    # Apply PAGE_VERSE_OVERRIDES. Done here rather than before bucketing so the
+    # editorial pick cannot reshuffle which emotions share a page — slugs are
+    # URLs, and an override changing bucket membership would move them.
+    ref_to_id = {
+        f"{books.get(t['book'], t['book'])} {t['chapter']}:{t['verse']}": verse_id
+        for verse_id, t in texts.items()
+    }
+    unknown_slugs = sorted(set(PAGE_VERSE_OVERRIDES) - {p["slug"] for p in pages})
+    unknown_refs = sorted(
+        ref for refs in PAGE_VERSE_OVERRIDES.values() for ref in refs
+        if ref not in ref_to_id
+    )
+    if unknown_slugs or unknown_refs:
+        if unknown_slugs:
+            print(f"PAGE_VERSE_OVERRIDES: no such page: {', '.join(unknown_slugs)}")
+        if unknown_refs:
+            print(f"PAGE_VERSE_OVERRIDES: unknown reference: {', '.join(unknown_refs)}")
+        return 1
+    topped_up = []
+    for slug, refs in PAGE_VERSE_OVERRIDES.items():
+        picked = [ref_to_id[ref] for ref in refs][:PER_EMOTION]
+        for verse_id in wanted[slug]:
+            if len(picked) >= PER_EMOTION:
+                break
+            if verse_id not in picked:
+                picked.append(verse_id)
+                topped_up.append(slug)
+        wanted[slug] = picked
+
     # Compact insight and prayer, the same three-part shape Take a Break shows.
     # Joined on verse_id, which is bible_verses.id in both databases.
     compact = {}
@@ -450,6 +536,8 @@ def main():
     print(f"compact:      {len(compact):,} loaded, "
           f"{missing_compact} passages without insight or prayer")
     print(f"size:         {OUT.stat().st_size / 1024:.0f} KB")
+    print(f"overrides:    {len(PAGE_VERSE_OVERRIDES)} pages"
+          + (f", topped up from scoring: {', '.join(sorted(set(topped_up)))}" if topped_up else ""))
     if empty:
         print(f"EMPTY PAGES:  {empty}")
         return 1

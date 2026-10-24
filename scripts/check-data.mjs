@@ -7,6 +7,7 @@
  *
  *   node scripts/check-data.mjs
  */
+import fs from "node:fs";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { versions as llmsVersions, slots, guides } from "./llms-data.mjs";
@@ -174,7 +175,33 @@ for (const entry of glossary) {
 // Bible verses by feeling. Same reason as the glossary: two pages carrying the
 // same verses is duplicate content, and a page with no verses is useless.
 const EMOTIONS = path.join(process.cwd(), "data", "take-a-break.json");
+const CURATED_DIR = path.join(process.cwd(), "data", "curated", "emotions");
 const emotionPages = JSON.parse(await readFile(EMOTIONS, "utf8"));
+
+/**
+ * Does the curated file for `slug` carry the longer devotional for `reference`?
+ *
+ * take-a-break.json only holds the compact lines, so a passage whose compact
+ * row is empty upstream has to be judged by its curated entry instead. Read
+ * lazily and cached: this only matters for the rare gap.
+ */
+const curatedCache = new Map();
+function hasFullDevotional(slug, reference) {
+  if (!curatedCache.has(slug)) {
+    const file = path.join(CURATED_DIR, `${slug}.json`);
+    const parsed = fs.existsSync(file)
+      ? JSON.parse(fs.readFileSync(file, "utf8"))
+      : { verses: [] };
+    curatedCache.set(
+      slug,
+      new Map(parsed.verses.map((v) => [v.reference, v])),
+    );
+  }
+  const verse = curatedCache.get(slug).get(reference);
+  return Boolean(
+    verse && String(verse.meaning ?? "").trim() && String(verse.reflection ?? "").trim(),
+  );
+}
 const emotionSlugs = new Map();
 const emotionTitles = new Set();
 for (const page of emotionPages) {
@@ -202,12 +229,19 @@ for (const page of emotionPages) {
     );
   }
   // Take a Break pairs every passage with a compact reflection and prayer. The
-  // build script only picks verses that have both, so a gap here means the data
-  // was edited by hand or an older build is being checked.
+  // build script only picks verses that have both — with one allowed exception:
+  // a passage whose compact row is empty in the app's database can still be
+  // listed if the longer devotional exists. Isaiah 26:3 is the case that forced
+  // this, and it is the verse /peace leads with. VerseList hides the empty
+  // Short panel, so the entry reads as verse + meaning + reflection + prayer.
+  // A passage with neither depth would render as a bare verse, so that still
+  // fails.
   for (const v of page.verses ?? []) {
     for (const field of ["insight", "prayer"]) {
-      if (!String(v[field] ?? "").trim()) {
-        problems.push(`bible-verses: "${page.slug}" ${v.reference} has no ${field}`);
+      if (!String(v[field] ?? "").trim() && !hasFullDevotional(page.slug, v.reference)) {
+        problems.push(
+          `bible-verses: "${page.slug}" ${v.reference} has no ${field} and no full devotional`,
+        );
       }
     }
   }

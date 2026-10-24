@@ -10,14 +10,94 @@
  ],
  "verses": [
   {
-   "reference": "Psalms 4:8",
-   "text": "I will both lay me down in peace, and sleep: for thou, LORD, only makest me dwell in safety.",
-   "micro": "I sleep in God's peace",
-   "insight": "I can rest because God keeps me safe, not because everything is calm.",
-   "prayer": "Let me lay down my burdens and trust Your care.",
-   "meaning": "David declares his confident trust in God's protection, stating that he can sleep peacefully because the Lord alone provides true security. This follows his plea for God's favor and expresses quiet assurance despite surrounding distress.",
-   "reflection": "True rest comes not from the absence of trouble but from the presence of God who alone establishes our dwelling in safety. This verse invites us to exchange our anxious vigilance for the quiet trust that God is keeping watch.",
-   "fullPrayer": "Lord, you alone make me dwell in safety; grant me the grace to lay down my burdens and receive the gift of peaceful sleep that flows from trusting your faithful care."
+   "reference": "Psalms 27:1",
+   "text": "The LORD is my light and my salvation; whom shall I fear? the LORD is the strength of my life; of whom shall I be afraid?",
+   "micro": "My fear fades with God's strength",
+   "insight": "When I remember that God is my strength, I can face anything without fear.",
+   "prayer": "Lord, with You I am not afraid.",
+   "meaning": "David declares God's threefold provision—illumination for his path, deliverance from danger, and fortitude for living—which together make fear of earthly threats irrational.",
+   "reflection": "When God becomes my light, I see threats in their true proportion to His power; when He is my strength, my weakness becomes the space where His sufficiency is displayed.",
+   "fullPrayer": "Lord, be my light in confusion and my strength in weakness, that I may live with the fearless confidence that comes from knowing You are my salvation."
+  },
+  {
+   "reference": "Psalms 56:4",
+   "text": "In God I will praise his word, in God I have put my trust; I will not fear what flesh can do unto me.",
+   "micro": "I trust God, so fear fades.",
+   "insight": "Trusting God shrinks human threats to their proper size.",
+   "prayer": "Lord, let my trust in You silence my fears.",
+   "meaning": "David, fleeing from Saul or the Philistines, declares that his praise and trust are anchored in God alone, specifically in God's faithful promises ('his word'), which gives him courage against human threats ('flesh').",
+   "reflection": "When my confidence rests on God's unchanging character and promises, the power of human opposition shrinks to its proper, limited size.",
+   "fullPrayer": "Lord, I choose to praise you for your reliable word today; let my trust in your faithfulness silence every fear of what others might do."
+  },
+  {
+   "reference": "Psalms 34:4",
+   "text": "I sought the LORD, and he heard me, and delivered me from all my fears.",
+   "micro": "God hears me when I seek Him.",
+   "insight": "I know that when I seek God, He listens to my cry.",
+   "prayer": "Lord, I seek You now; hear my cry.",
+   "meaning": "David declares his personal experience of calling out to God during a time of distress, testifying that God responded by rescuing him from the specific terrors that gripped him.",
+   "reflection": "The movement from seeking to being heard to being delivered reveals a God who is not distant, but actively attentive and powerful to save.",
+   "fullPrayer": "Lord, I seek you now with my fears; hear my cry and deliver me, as you delivered your servant David."
+  },
+  {
+   "reference": "Isaiah 12:2",
+   "text": "Behold, God is my salvation; I will trust, and not be afraid: for the LORD JEHOVAH is my strength and my song; he also is become my salvation.",
+   "micro": "My trust in God removes fear",
+   "insight": "When I trust God completely, fear has no place in my heart.",
+   "prayer": "Lord, be my strength and song; I trust You without fear.",
+   "meaning": "In Isaiah's prophecy, this verse is a song of praise from the redeemed remnant of Israel, declaring that God Himself is their deliverance from judgment and their source of courage, replacing fear with trust.",
+   "reflection": "When God is my salvation, my trust displaces fear, not because circumstances change, but because my strength is found in His unchanging character.",
+   "fullPrayer": "Lord Jehovah, be my strength and my song today; let my heart rest in the truth that you are my complete salvation, and in that I will trust without fear."
+  },
+  {
+   "reference": "Isaiah 26:4",
+   "text": "Trust ye in the LORD for ever: for in the LORD JEHOVAH is everlasting strength:",
+   "micro": "God is my everlasting strength.",
+   "insight": "I place my trust in God forever because He never changes.",
+   "prayer": "Lord, You are my strength forever.",
+   "meaning": "In Isaiah's prophecy, this verse is part of a song of trust sung by God's people, declaring that the LORD (Yahweh) is the only reliable and permanent source of power and security, in contrast to the failing strength of earthly powers.",
+   "reflection": "The name 'LORD JEHOVAH' reveals God's eternal, unchanging nature, inviting me to anchor my soul not in temporary circumstances but in His everlasting character.",
+   "fullPrayer": "Lord Jehovah, my everlasting strength, I choose to trust in You forever, for all other supports will fail, but Your power endures through every age."
+  },
+  {
+   "reference": "Isaiah 43:1",
+   "text": "But now thus saith the LORD that created thee, O Jacob, and he that formed thee, O Israel, Fear not: for I have redeemed thee, I have called thee by thy name; thou art mine.",
+   "micro": "I am called by name",
+   "insight": "The Lord who created and redeems calls His people His own.",
+   "prayer": "Help me live today knowing I am Yours.",
+   "meaning": "The LORD speaks to His exiled people, reminding them of His creative power and covenant relationship, assuring them of His personal redemption and ownership despite their present circumstances.",
+   "reflection": "The Creator who formed me knows my name and calls me His own, transforming my identity from one defined by failure to one secured by His redeeming claim.",
+   "fullPrayer": "Lord who formed and redeemed me, let me live today in the freedom of knowing I am Yours, called by name and held by Your promise."
+  },
+  {
+   "reference": "Joshua 1:9",
+   "text": "Have not I commanded thee? Be strong and of a good courage; be not afraid, neither be thou dismayed: for the LORD thy God is with thee whithersoever thou goest.",
+   "micro": "God's presence gives me courage.",
+   "insight": "When I remember God is with me, I find the strength to be brave.",
+   "prayer": "Lord, stay close and make me strong.",
+   "meaning": "The LORD directly commands Joshua, the new leader of Israel, to replace fear with strength and courage because his authority and presence will accompany Joshua in the daunting task of leading the people into the promised land.",
+   "reflection": "God's command to be courageous is not based on my abilities, but on the certainty of His presence, which transforms obedience from a burden into a confident journey.",
+   "fullPrayer": "Lord, when I am dismayed by the tasks before me, remind me that your command carries your presence; make me strong in the certainty that you are with me wherever I go."
+  },
+  {
+   "reference": "2 Timothy 1:7",
+   "text": "For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind.",
+   "micro": "God gives me power love and self-control.",
+   "insight": "God's Spirit equips believers with power, love, and self-discipline.",
+   "prayer": "Lord, replace fear with Your power, love, and sound mind.",
+   "meaning": "Paul reminds Timothy that the Spirit God gives believers is not one of timidity or cowardice, but one characterized by strength, sacrificial love, and self-discipline, encouraging him to stand firm in his calling despite opposition.",
+   "reflection": "The divine gift of a sound mind counters the internal confusion that fear creates, allowing us to discern truth and act with clarity even when circumstances are unsettling.",
+   "fullPrayer": "Lord, replace any spirit of fear within me with your power to act, your love to guide, and the sound mind that brings peaceful order to my thoughts."
+  },
+  {
+   "reference": "Job 13:15",
+   "text": "Though he slay me, yet will I trust in him: but I will maintain mine own ways before him.",
+   "micro": "I trust God even when I doubt",
+   "insight": "I can question God and still hold onto trust in Him.",
+   "prayer": "Keep my trust steady through my doubts.",
+   "meaning": "Job, in the midst of his suffering and debate with his friends, declares that even if God were to take his life, he would still trust in God, while also insisting on his own integrity and desire to present his case directly before God.",
+   "reflection": "This verse reveals a faith that is not blind submission but a tenacious trust that dares to bring honest questions and self-examination into God's presence, holding both divine sovereignty and human responsibility in tension.",
+   "fullPrayer": "Lord, grant me Job's courage to trust you completely, even in darkness, while maintaining the integrity to bring my honest ways before you for your examination and grace."
   },
   {
    "reference": "2 Samuel 22:3",
@@ -28,86 +108,6 @@
    "meaning": "David, in a song of deliverance, declares his trust in God, using seven military and architectural metaphors to describe God's complete protection and saving power throughout his life of conflict.",
    "reflection": "When I feel exposed to life's assaults, this verse reminds me that God is not just one defense but a complete, multi-layered fortress surrounding my vulnerable soul.",
    "fullPrayer": "God, my rock and high tower, be my secure refuge today; I place my trust in you as my shield and the horn of my salvation."
-  },
-  {
-   "reference": "Psalms 3:5",
-   "text": "I laid me down and slept; I awaked; for the LORD sustained me.",
-   "micro": "God watches over me while I sleep",
-   "insight": "I can sleep peacefully knowing God is watching over me.",
-   "prayer": "Lord, give me confidence that You watch over my rest.",
-   "meaning": "David declares his ability to sleep peacefully despite being surrounded by enemies, because he trusts that God alone preserves his life through the night.",
-   "reflection": "True rest comes not from the absence of danger, but from the conscious presence of the One who watches over us while we are unaware.",
-   "fullPrayer": "Lord, as you sustained David through the night watches, sustain me now with the quiet confidence that my waking and resting are in your hands."
-  },
-  {
-   "reference": "Acts 27:34",
-   "text": "Wherefore I pray you to take some meat: for this is for your health: for there shall not an hair fall from the head of any of you.",
-   "micro": "I need physical strength to endure.",
-   "insight": "God's deliverance does not remove the need for daily care.",
-   "prayer": "Help me take the nourishment I need today.",
-   "meaning": "Paul, a prisoner on a storm-wrecked ship, urges the terrified crew to eat for strength, grounding his practical command in God's prophetic promise that all will survive unharmed.",
-   "reflection": "God's sovereign promise of ultimate deliverance does not negate our need for ordinary means of sustenance and strength along the journey.",
-   "fullPrayer": "Lord, when I am fearful, help me to trust your promise of preservation while still taking the practical nourishment I need for today."
-  },
-  {
-   "reference": "Philippians 4:11",
-   "text": "Not that I speak in respect of want: for I have learned, in whatsoever state I am, therewith to be content.",
-   "micro": "I learn contentment through trusting Christ.",
-   "insight": "I find that trusting Christ teaches me contentment.",
-   "prayer": "Lord, teach me contentment through trust in You.",
-   "meaning": "Paul clarifies that his previous instructions about giving weren't motivated by personal need, but rather shares his personal spiritual journey: he has learned through experience to find contentment in every circumstance, whether having plenty or little.",
-   "reflection": "True contentment isn't a natural disposition but a spiritual discipline learned through dependence on Christ, transforming how we perceive our circumstances rather than changing the circumstances themselves.",
-   "fullPrayer": "Lord, teach me to learn contentment as Paul did, finding my sufficiency in You rather than in the changing states of my life."
-  },
-  {
-   "reference": "Lamentations 3:23",
-   "text": "They are new every morning: great is thy faithfulness.",
-   "micro": "Each morning, God's mercy is new",
-   "insight": "Each dawn renews God's unfailing compassion for us.",
-   "prayer": "Lord, remind me that Your mercies are new each morning.",
-   "meaning": "In Lamentations, the speaker acknowledges that God's mercies and compassions are not exhausted but are renewed each day, like a daily provision, despite the surrounding devastation of Jerusalem. This declaration of God's great faithfulness comes as a deliberate act of remembrance in the midst of pro...",
-   "reflection": "God's character does not wear out or diminish with time; His compassion is not a finite resource that depletes with my failures or the world's chaos. Each sunrise is a tangible sign that His commitment to love and sustain is actively renewed, not based on my circumstance but on His unchanging nature...",
-   "fullPrayer": "Faithful God, as this morning's light arrives, I receive it as a fresh token of Your mercies, which are new again today. Anchor my heart in the great reality of Your unwavering commitment, which my changing feelings cannot alter."
-  },
-  {
-   "reference": "Proverbs 3:24",
-   "text": "When thou liest down, thou shalt not be afraid: yea, thou shalt lie down, and thy sleep shall be sweet.",
-   "micro": "I sleep well trusting God",
-   "insight": "Trusting God's wisdom settles my soul.",
-   "prayer": "Lord, give me sweet sleep from trusting Your care.",
-   "meaning": "In the context of Proverbs 3, where a father instructs his son in wisdom, this verse presents the tangible blessing of a secure and peaceful life that results from trusting in God's wisdom and guidance, rather than one's own understanding.",
-   "reflection": "True wisdom from God does not merely inform the mind; it settles the soul, offering a rest that is deeper than the absence of trouble.",
-   "fullPrayer": "Lord, as I commit my ways to You, grant me the sweet sleep that comes from trusting not in my own vigilance, but in Your faithful care."
-  },
-  {
-   "reference": "Psalms 31:24",
-   "text": "Be of good courage, and he shall strengthen your heart, all ye that hope in the LORD.",
-   "micro": "My strength comes from my hope in God.",
-   "insight": "Hoping in God gives me the courage I need.",
-   "prayer": "Lord, strengthen my heart as I hope in You.",
-   "meaning": "In this psalm of lament and trust, David concludes by addressing fellow believers, declaring that God Himself will fortify the inner person of those who courageously wait for Him.",
-   "reflection": "My hope is not a passive wish but an active, courageous stance; in taking it, I find the Lord is the one who supplies the very strength I need to maintain it.",
-   "fullPrayer": "Lord, as I hope in You, strengthen my heart with Your courage, for my own resolve is weak but Yours is everlasting."
-  },
-  {
-   "reference": "Genesis 15:15",
-   "text": "And thou shalt go to thy fathers in peace; thou shalt be buried in a good old age.",
-   "micro": "My life is secure in God's hands.",
-   "insight": "God promises His faithful a peaceful end and secure rest.",
-   "prayer": "Lord, grant me peace knowing my days are in Your hands.",
-   "meaning": "This verse is a divine promise to Abram (later Abraham) concerning his peaceful death and honorable burial after a long life, assuring him that his descendants will possess the land after a period of servitude elsewhere.",
-   "reflection": "This promise reminds us that our lives are held in God's sovereign hands, from beginning to end. It encourages trust in God's timing and faithfulness, even when His promises seem distant. We can live and labor in peace, knowing our ultimate rest is secure in Him.",
-   "fullPrayer": "Faithful God, help me to trust in Your promises and Your perfect timing for my life. Grant me peace, knowing my days are in Your hands. May I live faithfully until You call me home. Amen."
-  },
-  {
-   "reference": "Isaiah 54:14",
-   "text": "In righteousness shalt thou be established: thou shalt be far from oppression; for thou shalt not fear: and from terror; for it shall not come near thee.",
-   "micro": "I am secure in God's righteousness",
-   "insight": "My security comes from God's righteousness, not my own efforts.",
-   "prayer": "Lord, let Your righteousness be my foundation.",
-   "meaning": "In Isaiah's prophecy, God speaks to the restored Jerusalem, promising that her future foundation will be His own righteousness, not human effort, resulting in complete security where oppression and terror are permanently banished.",
-   "reflection": "God's promise reveals that true stability comes not from our own moral perfection, but from being rooted in His unchanging character, which displaces fear with unshakable peace.",
-   "fullPrayer": "Lord, establish me in Your righteousness, not my own, so that fear finds no place in me and terror cannot draw near."
   }
  ]
 }
