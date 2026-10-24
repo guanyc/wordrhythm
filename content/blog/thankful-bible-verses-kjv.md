@@ -40,15 +40,13 @@ It is permission to be unpolished — which matters if the only gratitude you ca
 
 ## Thanks because God is good
 
-The next two verses are almost the same sentence, said twice in Scripture, which is a fair sign that it was worth repeating.
+This group is about the reason gratitude rests on, rather than the circumstances it responds to.
 
 ### Psalm 107:1
 
 > O give thanks unto the LORD, for he is good: for his mercy endureth for ever.
 
-### 1 Chronicles 16:34
-
-> O give thanks unto the LORD; for he is good; for his mercy endureth for ever.
+The same line comes back in 1 Chronicles 16:34, near enough word for word: *O give thanks unto the LORD; for he is good; for his mercy endureth for ever.*
 
 Notice where the reason sits.
 The verse does not say give thanks because the year went well.
