@@ -1,3 +1,9 @@
+import fs from "node:fs";
+import path from "node:path";
+import matter from "gray-matter";
+
+const BLOG_DIR = path.join(process.cwd(), "content", "blog");
+
 /**
  * Facts about each translation that llms.txt states as plain text.
  *
@@ -123,38 +129,32 @@ export const slots = [
   { key: "sleep", en: "Sleep", window: "21:00-04:59" },
 ];
 
-/** Guides published on the site, newest first. */
-export const guides = [
-  {
-    slug: "what-do-people-need-from-a-bible-app-today",
-    title: "What Do People Need From a Bible App Today?",
-  },
-  {
-    slug: "a-bible-app-for-real-life-not-just-research",
-    title: "A Bible App for Real Life, Not Just Research",
-  },
-  {
-    slug: "what-is-take-a-break-in-a-bible-app",
-    title: "What Is Take a Break in a Bible App?",
-  },
-  {
-    slug: "what-is-the-best-kjv-bible-app-for-offline-reading",
-    title: "What Is the Best KJV Bible App for Offline Reading?",
-  },
-  {
-    slug: "how-to-start-a-bible-reading-plan-without-the-guilt-loop",
-    title: "How to Start a Bible Reading Plan Without the Guilt Loop",
-  },
-  {
-    slug: "what-bible-verses-help-when-you-feel-anxious",
-    title: "What Bible Verses Help When You Feel Anxious?",
-  },
-  {
-    slug: "fell-behind-bible-reading-plan-take-a-break",
-    title: "Fell Behind on Your Bible Reading Plan? Here's a Gentler Way Back",
-  },
-  {
-    slug: "kjv-bible-app-daily-devotional-features",
-    title: "A Daily Devotional That Fits Real Life (KJV Bible App – Daily Devotional)",
-  },
-];
+/**
+ * Guides published on the site, newest first.
+ *
+ * The Guides index at /blog is generated from content/blog, and llms.txt has to
+ * name the same set. This list used to be typed out here, so every post written
+ * after it was last edited appeared on the site but not in llms.txt. Derive it
+ * from the same source instead, and the two cannot disagree.
+ */
+export const guides = fs.existsSync(BLOG_DIR)
+  ? fs
+      .readdirSync(BLOG_DIR)
+      .filter((file) => file.endsWith(".md"))
+      .map((file) => {
+        const slug = file.slice(0, -3);
+        const { data } = matter(fs.readFileSync(path.join(BLOG_DIR, file), "utf8"));
+        // gray-matter turns an unquoted `date:` into a Date, so normalise to ISO
+        // the way lib/blog.ts does — sorting on `Fri Oct 24 ...` orders by weekday.
+        const rawDate = data.date;
+        return {
+          slug,
+          title: String(data.title ?? slug),
+          date: rawDate instanceof Date ? rawDate.toISOString().slice(0, 10) : String(rawDate ?? ""),
+          draft: data.draft === true,
+        };
+      })
+      .filter((post) => !post.draft)
+      .sort((a, b) => b.date.localeCompare(a.date))
+      .map(({ slug, title }) => ({ slug, title }))
+  : [];

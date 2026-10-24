@@ -104,10 +104,15 @@ for (const file of postFiles) {
     problems.push(`${slug}: frontmatter has no real date (sitemap lastmod would drift)`);
   }
 }
-// Every guide listed in llms.txt must actually exist on disk.
+// llms.txt derives its Guides list from content/blog, so the list can only go
+// wrong by breaking the derivation itself (wrong cwd, a frontmatter title that
+// does not parse). Both fail quietly in the shipped file, so assert them here.
+if (!guides.length) {
+  problems.push("llms-data.mjs: derived guides list is empty — check content/blog");
+}
 for (const g of guides) {
-  if (!postFiles.includes(`${g.slug}.md`)) {
-    problems.push(`${g.slug}: listed in llms-data.mjs guides but no such file`);
+  if (!g.title || g.title === g.slug) {
+    problems.push(`${g.slug}: listed in llms.txt with no usable title`);
   }
 }
 
