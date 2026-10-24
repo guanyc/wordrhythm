@@ -224,6 +224,21 @@ COPY = {
 #                 "afraid of what is coming".
 #   peace         keeps the rest verses, so the two pages stop competing for the
 #                 same five passages.
+#   gratitude     scored on praise-as-music (Psalms 150:4, Isaiah 38:20) and
+#                 Revelation 4:9. The query is the habit of thanks in an ordinary
+#                 week: 1 Thessalonians 5:18, Colossians 3:17, Daniel 6:10.
+#   thankful-for-grace
+#                 this page exists so "thanksgiving" does not compete with
+#                 /gratitude, so it keeps the thanks that has a gift behind it —
+#                 Psalms 116:12, Ephesians 2:8, Titus 2:11 — and shares no
+#                 passage with its sibling page.
+#   grieving      answered "how do I feel better" (Job 8:7, Psalms 16:6) rather
+#                 than "someone has died". Psalms 34:18, Matthew 5:4 and
+#                 Revelation 21:4 are what the query means; 1 Thessalonians 4:13
+#                 was already right and stays.
+#   discouraged   drew Acts 26:6 and Romans 15:29 — Paul's trial defence and a
+#                 travel plan — where Isaiah 41:10 and Isaiah 40:31 are the two
+#                 passages the word actually means.
 #
 # Order is the page order. A reference that does not resolve fails the build
 # rather than quietly shrinking the page, and anything short of PER_EMOTION is
@@ -264,6 +279,54 @@ PAGE_VERSE_OVERRIDES: dict[str, list[str]] = {
         "Psalms 116:7",
         "Psalms 4:8",
         "Proverbs 3:24",
+    ],
+    "gratitude": [
+        "1 Thessalonians 5:18",
+        "Psalms 100:4",
+        "Psalms 107:1",
+        "Colossians 3:17",
+        "James 1:17",
+        "Philippians 4:6",
+        "Ephesians 5:20",
+        "1 Chronicles 29:13",
+        "Daniel 6:10",
+        "Hebrews 13:15",
+    ],
+    "thankful-for-grace": [
+        "Psalms 116:12",
+        "2 Corinthians 9:15",
+        "Ephesians 2:8",
+        "1 Corinthians 15:10",
+        "Titus 2:11",
+        "Isaiah 12:1",
+        "2 Corinthians 2:14",
+        "1 Peter 5:10",
+        "Lamentations 3:22",
+        "Psalms 34:8",
+    ],
+    "grieving": [
+        "Psalms 34:18",
+        "Matthew 5:4",
+        "2 Corinthians 1:3",
+        "1 Thessalonians 4:13",
+        "Psalms 94:19",
+        "John 16:20",
+        "Revelation 21:4",
+        "Isaiah 61:1",
+        "Lamentations 3:32",
+        "Psalms 147:3",
+    ],
+    "discouraged": [
+        "Isaiah 41:10",
+        "Isaiah 40:31",
+        "Psalms 42:11",
+        "2 Corinthians 4:8",
+        "Galatians 6:9",
+        "Hebrews 12:12",
+        "Deuteronomy 31:8",
+        "Zephaniah 3:16",
+        "Proverbs 24:16",
+        "2 Corinthians 12:9",
     ],
 }
 
