@@ -239,6 +239,14 @@ COPY = {
 #   discouraged   drew Acts 26:6 and Romans 15:29 — Paul's trial defence and a
 #                 travel plan — where Isaiah 41:10 and Isaiah 40:31 are the two
 #                 passages the word actually means.
+#   guilt         six of its ten passages came from Solomon's dedication prayer
+#                 (1 Kings 8, 2 Chronicles 6) and five of those were also on
+#                 /repentant. Guilt asks "is there still a record against me",
+#                 so it keeps the passages that answer no: Romans 8:1, Isaiah
+#                 1:18, Micah 7:19. Nothing here is shared with /repentant.
+#   repentant     the same six verses, plus nothing about turning. Repentance is
+#                 a change of direction (2 Chronicles 7:14, Joel 2:13, Acts
+#                 3:19); 1 John 1:9 and Psalms 51:10 are what it sounds like.
 #
 # Order is the page order. A reference that does not resolve fails the build
 # rather than quietly shrinking the page, and anything short of PER_EMOTION is
@@ -327,6 +335,30 @@ PAGE_VERSE_OVERRIDES: dict[str, list[str]] = {
         "Zephaniah 3:16",
         "Proverbs 24:16",
         "2 Corinthians 12:9",
+    ],
+    "guilt": [
+        "Romans 8:1",
+        "Isaiah 1:18",
+        "Psalms 103:12",
+        "Micah 7:19",
+        "Isaiah 44:22",
+        "Zechariah 3:4",
+        "Hebrews 10:22",
+        "Psalms 130:4",
+        "Ephesians 1:7",
+        "1 John 3:20",
+    ],
+    "repentant": [
+        "Psalms 51:10",
+        "2 Chronicles 7:14",
+        "Psalms 32:5",
+        "Proverbs 28:13",
+        "Joel 2:13",
+        "Hosea 6:1",
+        "Isaiah 55:7",
+        "Luke 15:18",
+        "Acts 3:19",
+        "1 John 1:9",
     ],
 }
 

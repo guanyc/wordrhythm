@@ -57,7 +57,7 @@ questions people actually ask.
 - [Hope and hopelessness](https://wordrhythm.app/bible-verses/hope) — 10 verses; starts at Romans 4:18
 - [Loneliness, but holding on](https://wordrhythm.app/bible-verses/lonely-strong) — 10 verses; starts at 2 Corinthians 10:15
 - [Anger](https://wordrhythm.app/bible-verses/angry) — 10 verses; starts at Ezekiel 33:15
-- [Guilt and shame](https://wordrhythm.app/bible-verses/guilt) — 10 verses; starts at Ezekiel 33:10
+- [Guilt and shame](https://wordrhythm.app/bible-verses/guilt) — 10 verses; starts at Romans 8:1
 - [Calm and peace](https://wordrhythm.app/bible-verses/peace) — 10 verses; starts at Isaiah 26:3
 - [Courage](https://wordrhythm.app/bible-verses/courage) — 10 verses; starts at Psalms 112:7
 - [Confusion](https://wordrhythm.app/bible-verses/confused) — 10 verses; starts at Proverbs 25:19
@@ -81,7 +81,7 @@ questions people actually ask.
 - [Love](https://wordrhythm.app/bible-verses/loving) — 10 verses; starts at Philippians 2:1
 - [Overwhelmed and weary](https://wordrhythm.app/bible-verses/overwhelmed) — 10 verses; starts at Daniel 10:19
 - [Refreshed](https://wordrhythm.app/bible-verses/refreshed) — 10 verses; starts at Daniel 10:19
-- [Repentance](https://wordrhythm.app/bible-verses/repentant) — 10 verses; starts at Ezekiel 33:10
+- [Repentance](https://wordrhythm.app/bible-verses/repentant) — 10 verses; starts at Psalms 51:10
 - [Resolve](https://wordrhythm.app/bible-verses/determined) — 10 verses; starts at Psalms 3:6
 - [Sadness](https://wordrhythm.app/bible-verses/sad) — 10 verses; starts at Daniel 10:19
 - [Seeking in confusion](https://wordrhythm.app/bible-verses/confused-seeking) — 10 verses; starts at Proverbs 2:4
