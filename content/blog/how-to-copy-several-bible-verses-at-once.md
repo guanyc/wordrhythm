@@ -80,6 +80,20 @@ Two things it does not do, both worth knowing:
 
 Because it is a checkbox rather than a modal, you can leave it on for a season of study notes and turn it off the day you need a clean reference list.
 
+## Coming back to the list
+
+One more switch decides whether this whole workflow survives a single tap, and it is the one most people never notice.
+
+**Keep search results** lives in the results overflow menu. It is free, and it is on by default.
+
+**On** — tapping a result opens the reader with the results list left behind it on the back stack. Read the passage, press Back, and you are exactly where you were: same list, same scroll, same selection. Tap the next result and keep going. This is the mode study wants, because a long list is a place you return to eight times, not a page you visit once.
+
+**Off** — the list closes behind you. Tapping a result finishes the list screen and opens the reader with the stack cleared, so Back takes you to the search screen and the results are gone. That is the right behaviour when you wanted one verse and you are finished.
+
+There is a second, less visible half to the switch. With it on, starting a **new** search clears the old result screen off the stack and reloads that same screen with the new query — so ten searches in a row leave you with one results screen, not ten piled up behind the reader. With it off there is nothing to clear, because each list already closed itself on the way out.
+
+Which is a longer way of saying that the toggle is not only about the Back button. It decides whether the results list is a place you work in or an errand you finish.
+
 ## The query is explained above the results
 
 Worth noticing if you use operators: the results screen restates your query in plain English.
@@ -114,6 +128,6 @@ A short reference, since the list is only as good as the query:
 
 Advanced queries — anything using OR, NOT or NEAR — are limited on a free account, and topic queries are exempt from that limit. Plain keyword and phrase searches are never limited. You can raise the size of the result list in Settings → Others if long queries are being cut off, and change the colour used for the matched words in Settings → Colours & Eye Comfort → Search Result Highlight Color.
 
-The results overflow menu also carries a **Keep search results** switch. It is free and on by default, so returning to the tab does not silently throw away a list you spent time building.
+The results overflow menu also carries a **Keep search results** switch, covered above — it is what makes returning from the reader land you back on the list instead of the search screen.
 
 If the first half — getting to the right list at all — is where you get stuck, the companion piece on [finding a verse quickly in the KJV](/blog/how-do-you-find-a-bible-verse-quickly-in-the-kjv) covers the three ways in.
