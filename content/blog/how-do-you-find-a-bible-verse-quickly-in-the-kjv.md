@@ -141,6 +141,8 @@ If you want to browse by passage online first, you can also use the KJV browser 
 ## Find a verse faster
 If you want a quicker way to move from memory to Scripture with **KJV Bible verse search**:
 
+- Work with a long result list: [/blog/how-to-copy-several-bible-verses-at-once](/blog/how-to-copy-several-bible-verses-at-once)
+
 - Read about devotional features: [/blog/kjv-bible-app-daily-devotional-features](/blog/kjv-bible-app-daily-devotional-features)
 - Browse verses by feeling: [/bible-verses](/bible-verses)
 - Read about the KJV app: [/versions/kjv](/versions/kjv)
