@@ -247,6 +247,19 @@ COPY = {
 #   repentant     the same six verses, plus nothing about turning. Repentance is
 #                 a change of direction (2 Chronicles 7:14, Joel 2:13, Acts
 #                 3:19); 1 John 1:9 and Psalms 51:10 are what it sounds like.
+#   anxiety       four of its ten are rest verses that belong to /peace — the
+#                 page that also answers "restless" — and Philippians 4:6, the
+#                 verse this query means, was on /gratitude as an example of
+#                 thanksgiving. It moves here; /gratitude takes Colossians 4:2.
+#   stressed      five of its ten were duplicates (Psalms 4:8, Psalms 3:5,
+#                 Proverbs 3:24, Philippians 4:7, Matthew 6:34) and 2 Corinthians
+#                 11:10 is Paul defending himself, not anything about pressure.
+#                 Matthew 6:34 moves to /anxiety, so /uncertain takes Isaiah
+#                 30:21 — a word behind you saying "this is the way".
+#   uncertain     read the old list: Proverbs 26:6, Job 8:15, Psalms 49:6 and
+#                 49:16, Ecclesiastes 11:1 and 11:4. Six of ten were about riches
+#                 not lasting, because the theme set is WEALTH. The query is about
+#                 a decision: James 1:5, Proverbs 16:9, Psalms 37:5.
 #
 # Order is the page order. A reference that does not resolve fails the build
 # rather than quietly shrinking the page, and anything short of PER_EMOTION is
@@ -294,8 +307,8 @@ PAGE_VERSE_OVERRIDES: dict[str, list[str]] = {
         "Psalms 107:1",
         "Colossians 3:17",
         "James 1:17",
-        "Philippians 4:6",
         "Ephesians 5:20",
+        "Colossians 4:2",
         "1 Chronicles 29:13",
         "Daniel 6:10",
         "Hebrews 13:15",
@@ -359,6 +372,42 @@ PAGE_VERSE_OVERRIDES: dict[str, list[str]] = {
         "Luke 15:18",
         "Acts 3:19",
         "1 John 1:9",
+    ],
+    "anxiety": [
+        "Philippians 4:6",
+        "Matthew 6:34",
+        "1 Peter 5:7",
+        "Proverbs 3:5",
+        "Psalms 139:23",
+        "Psalms 55:22",
+        "Proverbs 12:25",
+        "John 14:1",
+        "Isaiah 43:2",
+        "Exodus 14:14",
+    ],
+    "stressed": [
+        "Psalms 46:1",
+        "2 Chronicles 32:7",
+        "Nehemiah 8:10",
+        "Isaiah 40:29",
+        "Deuteronomy 33:27",
+        "Proverbs 18:10",
+        "Psalms 118:5",
+        "Psalms 138:7",
+        "John 16:33",
+        "Isaiah 30:15",
+    ],
+    "uncertain": [
+        "Isaiah 30:21",
+        "James 1:5",
+        "Proverbs 16:9",
+        "Psalms 37:5",
+        "Proverbs 19:21",
+        "Jeremiah 29:11",
+        "Isaiah 42:16",
+        "Psalms 32:8",
+        "Proverbs 20:24",
+        "Psalms 119:105",
     ],
 }
 

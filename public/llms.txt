@@ -51,7 +51,7 @@ verse — emotion → themes → highest-weighted verses. 41 collections,
 20 verses each. This is the site's highest-intent content: these are the
 questions people actually ask.
 
-- [Anxiety and fear](https://wordrhythm.app/bible-verses/anxiety) — 10 verses; starts at Psalms 4:8
+- [Anxiety and fear](https://wordrhythm.app/bible-verses/anxiety) — 10 verses; starts at Philippians 4:6
 - [Grief](https://wordrhythm.app/bible-verses/grieving) — 10 verses; starts at Psalms 34:18
 - [Gratitude](https://wordrhythm.app/bible-verses/gratitude) — 10 verses; starts at 1 Thessalonians 5:18
 - [Hope and hopelessness](https://wordrhythm.app/bible-verses/hope) — 10 verses; starts at Romans 4:18
@@ -86,10 +86,10 @@ questions people actually ask.
 - [Sadness](https://wordrhythm.app/bible-verses/sad) — 10 verses; starts at Daniel 10:19
 - [Seeking in confusion](https://wordrhythm.app/bible-verses/confused-seeking) — 10 verses; starts at Proverbs 2:4
 - [Seeking truth](https://wordrhythm.app/bible-verses/seeking-truth) — 10 verses; starts at Proverbs 28:26
-- [Stress](https://wordrhythm.app/bible-verses/stressed) — 10 verses; starts at Psalms 4:8
+- [Stress](https://wordrhythm.app/bible-verses/stressed) — 10 verses; starts at Psalms 46:1
 - [Thanksgiving](https://wordrhythm.app/bible-verses/thankful-for-grace) — 10 verses; starts at Psalms 116:12
 - [Trust](https://wordrhythm.app/bible-verses/trusting-in-god) — 10 verses; starts at Jeremiah 17:7
-- [Uncertainty](https://wordrhythm.app/bible-verses/uncertain) — 10 verses; starts at Proverbs 28:26
+- [Uncertainty](https://wordrhythm.app/bible-verses/uncertain) — 10 verses; starts at Isaiah 30:21
 - [Unity](https://wordrhythm.app/bible-verses/unity-needed) — 10 verses; starts at Psalms 133:1
 - [Worship](https://wordrhythm.app/bible-verses/worshipful) — 10 verses; starts at Psalms 13:6
 - [All collections](https://wordrhythm.app/bible-verses)

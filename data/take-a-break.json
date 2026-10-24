@@ -94,25 +94,67 @@
     ],
     "verses": [
       {
-        "reference": "Psalms 4:8",
-        "text": "I will both lay me down in peace, and sleep: for thou, LORD, only makest me dwell in safety.",
-        "micro": "I sleep in God's peace",
-        "insight": "I can rest because God keeps me safe, not because everything is calm.",
-        "prayer": "Let me lay down my burdens and trust Your care."
+        "reference": "Philippians 4:6",
+        "text": "Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God.",
+        "micro": "Thanksgiving anchors my heart.",
+        "insight": "When I thank God, my heart finds grounding in His faithful love.",
+        "prayer": "Thank You for Your presence before I see the answer."
       },
       {
-        "reference": "Genesis 15:15",
-        "text": "And thou shalt go to thy fathers in peace; thou shalt be buried in a good old age.",
-        "micro": "My life is secure in God's hands.",
-        "insight": "God promises His faithful a peaceful end and secure rest.",
-        "prayer": "Lord, grant me peace knowing my days are in Your hands."
+        "reference": "Matthew 6:34",
+        "text": "Take therefore no thought for the morrow: for the morrow shall take thought for the things of itself. Sufficient unto the day is the evil thereof.",
+        "micro": "I trust God for today.",
+        "insight": "I don't need to carry tomorrow's worries because I trust God for today.",
+        "prayer": "Help me trust You for today, not tomorrow."
       },
       {
-        "reference": "Psalms 3:5",
-        "text": "I laid me down and slept; I awaked; for the LORD sustained me.",
-        "micro": "God watches over me while I sleep",
-        "insight": "I can sleep peacefully knowing God is watching over me.",
-        "prayer": "Lord, give me confidence that You watch over my rest."
+        "reference": "1 Peter 5:7",
+        "text": "Casting all your care upon him; for he careth for you.",
+        "micro": "I cast my anxieties on God",
+        "insight": "I find relief by giving my anxieties to God.",
+        "prayer": "Lord, I cast my anxiety on You."
+      },
+      {
+        "reference": "Proverbs 3:5",
+        "text": "Trust in the LORD with all thine heart; and lean not unto thine own understanding.",
+        "micro": "I trust God beyond my understanding.",
+        "insight": "I learn to trust God even when I cannot understand everything.",
+        "prayer": "Lord, teach me to trust You fully."
+      },
+      {
+        "reference": "Psalms 139:23",
+        "text": "Search me, O God, and know my heart: try me, and know my thoughts:",
+        "micro": "God searching me is my safety.",
+        "insight": "I feel safe when God searches my heart.",
+        "prayer": "Lord, search me and lead me in Your way."
+      },
+      {
+        "reference": "Psalms 55:22",
+        "text": "Cast thy burden upon the LORD, and he shall sustain thee: he shall never suffer the righteous to be moved.",
+        "micro": "I give my burdens to God and He sustains me.",
+        "insight": "When I cast my anxieties on God, He sustains me and keeps me steady.",
+        "prayer": "Lord, I give You this anxiety; sustain me."
+      },
+      {
+        "reference": "Proverbs 12:25",
+        "text": "Heaviness in the heart of man maketh it stoop: but a good word maketh it glad.",
+        "micro": "A kind word lifts my heart",
+        "insight": "A timely kind word can restore a downcast soul.",
+        "prayer": "Lord, help me speak kind words."
+      },
+      {
+        "reference": "John 14:1",
+        "text": "Let not your heart be troubled: ye believe in God, believe also in me.",
+        "micro": "My peace is in trusting Jesus",
+        "insight": "When I trust Jesus, my troubled heart finds rest.",
+        "prayer": "Lord Jesus, calm my heart as I trust in You."
+      },
+      {
+        "reference": "Isaiah 43:2",
+        "text": "When thou passest through the waters, I will be with thee; and through the rivers, they shall not overflow thee: when thou walkest through the fire, thou shalt not be burned; neither shall the flame kindle upon thee.",
+        "micro": "I am not alone in the flood.",
+        "insight": "God promises His presence through waters and fire.",
+        "prayer": "Lord, remind me that You are with me in the deep waters."
       },
       {
         "reference": "Exodus 14:14",
@@ -120,48 +162,6 @@
         "micro": "I am still and at peace",
         "insight": "When I stop striving, peace settles in me.",
         "prayer": "Lord, help me be still and know You fight for me."
-      },
-      {
-        "reference": "Philippians 4:11",
-        "text": "Not that I speak in respect of want: for I have learned, in whatsoever state I am, therewith to be content.",
-        "micro": "I learn contentment through trusting Christ.",
-        "insight": "I find that trusting Christ teaches me contentment.",
-        "prayer": "Lord, teach me contentment through trust in You."
-      },
-      {
-        "reference": "Psalms 84:12",
-        "text": "O LORD of hosts, blessed is the man that trusteth in thee.",
-        "micro": "I am blessed when I trust God.",
-        "insight": "When I rely on God, I experience true blessing.",
-        "prayer": "Lord, help me trust You for my blessedness."
-      },
-      {
-        "reference": "Proverbs 3:24",
-        "text": "When thou liest down, thou shalt not be afraid: yea, thou shalt lie down, and thy sleep shall be sweet.",
-        "micro": "I sleep well trusting God",
-        "insight": "Trusting God's wisdom settles my soul.",
-        "prayer": "Lord, give me sweet sleep from trusting Your care."
-      },
-      {
-        "reference": "Isaiah 54:14",
-        "text": "In righteousness shalt thou be established: thou shalt be far from oppression; for thou shalt not fear: and from terror; for it shall not come near thee.",
-        "micro": "I am secure in God's righteousness",
-        "insight": "My security comes from God's righteousness, not my own efforts.",
-        "prayer": "Lord, let Your righteousness be my foundation."
-      },
-      {
-        "reference": "Job 13:15",
-        "text": "Though he slay me, yet will I trust in him: but I will maintain mine own ways before him.",
-        "micro": "I trust God even when I doubt",
-        "insight": "I can question God and still hold onto trust in Him.",
-        "prayer": "Keep my trust steady through my doubts."
-      },
-      {
-        "reference": "Ruth 2:12",
-        "text": "The LORD recompense thy work, and a full reward be given thee of the LORD God of Israel, under whose wings thou art come to trust.",
-        "micro": "I trust under God's wings.",
-        "insight": "When I trust in God, I find shelter and refuge for my daily life.",
-        "prayer": "Lord, let me take refuge under Your wings."
       }
     ]
   },
@@ -1145,18 +1145,18 @@
         "prayer": "Lord, help me to rest in Your unchanging faithfulness."
       },
       {
-        "reference": "Philippians 4:6",
-        "text": "Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God.",
-        "micro": "Thanksgiving anchors my heart.",
-        "insight": "When I thank God, my heart finds grounding in His faithful love.",
-        "prayer": "Thank You for Your presence before I see the answer."
-      },
-      {
         "reference": "Ephesians 5:20",
         "text": "Giving thanks always for all things unto God and the Father in the name of our Lord Jesus Christ;",
         "micro": "I thank God in Christ's name.",
         "insight": "Through Christ, my thanksgiving becomes an act of trust.",
         "prayer": "Father, I give thanks in Jesus' name."
+      },
+      {
+        "reference": "Colossians 4:2",
+        "text": "Continue in prayer, and watch in the same with thanksgiving;",
+        "micro": "I pray with watchful thanks.",
+        "insight": "I approach prayer with an alert heart and a thankful spirit.",
+        "prayer": "Teach me to pray with watchfulness and thanks."
       },
       {
         "reference": "1 Chronicles 29:13",
@@ -2877,32 +2877,11 @@
     ],
     "verses": [
       {
-        "reference": "Psalms 4:8",
-        "text": "I will both lay me down in peace, and sleep: for thou, LORD, only makest me dwell in safety.",
-        "micro": "I sleep in God's peace",
-        "insight": "I can rest because God keeps me safe, not because everything is calm.",
-        "prayer": "Let me lay down my burdens and trust Your care."
-      },
-      {
-        "reference": "Psalms 49:5",
-        "text": "Wherefore should I fear in the days of evil, when the iniquity of my heels shall compass me about?",
-        "micro": "My courage rests on God, not my righteousness.",
-        "insight": "I find my courage in God's grace, not my own record.",
-        "prayer": "Lord, anchor my heart in Your grace."
-      },
-      {
-        "reference": "Psalms 3:5",
-        "text": "I laid me down and slept; I awaked; for the LORD sustained me.",
-        "micro": "God watches over me while I sleep",
-        "insight": "I can sleep peacefully knowing God is watching over me.",
-        "prayer": "Lord, give me confidence that You watch over my rest."
-      },
-      {
-        "reference": "Proverbs 3:24",
-        "text": "When thou liest down, thou shalt not be afraid: yea, thou shalt lie down, and thy sleep shall be sweet.",
-        "micro": "I sleep well trusting God",
-        "insight": "Trusting God's wisdom settles my soul.",
-        "prayer": "Lord, give me sweet sleep from trusting Your care."
+        "reference": "Psalms 46:1",
+        "text": "God is our refuge and strength, a very present help in trouble.",
+        "micro": "God is my refuge now.",
+        "insight": "I don't need to look elsewhere for strength; God is here with me right now.",
+        "prayer": "Lord, be my refuge in this moment."
       },
       {
         "reference": "2 Chronicles 32:7",
@@ -2912,39 +2891,60 @@
         "prayer": "Lord, help me see Your army around me."
       },
       {
-        "reference": "Philippians 4:7",
-        "text": "And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus.",
-        "micro": "God's peace guards my soul beyond understanding.",
-        "insight": "I experience a peace that doesn't make sense, protecting my heart from anxiety.",
-        "prayer": "Lord, let Your peace guard my heart today."
+        "reference": "Nehemiah 8:10",
+        "text": "Then he said unto them, Go your way, eat the fat, and drink the sweet, and send portions unto them for whom nothing is prepared: for this day is holy unto our LORD: neither be ye sorry; for the joy of the LORD is your strength.",
+        "micro": "God's joy is my strength",
+        "insight": "I find that joy from God makes me strong, even in hard times.",
+        "prayer": "Lord, fill me with Your joy as my strength."
       },
       {
-        "reference": "Isaiah 57:19",
-        "text": "I create the fruit of the lips; Peace, peace to him that is far off, and to him that is near, saith the LORD; and I will heal him.",
-        "micro": "I am never far from God's peace.",
-        "insight": "No matter how far I feel, God's peace finds me.",
-        "prayer": "Lord, speak Your peace over me."
+        "reference": "Isaiah 40:29",
+        "text": "He giveth power to the faint; and to them that have no might he increaseth strength.",
+        "micro": "God gives me strength when I faint.",
+        "insight": "In exhaustion, we find God's power made perfect.",
+        "prayer": "Lord, give me strength when I am faint."
       },
       {
-        "reference": "Matthew 6:34",
-        "text": "Take therefore no thought for the morrow: for the morrow shall take thought for the things of itself. Sufficient unto the day is the evil thereof.",
-        "micro": "I trust God for today.",
-        "insight": "I don't need to carry tomorrow's worries because I trust God for today.",
-        "prayer": "Help me trust You for today, not tomorrow."
+        "reference": "Deuteronomy 33:27",
+        "text": "The eternal God is thy refuge, and underneath are the everlasting arms: and he shall thrust out the enemy from before thee; and shall say, Destroy them.",
+        "micro": "I rest in everlasting arms.",
+        "insight": "I know I am safe because God's arms never let go.",
+        "prayer": "Lord, be my refuge; I rest in Your everlasting arms."
       },
       {
-        "reference": "Acts 27:34",
-        "text": "Wherefore I pray you to take some meat: for this is for your health: for there shall not an hair fall from the head of any of you.",
-        "micro": "I need physical strength to endure.",
-        "insight": "God's deliverance does not remove the need for daily care.",
-        "prayer": "Help me take the nourishment I need today."
+        "reference": "Proverbs 18:10",
+        "text": "The name of the LORD is a strong tower: the righteous runneth into it, and is safe.",
+        "micro": "The Lord's name is my tower",
+        "insight": "When I feel scared, I remember that God's name protects me.",
+        "prayer": "Lord, be my refuge, my strong tower."
       },
       {
-        "reference": "2 Corinthians 11:10",
-        "text": "As the truth of Christ is in me, no man shall stop me of this boasting in the regions of Achaia.",
-        "micro": "Christ's truth anchors my actions",
-        "insight": "When Christ's truth is my foundation, my actions become steady and sure.",
-        "prayer": "Lord, anchor my choices in Your reality."
+        "reference": "Psalms 118:5",
+        "text": "I called upon the LORD in distress: the LORD answered me, and set me in a large place.",
+        "micro": "God gives me room to breathe.",
+        "insight": "When I cry out, God responds by giving me space and relief.",
+        "prayer": "Lord, answer my cry and give me room to breathe."
+      },
+      {
+        "reference": "Psalms 138:7",
+        "text": "Though I walk in the midst of trouble, thou wilt revive me: thou shalt stretch forth thine hand against the wrath of mine enemies, and thy right hand shall save me.",
+        "micro": "God revives me in trouble",
+        "insight": "Even in my hardest moments, God breathes new life into me.",
+        "prayer": "Revive me, Lord, when I am in trouble."
+      },
+      {
+        "reference": "John 16:33",
+        "text": "These things I have spoken unto you, that in me ye might have peace. In the world ye shall have tribulation: but be of good cheer; I have overcome the world.",
+        "micro": "In Christ, I have peace in trouble.",
+        "insight": "Even when life is hard, I can find peace in Christ.",
+        "prayer": "Lord, let me rest in Your peace when trouble comes."
+      },
+      {
+        "reference": "Isaiah 30:15",
+        "text": "For thus saith the Lord GOD, the Holy One of Israel; In returning and rest shall ye be saved; in quietness and in confidence shall be your strength: and ye would not.",
+        "micro": "I find strength in quiet trust.",
+        "insight": "God promises strength to those who rest in quiet trust.",
+        "prayer": "Lord, teach me to rest and trust in You."
       }
     ]
   },
@@ -3209,74 +3209,74 @@
     ],
     "verses": [
       {
-        "reference": "Proverbs 28:26",
-        "text": "He that trusteth in his own heart is a fool: but whoso walketh wisely, he shall be delivered.",
-        "micro": "My heart is not a safe guide",
-        "insight": "I often think I know what's best, but my own understanding can lead me astray.",
-        "prayer": "Lord, help me to trust Your wisdom over my own."
+        "reference": "Isaiah 30:21",
+        "text": "And thine ears shall hear a word behind thee, saying, This is the way, walk ye in it, when ye turn to the right hand, and when ye turn to the left.",
+        "micro": "God's voice guides my steps.",
+        "insight": "God's voice will guide His people when they wander.",
+        "prayer": "Lord, guide me when I don't know which way to turn."
       },
       {
-        "reference": "Proverbs 26:6",
-        "text": "He that sendeth a message by the hand of a fool cutteth off the feet, and drinketh damage.",
-        "micro": "My poor choices hurt God's work.",
-        "insight": "When I send the wrong person with a message, I damage the mission.",
-        "prayer": "Lord, help me choose wisely whom to trust."
+        "reference": "James 1:5",
+        "text": "If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him.",
+        "micro": "I can ask God for wisdom",
+        "insight": "God gives wisdom generously when I ask, without criticizing my uncertainty.",
+        "prayer": "Father, I ask for wisdom, trusting Your generous heart."
       },
       {
-        "reference": "Proverbs 25:19",
-        "text": "Confidence in an unfaithful man in time of trouble is like a broken tooth, and a foot out of joint.",
-        "micro": "Misplaced trust leaves me helpless.",
-        "insight": "I feel helpless when I trust in the wrong things.",
-        "prayer": "Lord, guard my trust from unfaithful places."
+        "reference": "Proverbs 16:9",
+        "text": "A man's heart deviseth his way: but the LORD directeth his steps.",
+        "micro": "God directs my steps",
+        "insight": "I can make my plans, but I trust God to guide my actual path today.",
+        "prayer": "Direct my steps as I go about my day."
       },
       {
-        "reference": "Matthew 6:34",
-        "text": "Take therefore no thought for the morrow: for the morrow shall take thought for the things of itself. Sufficient unto the day is the evil thereof.",
-        "micro": "I trust God for today.",
-        "insight": "I don't need to carry tomorrow's worries because I trust God for today.",
-        "prayer": "Help me trust You for today, not tomorrow."
+        "reference": "Psalms 37:5",
+        "text": "Commit thy way unto the LORD; trust also in him; and he shall bring it to pass.",
+        "micro": "I release my plans to God.",
+        "insight": "I no longer carry the weight of my own plans; I give them to God.",
+        "prayer": "Lord, I roll my way onto You today."
       },
       {
-        "reference": "Ecclesiastes 11:1",
-        "text": "Cast thy bread upon the waters: for thou shalt find it after many days.",
-        "micro": "I trust God with unseen kindness.",
-        "insight": "I can give generously without knowing the return, trusting God's timing.",
-        "prayer": "Lord, help me trust You with my kindness."
+        "reference": "Proverbs 19:21",
+        "text": "There are many devices in a man's heart; nevertheless the counsel of the LORD, that shall stand.",
+        "micro": "I find peace in God's unchanging purpose.",
+        "insight": "I am learning to find peace not in my own devices but in God's unchanging purpose.",
+        "prayer": "Lord, quiet my heart and align my will with Your purpose."
       },
       {
-        "reference": "Job 8:15",
-        "text": "He shall lean upon his house, but it shall not stand: he shall hold it fast, but it shall not endure.",
-        "micro": "My own strength cannot bear eternity.",
-        "insight": "I realize my own strength cannot sustain me forever.",
-        "prayer": "Lord, keep me from leaning on my own strength."
+        "reference": "Jeremiah 29:11",
+        "text": "For I know the thoughts that I think toward you, saith the LORD, thoughts of peace, and not of evil, to give you an expected end.",
+        "micro": "God's plans for me are full of hope.",
+        "insight": "I know God's plans for me are hopeful, even when I feel anxious.",
+        "prayer": "Lord, remind me that Your plans for me are hopeful."
       },
       {
-        "reference": "Psalms 49:6",
-        "text": "They that trust in their wealth, and boast themselves in the multitude of their riches;",
-        "micro": "My trust in God is my security",
-        "insight": "When I trust God, I find true safety that wealth can't give.",
-        "prayer": "Lord, let me boast only in You."
+        "reference": "Isaiah 42:16",
+        "text": "And I will bring the blind by a way that they knew not; I will lead them in paths that they have not known: I will make darkness light before them, and crooked things straight. These things will I do unto them, and not forsake them.",
+        "micro": "I trust God on unknown paths",
+        "insight": "God leads the blind on paths they never knew.",
+        "prayer": "Lord, lead me on the unknown path and light my darkness."
       },
       {
-        "reference": "Psalms 49:16",
-        "text": "Be not thou afraid when one is made rich, when the glory of his house is increased;",
-        "micro": "I treasure what is eternal.",
-        "insight": "I remind myself that my true treasure is eternal, not the temporary wealth around me.",
-        "prayer": "Lord, let me rest in Your eternal provision."
+        "reference": "Psalms 32:8",
+        "text": "I will instruct thee and teach thee in the way which thou shalt go: I will guide thee with mine eye.",
+        "micro": "God guides me with a knowing look.",
+        "insight": "I sense God's direction in a silent, knowing glance.",
+        "prayer": "Lord, help me be still to catch Your eye."
       },
       {
-        "reference": "Psalms 62:10",
-        "text": "Trust not in oppression, and become not vain in robbery: if riches increase, set not your heart upon them.",
-        "micro": "I do not trust in riches.",
-        "insight": "Wealth cannot provide the security only God gives.",
-        "prayer": "Lord, keep my hope from resting on riches."
+        "reference": "Proverbs 20:24",
+        "text": "Man's goings are of the LORD; how can a man then understand his own way?",
+        "micro": "God directs my steps",
+        "insight": "Even when I don't understand my path, I trust that God is guiding me.",
+        "prayer": "Lord, help me trust Your direction even when I don't understand."
       },
       {
-        "reference": "Ecclesiastes 11:4",
-        "text": "He that observeth the wind shall not sow; and he that regardeth the clouds shall not reap.",
-        "micro": "I act without waiting for certainty.",
-        "insight": "I don't need to have all the answers before I step out in faith.",
-        "prayer": "Lord, give me courage to act without seeing the outcome."
+        "reference": "Psalms 119:105",
+        "text": "Thy word is a lamp unto my feet, and a light unto my path.",
+        "micro": "God's word lights my way",
+        "insight": "I find clarity for my next step when I turn to His word.",
+        "prayer": "Lord, let your word light my path today."
       }
     ]
   },
