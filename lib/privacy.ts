@@ -163,6 +163,21 @@ export const privacyPolicies: PrivacyPolicy[] = [
     hidden: true,
   },
   {
+    // Reading/study/plan tool (no devotional slots, no audio), so it is not a
+    // /versions entry — same treatment as Bible KJV Quick. Store name keeps
+    // "Lite" to stay apart from the Statenvertaling devotional app to come.
+    slug: "svv",
+    appName: "Bijbel Statenvertaling Lite",
+    storeName: "Bijbel Statenvertaling Lite",
+    androidPackage: "com.gyc.ace.svv",
+    playUrl: "https://play.google.com/store/apps/details?id=com.gyc.ace.svv",
+    developerName: DEVELOPER,
+    legalEntity: DEVELOPER,
+    contactEmail: EMAIL,
+    updated: "October 28, 2026",
+    hidden: true,
+  },
+  {
     slug: "hanzinova",
     appName: "HanziNova HanziWriter",
     storeName: "HanziNova: HSK Chinese Writing",
