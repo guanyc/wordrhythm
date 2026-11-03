@@ -119,6 +119,22 @@ export const versions = [
     sleepLabel: "Nacht",
     package: "com.gyc.ace.luther",
   },
+  {
+    // Published ahead of the Play listing: the policy and the description go up
+    // first, so llms.txt must not advertise a store link that 404s.
+    slug: "yoruba",
+    name: "Yorùbá + KJV",
+    listing: "Word Rhythm: Yorùbá + KJV",
+    summary:
+      "the Open Yoruba Contemporary Bible and the KJV side by side, fully offline, with red letter in both texts",
+    language: "Yorùbá & English",
+    lang: "yo",
+    audio: "sleep",
+    audioNote: "text-to-speech and Sleep Audio",
+    sleepLabel: "Sleep",
+    package: "com.gyc.ace.yoruba",
+    status: "planned",
+  },
 ];
 
 /** The four daily slots, matching `DAILY_SLOTS` in lib/versions.ts. */

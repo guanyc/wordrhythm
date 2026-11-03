@@ -249,6 +249,24 @@ export const versions: BibleVersion[] = [
     ogImage: "/brand/og-luther.jpg",
     screenshots: shots("luther"),
   },
+  {
+    // Two translations in one app rather than a single-text pocket reader, so
+    // the summary names both. No playUrl yet: the store listing is written but
+    // publication waits on the OYCB distribution check (see the app's docs).
+    slug: "yoruba",
+    code: "YOR",
+    name: "Yorùbá + KJV",
+    listing: "Word Rhythm: Yorùbá + KJV",
+    storeTitle: "Yorùbá Bible + KJV Offline",
+    language: "Yorùbá & English",
+    lang: "yo",
+    summary:
+      "The Open Yoruba Contemporary Bible and the King James Version on one screen — four display modes, red letter in both texts, fully offline.",
+    status: "planned",
+    audio: "sleep",
+    sleepSlotLabel: "Sleep",
+    package: "com.gyc.ace.yoruba",
+  },
 ];
 
 export function getVersion(slug: string): BibleVersion | undefined {

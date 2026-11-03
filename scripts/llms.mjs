@@ -122,7 +122,13 @@ const appLines = versions.map((v) => {
         : cjk
           ? "。纯文字，无音频"
           : `. ${v.audioNote}`;
-  return `- [${v.listing ?? v.name}](${HOST}/versions/${v.slug}) (${v.language}) — ${summary}${audio}${cjk ? "" : "."} [Google Play](${playUrl(v.package)})`;
+  // A planned app has no store page yet. Printing the Play URL anyway would put
+  // a 404 into llms.txt, which answer engines quote back as if it worked.
+  const availability =
+    v.status === "planned"
+      ? " *(coming soon to Google Play)*"
+      : ` [Google Play](${playUrl(v.package)})`;
+  return `- [${v.listing ?? v.name}](${HOST}/versions/${v.slug}) (${v.language}) — ${summary}${audio}${cjk ? "" : "."}${availability}`;
 });
 
 const md = `# Word Rhythm

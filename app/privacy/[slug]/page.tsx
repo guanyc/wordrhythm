@@ -83,19 +83,21 @@ export default async function PrivacyPolicyPage({
               <dd className="break-all">{value}</dd>
             </div>
           ))}
-          <div className="flex flex-wrap gap-1">
-            <dt className="font-semibold text-ink">Google Play Listing:</dt>
-            <dd className="break-all">
-              <a
-                href={policy.playUrl}
-                className="text-brand hover:underline"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                {policy.playUrl}
-              </a>
-            </dd>
-          </div>
+          {policy.playUrl && (
+            <div className="flex flex-wrap gap-1">
+              <dt className="font-semibold text-ink">Google Play Listing:</dt>
+              <dd className="break-all">
+                <a
+                  href={policy.playUrl}
+                  className="text-brand hover:underline"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  {policy.playUrl}
+                </a>
+              </dd>
+            </div>
+          )}
         </dl>
       </div>
 

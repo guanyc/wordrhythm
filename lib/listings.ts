@@ -982,6 +982,139 @@ const luther: StoreListing = {
 };
 
 
+const yoruba: StoreListing = {
+  intro: [
+    "Word Rhythm: Yorùbá + KJV is a free, offline Bible that carries two texts: the Open Yoruba Contemporary Bible (OYCB) and the King James Version. Not two apps, not two tabs — two translations placed against each other, verse by verse.",
+    "For anyone who reads Yorùbá at home and studies in English, or who wants to see how a familiar verse reads in both: one setting decides which text you see, and every screen follows that decision.",
+  ],
+  sections: [
+    {
+      heading: "Two texts, one screen",
+      blocks: [
+        {
+          list: [
+            "Four display modes: Yorùbá only, KJV only, Yorùbá first, KJV first",
+            "Switch modes from the reading menu — the choice is remembered and applied everywhere",
+            "Bilingual modes stack the two texts in portrait: primary translation first, the other below it",
+            "On tablets, landscape phones and unfolded foldables the two texts can sit side by side in parallel columns, and you can swap which one is on the left",
+            "Highlights, notes, bookmarks, favourites and search results all render in the mode you chose",
+            "Reading plans follow the same rule — a plan’s chapters look like the reader, not a third style",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Red letter in both texts",
+      blocks: [
+        {
+          text: [
+            "The words of Christ are red in the KJV, and independently marked in the Yorùbá text — the Yorùbá spans are generated from the quotation marks in the OYCB itself, not copied from the KJV’s character positions, which point at different words in a different language.",
+          ],
+        },
+        {
+          list: [
+            "2,045 of the 2,056 verses the KJV marks as speech are covered in Yorùbá (99.46%)",
+            "Eight of the rest are verses the OYCB does not contain; three are deliberately left unmarked where the text has no clear speech boundary",
+            "In parallel columns each column is coloured from its own data, so a KJV range can never bleed into a Yorùbá line",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The whole Bible, offline",
+      blocks: [
+        {
+          list: [
+            "All 66 books in both translations, stored on your device",
+            "Nothing to download, nothing to sign in to, no connection required — read on a plane, underground, or with no airtime",
+            "The KJV runs to 31,102 verses; the OYCB carries 31,087",
+            "For the 15 verses the modern Yorùbá text omits, Yorùbá-only mode shows [not in the Yorùbá text] instead of quietly substituting the KJV",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Search that forgives missing tone marks",
+      blocks: [
+        {
+          list: [
+            "Type plain “Olorun” and find “Ọlọ́run” — tone marks and underdots are optional",
+            "Combine words with AND, OR, NOT and NEAR, or search an exact phrase",
+            "Restrict a search to a book or a range of books",
+            "Results render in your display mode, red letter included",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Read, study, keep",
+      blocks: [
+        {
+          list: [
+            "Highlights, bookmarks, notes and tags — each entry follows your display mode",
+            "Verse memorisation with typed and blanked practice",
+            "Daily reading plans, from a book at a time to the whole Bible",
+            "Devotional cards: a short message, a reflection and a guided prayer",
+            "Find Scripture by feeling, by life situation, by topic, or from the 100 most-searched verses",
+            "Reading streaks and progress, kept quietly in the background",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Share it as text, a picture, or a video",
+      blocks: [
+        {
+          list: [
+            "Send a verse as text, as an image card, or as a short video in your own setting",
+            "Choose either translation or both — the display mode travels with the share",
+            "Every Yorùbá share carries the attribution its licence requires",
+            "Home-screen widgets for the verse of the day, your favourites and Sleep Audio",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Listen — read-aloud and Sleep Audio",
+      blocks: [
+        {
+          list: [
+            "Text-to-speech playback of the passage you are reading",
+            "The KJV reads with an English voice; Yorùbá playback depends on whether your device offers a Yorùbá voice — where it does not, the app does not pretend to",
+            "Sleep Audio: gentle bedtime narration with quiet ambient sound, downloadable over Wi-Fi for offline listening",
+            "Playback continues with the screen off",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Bible Insights",
+      blocks: [
+        {
+          text: [
+            "Verse statistics, keyword trends and Bible facts, clearly labelled as built on the KJV corpus. They are study aids about the text, not a third translation.",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What stays in English",
+      blocks: [
+        {
+          text: [
+            "The app interface is English, and so are devotional reflections, reading-plan notes and audio meditations. That is a deliberate editorial decision while the Yorùbá devotional corpus is being reviewed, not a missing translation.",
+          ],
+        },
+      ],
+    },
+  ],
+  closing: [
+    "Two translations, one screen — and after the first launch, no connection needed.",
+    "Yorùbá: Biblica® Open Yoruba Contemporary Bible™ © 2009, 2017 Biblica, Inc. (CC BY-SA 4.0). KJV: public domain.",
+    "Read. Reflect. Pray. Grow.",
+  ],
+};
+
 export const listings: Record<string, StoreListing> = {
   kjv,
   asv,
@@ -991,6 +1124,7 @@ export const listings: Record<string, StoreListing> = {
   aa,
   lsg,
   luther,
+  yoruba,
 };
 
 export function getListing(slug: string): StoreListing | undefined {

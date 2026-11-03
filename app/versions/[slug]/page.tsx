@@ -196,8 +196,12 @@ export default async function VersionPage({
                 Text-to-speech
               </span>
             )}
-            <span className="text-xs font-semibold text-emerald-600">
-              Available now
+            <span
+              className={`text-xs font-semibold ${
+                version.status === "live" ? "text-emerald-600" : "text-muted"
+              }`}
+            >
+              {version.status === "live" ? "Available now" : "Coming soon"}
             </span>
           </div>
 
@@ -209,7 +213,7 @@ export default async function VersionPage({
             {audioNote(version.slug) ?? "Reading and devotionals only."}
           </p>
 
-          {version.playUrl && (
+          {version.playUrl ? (
             <div className="mt-6 flex flex-wrap items-center gap-4">
               <a
                 href={version.playUrl}
@@ -221,6 +225,13 @@ export default async function VersionPage({
                 Listed there as “{version.storeTitle}”
               </span>
             </div>
+          ) : (
+            // Pre-launch: the description and the privacy policy go up first,
+            // so say that plainly instead of showing a button that leads nowhere.
+            <p className="mt-6 max-w-xl rounded-xl border border-black/10 bg-surface px-4 py-3 text-sm text-muted">
+              Not on Google Play yet. This page is the description the listing
+              will carry — it will appear as “{version.storeTitle}”.
+            </p>
           )}
 
           <p className="mt-4 text-sm text-muted">

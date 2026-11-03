@@ -1,12 +1,12 @@
 # Word Rhythm
 
-> Scripture for the rhythm of everyday life. A family of 8 Android Bible apps
-> — KJV Bible, ASV Bible, WEB Bible, Biblia RVR, 和合本圣经, Bíblia AA, Bible Louis Segond 1910, Lutherbibel 1912 — each built around
+> Scripture for the rhythm of everyday life. A family of 9 Android Bible apps
+> — KJV Bible, ASV Bible, WEB Bible, Biblia RVR, 和合本圣经, Bíblia AA, Bible Louis Segond 1910, Lutherbibel 1912, Yorùbá + KJV — each built around
 > 4 daily touchpoints: morning, day, evening, sleep.
 
 ## Daily rhythm (every app)
 
-All 8 apps run the same 4 daily slots:
+All 9 apps run the same 4 daily slots:
 
 1. **Morning** (early morning)
 2. **Day** (daytime)
@@ -15,7 +15,7 @@ All 8 apps run the same 4 daily slots:
 
 The fourth slot is a real slot, not a synonym for the third: it opens in the
 evening and runs past midnight. Every app has before-bed devotional content —
-the label is localised (Sleep, Sleep, Sleep, Noche, 睡前, Noite, Nuit, Nacht).
+the label is localised (Sleep, Sleep, Sleep, Noche, 睡前, Noite, Nuit, Nacht, Sleep).
 
 Each devotional follows the same shape: time window, theme tag, the verse with
 its reference, what the verse says, how to reflect, and a short prayer.
@@ -24,13 +24,13 @@ its reference, what the verse says, how to reflect, and a short prayer.
 
 Audio is the feature that differs between apps:
 
-- **Sleep Audio — KJV Bible only.** Gentle nighttime Scripture
+- **Sleep Audio — KJV Bible, Yorùbá + KJV only.** Gentle nighttime Scripture
   reading with soft pacing and quiet pauses, plus peaceful background sounds.
 - **Text-to-speech — WEB Bible, Biblia RVR, 和合本圣经, Bíblia AA, Lutherbibel 1912.** Read-aloud Scripture playback.
 - **No audio — ASV Bible, Bible Louis Segond 1910.** Reading and devotionals only.
 
 Every app has all 4 devotional slots, including the sleep slot.
-Only KJV Bible ships the dedicated Sleep Audio track.
+Only KJV Bible, Yorùbá + KJV ships the dedicated Sleep Audio track.
 
 ## Apps
 
@@ -42,6 +42,7 @@ Only KJV Bible ships the dedicated Sleep Audio track.
 - [Word Rhythm: Bíblia AA](https://wordrhythm.app/versions/aa) (Português) — Almeida Atualizada with four daily slots, text-to-speech audio. [Google Play](https://play.google.com/store/apps/details?id=com.guanyc.ace.almeida)
 - [Word Rhythm: Louis Segond 1910](https://wordrhythm.app/versions/lsg) (Français) — LSG 1910 hors ligne, méditation, plans de lecture et recherche. Texte uniquement, sans audio. [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.lsg)
 - [Word Rhythm: Lutherbibel 1912](https://wordrhythm.app/versions/luther) (Deutsch) — Lutherbibel 1912 offline: Lesen, Andacht, Innehalten und Gebet, Bibel wird vorgelesen (TTS). [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.luther)
+- [Word Rhythm: Yorùbá + KJV](https://wordrhythm.app/versions/yoruba) (Yorùbá & English) — the Open Yoruba Contemporary Bible and the KJV side by side, fully offline, with red letter in both texts, plus **Sleep Audio** — gentle nighttime Scripture reading with soft pacing and peaceful background sounds. *(coming soon to Google Play)*
 - [All versions](https://wordrhythm.app/versions)
 
 ## Bible verses by feeling
@@ -172,7 +173,7 @@ the link above.
 - Platform: Android only. Fully offline reading. No account required.
 - 4 daily slots in every app: morning, day, evening, sleep.
 - Reading plans, memorization and Take a Break are available in every app.
-- Audio varies: Sleep Audio (KJV Bible), text-to-speech (WEB Bible, Biblia RVR, 和合本圣经, Bíblia AA, Lutherbibel 1912), or none (ASV Bible, Bible Louis Segond 1910).
+- Audio varies: Sleep Audio (KJV Bible, Yorùbá + KJV), text-to-speech (WEB Bible, Biblia RVR, 和合本圣经, Bíblia AA, Lutherbibel 1912), or none (ASV Bible, Bible Louis Segond 1910).
 - Also available as a standalone app: [Take a Break](https://wordrhythm.app/take-a-break)
 - KJV archaic-word glossary: 1440 entries, examples verified against the full KJV text.
 

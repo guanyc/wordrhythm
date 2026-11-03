@@ -10,7 +10,11 @@ export interface PrivacyPolicy {
   /** Name shown on the Google Play listing */
   storeName: string;
   androidPackage: string;
-  playUrl: string;
+  /**
+   * Google Play URL. Omitted while an app is still pre-launch — the policy
+   * still has to exist first, because Play Console asks for its URL.
+   */
+  playUrl?: string;
   developerName: string;
   legalEntity: string;
   contactEmail: string;
@@ -137,6 +141,19 @@ export const privacyPolicies: PrivacyPolicy[] = [
     updated: "September 26, 2026",
     icon: "/apps/aa/icon.png",
     versionSlug: "aa",
+  },
+  {
+    // Pre-launch: no Play URL yet. The policy is published first because Play
+    // Console requires a public policy URL before the listing can be created.
+    slug: "yoruba",
+    appName: "Yorùbá + KJV",
+    storeName: "Yorùbá Bible + KJV Offline",
+    androidPackage: "com.gyc.ace.yoruba",
+    developerName: DEVELOPER,
+    legalEntity: DEVELOPER,
+    contactEmail: EMAIL,
+    updated: "November 3, 2026",
+    versionSlug: "yoruba",
   },
   {
     slug: "take-a-break",
