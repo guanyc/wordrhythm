@@ -266,6 +266,7 @@ export const versions: BibleVersion[] = [
     audio: "sleep",
     sleepSlotLabel: "Sleep",
     package: "com.gyc.ace.yoruba",
+    icon: "/apps/yoruba/icon.png",
   },
 ];
 

@@ -153,6 +153,7 @@ export const privacyPolicies: PrivacyPolicy[] = [
     legalEntity: DEVELOPER,
     contactEmail: EMAIL,
     updated: "November 3, 2026",
+    icon: "/apps/yoruba/icon.png",
     versionSlug: "yoruba",
   },
   {
