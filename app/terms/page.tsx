@@ -50,7 +50,8 @@ export default function TermsPage() {
               Quick, Bijbel Statenvertaling Lite, Yorùbá + KJV), and{" "}
               <strong>Take a Break</strong>; plus{" "}
               <strong>HanziNova</strong> (Chinese character learning) and{" "}
-              <strong>Born Win</strong> (trading discipline).
+              <strong>Born Win</strong> / <strong>WatchList Tracker Lite</strong>{" "}
+              (trading discipline).
             </dd>
           </div>
         </dl>

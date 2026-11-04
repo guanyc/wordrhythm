@@ -4,8 +4,8 @@ Google Play store. This includes every app under the Word Rhythm brand (Bible
 KJV, Bible ASV, Bible Web / World English Bible, Biblia RVR / Reina-Valera,
 道韵 CUV Bible, Bíblia AA / Almeida Atualizada, Bible Louis Segond 1910,
 Lutherbibel 1912, Yorùbá + KJV, Bible KJV Quick, Bijbel Statenvertaling Lite,
-and Take a Break), as well as HanziNova and Born Win. The specific app you
-install or use is referred to below as "the App."
+and Take a Break), as well as HanziNova, Born Win, and WatchList Tracker
+Lite. The specific app you install or use is referred to below as "the App."
 
 By installing or using the App, you agree to these Terms. If you do not agree,
 please do not use the App.
@@ -23,9 +23,10 @@ general:
   prompts for moments when a full reading session is not practical.
 - **HanziNova** offers Chinese character writing practice, stroke-order
   reference, and vocabulary tools for learners.
-- **Born Win** offers a personal trading-discipline tool for tracking watch
-  lists, entry/exit rules, and reflections. It is **not** a brokerage, an
-  execution platform, and does **not** place or manage real trades.
+- **Born Win** — and its ad-supported **WatchList Tracker Lite** build —
+  offers a personal trading-discipline tool for tracking watch lists,
+  entry/exit rules, and reflections. It is **not** a brokerage, an execution
+  platform, and does **not** place or manage real trades.
 
 Some content — including audio recordings, sleep tracks, and downloadable
 language or reading packs — may be delivered over the network and requires an

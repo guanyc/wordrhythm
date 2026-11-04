@@ -221,6 +221,23 @@ export const privacyPolicies: PrivacyPolicy[] = [
     updated: "August 20, 2024",
     hidden: true,
   },
+  {
+    // Ad-supported Lite build of the same watchlist tool, published under its
+    // own package. AdMob with UMP consent; the Firebase dependencies are in
+    // the build but nothing initialises them, so the policy states no
+    // analytics or crash reporting.
+    slug: "watchlist-lite",
+    appName: "WatchList Tracker Lite",
+    storeName: "WatchList Tracker Lite",
+    androidPackage: "com.guanyc.stock.discipline.ads",
+    playUrl:
+      "https://play.google.com/store/apps/details?id=com.guanyc.stock.discipline.ads",
+    developerName: DEVELOPER,
+    legalEntity: DEVELOPER,
+    contactEmail: EMAIL,
+    updated: "November 4, 2026",
+    hidden: true,
+  },
 ];
 
 export function getPrivacy(slug: string): PrivacyPolicy | undefined {
