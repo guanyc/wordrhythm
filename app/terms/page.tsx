@@ -5,7 +5,7 @@ import { TERMS_UPDATED, renderTerms } from "@/lib/terms";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "The terms that govern your use of every Word Rhythm Bible app and Take a Break. Last updated " +
+    "The terms that govern your use of every app published by Guan Yongchun on Google Play — the Word Rhythm Bible apps, Take a Break, HanziNova, and Born Win. Last updated " +
     TERMS_UPDATED +
     ".",
   alternates: { canonical: "/terms" },
@@ -23,8 +23,8 @@ export default function TermsPage() {
         Terms of Service
       </h1>
       <p className="mt-4 text-muted">
-        One set of terms covers every app published under the Word Rhythm brand.
-        Updated {TERMS_UPDATED}.
+        One set of terms covers every app published by Guan Yongchun on Google
+        Play. Updated {TERMS_UPDATED}.
       </p>
 
       <div className="mt-8 rounded-2xl border border-black/5 bg-surface p-6 shadow-card">
@@ -45,9 +45,12 @@ export default function TermsPage() {
           <div className="flex flex-wrap gap-1">
             <dt className="font-semibold text-ink">Apps covered:</dt>
             <dd>
-              Bible KJV, Bible ASV, Bible Web, Biblia RVR, and Word Rhythm: 道韵
-              CUV Bible, Bíblia AA, Bible Louis Segond 1910, Lutherbibel 1912,
-              and Take a Break.
+              <strong>Word Rhythm</strong> Bible apps (KJV, ASV, WEB, RVR, 道韵
+              CUV, Bíblia AA, Louis Segond 1910, Lutherbibel 1912, Bible KJV
+              Quick, Bijbel Statenvertaling Lite, Yorùbá + KJV), and{" "}
+              <strong>Take a Break</strong>; plus{" "}
+              <strong>HanziNova</strong> (Chinese character learning) and{" "}
+              <strong>Born Win</strong> (trading discipline).
             </dd>
           </div>
         </dl>
@@ -69,7 +72,7 @@ export default function TermsPage() {
           href="/versions"
           className="rounded-xl border border-black/10 bg-surface px-4 py-2 font-semibold transition-colors hover:border-brand/40 hover:text-brand"
         >
-          About the apps
+          About the Bible apps
         </Link>
       </div>
     </section>

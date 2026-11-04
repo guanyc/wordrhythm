@@ -1,23 +1,39 @@
-This Terms of Service ("Terms") governs your use of the Word Rhythm mobile
-applications — including Bible KJV, Bible ASV, Bible Web (World English Bible),
-Biblia RVR (Reina-Valera), and Word Rhythm: 道韵 CUV Bible, Bíblia AA (Almeida
-Atualizada), Bible Louis Segond 1910, Lutherbibel 1912, and Take a Break —
-each developed and published by Guan Yongchun ("we", "our", or "us"). The
-specific app you install or use is referred to below as "the App."
+These Terms of Service ("Terms") govern your use of the mobile applications
+developed and published by **Guan Yongchun** ("we", "our", or "us") on the
+Google Play store. This includes every app under the Word Rhythm brand (Bible
+KJV, Bible ASV, Bible Web / World English Bible, Biblia RVR / Reina-Valera,
+道韵 CUV Bible, Bíblia AA / Almeida Atualizada, Bible Louis Segond 1910,
+Lutherbibel 1912, Yorùbá + KJV, Bible KJV Quick, Bijbel Statenvertaling Lite,
+and Take a Break), as well as HanziNova and Born Win. The specific app you
+install or use is referred to below as "the App."
 
 By installing or using the App, you agree to these Terms. If you do not agree,
 please do not use the App.
 
 ## 1. The Service
 
-The App provides offline access to public-domain Bible translations, along
-with daily devotionals, reading plans, text-to-speech audio, bookmarks, notes,
-and related features. Some content — including audio recordings and sleep
-tracks — may be delivered over the network and requires an internet
-connection. The exact set of features varies by App.
+Each App provides the functionality described in its Google Play listing. In
+general:
 
-The App is offered free of charge and is supported by advertising. An optional
-in-app purchase ("Remove Ads") may be available through Google Play Billing.
+- **Word Rhythm Bible apps** offer offline access to Bible translations with
+  daily devotional slots (morning, day, evening, sleep), reading plans,
+  bookmarks, notes, and — in some apps — text-to-speech or sleep-audio
+  playback.
+- **Take a Break** offers short devotional and Scripture-based reflection
+  prompts for moments when a full reading session is not practical.
+- **HanziNova** offers Chinese character writing practice, stroke-order
+  reference, and vocabulary tools for learners.
+- **Born Win** offers a personal trading-discipline tool for tracking watch
+  lists, entry/exit rules, and reflections. It is **not** a brokerage, an
+  execution platform, and does **not** place or manage real trades.
+
+Some content — including audio recordings, sleep tracks, and downloadable
+language or reading packs — may be delivered over the network and requires an
+internet connection. The exact set of features varies by App.
+
+Apps are offered free of charge, and some are supported by advertising. An
+optional in-app purchase (for example, "Remove Ads" or a Pro unlock) may be
+available through Google Play Billing.
 
 ## 2. Your Device and Account
 
@@ -34,7 +50,7 @@ You agree not to:
 
 - Reverse engineer, decompile, or disassemble the App's code.
 - Scrape, bulk-download, or redistribute the App's proprietary layout, design,
-  or curated devotional content.
+  curated content, or datasets.
 - Interfere with or disrupt the App's normal operation, its advertising, or
   its purchase flows.
 - Use the App for any unlawful purpose or in violation of applicable laws.
@@ -43,36 +59,50 @@ You agree not to:
 
 - **App code, design, and UI** belong to Guan Yongchun and are protected by
   applicable copyright laws.
-- **Bible translation texts** (KJV, ASV, WEB, Reina-Valera, CUV, Almeida,
-  Louis Segond, Luther 1912, and others) are in the public domain. You are
-  free to copy, quote, and share Scripture passages for personal, educational,
-  or devotional use.
-- **Curated devotionals, prayers, and reflections** included in the App are
-  original works. You may read them and share individual passages for personal
-  edification, but you may not republish them as a competing product.
+- **Bible translation texts** included in the Word Rhythm apps (KJV, ASV, WEB,
+  Reina-Valera, CUV, Almeida, Louis Segond, Luther 1912, and others) are in
+  the public domain. You are free to copy, quote, and share Scripture passages
+  for personal, educational, or devotional use.
+- **Curated devotionals, prayers, reflections, and lesson content** are
+  original works. You may read them and share individual passages or prompts
+  for personal edification, but you may not republish them as a competing
+  product.
+- **Reference datasets** — including character stroke data, word lists, and
+  public-domain dictionaries — are used under their respective licences. You
+  may not extract and redistribute them as a standalone dataset.
 
 ## 5. In-App Purchases
 
-Purchases such as "Remove Ads" are processed by Google Play Billing. All
-transactions, refunds, and payment issues are governed by the Google Play
-Terms of Service. We do not store or access your payment information.
+Purchases such as "Remove Ads" or Pro unlocks are processed by Google Play
+Billing. All transactions, refunds, subscription renewals, and payment issues
+are governed by the Google Play Terms of Service and the refund policy set out
+there. We do not store or access your payment information.
 
 ## 6. Disclaimers
 
-- The App is a personal reading tool. It is **not affiliated with, endorsed
-  by, or acting on behalf of any church, denomination, or theological
-  institution.**
-- The App is a reading and devotional aid. It does **not provide pastoral,
-  counselling, medical, legal, or financial advice.**
+- The App is a personal reading, learning, or tracking tool. It is **not
+  affiliated with, endorsed by, or acting on behalf of any church,
+  denomination, theological institution, brokerage, exchange, or employer.**
+- Word Rhythm Bible apps are a reading and devotional aid. They do **not
+  provide pastoral, counselling, medical, legal, or financial advice.**
+- **HanziNova** is a practice aid. It does not guarantee exam readiness,
+  language proficiency, or the accuracy of every historical variant of a
+  character.
+- **Born Win** is a personal discipline and journaling tool. **Nothing in the
+  App is investment advice, a recommendation to buy or sell any security, or a
+  guarantee of trading performance.** All market data, watchlists, and
+  signals are for information only. You alone are responsible for your trades
+  and their consequences.
 - We do not guarantee the accuracy, completeness, or fitness for any particular
-  purpose of any translation text, devotional content, or audio rendering.
+  purpose of any content, dataset, or audio rendering included in the App.
 - The App is provided **"as is"**, without warranty of any kind, express or
   implied, to the fullest extent permitted by law.
 
 ## 7. Limitation of Liability
 
 To the maximum extent permitted by law, Guan Yongchun shall not be liable for
-any indirect, incidental, special, consequential, or punitive damages arising
+any indirect, incidental, special, consequential, or punitive damages —
+including, for users of Born Win, any trading or investment losses — arising
 from your use of, or inability to use, the App. Nothing in these Terms limits
 any non-waivable consumer rights you may have under your local laws, including
 consumer protection laws of the European Economic Area and the United Kingdom.
