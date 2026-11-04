@@ -1,55 +1,76 @@
-The Win First stock targets selecting notes-taking application provides
-some stock markets targets selection notes-taking and data analysis funtions.
+# Privacy Policy
 
-[Born Win](https://play.google.com/store/apps/details?id=com.guanyc.stock.discipline)
+**Effective Date:** November 4, 2026
 
-**Effective Date:** [August-20-2024]
+This Privacy Policy applies only to the mobile app identified below.
 
-## 1. Introduction
+The identifiers in this policy should match the Google Play store listing for this app, including the app name, developer name, legal entity, and package name.
 
-Welcome to [Born Win] ("we", "our", "us"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application ("the App"). Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the App.
+**Born to Win** (“we”, “our”, or “the App”) values your privacy. This Privacy Policy explains how information is handled when you use our mobile application.
 
-## 2. Information We Collect
+## 1. Information We Collect
 
-We may collect the following types of information when you use our App:
+### a) Watchlist Data (Local Storage Only)
+The App stores your stock codes, watchlists, action and reason tags, daily notes, execution status, analysis views, and language preference (English or Chinese) locally on your device. There is no account, no sign-in, and no upload of this data to us.
 
-### 2.1 Personal Information
-We do not collect any personal information such as your name, email address, or phone number.
+The App also includes backup and export tools that write a copy of this data — as JSON, XML, or a database file — to a location you pick on your own device. You control that file completely; it is never sent to us.
 
-### 2.2 Non-Personal Information
-We may collect non-personal information about your use of the App, including but not limited to:
-- **Device Information:** We may collect information about your device, such as the device model, operating system, and unique device identifiers.
-- **Usage Data:** We may collect information about how you use the App, including the features you use and the time spent on the App.
+If Android's system backup is enabled on your device, the operating system may include the App's local data in your own Google backup. That backup is configured and controlled by you in your device settings, not by us.
 
-## 3. How We Use Your Information
+### b) Crash Reports (Firebase Crashlytics)
+The App includes **Google Firebase Crashlytics**. If the App crashes or throws an unhandled error, a crash report is sent to Google containing the stack trace, the state of the app at that moment, and device details such as model, operating system version, app version, and language. Reports are linked to an installation identifier, not to your name or account. They are used only to find and fix bugs.
 
-We may use the collected information in the following ways:
-- To operate and improve the App.
-- To understand and analyze how you use the App.
-- To provide you with technical support and respond to your inquiries.
+### c) Usage Analytics (Firebase Analytics)
+The App includes **Google Firebase Analytics**, which records basic events such as app opens, sessions, and screens visited, together with device and app version. It never receives your watchlist, notes, comments, or any other text you type into the App. This build has no in-app switch for these events, so they are collected for every install.
 
-## 4. Sharing Your Information
+### d) Text Recognition From Photos (On Device)
+The scan feature reads stock codes from a photo you pick with Android's own photo picker. Recognition runs on the device with **Google ML Kit**, and the photo is not uploaded by us. Google's ML Kit SDK may report anonymous usage metrics about itself to Google under its own terms.
 
-We do not share your personal information with any third parties. We may share non-personal information for the purposes of analytics and improving our services.
+### e) No Ads, No Location, No Purchases
+This build contains no advertising SDK, never requests your location, and has no in-app purchases. Nothing is charged beyond what Google Play itself applies to the download.
+
+## 2. How We Use Information
+
+Information is used only to:
+
+*   Save and display your watchlist, notes, tags, and preferences on your device.
+*   Detect, diagnose, and fix crashes.
+*   Understand, in aggregate, which screens are actually used, so they can be improved.
+
+## 3. Data Sharing
+
+We do not sell, rent, or trade your personal information, and we never receive your watchlist or notes.
+
+Information may be processed by third-party service providers:
+
+*   **Google Firebase (Crashlytics, Analytics):** crash reporting and usage analytics.
+*   **Google ML Kit:** on-device text recognition and its own SDK metrics.
+
+Each of these services operates under its own privacy policy.
+
+## 4. Your Choices & Controls
+
+*   **Local data:** the backup and export tools are the only way your watchlist data leaves the App, and only to a location you choose. Uninstalling the App deletes its local database.
+*   **Crash and usage data:** this build has no in-app switch for Firebase. Uninstalling the App stops further collection; reports already sent are retained by Google under its own retention rules.
+*   **No purchases:** there is nothing to unsubscribe from or refund — the App has no in-app purchases.
 
 ## 5. Data Security
 
-We take reasonable measures to protect your information from unauthorized access, use, or disclosure. However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.
+We take reasonable technical measures to protect user data.
 
-## 6. Third-Party Services
+*   Your watchlist data is stored in the App's private sandbox and is not transmitted to us.
+*   Crash reports and analytics events are transmitted over HTTPS and carry no watchlist content.
 
-Our App may use third-party services that may collect information used to identify you. We are not responsible for the privacy practices of these third-party services. We encourage you to read the privacy policies of any third-party services you use.
+## 6. Children's Privacy
 
-## 7. Children's Privacy
+The App is a tracking and journaling tool for investors and is not directed to children under the age of 13. We do not knowingly collect personal information from children.
 
-Our App is not intended for children under the age of 16. We do not knowingly collect personal information from children under 16. If we discover that a child under 16 has provided us with personal information, we will delete such information from our servers immediately.
+## 7. Changes to This Policy
 
-## 8. Changes to This Privacy Policy
+We may update this Privacy Policy from time to time. Updates will be reflected by revising the “Effective Date” at the top of this policy.
 
-We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes. Changes are effective when they are posted on this page.
+## 8. Contact Us
 
-## 9. Contact Us
-
-If you have questions about this Privacy Policy, please contact:
+If you have questions regarding this Privacy Policy, please contact:
 
 **Email:** yc.guan@gmail.com

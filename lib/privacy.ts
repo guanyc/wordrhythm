@@ -210,7 +210,7 @@ export const privacyPolicies: PrivacyPolicy[] = [
   },
   {
     slug: "winfirst",
-    appName: "Win First",
+    appName: "Born to Win",
     storeName: "Born to Win: WatchList Tracker",
     androidPackage: "com.guanyc.stock.discipline",
     playUrl:
@@ -218,7 +218,7 @@ export const privacyPolicies: PrivacyPolicy[] = [
     developerName: DEVELOPER,
     legalEntity: DEVELOPER,
     contactEmail: EMAIL,
-    updated: "August 20, 2024",
+    updated: "November 4, 2026",
     hidden: true,
   },
   {
