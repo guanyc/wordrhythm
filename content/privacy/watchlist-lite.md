@@ -35,7 +35,7 @@ Ads may be **personalized** or **non-personalized**, in accordance with Google's
 For more information, please visit: [Google Privacy Policy](https://policies.google.com/privacy)
 
 ### c) No Analytics or Crash Reporting
-This build of the App does not run an analytics or crash-reporting service. It does not send usage statistics, device logs, or crash reports anywhere.
+This build carries the **Google Firebase Analytics** and **Crashlytics** libraries, but both collection switches are turned off in the app's manifest. Nothing is recorded and nothing is sent: no usage statistics, no device logs, and no crash reports.
 
 ## 2. How We Use Information
 
