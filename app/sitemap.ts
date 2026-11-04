@@ -107,5 +107,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.4,
     },
     ...privacyPages,
+    {
+      url: `${BASE}/terms`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.4,
+    },
   ];
 }
