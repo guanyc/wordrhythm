@@ -135,6 +135,22 @@ export const versions = [
     package: "com.gyc.ace.yoruba",
     status: "planned",
   },
+  {
+    // Same pre-launch treatment as Yorùbá. Sleep audio was removed from this
+    // build, so audio is TTS only — keep in sync with lib/versions.ts.
+    slug: "igbo",
+    name: "Igbo + KJV",
+    listing: "Word Rhythm: Igbo + KJV",
+    summary:
+      "the Open Igbo Contemporary Bible and the KJV side by side, fully offline, with red letter from the Igbo text's own speaker markers",
+    language: "Igbo & English",
+    lang: "ig",
+    audio: "tts",
+    audioNote: "text-to-speech audio",
+    sleepLabel: "Sleep",
+    package: "com.gyc.ace.igbo",
+    status: "planned",
+  },
 ];
 
 /** The four daily slots, matching `DAILY_SLOTS` in lib/versions.ts. */

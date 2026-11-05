@@ -157,6 +157,22 @@ export const privacyPolicies: PrivacyPolicy[] = [
     versionSlug: "yoruba",
   },
   {
+    // Pre-launch, same as Yorùbá: the policy goes up first because Play Console
+    // requires a public policy URL. The app already links to /privacy/igbo
+    // (SettingsFragment), and ads + opt-in Firebase reporting are live in the
+    // build, so the policy covers advertising ID, app activity and diagnostics.
+    slug: "igbo",
+    appName: "Igbo + KJV",
+    storeName: "Igbo Bible + KJV Offline",
+    androidPackage: "com.gyc.ace.igbo",
+    developerName: DEVELOPER,
+    legalEntity: DEVELOPER,
+    contactEmail: EMAIL,
+    updated: "November 6, 2026",
+    icon: "/apps/igbo/icon.png",
+    versionSlug: "igbo",
+  },
+  {
     slug: "take-a-break",
     appName: "Take a Break",
     storeName: "Take a Break",

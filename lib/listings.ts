@@ -1115,6 +1115,136 @@ const yoruba: StoreListing = {
   ],
 };
 
+const igbo: StoreListing = {
+  intro: [
+    "Word Rhythm: Igbo + KJV is a free, offline Bible that carries two texts: the Biblica Open Igbo Contemporary Bible (OICB) and the King James Version. Not two apps, not two tabs — two translations placed against each other, verse by verse.",
+    "For anyone who reads Igbo at home and studies in English, or who wants to see how a familiar verse reads in both: one setting decides which text you see, and every screen follows that decision.",
+  ],
+  sections: [
+    {
+      heading: "Two texts, one screen",
+      blocks: [
+        {
+          list: [
+            "Four display modes: Igbo only, KJV only, Igbo first, KJV first",
+            "Switch modes from the reading menu — the choice is remembered and applied everywhere",
+            "Bilingual modes stack the two texts in portrait: primary translation first, the other below it",
+            "On tablets, landscape phones and unfolded foldables the two texts can sit side by side in parallel columns, and you can swap which one is on the left",
+            "Highlights, notes, bookmarks, favourites and search results all render in the mode you chose",
+            "Reading plans follow the same rule — a plan’s chapters look like the reader, not a third style",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Red letter from the Igbo text itself",
+      blocks: [
+        {
+          text: [
+            "The words of Christ are red in the KJV, and independently marked in the Igbo text — the Igbo spans come from the translation’s own speaker markers, verse by verse, not copied from the KJV’s character positions, which point at different words in a different language.",
+          ],
+        },
+        {
+          list: [
+            "2,038 Igbo verses carry the red letter; 1,414 of them are marked whole",
+            "In parallel columns each column is coloured from its own data, so a KJV range can never bleed into an Igbo line",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The whole Bible, offline",
+      blocks: [
+        {
+          list: [
+            "All 66 books in both translations, stored on your device",
+            "Every one of the 31,102 KJV verses has its Igbo text — no gaps, no placeholders",
+            "Nothing to download, nothing to sign in to, no connection required — read on a plane, underground, or with no airtime",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Search that forgives missing diacritics",
+      blocks: [
+        {
+          list: [
+            "Type plain “uwa” and find “ụwa”, “Jisos” and find “Jisọs” — underdots are optional",
+            "Combine words with AND, OR, NOT and NEAR, or search an exact phrase",
+            "Results render in your display mode, red letter included",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Read, study, keep",
+      blocks: [
+        {
+          list: [
+            "Highlights, bookmarks, notes and tags — each entry follows your display mode",
+            "Verse memorisation with typed and blanked practice",
+            "Daily reading plans, from a book at a time to the whole Bible",
+            "Devotional cards: a short message, a reflection and a guided prayer",
+            "Find Scripture by feeling, by life situation, by topic, or from the 100 most-searched verses",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Share it as text, a picture, or a video",
+      blocks: [
+        {
+          list: [
+            "Send a verse as text, as an image card, or as a short video in your own setting",
+            "Choose either translation or both — the display mode travels with the share",
+            "Every Igbo share carries the attribution its licence requires",
+            "Four home-screen widgets: today’s verse in light and dark, top verses, a take-a-break card, and a “how are you feeling” shortcut",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Listen — read-aloud",
+      blocks: [
+        {
+          list: [
+            "Text-to-speech playback of the passage you are reading, with your device’s voices",
+            "The KJV reads with an English voice; Igbo playback depends on whether your device offers an Igbo voice — where it does not, the app does not pretend to",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Free, with ads",
+      blocks: [
+        {
+          list: [
+            "Free to read, supported by ads",
+            "Longer devotional collections can open for one day after a short rewarded ad — optional, and never required for Bible reading, search or sharing",
+            "Analytics and crash reports are opt-in and stay off until you agree",
+            "Highlights, notes and plans are stored only on your device",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What stays in English",
+      blocks: [
+        {
+          text: [
+            "The app interface is English, and so are devotional reflections and reading-plan notes. That is a deliberate editorial decision while the Igbo devotional corpus is being prepared, not a missing translation.",
+          ],
+        },
+      ],
+    },
+  ],
+  closing: [
+    "Two translations, one screen — and after the first launch, no connection needed.",
+    "Igbo: Biblica® Open Igbo Contemporary Bible™ © 1980, 1988, 2019, 2020 Biblica, Inc. (CC BY-SA 4.0). KJV: public domain.",
+    "Read. Reflect. Pray. Grow.",
+  ],
+};
+
 export const listings: Record<string, StoreListing> = {
   kjv,
   asv,
@@ -1125,6 +1255,7 @@ export const listings: Record<string, StoreListing> = {
   lsg,
   luther,
   yoruba,
+  igbo,
 };
 
 export function getListing(slug: string): StoreListing | undefined {

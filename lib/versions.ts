@@ -268,6 +268,26 @@ export const versions: BibleVersion[] = [
     package: "com.gyc.ace.yoruba",
     icon: "/apps/yoruba/icon.png",
   },
+  {
+    // Same two-text layout as Yorùbá, but the Igbo text covers every KJV verse
+    // and its red letter comes from the translation's own speaker markers.
+    // Sleep audio was removed from this build, so audio is TTS only. No playUrl
+    // yet: publication waits on the OICB distribution check (see the app's docs).
+    slug: "igbo",
+    code: "IGB",
+    name: "Igbo + KJV",
+    listing: "Word Rhythm: Igbo + KJV",
+    storeTitle: "Igbo Bible + KJV Offline",
+    language: "Igbo & English",
+    lang: "ig",
+    summary:
+      "The Open Igbo Contemporary Bible and the King James Version on one screen — four display modes, red letter from the Igbo text's own speaker markers, fully offline.",
+    status: "planned",
+    audio: "tts",
+    sleepSlotLabel: "Sleep",
+    package: "com.gyc.ace.igbo",
+    icon: "/apps/igbo/icon.png",
+  },
 ];
 
 export function getVersion(slug: string): BibleVersion | undefined {
