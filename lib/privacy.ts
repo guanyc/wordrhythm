@@ -143,12 +143,11 @@ export const privacyPolicies: PrivacyPolicy[] = [
     versionSlug: "aa",
   },
   {
-    // Pre-launch: no Play URL yet. The policy is published first because Play
-    // Console requires a public policy URL before the listing can be created.
     slug: "yoruba",
     appName: "Yorùbá + KJV",
     storeName: "Yorùbá Bible + KJV Offline",
     androidPackage: "com.gyc.ace.yoruba",
+    playUrl: "https://play.google.com/store/apps/details?id=com.gyc.ace.yoruba",
     developerName: DEVELOPER,
     legalEntity: DEVELOPER,
     contactEmail: EMAIL,
@@ -157,14 +156,14 @@ export const privacyPolicies: PrivacyPolicy[] = [
     versionSlug: "yoruba",
   },
   {
-    // Pre-launch, same as Yorùbá: the policy goes up first because Play Console
-    // requires a public policy URL. The app already links to /privacy/igbo
-    // (SettingsFragment), and ads + opt-in Firebase reporting are live in the
-    // build, so the policy covers advertising ID, app activity and diagnostics.
+    // The app links to /privacy/igbo from SettingsFragment, and ads + opt-in
+    // Firebase reporting are live in the build, so the policy covers
+    // advertising ID, app activity and diagnostics.
     slug: "igbo",
     appName: "Igbo + KJV",
     storeName: "Igbo Bible + KJV Offline",
     androidPackage: "com.gyc.ace.igbo",
+    playUrl: "https://play.google.com/store/apps/details?id=com.gyc.ace.igbo",
     developerName: DEVELOPER,
     legalEntity: DEVELOPER,
     contactEmail: EMAIL,

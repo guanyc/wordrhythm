@@ -120,8 +120,6 @@ export const versions = [
     package: "com.gyc.ace.luther",
   },
   {
-    // Published ahead of the Play listing: the policy and the description go up
-    // first, so llms.txt must not advertise a store link that 404s.
     slug: "yoruba",
     name: "Yorùbá + KJV",
     listing: "Word Rhythm: Yorùbá + KJV",
@@ -133,11 +131,10 @@ export const versions = [
     audioNote: "text-to-speech and Sleep Audio",
     sleepLabel: "Sleep",
     package: "com.gyc.ace.yoruba",
-    status: "planned",
   },
   {
-    // Same pre-launch treatment as Yorùbá. Sleep audio was removed from this
-    // build, so audio is TTS only — keep in sync with lib/versions.ts.
+    // Same two-text layout as Yorùbá. Sleep audio was removed from this build,
+    // so audio is TTS only — keep in sync with lib/versions.ts.
     slug: "igbo",
     name: "Igbo + KJV",
     listing: "Word Rhythm: Igbo + KJV",
@@ -149,7 +146,6 @@ export const versions = [
     audioNote: "text-to-speech audio",
     sleepLabel: "Sleep",
     package: "com.gyc.ace.igbo",
-    status: "planned",
   },
 ];
 

@@ -251,8 +251,7 @@ export const versions: BibleVersion[] = [
   },
   {
     // Two translations in one app rather than a single-text pocket reader, so
-    // the summary names both. No playUrl yet: the store listing is written but
-    // publication waits on the OYCB distribution check (see the app's docs).
+    // the summary names both.
     slug: "yoruba",
     code: "YOR",
     name: "Yorùbá + KJV",
@@ -262,17 +261,18 @@ export const versions: BibleVersion[] = [
     lang: "yo",
     summary:
       "The Open Yoruba Contemporary Bible and the King James Version on one screen — four display modes, red letter in both texts, fully offline.",
-    status: "planned",
+    status: "live",
     audio: "sleep",
     sleepSlotLabel: "Sleep",
     package: "com.gyc.ace.yoruba",
+    playUrl:
+      "https://play.google.com/store/apps/details?id=com.gyc.ace.yoruba",
     icon: "/apps/yoruba/icon.png",
   },
   {
     // Same two-text layout as Yorùbá, but the Igbo text covers every KJV verse
     // and its red letter comes from the translation's own speaker markers.
-    // Sleep audio was removed from this build, so audio is TTS only. No playUrl
-    // yet: publication waits on the OICB distribution check (see the app's docs).
+    // Sleep audio was removed from this build, so audio is TTS only.
     slug: "igbo",
     code: "IGB",
     name: "Igbo + KJV",
@@ -282,10 +282,12 @@ export const versions: BibleVersion[] = [
     lang: "ig",
     summary:
       "The Open Igbo Contemporary Bible and the King James Version on one screen — four display modes, red letter from the Igbo text's own speaker markers, fully offline.",
-    status: "planned",
+    status: "live",
     audio: "tts",
     sleepSlotLabel: "Sleep",
     package: "com.gyc.ace.igbo",
+    playUrl:
+      "https://play.google.com/store/apps/details?id=com.gyc.ace.igbo",
     icon: "/apps/igbo/icon.png",
   },
 ];
