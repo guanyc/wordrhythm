@@ -93,11 +93,11 @@ export const versions: BibleVersion[] = [
     code: "KJV",
     name: "KJV Bible",
     listing: "Word Rhythm: KJV Bible",
-    storeTitle: "Bible KJV",
+    storeTitle: "Word Rhythm: KJV Bible Offline",
     language: "English",
     lang: "en",
     summary:
-      "The King James Version, offline — devotionals, audio, and guided plans across four daily slots: morning, day, evening and sleep.",
+      "Want to read the Bible anywhere — even with no signal? The complete KJV offline, with devotionals, audio and guided plans across morning, day, evening and sleep.",
     status: "live",
     audio: "sleep",
     sleepSlotLabel: "Sleep",
