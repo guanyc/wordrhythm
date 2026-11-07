@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.gyc.ace.kjv",
+      "sha256_cert_fingerprints": [
+        "C0:2C:95:63:BB:FF:07:05:7C:15:32:9A:E6:45:FE:E3:79:E4:69:BC:44:58:15:6C:F0:9A:B1:10:F3:B6:9A:58",
+        "B1:8F:C0:2A:2B:1D:00:30:3F:25:0C:1B:74:0D:2D:22:AF:ED:DD:04:A1:EA:BC:79:C3:E1:9D:F9:AB:F3:63:C4"
+      ]
+    }
+  }
+]
