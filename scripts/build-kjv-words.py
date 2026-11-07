@@ -2,7 +2,7 @@
 """
 Build data/kjv-words.json from the Android app's glossary.
 
-The app ships the same 1440 words in
+The app ships the same glossary in
 MyApplication/app/src/main/res/raw/kjv_words_json.json, but stores the verse
 reference glued onto the end of the example string:
 
@@ -12,11 +12,12 @@ This script splits that into `quote` + `reference` so the site can render the
 citation separately — that is the part a reader can paste into a Bible app, and
 the part search engines treat as an entity reference.
 
-A handful of entries use a phrasing or hyphenation the KJV text does not
-contain ("thee-ward", "Turtle-dove"), so their reference is not derivable by
-pattern match. Those are listed in MISSING_REFERENCE below with the verse each
-quote actually comes from, verified against kjv_bible.json. Re-run
-verify_archaic_examples.py after changing anything here.
+Every entry now ends with a parseable "(Book chapter:verse)" citation: the
+entries that used to need a hand-written reference were repaired in the app
+data, so the exceptions table is gone. The app-side checks live in the KJV_CUV
+repo — `scripts/verify_archaic_words.py` (headwords really occur in the KJV)
+and `verify_archaic_examples.py` (quotes are verbatim KJV). Re-run both after
+changing anything here.
 """
 import json
 import re
@@ -25,7 +26,6 @@ from pathlib import Path
 
 KJV_CUV = Path("/Users/guanyc/StudioProjects/KJV_CUV")
 SRC = KJV_CUV / "MyApplication/app/src/main/res/raw/kjv_words_json.json"
-BIBLE = KJV_CUV / "MyApplication/kjv_bible.json"
 OUT = Path("/Users/guanyc/projects/wordrhythm/data/kjv-words.json")
 
 BOOKS = (
@@ -65,29 +65,11 @@ CN_GLOSSES = {
 # report dozens of false positives.
 HAN = re.compile(r"[㐀-䶿一-鿿]")
 
-# Entries whose example does not end in a parseable citation. Each quote was
-# located in kjv_bible.json by full-text search.
-MISSING_REFERENCE = {
-    "couchingplace": ("Isaiah", 57, 20),
-    "entreaty": ("Luke", 19, 41),
-    "evilmindedness": ("Mark", 7, 21),
-    "lanced": ("1 Samuel", 17, 49),
-    "rollers": ("Exodus", 27, 9),
-    "Stupor": ("Acts", 2, 4),
-    "thee-ward": ("Psalms", 25, 16),
-    "Tussle": ("Genesis", 32, 24),
-    "us-ward": ("Lamentations", 5, 21),
-    "you-ward": ("Romans", 5, 8),
-}
-
 
 def main():
     words = json.loads(SRC.read_text(encoding="utf-8"))
-    bible = json.loads(BIBLE.read_text(encoding="utf-8"))["verses"]
-    verses = {(v["book_name"], v["chapter"], v["verse"]): v["text"] for v in bible}
 
     out = []
-    patched = 0
     for entry in words:
         example = entry["example"].strip()
         match = TAIL.search(example)
@@ -102,10 +84,6 @@ def main():
                 "chapter": int(match.group("chapter")),
                 "verse": int(match.group("verse")),
             }
-        elif entry["archaic_word"] in MISSING_REFERENCE:
-            book, chapter, verse = MISSING_REFERENCE[entry["archaic_word"]]
-            reference = {"book": book, "chapter": chapter, "verse": verse}
-            patched += 1
 
         out.append(
             {
@@ -144,7 +122,6 @@ def main():
     missing = [e["word"] for e in out if not e["reference"]]
 
     print(f"entries written    {len(out)}")
-    print(f"references patched {patched}")
     print(f"missing reference  {len(missing)}")
     print(f"slug clashes       {len(clashes)}")
     for c in clashes:

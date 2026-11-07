@@ -134,6 +134,7 @@ questions people actually ask.
 - [disquiet](https://wordrhythm.app/kjv-words/disquiet) — anxiety; Jeremiah 50:34
 - [Edify](https://wordrhythm.app/kjv-words/edify) — Edify; to instruct or build up (morally/spiritually); Romans 14:19
 - [ensample](https://wordrhythm.app/kjv-words/ensample) — example; Philippians 3:17
+- [excellency](https://wordrhythm.app/kjv-words/excellency) — pre-eminence; Deuteronomy 33:26
 - [Exhort](https://wordrhythm.app/kjv-words/exhort) — Exhort; to urge or advise strongly; Titus 2:9
 - [forasmuch](https://wordrhythm.app/kjv-words/forasmuch) — since; Acts 9:38
 - [forbare](https://wordrhythm.app/kjv-words/forbare) — refrained; 1 Samuel 23:13
@@ -150,7 +151,6 @@ questions people actually ask.
 - [Impute](https://wordrhythm.app/kjv-words/impute) — To attribute or ascribe (especially sin or righteousness); Romans 4:8
 - [Persecute](https://wordrhythm.app/kjv-words/persecute) — To persecute; to harass or oppress (for beliefs); Lamentations 3:66
 - [Profaned](https://wordrhythm.app/kjv-words/profaned) — Profaned; desecrated or made unholy (past tense); Psalms 89:39
-- [Unequaled](https://wordrhythm.app/kjv-words/unequaled) — unparalleled; incomparable; Exodus 15:11
 - [unfeigned](https://wordrhythm.app/kjv-words/unfeigned) — sincere; 2 Corinthians 6:6
 - [unsatiable](https://wordrhythm.app/kjv-words/unsatiable) — insatiable; Ezekiel 16:28
 - [wanton](https://wordrhythm.app/kjv-words/wanton) — unruly; reckless; immoral; James 5:5
@@ -162,11 +162,11 @@ questions people actually ask.
 - [whisperings](https://wordrhythm.app/kjv-words/whisperings) — whispers; gossip; secret talk; 2 Corinthians 12:20
 - [whosoever](https://wordrhythm.app/kjv-words/whosoever) — whoever; any person (emphatic); Luke 7:23
 - [wist](https://wordrhythm.app/kjv-words/wist) — knew (archaic past tense of 'wit'); Luke 2:49
-- [Full glossary of 1440 KJV words](https://wordrhythm.app/kjv-words)
+- [Full glossary of 1439 KJV words](https://wordrhythm.app/kjv-words)
 
 Every entry in the glossary carries a modern equivalent, a definition and a
 verbatim KJV example with its book, chapter and verse. The ones listed above
-are the words readers look up most; all 1440 are searchable at
+are the words readers look up most; all 1439 are searchable at
 the link above.
 
 ## Facts
@@ -176,7 +176,7 @@ the link above.
 - Reading plans, memorization and Take a Break are available in every app.
 - Audio varies: Sleep Audio (KJV Bible, Yorùbá + KJV), text-to-speech (WEB Bible, Biblia RVR, 和合本圣经, Bíblia AA, Lutherbibel 1912, Igbo + KJV), or none (ASV Bible, Bible Louis Segond 1910).
 - Also available as a standalone app: [Take a Break](https://wordrhythm.app/take-a-break)
-- KJV archaic-word glossary: 1440 entries, examples verified against the full KJV text.
+- KJV archaic-word glossary: 1439 entries, examples verified against the full KJV text.
 
 ## Guides
 

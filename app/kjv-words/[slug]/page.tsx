@@ -3,17 +3,17 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   TOTAL_WORDS,
-  featuredWordSlugs,
   featuredWords,
   formatRef,
   getWord,
   isFeatured,
+  pageWordSlugs,
   slugify,
 } from "@/lib/archaic";
 
 /** Only the words in FEATURED get a page; the rest live in the glossary. */
 export function generateStaticParams() {
-  return featuredWordSlugs().map((slug) => ({ slug }));
+  return pageWordSlugs().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
@@ -40,11 +40,15 @@ export async function generateMetadata({
     `${word.word} (/${word.phonetic.replace(/^\/|\/$/g, "")}/) means "${modern}" in the King James Version. ` +
     `${word.definition} See it in context${word.reference ? ` at ${formatRef(word.reference)}` : ""}.`;
 
+  // A renamed word keeps its old URL alive, but the canonical page is the one
+  // under the word's current name.
+  const canonicalSlug = slugify(word.word);
+
   return {
     title,
     description,
-    alternates: { canonical: `/kjv-words/${slug}` },
-    openGraph: { title, description, url: `/kjv-words/${slug}` },
+    alternates: { canonical: `/kjv-words/${canonicalSlug}` },
+    openGraph: { title, description, url: `/kjv-words/${canonicalSlug}` },
   };
 }
 
@@ -97,6 +101,20 @@ export default async function ArchaicWordPage({
         {word.word}
       </h1>
       <p className="mt-2 font-mono text-sm text-muted">{word.phonetic}</p>
+
+      {slug !== slugify(word.word) && (
+        <p className="mt-3 rounded-xl bg-surface px-4 py-3 text-sm text-muted">
+          The KJV does not write &ldquo;{slug.replace(/-/g, " ")}&rdquo; — this
+          word is filed under{" "}
+          <Link
+            href={`/kjv-words/${slugify(word.word)}`}
+            className="font-semibold text-brand hover:underline"
+          >
+            {word.word}
+          </Link>
+          .
+        </p>
+      )}
 
       <dl className="mt-8 space-y-6">
         <div>

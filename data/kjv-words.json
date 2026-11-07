@@ -936,6 +936,18 @@
     }
   },
   {
+    "word": "astonished",
+    "phonetic": "/əˈstɒnɪʃt/",
+    "modern": "astonished, amazed, stunned",
+    "definition": "Verb (past participle): struck with wonder or amazement; stunned into speechlessness",
+    "quote": "Mark me, and be astonished, and lay your hand upon your mouth.",
+    "reference": {
+      "book": "Job",
+      "chapter": 21,
+      "verse": 5
+    }
+  },
+  {
     "word": "asunder",
     "phonetic": "/əˈsʌndə(r)/",
     "modern": "apart, into pieces",
@@ -2148,6 +2160,18 @@
     }
   },
   {
+    "word": "bush",
+    "phonetic": "/bʊʃ/",
+    "modern": "bush, shrub, thicket",
+    "definition": "Noun: a shrub or small tree; a thicket of shrubs",
+    "quote": "And the angel of the LORD appeared unto him in a flame of fire out of the midst of a bush: and he looked, and, behold, the bush burned with fire, and the bush was not consumed.",
+    "reference": {
+      "book": "Exodus",
+      "chapter": 3,
+      "verse": 2
+    }
+  },
+  {
     "word": "Bushel",
     "phonetic": "/ˈbʊʃəl/",
     "modern": "Bushel; a unit of dry measure",
@@ -2616,10 +2640,10 @@
     }
   },
   {
-    "word": "Chrysolite",
+    "word": "chrysolyte",
     "phonetic": "/ˈkrɪsəlaɪt/",
-    "modern": "Chrysolite (a yellow-green gemstone)",
-    "definition": "Noun referring to a yellow or green gemstone (likely peridot), used in the foundation of the New Jerusalem",
+    "modern": "chrysolite, a yellow-green gemstone",
+    "definition": "Noun: a yellow or green precious stone (thought to be peridot), the seventh stone in the foundation of the New Jerusalem",
     "quote": "The fifth, sardonyx; the sixth, sardius; the seventh, chrysolyte; the eighth, beryl; the ninth, a topaz; the tenth, a chrysoprasus; the eleventh, a jacinth; the twelfth, an amethyst.",
     "reference": {
       "book": "Revelation",
@@ -3336,15 +3360,15 @@
     }
   },
   {
-    "word": "couchingplace",
-    "phonetic": "/ˈkaʊtʃɪŋpleɪs/",
-    "modern": "hiding place, lair, resting place",
-    "definition": "A place where one lies in wait or rests; a hiding place",
-    "quote": "The wicked are like the troubled sea, when it cannot rest, whose waters cast up mire and dirt. There is no peace, saith my God, to the wicked. (Isaiah 57:20-21, referencing their couchingplace)",
+    "word": "couching place",
+    "phonetic": "/ˈkaʊtʃɪŋ pleɪs/",
+    "modern": "couching place, resting place, lair",
+    "definition": "Noun: a place to lie down or rest; a fold where flocks are bedded, or a lair where one lies in wait",
+    "quote": "And I will make Rabbah a stable for camels, and the Ammonites a couching place for flocks: and ye shall know that I am the LORD.",
     "reference": {
-      "book": "Isaiah",
-      "chapter": 57,
-      "verse": 20
+      "book": "Ezekiel",
+      "chapter": 25,
+      "verse": 5
     }
   },
   {
@@ -4272,6 +4296,18 @@
     }
   },
   {
+    "word": "doctrine",
+    "phonetic": "/ˈdɒktrɪn/",
+    "modern": "doctrine, teaching, instruction",
+    "definition": "Noun: a body of teaching or belief; the instruction given by a preacher",
+    "quote": "And he taught them many things by parables, and said unto them in his doctrine,",
+    "reference": {
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 2
+    }
+  },
+  {
     "word": "doest",
     "phonetic": "/dʌɪst/",
     "modern": "do (second person singular)",
@@ -4884,15 +4920,15 @@
     }
   },
   {
-    "word": "entreaty",
-    "phonetic": "/ɪnˈtriːti/",
-    "modern": "plea, request, supplication",
-    "definition": "An earnest request or plea; a humble appeal",
-    "quote": "And when he was come near, he beheld the city, and wept over it. (Luke 19:41, with silent entreaty for its people)",
+    "word": "entreateth",
+    "phonetic": "/ɪnˈtriːtɪθ/",
+    "modern": "entreat, plead with",
+    "definition": "Verb (third person singular): to beg, petition, or appeal to; to make earnest request of another",
+    "quote": "He evil entreateth the barren that beareth not: and doeth not good to the widow.",
     "reference": {
-      "book": "Luke",
-      "chapter": 19,
-      "verse": 41
+      "book": "Job",
+      "chapter": 24,
+      "verse": 21
     }
   },
   {
@@ -5092,7 +5128,7 @@
     "phonetic": "/ˈiːvəlˈmaɪndɪdnəs/",
     "modern": "malice, wicked intent",
     "definition": "The quality of having evil thoughts or intentions; malice",
-    "quote": "For from within, out of the heart of men, proceed evil thoughts, adulteries... (Mark 7:20, evilmindedness)",
+    "quote": "For from within, out of the heart of men, proceed evil thoughts, adulteries",
     "reference": {
       "book": "Mark",
       "chapter": 7,
@@ -5109,6 +5145,18 @@
       "book": "Isaiah",
       "chapter": 60,
       "verse": 17
+    }
+  },
+  {
+    "word": "excellency",
+    "phonetic": "/ɪkˈsɛlənsi/",
+    "modern": "excellency, pre-eminence, glory",
+    "definition": "Noun: surpassing glory and pre-eminence; the highest rank or dignity",
+    "quote": "There is none like unto the God of Jeshurun, who rideth upon the heaven in thy help, and in his excellency on the sky.",
+    "reference": {
+      "book": "Deuteronomy",
+      "chapter": 33,
+      "verse": 26
     }
   },
   {
@@ -5253,6 +5301,18 @@
       "book": "Proverbs",
       "chapter": 10,
       "verse": 3
+    }
+  },
+  {
+    "word": "famished",
+    "phonetic": "/ˈfæmɪʃt/",
+    "modern": "famished, starving",
+    "definition": "Verb (past participle): to be pinched with hunger for want of food; to starve",
+    "quote": "And when all the land of Egypt was famished, the people cried to Pharaoh for bread: and Pharaoh said unto all the Egyptians, Go unto Joseph; what he saith to you, do.",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 41,
+      "verse": 55
     }
   },
   {
@@ -5937,6 +5997,18 @@
       "book": "Hebrews",
       "chapter": 12,
       "verse": 16
+    }
+  },
+  {
+    "word": "forsaketh",
+    "phonetic": "/fərˈseɪkɪθ/",
+    "modern": "forsake, give up, relinquish",
+    "definition": "Verb (third person singular): to leave behind, give up, or lay aside; to give up possession of something",
+    "quote": "So likewise, whosoever he be of you that forsaketh not all that he hath, he cannot be my disciple.",
+    "reference": {
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 33
     }
   },
   {
@@ -8052,6 +8124,18 @@
     }
   },
   {
+    "word": "husks",
+    "phonetic": "/hʌsks/",
+    "modern": "husks, husks of grain",
+    "definition": "Noun: the dry outer shell of grain, too coarse to be eaten; chaff",
+    "quote": "And he would fain have filled his belly with the husks that the swine did eat: and no man gave unto him.",
+    "reference": {
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 16
+    }
+  },
+  {
     "word": "Idolater",
     "phonetic": "/aɪˈdɒlətər/",
     "modern": "One who worships idols",
@@ -9016,7 +9100,7 @@
     "phonetic": "/lɑːnst/",
     "modern": "pierced with a lance, stabbed (past tense)",
     "definition": "Past tense of 'lance'; to have pierced or stabbed with a long, pointed weapon (lance)",
-    "quote": "And David put his hand in his bag, and took thence a stone, and slang it, and smote the Philistine in his forehead, that the stone sunk into his forehead; and he fell upon his face to the earth. (1 Samuel 17:49, a blow like that of a lanced wound)",
+    "quote": "And David put his hand in his bag, and took thence a stone, and slang it, and smote the Philistine in his forehead, that the stone sunk into his forehead; and he fell upon his face to the earth",
     "reference": {
       "book": "1 Samuel",
       "chapter": 17,
@@ -9669,6 +9753,18 @@
       "book": "1 Timothy",
       "chapter": 3,
       "verse": 3
+    }
+  },
+  {
+    "word": "lukewarm",
+    "phonetic": "/ˈlʌkwərm/",
+    "modern": "lukewarm, tepid, indifferent",
+    "definition": "Adjective: neither hot nor cold; half-hearted and indifferent in zeal or devotion",
+    "quote": "So then because thou art lukewarm, and neither cold nor hot, I will spue thee out of my mouth.",
+    "reference": {
+      "book": "Revelation",
+      "chapter": 3,
+      "verse": 16
     }
   },
   {
@@ -12024,6 +12120,18 @@
     }
   },
   {
+    "word": "priesthood",
+    "phonetic": "/ˈpriːsthʊd/",
+    "modern": "priesthood, priestly office",
+    "definition": "Noun: the office and order of priests; the rank, service, and succession belonging to those set apart as priests",
+    "quote": "And thou shalt anoint them, as thou didst anoint their father, that they may minister unto me in the priest's office: for their anointing shall surely be an everlasting priesthood throughout their generations.",
+    "reference": {
+      "book": "Exodus",
+      "chapter": 40,
+      "verse": 15
+    }
+  },
+  {
     "word": "principalities",
     "phonetic": "/ˌprɪnsəˈpælətiz/",
     "modern": "ruling powers, spiritual authorities (good/evil)",
@@ -12696,11 +12804,11 @@
     }
   },
   {
-    "word": "Refining",
-    "phonetic": "/rɪˈfaɪnɪŋ/",
-    "modern": "Refining; purifying (present participle)",
-    "definition": "Present participle meaning to remove impurities (from materials) or spiritually purify someone",
-    "quote": "But who may abide the day of his coming? and who shall stand when he appeareth? for he is like a refiner's fire, and like fullers' soap.",
+    "word": "refiner",
+    "phonetic": "/rɪˈfaɪnər/",
+    "modern": "refiner, purifier",
+    "definition": "Noun: one who refines metal, as silver or gold, purifying it from its dross; figuratively, one who purifies people",
+    "quote": "But who may abide the day of his coming? and who shall stand when he appeareth? for he is like a refiner's fire, and like fullers' soap:",
     "reference": {
       "book": "Malachi",
       "chapter": 3,
@@ -12753,18 +12861,6 @@
       "book": "Romans",
       "chapter": 12,
       "verse": 12
-    }
-  },
-  {
-    "word": "Relinquish",
-    "phonetic": "/rɪˈlɪŋkwɪʃ/",
-    "modern": "Relinquish; to give up or surrender",
-    "definition": "Verb meaning to voluntarily give up possession, control, or a right (often for a greater good)",
-    "quote": "So likewise, whosoever he be of you that forsaketh not all that he hath, he cannot be my disciple.",
-    "reference": {
-      "book": "Luke",
-      "chapter": 14,
-      "verse": 33
     }
   },
   {
@@ -12888,10 +12984,10 @@
     }
   },
   {
-    "word": "Reproaching",
-    "phonetic": "/rɪˈproʊtʃɪŋ/",
-    "modern": "Reproaching; blaming or criticizing (present participle)",
-    "definition": "Present participle meaning to express blame, criticism, or disapproval toward someone",
+    "word": "reproach",
+    "phonetic": "/rɪˈproʊtʃ/",
+    "modern": "reproach, blame, disgrace",
+    "definition": "Noun: blame or disgrace cast upon a person; a word of rebuke. Verb: to blame, censure, or reproach",
     "quote": "For the zeal of thine house hath eaten me up; and the reproaches of them that reproached thee are fallen upon me.",
     "reference": {
       "book": "Psalms",
@@ -13056,18 +13152,6 @@
     }
   },
   {
-    "word": "Riven",
-    "phonetic": "/ˈrɪvn/",
-    "modern": "Riven; split or torn apart (past participle)",
-    "definition": "Past participle meaning to be split, torn, or broken apart (physically or metaphorically)",
-    "quote": "And, behold, the veil of the temple was rent in twain from the top to the bottom; and the earth did quake, and the rocks rent.",
-    "reference": {
-      "book": "Matthew",
-      "chapter": 27,
-      "verse": 51
-    }
-  },
-  {
     "word": "road",
     "phonetic": "/rəʊd/",
     "modern": "road, path, way",
@@ -13104,15 +13188,15 @@
     }
   },
   {
-    "word": "rollers",
-    "phonetic": "/ˈrəʊləz/",
-    "modern": "rollers, cylinders (for pressing/rolling)",
-    "definition": "Cylindrical objects used for pressing, rolling, or shaping materials (e.g., in textile work, construction, or grain processing in biblical times)",
-    "quote": "And thou shalt make the court of the tabernacle: for the south side southward there shall be hangings of fine twined linen of an hundred cubits long for one side. (Exodus 27:9, referencing rollers used to stretch and secure the tabernacle hangings)",
+    "word": "roller",
+    "phonetic": "/ˈroʊlər/",
+    "modern": "roller, binding bandage",
+    "definition": "Noun: a cylinder or band rolled up and used to bind and support a broken limb or a weapon",
+    "quote": "Son of man, I have broken the arm of Pharaoh king of Egypt; and, lo, it shall not be bound up to be healed, to put a roller to bind it, to make it strong to hold the sword.",
     "reference": {
-      "book": "Exodus",
-      "chapter": 27,
-      "verse": 9
+      "book": "Ezekiel",
+      "chapter": 30,
+      "verse": 21
     }
   },
   {
@@ -13161,18 +13245,6 @@
       "book": "Isaiah",
       "chapter": 9,
       "verse": 14
-    }
-  },
-  {
-    "word": "Sacerdotal",
-    "phonetic": "/ˌsæsərˈdoʊtl/",
-    "modern": "Sacerdotal; relating to priests or the priesthood",
-    "definition": "Adjective meaning belonging to or relating to priests, the priesthood, or religious ceremonies performed by priests",
-    "quote": "And thou shalt speak unto all that are wise hearted, that they may make Aaron's garments to consecrate him, that he may minister unto me in the priest's office.",
-    "reference": {
-      "book": "Exodus",
-      "chapter": 28,
-      "verse": 3
     }
   },
   {
@@ -13692,18 +13764,6 @@
     }
   },
   {
-    "word": "Sloth",
-    "phonetic": "/sləʊθ/",
-    "modern": "Sloth; laziness (a sin) or a slow-moving animal",
-    "definition": "Noun: 1) The vice of laziness, condemned in biblical wisdom literature; 2) A slow-moving animal (not referenced in the KJV)",
-    "quote": "Slothfulness casteth into a deep sleep: and an idle soul shall suffer hunger.",
-    "reference": {
-      "book": "Proverbs",
-      "chapter": 19,
-      "verse": 15
-    }
-  },
-  {
     "word": "slothful",
     "phonetic": "/ˈsləʊθfl/",
     "modern": "slothful, lazy, idle, unwilling to work",
@@ -13725,6 +13785,30 @@
       "book": "Ecclesiastes",
       "chapter": 10,
       "verse": 18
+    }
+  },
+  {
+    "word": "slow",
+    "phonetic": "/sloʊ/",
+    "modern": "slow, sluggish, halting",
+    "definition": "Adjective: not quick or swift; slow of speech, or of tongue",
+    "quote": "And Moses said unto the LORD, O my LORD, I am not eloquent, neither heretofore, nor since thou hast spoken unto thy servant: but I am slow of speech, and of a slow tongue.",
+    "reference": {
+      "book": "Exodus",
+      "chapter": 4,
+      "verse": 10
+    }
+  },
+  {
+    "word": "sluggard",
+    "phonetic": "/ˈslʌɡərd/",
+    "modern": "sluggard, slothful person, drone",
+    "definition": "Noun: one who is lazy and idle and so shirks his work; a drone",
+    "quote": "Go to the ant, thou sluggard; consider her ways, and be wise:",
+    "reference": {
+      "book": "Proverbs",
+      "chapter": 6,
+      "verse": 6
     }
   },
   {
@@ -13944,6 +14028,18 @@
     }
   },
   {
+    "word": "stammering",
+    "phonetic": "/ˈstæmərɪŋ/",
+    "modern": "stammering, stuttering, halting speech",
+    "definition": "Noun: the act of speaking with a halting or impeded utterance",
+    "quote": "Thou shalt not see a fierce people, a people of a deeper speech than thou canst perceive; of a stammering tongue, that thou canst not understand.",
+    "reference": {
+      "book": "Isaiah",
+      "chapter": 33,
+      "verse": 19
+    }
+  },
+  {
     "word": "stanched",
     "phonetic": "/stɑːntʃt/",
     "modern": "stanched, stopped (flow of blood/liquid), checked",
@@ -13965,18 +14061,6 @@
       "book": "Isaiah",
       "chapter": 3,
       "verse": 13
-    }
-  },
-  {
-    "word": "Starveth",
-    "phonetic": "/ˈstɑːrvəθ/",
-    "modern": "Starveth; starves (archaic 3rd person singular present tense of 'starve')",
-    "definition": "Archaic verb form meaning 'starves', used for 3rd person singular subjects to describe hunger",
-    "quote": "The slothful man roasteth not that which he took in hunting: but the substance of a diligent man is precious.",
-    "reference": {
-      "book": "Proverbs",
-      "chapter": 12,
-      "verse": 27
     }
   },
   {
@@ -14013,6 +14097,18 @@
       "book": "Isaiah",
       "chapter": 3,
       "verse": 24
+    }
+  },
+  {
+    "word": "stout",
+    "phonetic": "/staʊt/",
+    "modern": "stout, strong, bold",
+    "definition": "Adjective: strong and sturdy of body; bold and hard in spirit",
+    "quote": "The old lion perisheth for lack of prey, and the stout lion's whelps are scattered abroad.",
+    "reference": {
+      "book": "Job",
+      "chapter": 4,
+      "verse": 11
     }
   },
   {
@@ -14145,66 +14241,6 @@
       "book": "2 Chronicles",
       "chapter": 34,
       "verse": 4
-    }
-  },
-  {
-    "word": "Stupor",
-    "phonetic": "/ˈstjuːpər/",
-    "modern": "A state of confusion or unconsciousness",
-    "definition": "Noun referring to a dazed, confused, or semi-unconscious state (physical or spiritual)",
-    "quote": "And they were all filled with the Holy Ghost, and began to speak with other tongues, as the Spirit gave them utterance. (Acts 2:4) [Context of overwhelming experience; direct example: And there came a fear on all: and they glorified God, saying, That a great prophet is risen up among us; and, That God hath visited his people. (Luke 7:16)]",
-    "reference": {
-      "book": "Acts",
-      "chapter": 2,
-      "verse": 4
-    }
-  },
-  {
-    "word": "Sturdy",
-    "phonetic": "/ˈstɜːrdi/",
-    "modern": "Strong or robust (physically/morally)",
-    "definition": "Adjective meaning physically strong, or morally firm and resilient",
-    "quote": "The righteous shall flourish like the palm tree: he shall grow like a cedar in Lebanon.",
-    "reference": {
-      "book": "Psalms",
-      "chapter": 92,
-      "verse": 12
-    }
-  },
-  {
-    "word": "Stutter",
-    "phonetic": "/ˈstʌtər/",
-    "modern": "To speak with involuntary pauses (stammer)",
-    "definition": "Verb meaning to speak with repeated sounds or pauses (synonymous with 'stammer' in KJV)",
-    "quote": "And Moses said unto the LORD, O my Lord, I am not eloquent, neither heretofore, nor since thou hast spoken unto thy servant: but I am slow of speech, and of a slow tongue.",
-    "reference": {
-      "book": "Exodus",
-      "chapter": 4,
-      "verse": 10
-    }
-  },
-  {
-    "word": "Stuttering",
-    "phonetic": "/ˈstʌtərɪŋ/",
-    "modern": "Speaking with involuntary pauses (present participle of 'stutter')",
-    "definition": "Present participle meaning to speak with stammers or pauses—see 'stammering' in KJV",
-    "quote": "And the LORD said unto him, Who hath made man's mouth? or who maketh the dumb, or deaf, or the seeing, or the blind? have not I the LORD?",
-    "reference": {
-      "book": "Exodus",
-      "chapter": 4,
-      "verse": 11
-    }
-  },
-  {
-    "word": "Sty",
-    "phonetic": "/staɪ/",
-    "modern": "A pen for pigs (pigsty)",
-    "definition": "Noun referring to a dirty enclosure for keeping pigs, referenced in the Parable of the Prodigal Son",
-    "quote": "And he would fain have filled his belly with the husks that the swine did eat: and no man gave unto him.",
-    "reference": {
-      "book": "Luke",
-      "chapter": 15,
-      "verse": 16
     }
   },
   {
@@ -14628,18 +14664,6 @@
     }
   },
   {
-    "word": "Teachings",
-    "phonetic": "/ˈtiːtʃɪŋz/",
-    "modern": "Teachings; doctrines or instructions (plural)",
-    "definition": "Noun referring to a collection of doctrines, instructions, or truths (e.g., Jesus’ teachings)",
-    "quote": "And he taught them many things by parables, and said unto them in his doctrine.",
-    "reference": {
-      "book": "Mark",
-      "chapter": 4,
-      "verse": 2
-    }
-  },
-  {
     "word": "teats",
     "phonetic": "/tiːts/",
     "modern": "teats, nipples (for nursing)",
@@ -14649,6 +14673,18 @@
       "book": "Isaiah",
       "chapter": 32,
       "verse": 12
+    }
+  },
+  {
+    "word": "teeth",
+    "phonetic": "/tiːθ/",
+    "modern": "teeth, tusks",
+    "definition": "Noun: the hard bony parts in the mouth, used for biting; the tusk of an elephant",
+    "quote": "What mean ye, that ye use this proverb concerning the land of Israel, saying, The fathers have eaten sour grapes, and the children's teeth are set on edge?",
+    "reference": {
+      "book": "Ezekiel",
+      "chapter": 18,
+      "verse": 2
     }
   },
   {
@@ -14796,18 +14832,6 @@
     }
   },
   {
-    "word": "Tepid",
-    "phonetic": "/ˈtepɪd/",
-    "modern": "Tepid; lukewarm (not hot or cold)",
-    "definition": "Adjective meaning moderately warm (not hot or cold), metaphorically for spiritual indifference",
-    "quote": "So then because thou art lukewarm, and neither cold nor hot, I will spue thee out of my mouth.",
-    "reference": {
-      "book": "Revelation",
-      "chapter": 3,
-      "verse": 16
-    }
-  },
-  {
     "word": "teraphim",
     "phonetic": "/ˈterəfɪm/",
     "modern": "teraphim, household idols, pagan images",
@@ -14872,11 +14896,11 @@
     "phonetic": "/ˈðiːwərd/",
     "modern": "thee-ward, toward you, in your direction",
     "definition": "In the direction of thee; toward you",
-    "quote": "Turn thee unto me, and have mercy upon me; for I am desolate and afflicted. (Psalm 25:16, implying God turning thee-ward in mercy)",
+    "quote": "And Jonathan spake good of David unto Saul his father, and said unto him, Let not the king sin against his servant, against David; because he hath not sinned against thee, and because his works have been to thee-ward very good:",
     "reference": {
-      "book": "Psalms",
-      "chapter": 25,
-      "verse": 16
+      "book": "1 Samuel",
+      "chapter": 19,
+      "verse": 4
     }
   },
   {
@@ -15108,18 +15132,6 @@
     }
   },
   {
-    "word": "Thornbush",
-    "phonetic": "/ˈθɔːrnbʊʃ/",
-    "modern": "Thornbush; a bush with thorns",
-    "definition": "Noun referring to a bush covered in sharp thorns, most famously the 'burning bush' in Moses’ encounter with God",
-    "quote": "And the angel of the LORD appeared unto him in a flame of fire out of the midst of a bush: and he looked, and, behold, the bush burned with fire, and the bush was not consumed.",
-    "reference": {
-      "book": "Exodus",
-      "chapter": 3,
-      "verse": 2
-    }
-  },
-  {
     "word": "thou",
     "phonetic": "/ðaʊ/",
     "modern": "thou, you (archaic subject form)",
@@ -15132,18 +15144,6 @@
     }
   },
   {
-    "word": "Thrash",
-    "phonetic": "/θræʃ/",
-    "modern": "Thrash; to beat (grain for threshing) or whip",
-    "definition": "Verb meaning to beat grain to separate it from chaff (threshing), or to strike with a whip",
-    "quote": "Thou shalt not muzzle the ox when he treadeth out the corn.",
-    "reference": {
-      "book": "Deuteronomy",
-      "chapter": 25,
-      "verse": 4
-    }
-  },
-  {
     "word": "threescore",
     "phonetic": "/ˈθriːskɔː(r)/",
     "modern": "threescore, sixty (60)",
@@ -15153,6 +15153,18 @@
       "book": "Acts",
       "chapter": 27,
       "verse": 37
+    }
+  },
+  {
+    "word": "thresh",
+    "phonetic": "/θrɛʃ/",
+    "modern": "thresh, beat out grain",
+    "definition": "Verb: to beat out the grain from the husk; to beat or strike repeatedly",
+    "quote": "Behold, I will make thee a new sharp threshing instrument having teeth: thou shalt thresh the mountains, and beat them small, and shalt make the hills as chaff.",
+    "reference": {
+      "book": "Isaiah",
+      "chapter": 41,
+      "verse": 15
     }
   },
   {
@@ -15312,6 +15324,18 @@
     }
   },
   {
+    "word": "torn",
+    "phonetic": "/tɔrn/",
+    "modern": "torn, rent, riven",
+    "definition": "Verb (past participle): ripped apart, split, or torn in pieces by force",
+    "quote": "And the one went out from me, and I said, Surely he is torn in pieces; and I saw him not since:",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 44,
+      "verse": 28
+    }
+  },
+  {
     "word": "tow",
     "phonetic": "/taʊ/",
     "modern": "tow, flax fibers",
@@ -15432,51 +15456,15 @@
     }
   },
   {
-    "word": "Turtle-dove",
+    "word": "turtledove",
     "phonetic": "/ˈtɜːtl dʌv/",
-    "modern": "Turtle-dove; a small, gentle bird used in biblical sacrifices",
-    "definition": "Noun referring to a small, peaceful bird often associated with love and used in ritual sacrifices for those who could not afford larger animals",
-    "quote": "And if he be poor, and cannot get so much; then he shall take one turtledove, or one young pigeon, for a sin offering, and one for a burnt offering.",
+    "modern": "turtledove, turtle dove",
+    "definition": "Noun: a small, plump dove; the bird offered in sacrifice by those who could not afford a lamb, and kept as a symbol of the redeemed",
+    "quote": "And when the days of her purifying are fulfilled, for a son, or for a daughter, she shall bring a lamb of the first year for a burnt offering, and a young pigeon, or a turtledove, for a sin offering, unto the door of the tabernacle of the congregation, unto the priest:",
     "reference": {
       "book": "Leviticus",
       "chapter": 12,
-      "verse": 8
-    }
-  },
-  {
-    "word": "turtledove",
-    "phonetic": "/ˈtɜːtldʌv/",
-    "modern": "turtledove, small dove (sacrificial bird)",
-    "definition": "A small, plump dove with a soft cooing call; a clean bird under Jewish law, often used for sacrifices (especially by those who could not afford lambs)",
-    "quote": "O deliver not the soul of thy turtledove unto the multitude of the wicked: forget not the congregation of thy poor for ever.",
-    "reference": {
-      "book": "Psalms",
-      "chapter": 74,
-      "verse": 19
-    }
-  },
-  {
-    "word": "Tusk",
-    "phonetic": "/tʌsk/",
-    "modern": "Tusk; a long, pointed tooth (of elephants, walruses)",
-    "definition": "Noun referring to a long, curved, pointed tooth of certain animals (e.g., elephants), used for defense or digging—mentioned in biblical descriptions of wealth",
-    "quote": "And the king made of the almug trees a porch for the house of the LORD, and for the king's house, and harps and psalteries for singers: there came no such almug trees, nor were seen unto this day.",
-    "reference": {
-      "book": "1 Kings",
-      "chapter": 10,
-      "verse": 12
-    }
-  },
-  {
-    "word": "Tussle",
-    "phonetic": "/ˈtʌsl/",
-    "modern": "Tussle; a physical fight or struggle",
-    "definition": "Noun: A rough, physical fight or struggle. Verb: To fight or struggle physically.",
-    "quote": "And Jacob was left alone; and there wrestled a man with him until the breaking of the day. And when he saw that he prevailed not against him, he touched the hollow of his thigh; and the hollow of Jacob's thigh was out of joint, as he wrestled with him. (Genesis 32:24-25)",
-    "reference": {
-      "book": "Genesis",
-      "chapter": 32,
-      "verse": 24
+      "verse": 6
     }
   },
   {
@@ -15549,18 +15537,6 @@
       "book": "1 Kings",
       "chapter": 7,
       "verse": 34
-    }
-  },
-  {
-    "word": "Unequaled",
-    "phonetic": "/ʌnˈiːkwəld/",
-    "modern": "unparalleled; incomparable",
-    "definition": "Adjective meaning having no equal, unmatched, or unparalleled",
-    "quote": "Who is like unto thee, O LORD, among the gods? who is like thee, glorious in holiness, fearful in praises, doing wonders?",
-    "reference": {
-      "book": "Exodus",
-      "chapter": 15,
-      "verse": 11
     }
   },
   {
@@ -15676,11 +15652,11 @@
     "phonetic": "/ˈʌzwəd/",
     "modern": "us-ward, toward us, in our direction",
     "definition": "In the direction of us; toward us or our position",
-    "quote": "Turn thou us unto thee, O LORD, and we shall be turned; renew our days as of old. (Lamentations 5:21, asking God to turn us-ward)",
+    "quote": "The Lord is not slack concerning his promise, as some men count slackness; but is longsuffering to us-ward, not willing that any should perish, but that all should come to repentance.",
     "reference": {
-      "book": "Lamentations",
-      "chapter": 5,
-      "verse": 21
+      "book": "2 Peter",
+      "chapter": 3,
+      "verse": 9
     }
   },
   {
@@ -17124,6 +17100,18 @@
     }
   },
   {
+    "word": "wrestle",
+    "phonetic": "/ˈrɛsl/",
+    "modern": "wrestle, grapple, contend",
+    "definition": "Verb: to grapple hand to hand, as in a wrestling match; to struggle or contend with",
+    "quote": "And Jacob was left alone; and there wrestled a man with him until the breaking of the day.",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 32,
+      "verse": 24
+    }
+  },
+  {
     "word": "wroth",
     "phonetic": "/rɒθ/",
     "modern": "angry, furious, wrathful",
@@ -17260,11 +17248,11 @@
     "phonetic": "/ˈjuːwəd/",
     "modern": "toward you, in your direction",
     "definition": "Meaning 'in the direction of you' or 'toward you'; indicating movement or focus toward the person(s) addressed.",
-    "quote": "But God commendeth his love toward us, in that, while we were yet sinners, Christ died for us. (Romans 5:8, archaic variant: 'God commendeth his love you-ward')",
+    "quote": "Since ye seek a proof of Christ speaking in me, which to you-ward is not weak, but is mighty in you.",
     "reference": {
-      "book": "Romans",
-      "chapter": 5,
-      "verse": 8
+      "book": "2 Corinthians",
+      "chapter": 13,
+      "verse": 3
     }
   },
   {

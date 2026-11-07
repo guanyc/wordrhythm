@@ -74,7 +74,7 @@ const FEATURED = new Set([
   "comforter", "comfortless", "concubine", "importunity",
   "fornicator", "impenitent", "impotent", "impute", "ensample",
   "covetous", "concupiscence", "conversation", "profaned", "wanton",
-  "discomfited", "unequaled", "unfeigned", "unsatiable", "imperious",
+  "discomfited", "excellency", "unfeigned", "unsatiable", "imperious",
   // participles readers meet and cannot place
   "edify", "exhort", "forsaking", "forbear", "forbare",
   "consecrate", "backslider", "chasten", "foreknow", "forewarn",
@@ -85,12 +85,28 @@ const FEATURED = new Set([
 // FEATURED it should not silently drop that word from its own page.
 const FEATURED_SET = new Set([...FEATURED].map((w) => w.toLowerCase()));
 
+/**
+ * Slugs that used to have their own page, mapped to the word that replaced
+ * them.
+ *
+ * The KJV never writes "unequaled" — the word is "excellency" (Deuteronomy
+ * 33:26). The old URL is live and may be linked from elsewhere, so it has to
+ * keep resolving instead of 404ing.
+ */
+const ALIASES: Record<string, string> = {
+  unequaled: "excellency",
+};
+
 /** Slug -> entry map. */
 const bySlug = new Map(all.map((w) => [slugify(w.word), w]));
 
 /** Entry for a slug produced by {@link slugify}, or undefined. */
 export function getWord(slug: string): ArchaicWord | undefined {
-  return bySlug.get(slug.toLowerCase());
+  const key = slug.toLowerCase();
+  const direct = bySlug.get(key);
+  if (direct) return direct;
+  const target = ALIASES[key];
+  return target ? bySlug.get(slugify(target)) : undefined;
 }
 
 /** Every entry, alphabetically. */
@@ -109,9 +125,21 @@ export function isFeatured(word: string): boolean {
   return FEATURED_SET.has(word.toLowerCase());
 }
 
-/** Slugs for generateStaticParams — featured words only. */
+/** Slugs for generateStaticParams — the featured words themselves. */
 export function featuredWordSlugs(): string[] {
   return featuredWords().map((w) => slugify(w.word));
+}
+
+/** Former URLs that still resolve, so old links do not 404. */
+export function aliasWordSlugs(): string[] {
+  return Object.entries(ALIASES)
+    .filter(([, target]) => FEATURED_SET.has(target.toLowerCase()))
+    .map(([alias]) => alias);
+}
+
+/** Every slug that gets a page: featured words plus their former URLs. */
+export function pageWordSlugs(): string[] {
+  return [...featuredWordSlugs(), ...aliasWordSlugs()];
 }
 
 /** "1 John 4:11" — the form a reader can paste into a Bible app. */
