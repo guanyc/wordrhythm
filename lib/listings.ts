@@ -1069,19 +1069,18 @@ const yoruba: StoreListing = {
             "Send a verse as text, as an image card, or as a short video in your own setting",
             "Choose either translation or both — the display mode travels with the share",
             "Every Yorùbá share carries the attribution its licence requires",
-            "Home-screen widgets for the verse of the day, your favourites and Sleep Audio",
+            "Home-screen widgets for the verse of the day and your favourites",
           ],
         },
       ],
     },
     {
-      heading: "Listen — read-aloud and Sleep Audio",
+      heading: "Listen — read-aloud",
       blocks: [
         {
           list: [
             "Text-to-speech playback of the passage you are reading",
             "The KJV reads with an English voice; Yorùbá playback depends on whether your device offers a Yorùbá voice — where it does not, the app does not pretend to",
-            "Sleep Audio: gentle bedtime narration with quiet ambient sound, downloadable over Wi-Fi for offline listening",
             "Playback continues with the screen off",
           ],
         },
@@ -1245,6 +1244,122 @@ const igbo: StoreListing = {
   ],
 };
 
+const swahili: StoreListing = {
+  intro: [
+    "Word Rhythm: Swahili Bible is a free, offline Bible carrying one text: the Biblica Toleo Wazi Neno: Bibilia Takatifu (ONEN, the Open Kiswahili Contemporary Version). There is no second column here, because there is nothing to compare it against — the reading, the devotionals, the reading plans and the interface are all Kiswahili.",
+    "It is built for the shape of a day rather than for a shelf: something to open in the morning, a short pause at midday, and a quiet reading before sleep.",
+  ],
+  sections: [
+    {
+      heading: "One text, in Kiswahili throughout",
+      blocks: [
+        {
+          list: [
+            "The complete Neno Bible — all 66 books, 31,102 verses, every one of them translated",
+            "Menus, settings, search, help and the daily devotionals are in Kiswahili, not in English",
+            "The text ships inside the app: no download on first open, no sign-in, no connection needed",
+            "Read on a plane, underground, or with no airtime",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Red letter from the Neno text itself",
+      blocks: [
+        {
+          text: [
+            "The words of Christ are marked in red on 2,053 verses, and the marks come from the translation's own speaker markers rather than from the KJV's character positions, which would point at different words in a different language.",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "The day in four movements",
+      blocks: [
+        {
+          list: [
+            "Asubuhi — a verse, its meaning and a short reflection to begin",
+            "Mchana — a midday pause rather than a chapter you have to finish",
+            "Jioni — an evening reading that closes the day in prayer",
+            "Usiku — a before-bed devotional that opens in the evening and runs past midnight",
+            "Each slot carries its own content; the fourth is a real slot, not a synonym for the third",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Pumzika kidogo — Take a Break",
+      blocks: [
+        {
+          list: [
+            "“Unajisikiaje?” — find Scripture by what you are feeling, not by where you left off",
+            "Collections for worry, weariness, gratitude, hope and peace, each with reflection and prayer",
+            "Topic guidance for faith, love, forgiveness and wisdom",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Search, and keep what you find",
+      blocks: [
+        {
+          list: [
+            "Search the whole Bible by word or by an exact phrase",
+            "An apostrophe typed the other way round still matches — the index folds the whole apostrophe family to one character",
+            "Highlights, bookmarks, notes and tags, each attached to the verse it belongs to",
+            "Kukariri — memorise a verse and move it from Inaendelea to Umebobea as it sticks",
+            "Reading plans with progress, including the traditional three-year cycle with a calendar view",
+            "Reading statistics and streaks, kept quietly in the background",
+            "Backup and restore a copy of your data to a folder on your own device",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Sikiliza — read-aloud",
+      blocks: [
+        {
+          list: [
+            "Text-to-speech playback of the passage you are reading, using your device's voices",
+            "If your device has no Kiswahili voice installed, the read-aloud depends on what the system can offer — the app does not pretend otherwise",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Share it as text, a picture, or a video",
+      blocks: [
+        {
+          list: [
+            "Send a verse as plain text, as an image card, or as a short video recorded in your own setting",
+            "Recording a video uses the camera and the microphone, and only while you are recording",
+            "Widgets for today's verse, a Take a Break card, and a “how are you feeling” shortcut",
+            "Every share carries the attribution the Neno licence requires",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Free, with ads",
+      blocks: [
+        {
+          list: [
+            "Free to read, with no account, no subscription and no in-app purchases",
+            "Supported by banner and native ads",
+            "Usage analytics and crash reports are opt-in and stay off until you agree",
+            "Reading data stays on your device; nothing is uploaded unless you export or share it yourself",
+          ],
+        },
+      ],
+    },
+  ],
+  closing: [
+    "Soma. Tafuta. Jifunze. Sikiliza.",
+    "Kiswahili: Biblica® Toleo Wazi Neno: Bibilia Takatifu™ (ONEN) © 1984, 1989, 2009, 2015 Biblica, Inc. (CC BY-SA 4.0).",
+    "Read. Reflect. Pray. Grow.",
+  ],
+};
+
 export const listings: Record<string, StoreListing> = {
   kjv,
   asv,
@@ -1256,6 +1371,7 @@ export const listings: Record<string, StoreListing> = {
   luther,
   yoruba,
   igbo,
+  swahili,
 };
 
 export function getListing(slug: string): StoreListing | undefined {

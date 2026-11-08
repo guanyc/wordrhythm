@@ -24,7 +24,8 @@ function parseTs() {
     const sleepSlotLabel = block.match(/sleepSlotLabel:\s*"([^"]+)"/)?.[1];
     const listing = block.match(/listing:\s*"([^"]+)"/)?.[1];
     const lang = block.match(/\blang:\s*"([^"]+)"/)?.[1];
-    if (slug) out.push({ slug, audio, sleepSlotLabel, listing, lang });
+    const status = block.match(/status:\s*"([^"]+)"/)?.[1] ?? "live";
+    if (slug) out.push({ slug, audio, sleepSlotLabel, listing, lang, status });
   }
   return out;
 }
@@ -63,6 +64,14 @@ for (const v of llmsVersions) {
   if (ts.lang !== v.lang) {
     problems.push(
       `${v.slug}: lang differs — versions.ts "${ts.lang}", llms-data.mjs "${v.lang}"`,
+    );
+  }
+  // A planned app has no store page. If the two disagree, llms.txt either
+  // links to a 404 or hides a live app behind "coming soon".
+  const llmsStatus = v.status ?? "live";
+  if (ts.status !== llmsStatus) {
+    problems.push(
+      `${v.slug}: status differs — versions.ts "${ts.status}", llms-data.mjs "${llmsStatus}"`,
     );
   }
 }

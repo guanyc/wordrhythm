@@ -8,8 +8,9 @@ export type VersionStatus = "live" | "planned";
  *            reading and background sounds)
  *
  * Distinct from the sleep slot itself, which every app has: devotional content
- * before bed is the product baseline, Sleep Audio is what only some
- * translations ship.
+ * before bed is the product baseline, Sleep Audio is a separate built-in track
+ * that so far only the KJV app ships — do not mark another translation `sleep`
+ * until its audio has actually been produced and shipped.
  *
  * Single source of truth: drives llms.txt, page copy and structured data.
  * Keep it honest — a capability listed here must be shipped in the Play build.
@@ -71,6 +72,12 @@ export interface BibleVersion {
   ogImage?: string;
   /** App icon in /public (from the Play listing) */
   icon?: string;
+  /**
+   * Wide store feature graphic (1024x500) in /public, shown near the top of the
+   * version page. Only set where the artwork exists — the older translations
+   * only ever had an icon and screenshots.
+   */
+  feature?: string;
   /** Phone screenshots in /public (from the Play listing) */
   screenshots?: string[];
 }
@@ -262,7 +269,9 @@ export const versions: BibleVersion[] = [
     summary:
       "The Open Yoruba Contemporary Bible and the King James Version on one screen — four display modes, red letter in both texts, fully offline.",
     status: "live",
-    audio: "sleep",
+    // Read-aloud only: the Sleep Audio track has not been produced for Yorùbá,
+    // so this app must not inherit the KJV's `sleep` level.
+    audio: "tts",
     sleepSlotLabel: "Sleep",
     package: "com.gyc.ace.yoruba",
     playUrl:
@@ -289,6 +298,33 @@ export const versions: BibleVersion[] = [
     playUrl:
       "https://play.google.com/store/apps/details?id=com.gyc.ace.igbo",
     icon: "/apps/igbo/icon.png",
+  },
+  {
+    // One text, not two. This build carries Neno only, so there is no second
+    // column and no display-mode switch — and unlike the Yorùbá and Igbo apps
+    // its interface is Kiswahili throughout, which is why the summary leads
+    // with the translation rather than with a pairing.
+    //
+    // Not on Play yet: the release build is still unsigned, so there is no
+    // playUrl and the page shows the pre-launch note instead of a button.
+    slug: "swahili",
+    code: "SWA",
+    name: "Biblia Takatifu",
+    listing: "Word Rhythm: Swahili Bible",
+    storeTitle: "Word Rhythm: Swahili Bible",
+    language: "Kiswahili",
+    lang: "sw",
+    summary:
+      "The complete Neno — the Open Kiswahili Contemporary Version — with a Kiswahili interface: four daily slots, devotionals, reading plans, search and audio, all offline.",
+    status: "planned",
+    // The sleep slot and its devotionals are there; the Sleep Audio track is
+    // KJV-only for now, so read-aloud is the whole audio story.
+    audio: "tts",
+    sleepSlotLabel: "Usiku",
+    package: "com.gyc.ace.swahili",
+    icon: "/apps/swahili/icon.png",
+    feature: "/apps/swahili/feature.webp",
+    ogImage: "/brand/og-swahili.jpg",
   },
 ];
 

@@ -47,7 +47,8 @@ export default function TermsPage() {
             <dd>
               <strong>Word Rhythm</strong> Bible apps (KJV, ASV, WEB, RVR, 道韵
               CUV, Bíblia AA, Louis Segond 1910, Lutherbibel 1912, Bible KJV
-              Quick, Bijbel Statenvertaling Lite, Yorùbá + KJV), and{" "}
+              Quick, Bijbel Statenvertaling Lite, Yorùbá + KJV, Igbo + KJV and
+              the Kiswahili Bible), and{" "}
               <strong>Take a Break</strong>; plus{" "}
               <strong>HanziNova</strong> (Chinese character learning) and{" "}
               <strong>Born Win</strong> / <strong>WatchList Tracker Lite</strong>{" "}

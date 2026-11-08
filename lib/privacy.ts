@@ -172,6 +172,26 @@ export const privacyPolicies: PrivacyPolicy[] = [
     versionSlug: "igbo",
   },
   {
+    // Written before the first upload, because Play Console asks for the URL
+    // first. It differs from the Igbo policy in three measured ways: the Drive
+    // backup category is commented out in this build (so backup is a file on
+    // the device), there is no rewarded ad, and ProManager reports every
+    // purchase as already unlocked, so no Billing flow is reachable.
+    //
+    // SettingsFragment and ActivitySettings still point at /privacy/lsg; this
+    // page is the URL they should be switched to.
+    slug: "swahili",
+    appName: "Word Rhythm: Swahili Bible",
+    storeName: "Word Rhythm: Swahili Bible",
+    androidPackage: "com.gyc.ace.swahili",
+    developerName: DEVELOPER,
+    legalEntity: DEVELOPER,
+    contactEmail: EMAIL,
+    updated: "November 8, 2026",
+    icon: "/apps/swahili/icon.png",
+    versionSlug: "swahili",
+  },
+  {
     slug: "take-a-break",
     appName: "Take a Break",
     storeName: "Take a Break",

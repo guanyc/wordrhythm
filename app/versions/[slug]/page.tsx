@@ -25,6 +25,8 @@ function ogLocale(lang: string): string {
       return "pt_BR";
     case "fr":
       return "fr_FR";
+    case "sw":
+      return "sw_KE";
     default:
       return "en_US";
   }
@@ -244,6 +246,19 @@ export default async function VersionPage({
           </p>
         </div>
       </div>
+
+      {version.feature && (
+        <Image
+          src={version.feature}
+          alt={`${version.listing} — ${version.language}`}
+          width={1024}
+          height={500}
+          // Above the fold on a phone, so it must not be lazy: it is the
+          // largest element the detail page paints.
+          priority
+          className="mt-10 w-full rounded-2xl border border-black/5 shadow-card"
+        />
+      )}
 
       {listing && (
         <div className="mt-12 max-w-2xl space-y-3 border-l-2 border-brand-soft pl-5 text-muted">

@@ -13,7 +13,7 @@ const BLOG_DIR = path.join(process.cwd(), "content", "blog");
  * edit both and let the check catch a missed one.
  *
  * `audio` values must match `AudioSupport` in lib/versions.ts:
- *   "sleep" = TTS plus a dedicated Sleep Audio track
+ *   "sleep" = TTS plus a dedicated Sleep Audio track — KJV only so far
  *   "tts"   = text-to-speech playback
  *   "none"  = reading and devotionals only
  */
@@ -127,8 +127,8 @@ export const versions = [
       "the Open Yoruba Contemporary Bible and the KJV side by side, fully offline, with red letter in both texts",
     language: "Yorùbá & English",
     lang: "yo",
-    audio: "sleep",
-    audioNote: "text-to-speech and Sleep Audio",
+    audio: "tts",
+    audioNote: "text-to-speech audio",
     sleepLabel: "Sleep",
     package: "com.gyc.ace.yoruba",
   },
@@ -146,6 +146,25 @@ export const versions = [
     audioNote: "text-to-speech audio",
     sleepLabel: "Sleep",
     package: "com.gyc.ace.igbo",
+  },
+  {
+    // One text only — Neno, with a Kiswahili interface throughout. Keep in
+    // sync with lib/versions.ts.
+    //
+    // No store page yet, so `status` says "planned": llms.mjs prints "coming
+    // soon" instead of a Play link that would 404.
+    slug: "swahili",
+    name: "Biblia Takatifu",
+    listing: "Word Rhythm: Swahili Bible",
+    summary:
+      "the complete Neno (Open Kiswahili Contemporary Version) offline, with a Kiswahili interface, devotionals, reading plans and search",
+    language: "Kiswahili",
+    lang: "sw",
+    status: "planned",
+    audio: "tts",
+    audioNote: "text-to-speech audio",
+    sleepLabel: "Usiku",
+    package: "com.gyc.ace.swahili",
   },
 ];
 
