@@ -62,10 +62,14 @@ hydrate, and 31,102 of them cost about 10 seconds of build time as strings
 versus minutes as routes. The Worker is now only the fallback for an address
 with no file.
 
-That output is **34,125 files**, which is past Cloudflare's 20,000-file ceiling
-for static assets on the Workers Free plan — deploying this needs Workers Paid
+That output is **34,126 files** and about 224 MB, which is past Cloudflare's
+20,000-file ceiling for static assets on the Workers Free plan — deploying this needs Workers Paid
 ($5/month, 100,000 files). Drop `scripts/kjv-verses.mjs` from the `build` script
 to go back to Worker-rendered verses and the free plan.
+
+Their stylesheet is `public/kjv/verse.css`, linked rather than inlined: the
+same 2.3 KB repeated across 31,102 pages was 72 MB of the deploy and meant
+restyling one file instead of 31,102. Editing it restyles every verse page.
 
 The pages also stay on the right side of Play policy: the verse is the content,
 the install link is an offer beside it — nothing redirects to the store.
@@ -98,6 +102,7 @@ lib/verse-page.mjs        # one verse page, shared by the build script and the W
 worker/index.ts           # 302 for a verse past the end of its chapter, 404 body
 scripts/kjv-verses.mjs    # writes 31,102 verse pages into out/ after next build
 public/apps/<slug>/       # icons + screenshots pulled from Google Play
+public/kjv/verse.css     # stylesheet shared by all 31,102 verse pages
 public/kjv-data/          # generated: 66 books of KJV text + books.json
 DESIGN.md                 # brand analysis + site design
 ```
