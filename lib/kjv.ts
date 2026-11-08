@@ -1,0 +1,104 @@
+/**
+ * KJV reading data for the /kjv routes.
+ *
+ * `scripts/build-kjv.py` generates `public/kjv-data/` from the Android app's own
+ * `kjv_bible.json`, so the site and the app can never disagree about the text.
+ * The files live under `public/` for one reason: they are also what the
+ * verse-level Worker fetches from the asset binding at request time. Reading the
+ * same files from disk at build time keeps a single copy in the repo.
+ *
+ * Book slugs are the app's own book names lower-cased with spaces turned into
+ * hyphens ("1 Samuel" -> "1-samuel"). `ActivityLandingTab` joins App Links path
+ * segments back into a reference with spaces, so this spelling round-trips.
+ */
+import fs from "node:fs";
+import path from "node:path";
+
+import { getVersion } from "@/lib/versions";
+
+interface BookIndexEntry {
+  slug: string;
+  name: string;
+  abbr: string;
+  /** Verse count per chapter, chapter 1 first. */
+  chapters: number[];
+  verses: number;
+}
+
+export interface KjvBook extends BookIndexEntry {
+  /** 1-based chapter numbers, convenient for rendering a chapter grid. */
+  chapterNumbers: number[];
+}
+
+const DATA_DIR = path.join(process.cwd(), "public", "kjv-data");
+
+const index = JSON.parse(
+  fs.readFileSync(path.join(DATA_DIR, "books.json"), "utf8"),
+) as {
+  translation: string;
+  totalBooks: number;
+  totalChapters: number;
+  totalVerses: number;
+  books: BookIndexEntry[];
+};
+
+export const TOTAL_KJV_VERSES = index.totalVerses;
+export const TOTAL_KJV_CHAPTERS = index.totalChapters;
+
+export const kjvBooks: KjvBook[] = index.books.map((b) => ({
+  ...b,
+  chapterNumbers: b.chapters.map((_, i) => i + 1),
+}));
+
+const bySlug = new Map(kjvBooks.map((b) => [b.slug, b]));
+
+export function getKjvBook(slug: string): KjvBook | undefined {
+  return bySlug.get(slug.toLowerCase());
+}
+
+function chapterCount(book: KjvBook, chapter: number): number {
+  return book.chapters[chapter - 1] ?? 0;
+}
+
+/** Verse texts for one chapter, or null when the book/chapter does not exist. */
+export function getKjvChapter(slug: string, chapter: number): string[] | null {
+  const book = getKjvBook(slug);
+  if (!book || chapter < 1 || chapter > book.chapters.length) return null;
+  const all = JSON.parse(
+    fs.readFileSync(path.join(DATA_DIR, `${book.slug}.json`), "utf8"),
+  ) as Record<string, string[]>;
+  return all[String(chapter)] ?? null;
+}
+
+/** Human reference, e.g. "1 Samuel 3:10". */
+export function kjvReference(
+  book: KjvBook,
+  chapter: number,
+  verse: number,
+): string {
+  return `${book.name} ${chapter}:${verse}`;
+}
+
+export function kjvHref(slug: string, chapter?: number, verse?: number): string {
+  if (!chapter) return `/kjv/${slug}`;
+  if (!verse) return `/kjv/${slug}/${chapter}`;
+  return `/kjv/${slug}/${chapter}/${verse}`;
+}
+
+/** Play install link with a referrer, so installs from the site are attributable. */
+export const KJV_PLAY_URL = `${getVersion("kjv")?.playUrl ?? "https://play.google.com/store/apps/details?id=com.gyc.ace.kjv"}&referrer=kjv_web_verse`;
+
+/**
+ * `intent://` link for a verse. Android hands the URL to the app when App Links
+ * verification succeeded; when it did not (or the app is not installed) the
+ * browser falls back to the Play listing instead of showing an error.
+ */
+export function kjvIntentUrl(slug: string, chapter: number, verse: number): string {
+  const fallback = encodeURIComponent(KJV_PLAY_URL);
+  return `intent://wordrhythm.app/kjv/${slug}/${chapter}/${verse}#Intent;scheme=https;package=com.gyc.ace.kjv;S.browser_fallback_url=${fallback};end`;
+}
+
+export function versesInChapter(slug: string, chapter: number): number {
+  const book = getKjvBook(slug);
+  return book ? chapterCount(book, chapter) : 0;
+}

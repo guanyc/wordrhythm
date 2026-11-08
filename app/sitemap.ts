@@ -3,6 +3,7 @@ import { featuredWordSlugs } from "@/lib/archaic";
 import { getPublishedPosts } from "@/lib/blog";
 import { emotionPageSlugs } from "@/lib/emotions";
 import { publicPrivacyPolicies } from "@/lib/privacy";
+import { kjvBooks } from "@/lib/kjv";
 import { versions } from "@/lib/versions";
 
 const BASE = "https://wordrhythm.app";
@@ -53,6 +54,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  // The reading shell the app's App Links point at. Chapters are the pages
+  // worth indexing (verse URLs are Worker-rendered, canonicalised to a chapter
+  // and marked noindex), so only the chapters go in the sitemap.
+  const kjvIndexPages = [
+    {
+      url: `${BASE}/kjv`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
+  ];
+
+  const kjvBookPages = kjvBooks.map((b) => ({
+    url: `${BASE}/kjv/${b.slug}`,
+    lastModified: now,
+    changeFrequency: "yearly" as const,
+    priority: 0.5,
+  }));
+
+  const kjvChapterPages = kjvBooks.flatMap((b) =>
+    b.chapterNumbers.map((chapter) => ({
+      url: `${BASE}/kjv/${b.slug}/${chapter}`,
+      lastModified: now,
+      changeFrequency: "yearly" as const,
+      priority: 0.4,
+    })),
+  );
+
   return [
     {
       url: BASE,
@@ -60,6 +89,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1,
     },
+    ...kjvIndexPages,
+    ...kjvBookPages,
+    ...kjvChapterPages,
     {
       url: `${BASE}/versions`,
       lastModified: now,

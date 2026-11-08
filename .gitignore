@@ -28,3 +28,6 @@ yarn-error.log*
 
 # agent workspace memory — local notes, not part of the site
 /.workbuddy/
+
+# wrangler dev state
+/.wrangler/
