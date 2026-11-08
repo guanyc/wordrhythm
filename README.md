@@ -67,6 +67,10 @@ That output is **34,126 files** and about 224 MB, which is past Cloudflare's
 ($5/month, 100,000 files). Drop `scripts/kjv-verses.mjs` from the `build` script
 to go back to Worker-rendered verses and the free plan.
 
+The plan went to Workers Paid on 2026-11-08 and the full tree is deployed: 152 s
+end to end, of which 100 s was uploading 33,935 changed assets (wrangler reuses
+hashes it has seen before, so later deploys only send what changed).
+
 Their stylesheet is `public/kjv/verse.css`, linked rather than inlined: the
 same 2.3 KB repeated across 31,102 pages was 72 MB of the deploy and meant
 restyling one file instead of 31,102. Editing it restyles every verse page.
