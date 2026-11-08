@@ -28,7 +28,7 @@ The App uses **Google Firebase** to improve stability and the reading experience
 On first launch the App asks for your consent; nothing is reported unless you allow it. Both can be turned off again at any time in **Settings → Mipangilio mingine** (“Washa uchanganuzi wa matumizi” and “Washa ripoti za hitilafu”). With them off, the App keeps working exactly as before.
 
 ### c) Advertising
-The App is free and uses **Google AdMob** to display advertisements (banner and native ads). Ads allow us to offer the App for free.
+The App is free and uses **Google AdMob** to display advertisements (banner and native ads). Ads allow us to offer the App for free. They appear on the home screen (a single banner at the top) and on a few secondary screens — the search entry screen, the book picker, devotionals and reading plans — but never on the Bible reading screen, in your favourites, in your bookmarks, or among your search results.
 
 AdMob may automatically collect certain information — in both current and future versions of the App — to serve and measure ads, including:
 
