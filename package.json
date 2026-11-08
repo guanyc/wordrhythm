@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/check-data.mjs && next build && node scripts/rss.mjs && node scripts/llms.mjs",
+    "build": "node scripts/check-data.mjs && next build && node scripts/kjv-verses.mjs && node scripts/rss.mjs && node scripts/llms.mjs",
     "deploy": "wrangler deploy",
     "indexnow": "node scripts/indexnow.mjs",
     "check-data": "node scripts/check-data.mjs",

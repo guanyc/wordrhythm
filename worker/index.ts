@@ -1,23 +1,17 @@
 /**
- * Verse-level renderer for `/kjv/<book>/<chapter>/<verse>`.
+ * Fallback renderer for `/kjv/<book>/<chapter>/<verse>`.
  *
- * The rest of the site is a static export (`out/`), and those 1,189 chapter
- * pages are served straight off the assets binding. Verse URLs cannot be: any of
- * the 31,102 verses can appear in a shared link, and pre-rendering all of them
- * would blow past Cloudflare's files-per-deployment limit. So this Worker only
- * catches what the export does not have — a verse URL — reads that one book's
- * JSON from the assets binding, and renders a small page around the verse.
+ * scripts/kjv-verses.mjs writes one file per verse into `out/`, so the assets
+ * binding normally answers these URLs without this code ever running. What is
+ * left for the Worker is the address that has no file: a verse number past the
+ * end of the chapter, which should land the reader in the chapter rather than
+ * on a 404, and any other miss, which gets the site's own 404 body.
  *
- * Two jobs for that page:
- *   1. Unfurl well when the link is pasted into a chat (title/description/OG).
- *   2. Hand the reader to the app if it is installed, or to Play if it is not.
- *      App Links already intercept the URL on a verified device, so this page is
- *      mostly for iOS, desktop and first-time visitors.
- *
- * It is deliberately `noindex, follow` with a canonical pointing at the chapter
- * page: the chapter is the page worth ranking, and 31k thin pages would waste
- * crawl budget.
+ * Keeping the page itself in lib/verse-page.mjs is what stops the pre-rendered
+ * files and this fallback from disagreeing about how the same URL looks.
  */
+
+import { versePage } from "../lib/verse-page.mjs";
 
 interface AssetFetcher {
   fetch(input: Request | string | URL, init?: RequestInit): Promise<Response>;
@@ -39,9 +33,6 @@ interface Index {
   totalVerses: number;
   books: BookIndex[];
 }
-
-const PLAY_URL =
-  "https://play.google.com/store/apps/details?id=com.gyc.ace.kjv&referrer=kjv_web_verse";
 
 // Isolates are long-lived, so the parsed index and the books actually asked for
 // stay cached between requests. A single book is ~40 KB; the whole Bible is
@@ -74,132 +65,6 @@ async function loadBook(
   );
   if (book) bookCache.set(slug, book);
   return book;
-}
-
-function escapeHtml(value: string): string {
-  return value
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
-}
-
-function versePage({
-  book,
-  chapter,
-  verse,
-  text,
-  verses,
-}: {
-  book: BookIndex;
-  chapter: number;
-  verse: number;
-  text: string;
-  verses: string[];
-}): string {
-  const reference = `${book.name} ${chapter}:${verse}`;
-  const chapterPath = `/kjv/${book.slug}/${chapter}`;
-  const intent =
-    `intent://wordrhythm.app/kjv/${book.slug}/${chapter}/${verse}#Intent;scheme=https;` +
-    `package=com.gyc.ace.kjv;S.browser_fallback_url=${encodeURIComponent(PLAY_URL)};end`;
-
-  const neighbours = [verse - 1, verse + 1].filter(
-    (v) => v >= 1 && v <= verses.length,
-  );
-
-  return `<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${escapeHtml(reference)} — King James Bible</title>
-<meta name="description" content="${escapeHtml(text.slice(0, 155))}">
-<meta name="robots" content="noindex, follow">
-<link rel="canonical" href="https://wordrhythm.app${chapterPath}">
-<meta property="og:type" content="article">
-<meta property="og:site_name" content="Word Rhythm">
-<meta property="og:title" content="${escapeHtml(reference)} — King James Bible">
-<meta property="og:description" content="${escapeHtml(text)}">
-<meta property="og:url" content="https://wordrhythm.app/kjv/${book.slug}/${chapter}/${verse}">
-<meta property="og:image" content="https://wordrhythm.app/brand/og-kjv.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/brand/icon-512.png" type="image/png">
-<style>
-  :root { --bg:#f7f6f3; --surface:#fff; --ink:#1f2430; --muted:#6b7280; --brand:#4f46e5; }
-  * { box-sizing: border-box; }
-  body { margin:0; background:var(--bg); color:var(--ink);
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    -webkit-font-smoothing:antialiased; }
-  a { color:var(--brand); text-decoration:none; }
-  header { border-bottom:1px solid rgba(0,0,0,.05); background:rgba(247,246,243,.85);
-    backdrop-filter:blur(8px); position:sticky; top:0; }
-  .wrap { max-width:46rem; margin:0 auto; padding:0 1.25rem; }
-  header .wrap { display:flex; align-items:center; gap:.5rem; padding-top:1rem; padding-bottom:1rem;
-    font-weight:600; }
-  .mark { display:grid; place-items:center; width:2rem; height:2rem; border-radius:.5rem;
-    background:var(--brand); color:#fff; font-weight:700; }
-  main { padding:2.5rem 0 4rem; }
-  .crumb { font-size:.875rem; color:var(--muted); }
-  h1 { font-size:2rem; line-height:1.2; letter-spacing:-.02em; margin:.75rem 0 0; }
-  h1 span { font-size:.875rem; font-weight:400; color:var(--muted); margin-left:.5rem; }
-  .verse { margin:1.75rem 0 0; font-size:1.375rem; line-height:1.65; }
-  .verse .num { color:var(--brand); font-size:.75rem; font-weight:600; vertical-align:super;
-    margin-right:.35rem; }
-  .context { margin-top:1.5rem; border-top:1px solid rgba(0,0,0,.06); padding-top:1.25rem;
-    font-size:1rem; line-height:1.7; color:var(--muted); }
-  .context .ref { font-weight:600; color:var(--ink); font-size:.8125rem; display:block;
-    margin-bottom:.35rem; }
-  .cta { margin-top:2.5rem; background:var(--surface); border:1px solid rgba(0,0,0,.05);
-    border-radius:1.5rem; padding:1.5rem; box-shadow:0 10px 30px rgba(31,41,55,.06); }
-  .cta p { margin:0; font-size:.875rem; line-height:1.6; color:var(--muted); }
-  .cta .brand { color:var(--brand); font-weight:600; font-size:.875rem; }
-  .btns { display:flex; flex-wrap:wrap; gap:.75rem; margin-top:1.25rem; }
-  .btn { border-radius:999px; padding:.625rem 1.25rem; font-size:.875rem; font-weight:600; }
-  .btn-primary { background:var(--brand); color:#fff; }
-  .btn-secondary { border:1px solid rgba(0,0,0,.1); color:var(--ink); }
-  nav.chapters { display:flex; justify-content:space-between; gap:1rem; margin-top:2rem;
-    font-size:.875rem; font-weight:600; }
-</style>
-</head>
-<body>
-<header><div class="wrap"><span class="mark">W</span><a href="/" style="color:inherit">Word Rhythm</a></div></header>
-<main class="wrap">
-  <div class="crumb"><a href="/kjv">King James Bible</a> / <a href="/kjv/${book.slug}">${escapeHtml(book.name)}</a> / ${chapter}</div>
-  <h1>${escapeHtml(reference)}<span>King James Version</span></h1>
-
-  <p class="verse"><span class="num">${verse}</span>${escapeHtml(text)}</p>
-
-  <div class="context">
-    <span class="ref">${escapeHtml(book.name)} ${chapter}</span>
-    This verse sits in a chapter of ${verses.length} verses.
-    <a href="${chapterPath}">Read ${escapeHtml(book.name)} ${chapter} in full →</a>
-  </div>
-
-  <aside class="cta">
-    <p class="brand">Word Rhythm: KJV Bible</p>
-    <p>The same King James text, completely offline — with devotionals, audio, reading plans and verse cards. Free on Google Play.</p>
-    <div class="btns">
-      <a class="btn btn-primary" href="${intent}">Open in the app</a>
-      <a class="btn btn-secondary" href="${PLAY_URL}" rel="nofollow sponsored">Get it on Google Play</a>
-    </div>
-  </aside>
-
-  <nav class="chapters">
-    ${
-      neighbours.includes(verse - 1)
-        ? `<a href="/kjv/${book.slug}/${chapter}/${verse - 1}">← Verse ${verse - 1}</a>`
-        : "<span></span>"
-    }
-    ${
-      neighbours.includes(verse + 1)
-        ? `<a href="/kjv/${book.slug}/${chapter}/${verse + 1}">Verse ${verse + 1} →</a>`
-        : "<span></span>"
-    }
-  </nav>
-</main>
-</body>
-</html>`;
 }
 
 function notFoundPage(): string {
