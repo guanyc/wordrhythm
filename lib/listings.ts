@@ -1346,7 +1346,7 @@ const swahili: StoreListing = {
           list: [
             "Free to read, with no account, no subscription and no in-app purchases",
             "The Bible reading screen carries no ad at all — only the home screen does, where a single banner sits at the top",
-            "Banners and native ads elsewhere sit on a handful of secondary screens: the search entry screen, the book picker, devotionals and reading plans",
+            "Banners and native ads elsewhere sit on a handful of secondary screens: the book picker, devotionals and reading plans",
             "Usage analytics and crash reports are opt-in and stay off until you agree",
             "Reading data stays on your device; nothing is uploaded unless you export or share it yourself",
           ],
