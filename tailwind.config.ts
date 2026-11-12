@@ -5,13 +5,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: "var(--bg)",
-        surface: "var(--surface)",
-        ink: "var(--ink)",
-        muted: "var(--muted)",
-        brand: "var(--brand)",
-        "brand-soft": "var(--brand-soft)",
-        accent: "var(--accent)",
+        // Channel triplets rather than the hex vars directly, so the `/40`
+        // opacity modifiers the components already use (`hover:border-brand/40`,
+        // `bg-bg/80`) actually produce a rule. See app/globals.css.
+        bg: "rgb(var(--bg-rgb) / <alpha-value>)",
+        surface: "rgb(var(--surface-rgb) / <alpha-value>)",
+        ink: "rgb(var(--ink-rgb) / <alpha-value>)",
+        muted: "rgb(var(--muted-rgb) / <alpha-value>)",
+        brand: "rgb(var(--brand-rgb) / <alpha-value>)",
+        "brand-soft": "rgb(var(--brand-soft-rgb) / <alpha-value>)",
+        accent: "rgb(var(--accent-rgb) / <alpha-value>)",
       },
       fontFamily: {
         sans: [

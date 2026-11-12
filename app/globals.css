@@ -10,6 +10,19 @@
   --brand: #4f46e5;
   --brand-soft: #eef0ff;
   --accent: #e0a458;
+
+  /* The same seven colours as space-separated channels, because Tailwind can
+     only apply an opacity modifier to a colour it can take apart: `text-brand`
+     works off the hex above, but `border-brand/40` needs
+     `rgb(var(--brand-rgb) / <alpha-value>)` and, given a bare var(), silently
+     emits no rule at all. Keep the two in step — the numbers are the hex. */
+  --bg-rgb: 247 246 243;
+  --surface-rgb: 255 255 255;
+  --ink-rgb: 31 36 48;
+  --muted-rgb: 107 114 128;
+  --brand-rgb: 79 70 229;
+  --brand-soft-rgb: 238 240 255;
+  --accent-rgb: 224 164 88;
 }
 
 html {
