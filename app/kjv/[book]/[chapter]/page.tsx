@@ -179,6 +179,40 @@ export default async function KjvChapterPage({
         </p>
       )}
 
+      {/* The chapter's own table of contents. Verses carry ids, so each entry
+          jumps within the page rather than to the noindex verse URL. Eight
+          chapters are a single scene and have no segments to list. */}
+      {outline && outline.segments.length > 1 && (
+        <nav
+          aria-label={`Outline of ${reference}`}
+          className="mt-8 rounded-2xl bg-surface p-6 shadow-card"
+        >
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-muted">
+            In this chapter
+          </h2>
+          <ol className="mt-4 space-y-3">
+            {outline.segments.map((segment) => (
+              <li key={segment.start}>
+                <a
+                  href={`#v${segment.start}`}
+                  className="font-medium text-ink hover:text-brand"
+                >
+                  {segment.title}
+                </a>
+                <span className="ml-2 text-sm tabular-nums text-muted">
+                  {segment.start === segment.end
+                    ? `verse ${segment.start}`
+                    : `verses ${segment.start}–${segment.end}`}
+                </span>
+                <p className="mt-1 text-sm leading-relaxed text-muted">
+                  {segment.gist}
+                </p>
+              </li>
+            ))}
+          </ol>
+        </nav>
+      )}
+
       <ol className="mt-10 space-y-3 text-lg leading-relaxed">
         {verses.map((text, i) => {
           const verse = i + 1;
