@@ -47,10 +47,18 @@ function resolve(pathname) {
   const candidate = path.join(ROOT, path.normalize(decoded));
   if (!candidate.startsWith(ROOT)) return null;
 
-  if (decoded.endsWith("/")) {
-    return isFile(path.join(candidate, "index.html"))
-      ? path.join(candidate, "index.html")
-      : null;
+  // The export writes `<path>.html`, never `<path>/index.html` (there is no
+  // trailingSlash in next.config.mjs), so `/kjv/` has to fall back to
+  // `kjv.html` — which is what html_handling: auto-trailing-slash does on
+  // Cloudflare. Without this every trailing-slash link 404s here and works in
+  // production, the worst way for a preview to be wrong.
+  if (decoded.endsWith("/") && candidate !== ROOT) {
+    const directory = candidate.replace(/\/+$/, "");
+    if (isFile(path.join(directory, "index.html"))) {
+      return path.join(directory, "index.html");
+    }
+    if (isFile(`${directory}.html`)) return `${directory}.html`;
+    return null;
   }
   if (isFile(candidate)) return candidate;
   if (isFile(`${candidate}.html`)) return `${candidate}.html`;
