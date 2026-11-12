@@ -21,25 +21,29 @@ npm run build      # produces a static site in ./out
 ```
 
 > This project uses `output: "export"`, so it builds to plain static files in
-> `out/`. Preview locally with any static server, e.g. `npx serve out`, or use
-> `npm run dev` for the dev server.
+> `out/`. Look at the result with `npm run preview` (http://localhost:3001),
+> which resolves paths the way the asset binding does — `npm run dev` cannot
+> answer `/kjv/<book>/<chapter>/<verse>`, because those pages are files that
+> `scripts/kjv-verses.mjs` writes after the build, not routes.
 
 ## Deploy to Cloudflare (from GitHub)
 
-The export is plain static files; the Worker in `worker/index.ts` is bundled by
-`wrangler` and serves anything the export does not have.
+The site is a Worker named `wordrhythm`. The export in `out/` is uploaded as
+static assets through the `ASSETS` binding in `wrangler.jsonc`, and
+`worker/index.ts` answers the verse URLs no file covers.
 
-1. Push this repo to GitHub.
-2. Cloudflare Dashboard → **Workers & Pages → Create → Pages → Connect to Git**.
-3. Select the repository.
-4. Framework preset: **Next.js** (Cloudflare detects it), or choose "None"
-   and set build/output manually:
-   - Build command: `npm run build`
-   - Build output directory: `out`
-5. Add custom domain: `wordrhythm.app` (DNS managed in Cloudflare).
+It is connected to this GitHub repository, so **a push to `main` is a deploy**:
+Cloudflare runs `npm run build` and publishes. There is no GitHub Actions
+workflow involved, and nothing to trigger by hand — the change is live a couple
+of minutes after the push. `npm run deploy` (`wrangler deploy`) does the same
+from a terminal, uploading whatever is in `out/` locally, and is the path for a
+manual deploy or a fix that must go out without a commit.
 
-From a terminal, `npm run deploy` (`wrangler deploy`) uploads the same output
-using `wrangler.jsonc` — that is the only path that also deploys the Worker.
+A push is therefore a production action. Look first:
+
+```bash
+npm run build && npm run preview
+```
 
 ## KJV reading routes (`/kjv`)
 
