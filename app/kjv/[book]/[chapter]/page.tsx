@@ -106,6 +106,11 @@ export default async function KjvChapterPage({
   const nextChapter = chapter < book.chapters.length ? chapter + 1 : null;
   const outline = getKjvOutline(slug, chapter);
 
+  // Keyed by starting verse so the verse loop is a lookup, not a scan.
+  const sections = new Map(
+    (outline?.segments ?? []).map((segment) => [segment.start, segment]),
+  );
+
   const reference = `${book.name} ${chapter}`;
   const url = `${SITE}/kjv/${book.slug}/${chapter}`;
   const chapterSchema = {
@@ -216,8 +221,26 @@ export default async function KjvChapterPage({
       <ol className="mt-10 space-y-3 text-lg leading-relaxed">
         {verses.map((text, i) => {
           const verse = i + 1;
+          const section = sections.get(verse);
           return (
             <li key={verse} id={`v${verse}`} className="scroll-mt-24">
+              {/* The same parts the outline lists, marked where they begin, so
+                  the text is divided without leaving the column. Not a separate
+                  list item: an <ol> may only contain <li>. */}
+              {section && (
+                <h2
+                  className={`mb-3 flex flex-wrap items-baseline gap-x-2 border-b-2 border-accent pb-2 text-sm font-semibold uppercase tracking-wide text-ink ${
+                    section.start === 1 ? "" : "mt-10"
+                  }`}
+                >
+                  {section.title}
+                  <span className="text-xs font-normal normal-case tracking-normal tabular-nums text-muted">
+                    {section.start === section.end
+                      ? `verse ${section.start}`
+                      : `verses ${section.start}–${section.end}`}
+                  </span>
+                </h2>
+              )}
               <a
                 href={`/kjv/${book.slug}/${chapter}/${verse}`}
                 rel="nofollow"
