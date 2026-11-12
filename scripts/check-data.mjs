@@ -320,6 +320,96 @@ for (const slug of featuredSlugs) {
   }
 }
 
+// KJV chapter outlines — the summary and verse-range segments each chapter page
+// introduces itself with. The upstream pipeline only checked "segments run 1..N"
+// against the verse count it had been told, so a range that overshoots the real
+// chapter passes there and renders as an outline entry pointing past the last
+// verse here. books.json is the ground truth; re-check the coverage rule
+// against it instead of trusting the generator.
+const OUTLINES = path.join(process.cwd(), "data", "kjv-outlines.json");
+const KJV_INDEX = path.join(process.cwd(), "public", "kjv-data", "books.json");
+const outlines = JSON.parse(await readFile(OUTLINES, "utf8")).chapters;
+const kjvIndex = JSON.parse(await readFile(KJV_INDEX, "utf8"));
+const SEGMENT_KINDS = new Set([
+  "scene",
+  "story",
+  "topic",
+  "turn",
+  "list",
+  "song",
+  "speech",
+  "other",
+]);
+
+let outlineCount = 0;
+let segmentCount = 0;
+for (const book of kjvIndex.books) {
+  const bookOutlines = outlines[book.slug] ?? {};
+  for (const [index, verses] of book.chapters.entries()) {
+    const chapter = String(index + 1);
+    const reference = `${book.name} ${chapter}`;
+    const outline = bookOutlines[chapter];
+    if (!outline) {
+      problems.push(`kjv-outlines: ${reference} has no summary`);
+      continue;
+    }
+    outlineCount += 1;
+    const summary = String(outline.summary ?? "").trim();
+    if (!summary) {
+      problems.push(`kjv-outlines: ${reference} has an empty summary`);
+    }
+    if (/[㐀-䶿一-鿿]/.test(summary)) {
+      problems.push(`kjv-outlines: ${reference} summary contains Chinese`);
+    }
+
+    const segments = outline.segments ?? [];
+    segmentCount += segments.length;
+    // A single-part outline restates the summary as one heading.
+    if (segments.length === 1) {
+      problems.push(`kjv-outlines: ${reference} keeps a one-part outline`);
+    }
+    let expectNext = 1;
+    for (const segment of segments) {
+      if (!SEGMENT_KINDS.has(segment.kind)) {
+        problems.push(
+          `kjv-outlines: ${reference} segment kind "${segment.kind}" is outside the enum`,
+        );
+      }
+      if (!String(segment.title ?? "").trim() || !String(segment.gist ?? "").trim()) {
+        problems.push(
+          `kjv-outlines: ${reference} segment ${segment.start}-${segment.end} is missing a title or gist`,
+        );
+      }
+      if (
+        segment.start !== expectNext ||
+        segment.end < segment.start ||
+        segment.end > verses
+      ) {
+        problems.push(
+          `kjv-outlines: ${reference} segment ${segment.start}-${segment.end} does not follow on from verse ${expectNext} of ${verses}`,
+        );
+        break;
+      }
+      expectNext = segment.end + 1;
+    }
+    if (segments.length > 0 && expectNext !== verses + 1) {
+      problems.push(
+        `kjv-outlines: ${reference} segments stop at verse ${expectNext - 1} of ${verses}`,
+      );
+    }
+  }
+}
+if (outlineCount !== kjvIndex.totalChapters) {
+  problems.push(
+    `kjv-outlines: ${outlineCount} chapters covered, books.json says ${kjvIndex.totalChapters}`,
+  );
+}
+for (const slug of Object.keys(outlines)) {
+  if (!kjvIndex.books.some((b) => b.slug === slug)) {
+    problems.push(`kjv-outlines: "${slug}" is not a KJV book slug`);
+  }
+}
+
 if (problems.length > 0) {
   console.error("data sources are out of sync:\n" + problems.map((p) => `  - ${p}`).join("\n"));
   process.exit(1);
@@ -328,5 +418,6 @@ if (problems.length > 0) {
 console.log(
   `data in sync: ${llmsVersions.length} translations, ${slots.length} slots, ` +
     `${postFiles.length} guides, ${glossary.length} KJV words, ` +
-    `${emotionPages.length} verse collections`,
+    `${emotionPages.length} verse collections, ` +
+    `${outlineCount} chapter outlines (${segmentCount} segments)`,
 );

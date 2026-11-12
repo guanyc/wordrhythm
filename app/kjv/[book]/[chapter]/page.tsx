@@ -3,9 +3,16 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import KjvAppCta from "@/components/KjvAppCta";
-import { getKjvBook, getKjvChapter, kjvBooks } from "@/lib/kjv";
+import {
+  getKjvBook,
+  getKjvChapter,
+  getKjvOutline,
+  kjvBooks,
+} from "@/lib/kjv";
 
 export const dynamicParams = false;
+
+const SITE = "https://wordrhythm.app";
 
 /**
  * 1,189 chapter pages. This is the indexable set: verse links
@@ -29,6 +36,25 @@ function snippet(text: string, max = 155): string {
   return `${(space > 60 ? cut.slice(0, space) : cut).trim()}…`;
 }
 
+/**
+ * The chapter summary as a meta description. Prefer its first sentence, so the
+ * snippet reads as a finished thought rather than a cut-off one; 457 of the
+ * 1,189 summaries already open with the book name ("Genesis 1 continues…"), and
+ * prefixing those with the reference would stutter.
+ */
+function metaDescription(
+  reference: string,
+  bookName: string,
+  summary: string,
+): string {
+  const body = summary.replace(/\s+/g, " ").trim();
+  const prefix = body.toLowerCase().startsWith(bookName.toLowerCase())
+    ? ""
+    : `${reference}: `;
+  const firstSentence = /^.*?[.!?](?=\s|$)/.exec(body)?.[0] ?? body;
+  return snippet(`${prefix}${firstSentence}`, 155);
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -42,10 +68,15 @@ export async function generateMetadata({
 
   const reference = `${book.name} ${chapter}`;
   const title = `${reference} — King James Bible`;
-  const description = `${reference} in the King James Version, ${verses.length} verses: “${snippet(
-    verses[0],
-    110,
-  )}” Read the full chapter or open it offline in the Word Rhythm: KJV Bible app.`;
+  const outline = getKjvOutline(slug, chapter);
+  // Without a summary the page has no prose of its own, so the opening verse
+  // still stands in — but it reads as an excerpt, not as what the chapter is.
+  const description = outline
+    ? metaDescription(reference, book.name, outline.summary)
+    : `${reference} in the King James Version, ${verses.length} verses: “${snippet(
+        verses[0],
+        110,
+      )}” Read the full chapter or open it offline in the Word Rhythm: KJV Bible app.`;
 
   return {
     title,
@@ -73,9 +104,56 @@ export default async function KjvChapterPage({
 
   const prevChapter = chapter > 1 ? chapter - 1 : null;
   const nextChapter = chapter < book.chapters.length ? chapter + 1 : null;
+  const outline = getKjvOutline(slug, chapter);
+
+  const reference = `${book.name} ${chapter}`;
+  const url = `${SITE}/kjv/${book.slug}/${chapter}`;
+  const chapterSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "King James Bible",
+            item: `${SITE}/kjv`,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: book.name,
+            item: `${SITE}/kjv/${book.slug}`,
+          },
+          { "@type": "ListItem", position: 3, name: reference, item: url },
+        ],
+      },
+      {
+        // What tells 1,189 near-identical pages apart: the summary, plus the
+        // book the chapter belongs to.
+        "@type": "Chapter",
+        name: reference,
+        position: chapter,
+        url,
+        inLanguage: "en",
+        isPartOf: {
+          "@type": "Book",
+          name: book.name,
+          url: `${SITE}/kjv/${book.slug}`,
+        },
+        ...(outline ? { abstract: outline.summary } : {}),
+      },
+    ],
+  };
 
   return (
     <article className="mx-auto max-w-3xl px-5 py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(chapterSchema) }}
+      />
+
       <nav className="text-sm text-muted">
         <Link href="/kjv" className="hover:text-ink">
           King James Bible
@@ -94,6 +172,12 @@ export default async function KjvChapterPage({
           King James Version
         </span>
       </h1>
+
+      {outline && (
+        <p className="mt-6 border-l-2 border-brand/40 pl-4 text-lg leading-relaxed text-ink">
+          {outline.summary}
+        </p>
+      )}
 
       <ol className="mt-10 space-y-3 text-lg leading-relaxed">
         {verses.map((text, i) => {
