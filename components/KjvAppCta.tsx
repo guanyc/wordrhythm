@@ -1,14 +1,20 @@
+import Script from "next/script";
+
 import { KJV_PLAY_URL, kjvIntentUrl } from "@/lib/kjv";
 
 /**
  * Install / open-the-app call to action for the /kjv pages.
  *
- * Two links, in order of preference for the reader:
- *   1. `intent://` — targets the app by package name, so it works even when App
- *      Links verification has not completed on that device; Android falls back
- *      to the Play listing when the app is missing.
- *   2. the plain Play listing, for iOS, desktop and anyone who dismissed the
- *      first link.
+ * The markup is two buttons, but what they do is decided at runtime by
+ * `public/kjv/open-in-app.js` — the same script the verse pages load, so the
+ * chapter pages and the verse pages cannot disagree:
+ *   - Android: the first button is the `intent://` address, which targets the
+ *     app by package name and therefore works even when App Links verification
+ *     has not completed on that device. If the app does not take over, the
+ *     script sends the reader to the store instead of leaving a dead click.
+ *   - iOS, desktop, in-app WebViews: `intent://` means nothing there, so the
+ *     script relabels the first button as the Play listing and drops the
+ *     duplicate.
  *
  * Nothing here redirects or covers the page: the verse is the content, the app
  * is an offer next to it.
@@ -22,6 +28,8 @@ export default function KjvAppCta({
   chapter: number;
   verse?: number;
 }) {
+  const intent = kjvIntentUrl(slug, chapter, verse ?? 1);
+
   return (
     <aside className="mt-16 rounded-2xl border border-black/5 bg-surface p-6 shadow-card">
       <p className="text-sm font-semibold text-brand">Word Rhythm: KJV Bible</p>
@@ -31,7 +39,10 @@ export default function KjvAppCta({
       </p>
       <div className="mt-5 flex flex-wrap items-center gap-3">
         <a
-          href={kjvIntentUrl(slug, chapter, verse ?? 1)}
+          href={intent}
+          data-open-in-app
+          data-intent={intent}
+          data-play={KJV_PLAY_URL}
           className="rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
         >
           Open in the app
@@ -39,11 +50,13 @@ export default function KjvAppCta({
         <a
           href={KJV_PLAY_URL}
           rel="nofollow sponsored"
+          data-play-store
           className="rounded-full border border-black/10 px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-brand/40"
         >
           Get it on Google Play
         </a>
       </div>
+      <Script src="/kjv/open-in-app.js" strategy="afterInteractive" />
     </aside>
   );
 }

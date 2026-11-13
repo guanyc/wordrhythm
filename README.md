@@ -66,6 +66,15 @@ hydrate, and 31,102 of them cost about 10 seconds of build time as strings
 versus minutes as routes. The Worker is now only the fallback for an address
 with no file.
 
+The "Open in the app" button on those pages is `intent://`, which only Android
+understands — iOS, desktop and the WebViews inside messaging apps render it as a
+dead control. `public/kjv/open-in-app.js` is loaded by both renderers (verse
+files and the React pages via `components/KjvAppCta.tsx`) and fixes that at
+runtime: off Android it relabels the button as the Play listing and drops the
+duplicate, and on Android it sends the reader to Play if the app has not taken
+over two seconds after the click. Neither file hardcodes the rules; the markup
+contract is `[data-open-in-app]` + `[data-play-store]`.
+
 That output is **34,126 files** and about 224 MB, which is past Cloudflare's
 20,000-file ceiling for static assets on the Workers Free plan — deploying this needs Workers Paid
 ($5/month, 100,000 files). Drop `scripts/kjv-verses.mjs` from the `build` script
