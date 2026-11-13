@@ -72,8 +72,11 @@ dead control. `public/kjv/open-in-app.js` is loaded by both renderers (verse
 files and the React pages via `components/KjvAppCta.tsx`) and fixes that at
 runtime: off Android it relabels the button as the Play listing and drops the
 duplicate, and on Android it sends the reader to Play if the app has not taken
-over two seconds after the click. Neither file hardcodes the rules; the markup
-contract is `[data-open-in-app]` + `[data-play-store]`.
+over two seconds after the click. Inside a chat app's WebView (WeChat, Weibo,
+Instagram…) neither App Links nor `intent://` can do anything — that WebView owns
+the URL — so both buttons are replaced by a line asking the reader to reopen the
+page in the system browser. Neither file hardcodes the rules; the markup
+contract is `[data-open-in-app]`, `[data-play-store]` and `[data-in-app-hint]`.
 
 That output is **34,126 files** and about 224 MB, which is past Cloudflare's
 20,000-file ceiling for static assets on the Workers Free plan — deploying this needs Workers Paid

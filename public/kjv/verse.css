@@ -32,6 +32,9 @@
   .cta p { margin:0; font-size:.875rem; line-height:1.6; color:var(--muted); }
   .cta .brand { color:var(--brand); font-weight:600; font-size:.875rem; }
   .btns { display:flex; flex-wrap:wrap; gap:.75rem; margin-top:1.25rem; }
+  /* Shown instead of the buttons inside a chat app's WebView, which cannot
+     launch apps at all. See public/kjv/open-in-app.js. */
+  .cta [data-in-app-hint] { margin-top:1.25rem; color:var(--ink); }
   .btn { border-radius:999px; padding:.625rem 1.25rem; font-size:.875rem; font-weight:600; }
   .btn-primary { background:var(--brand); color:#fff; }
   .btn-secondary { border:1px solid rgba(0,0,0,.1); color:var(--ink); }

@@ -15,6 +15,9 @@ import { KJV_PLAY_URL, kjvIntentUrl } from "@/lib/kjv";
  *   - iOS, desktop, in-app WebViews: `intent://` means nothing there, so the
  *     script relabels the first button as the Play listing and drops the
  *     duplicate.
+ *   - a chat app's WebView (WeChat, Weibo, Instagram…): it owns the URL and
+ *     cannot start intents at all, so both buttons are replaced by a line
+ *     telling the reader to reopen the page in the system browser.
  *
  * Nothing here redirects or covers the page: the verse is the content, the app
  * is an offer next to it.
@@ -56,6 +59,14 @@ export default function KjvAppCta({
           Get it on Google Play
         </a>
       </div>
+      <p
+        data-in-app-hint
+        hidden
+        className="mt-5 text-sm leading-relaxed text-ink"
+      >
+        The browser inside this app cannot open apps — tap ⋯ at the top right,
+        then “Open in Browser”, and open the app from there.
+      </p>
       <Script src="/kjv/open-in-app.js" strategy="afterInteractive" />
     </aside>
   );
