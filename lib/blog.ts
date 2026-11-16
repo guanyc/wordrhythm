@@ -79,6 +79,7 @@ const DEFAULT_VERSION = "kjv";
 export interface PostLinks {
   /** The translation this post talks about, always present. */
   version: {
+    slug: string;
     href: string;
     label: string;
     note: string;
@@ -110,6 +111,7 @@ export function postLinks(post: PostMeta): PostLinks {
 
   return {
     version: {
+      slug: version.slug,
       href: `/versions/${version.slug}`,
       label: version.listing,
       note: audioNote(version.slug) ?? "Offline, no account needed",

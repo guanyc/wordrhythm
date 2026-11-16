@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { attributedPlayUrl } from "@/lib/play";
 import Screenshots from "@/components/Screenshots";
 import { getListing } from "@/lib/listings";
 import { getVersion, versions, audioNote } from "@/lib/versions";
@@ -218,7 +219,11 @@ export default async function VersionPage({
           {version.playUrl ? (
             <div className="mt-6 flex flex-wrap items-center gap-4">
               <a
-                href={version.playUrl}
+                href={attributedPlayUrl(
+                  version.playUrl,
+                  version.slug,
+                  "version-page",
+                )}
                 className="inline-flex items-center justify-center rounded-xl bg-brand px-6 py-3 font-semibold text-white shadow-card transition-transform hover:-translate-y-0.5"
               >
                 Get it on Google Play

@@ -15,6 +15,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 import { getVersion } from "@/lib/versions";
+import { attributedPlayUrl } from "@/lib/play";
 
 interface BookIndexEntry {
   slug: string;
@@ -142,8 +143,22 @@ export function kjvHref(slug: string, chapter?: number, verse?: number): string 
   return `/kjv/${slug}/${chapter}/${verse}`;
 }
 
-/** Play install link with a referrer, so installs from the site are attributable. */
-export const KJV_PLAY_URL = `${getVersion("kjv")?.playUrl ?? "https://play.google.com/store/apps/details?id=com.gyc.ace.kjv"}&referrer=kjv_web_verse`;
+/**
+ * Play install link for the verse pages.
+ *
+ * The UTM string lives inside `referrer` (see lib/play.ts): raw utm parameters
+ * on a Play URL are ignored by Play Console, and the percent-encoded form is
+ * also what the Install Referrer library hands back to the app after install.
+ * The old `kjv_web_verse` token is kept as `utm_content`, so anything that
+ * already keyed off it still lines up.
+ */
+export const KJV_PLAY_URL =
+  attributedPlayUrl(
+    getVersion("kjv")?.playUrl ??
+      "https://play.google.com/store/apps/details?id=com.gyc.ace.kjv",
+    "kjv",
+    "kjv_web_verse",
+  ) ?? "https://play.google.com/store/apps/details?id=com.gyc.ace.kjv";
 
 /**
  * `intent://` link for a verse. Android hands the URL to the app when App Links

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { attributedPlayUrl } from "@/lib/play";
 import type { BibleVersion } from "@/lib/versions";
 
 export default function VersionCard({ version }: { version: BibleVersion }) {
@@ -48,7 +49,11 @@ export default function VersionCard({ version }: { version: BibleVersion }) {
       <div className="mt-5 flex flex-wrap items-center gap-3">
         {isLive && version.playUrl ? (
           <a
-            href={version.playUrl}
+            href={attributedPlayUrl(
+              version.playUrl,
+              version.slug,
+              "version-card",
+            )}
             className="inline-flex items-center justify-center rounded-xl bg-brand px-4 py-2 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5"
           >
             Google Play

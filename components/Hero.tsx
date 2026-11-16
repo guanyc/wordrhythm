@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { attributedPlayUrl } from "@/lib/play";
 
 export default function Hero() {
   return (
@@ -37,7 +38,11 @@ export default function Hero() {
 
       <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
         <a
-          href="https://play.google.com/store/apps/details?id=com.gyc.ace.kjv"
+          href={attributedPlayUrl(
+            "https://play.google.com/store/apps/details?id=com.gyc.ace.kjv",
+            "kjv",
+            "home-hero",
+          )}
           className="rounded-xl bg-brand px-6 py-3 font-semibold text-white shadow-card transition-transform hover:-translate-y-0.5"
         >
           Get the KJV Bible app

@@ -53,7 +53,10 @@ export const metadata: Metadata = {
  * they exist; an empty array omits `sameAs` rather than shipping a guess.
  */
 const SAME_AS: string[] = [
-  "https://play.google.com/store/apps/developer?id=right",
+  // The Play developer page slug follows the developer name, so this moves with
+  // it: "right" → "Word Rhythm". The new URL only resolves once Play has
+  // approved the name change; until then it 404s and the old one still works.
+  "https://play.google.com/store/apps/developer?id=Word+Rhythm",
 ];
 
 const siteSchema = {

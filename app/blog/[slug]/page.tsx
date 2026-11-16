@@ -9,6 +9,7 @@ import {
   renderPost,
 } from "@/lib/blog";
 import { TOTAL_EMOTION_PAGES } from "@/lib/emotions";
+import { attributedPlayUrl } from "@/lib/play";
 
 export function generateStaticParams() {
   return getPublishedPosts().map((p) => ({ slug: p.slug }));
@@ -129,7 +130,11 @@ export default async function BlogPostPage({
             )}
             {links.version.playUrl && (
               <a
-                href={links.version.playUrl}
+                href={attributedPlayUrl(
+                  links.version.playUrl,
+                  links.version.slug,
+                  "blog-cta",
+                )}
                 className="inline-flex items-center gap-2 rounded-xl border border-black/10 bg-bg px-4 py-2 font-semibold transition-colors hover:border-brand/40 hover:text-brand"
               >
                 Get on Google Play

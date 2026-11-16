@@ -5,6 +5,7 @@ import {
   allEmotionPages,
   groupedEmotionPages,
 } from "@/lib/emotions";
+import { attributedPlayUrl } from "@/lib/play";
 import { takeABreak } from "@/lib/versions";
 
 export const metadata: Metadata = {
@@ -128,7 +129,7 @@ export default function TakeABreakPage() {
 
       <div className="mt-12">
         <a
-          href={takeABreak.playUrl}
+          href={attributedPlayUrl(takeABreak.playUrl, "take-a-break", "take-a-break-page")}
           className="inline-flex items-center justify-center rounded-xl bg-brand px-6 py-3 font-semibold text-white shadow-card transition-transform hover:-translate-y-0.5"
         >
           Get Take a Break on Google Play
