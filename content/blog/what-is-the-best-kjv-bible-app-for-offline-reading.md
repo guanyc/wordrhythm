@@ -120,6 +120,6 @@ For others, it’s the combination of solid search, devotional support, rich rea
 ## Try this KJV Bible app
 If you’re looking for a KJV app built for offline reading and real-life devotion:
 - Read more about devotional features: [/blog/kjv-bible-app-daily-devotional-features](/blog/kjv-bible-app-daily-devotional-features)
-- Google Play: https://play.google.com/store/apps/details?id=com.gyc.ace.kjv
+- [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.kjv&referrer=utm_source%3Dwordrhythm%26utm_medium%3Dweb%26utm_campaign%3Dkjv%26utm_content%3Dblog-body)
 
 The best KJV Bible app is the one that makes it easy to return to Scripture — not just when life is quiet, but also when life feels full.

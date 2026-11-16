@@ -166,7 +166,7 @@ If you want a **KJV Bible app** with **daily devotional** support and more usabl
 - Read about Take a Break: [/blog/what-is-take-a-break-in-a-bible-app](/blog/what-is-take-a-break-in-a-bible-app)
 - Read more about devotional features: [/blog/kjv-bible-app-daily-devotional-features](/blog/kjv-bible-app-daily-devotional-features)
 - Read about the KJV app: [/versions/kjv](/versions/kjv)
-- Google Play: https://play.google.com/store/apps/details?id=com.gyc.ace.kjv
+- [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.kjv&referrer=utm_source%3Dwordrhythm%26utm_medium%3Dweb%26utm_campaign%3Dkjv%26utm_content%3Dblog-body)
 
 Consistency is not a personality trait. It is usually a matter of what you find when you open the app.
 

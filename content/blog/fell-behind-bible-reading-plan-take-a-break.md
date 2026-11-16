@@ -124,7 +124,7 @@ Just a simple way to stay connected to God's Word, even on difficult days.
 
 If you're looking for a KJV Bible app with daily devotionals, Bible reading plans, and a gentler way to reconnect with Scripture when life gets busy, explore Take a Break inside **KJV Bible App – Daily Devotional**.
 
-- Google Play: https://play.google.com/store/apps/details?id=com.gyc.ace.kjv
+- [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.kjv&referrer=utm_source%3Dwordrhythm%26utm_medium%3Dweb%26utm_campaign%3Dkjv%26utm_content%3Dblog-body)
 - Apps page: https://wordrhythm.app/versions/kjv
 
 Some days you'll read a chapter.

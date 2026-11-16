@@ -110,7 +110,7 @@ These are sample quotes that reflect what many users look for:
 
 If you want a **King James Bible app** that supports daily devotional reading with practical structure, emotion/topic entry points, and a gentle “come back” feature, try **Bible KJV – Daily Devotional**:
 
-- Google Play: https://play.google.com/store/apps/details?id=com.gyc.ace.kjv
+- [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.kjv&referrer=utm_source%3Dwordrhythm%26utm_medium%3Dweb%26utm_campaign%3Dkjv%26utm_content%3Dblog-body)
 - Apps page: https://wordrhythm.app/versions/kjv
 
 If you want the broader product ideas and feature guides in one place, see:

@@ -136,6 +136,6 @@ That question tends to lead you to much better choices.
 ## Try this gentler approach
 If you’re looking for a **KJV Bible app** with reading plans and low-pressure ways to restart:
 - Read this: [/blog/fell-behind-bible-reading-plan-take-a-break](/blog/fell-behind-bible-reading-plan-take-a-break)
-- Explore the app on Google Play: https://play.google.com/store/apps/details?id=com.gyc.ace.kjv
+- [Explore the app on Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.kjv&referrer=utm_source%3Dwordrhythm%26utm_medium%3Dweb%26utm_campaign%3Dkjv%26utm_content%3Dblog-body)
 
 A Bible reading plan works best when it helps you keep moving forward, not when it keeps reminding you how far behind you are.

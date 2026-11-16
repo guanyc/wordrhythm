@@ -146,7 +146,7 @@ If you want a quicker way to move from memory to Scripture with **KJV Bible vers
 - Read about devotional features: [/blog/kjv-bible-app-daily-devotional-features](/blog/kjv-bible-app-daily-devotional-features)
 - Browse verses by feeling: [/bible-verses](/bible-verses)
 - Read about the KJV app: [/versions/kjv](/versions/kjv)
-- Google Play: https://play.google.com/store/apps/details?id=com.gyc.ace.kjv
+- [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.kjv&referrer=utm_source%3Dwordrhythm%26utm_medium%3Dweb%26utm_campaign%3Dkjv%26utm_content%3Dblog-body)
 
 The easier it is to find a verse, the easier it becomes to stay close to the Word in everyday life.
 

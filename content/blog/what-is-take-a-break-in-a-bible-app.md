@@ -162,7 +162,7 @@ If you’d like to explore this KJV Bible app, with daily devotionals and this e
 - Read more about Take a Break: [/take-a-break](/take-a-break)
 - Related post: [/blog/fell-behind-bible-reading-plan-take-a-break](/blog/fell-behind-bible-reading-plan-take-a-break)
 - More about devotional features: [/blog/kjv-bible-app-daily-devotional-features](/blog/kjv-bible-app-daily-devotional-features)
-- Google Play: https://play.google.com/store/apps/details?id=com.gyc.ace.kjv
+- [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.kjv&referrer=utm_source%3Dwordrhythm%26utm_medium%3Dweb%26utm_campaign%3Dkjv%26utm_content%3Dblog-body)
 
 Some days spiritual consistency means reading a lot.
 Other days, it just means taking one small step back toward Scripture.

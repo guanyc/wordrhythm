@@ -258,7 +258,7 @@ That is strong enough to support its own landing copy, its own article, and even
 If you are looking for a **KJV Bible app** that offers more than a generic annual plan:
 
 - Read more about devotional features: [/blog/kjv-bible-app-daily-devotional-features](/blog/kjv-bible-app-daily-devotional-features)
-- Google Play: https://play.google.com/store/apps/details?id=com.gyc.ace.kjv
+- [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.kjv&referrer=utm_source%3Dwordrhythm%26utm_medium%3Dweb%26utm_campaign%3Dkjv%26utm_content%3Dblog-body)
 
 A good 365-day devotional journey is not only about lasting a year.
 
@@ -270,7 +270,7 @@ If you are looking for a **KJV Bible app** that offers more than a generic annua
 - Read more about devotional features: [/blog/kjv-bible-app-daily-devotional-features](/blog/kjv-bible-app-daily-devotional-features)
 - How to start a plan you can keep: [/blog/how-to-start-a-bible-reading-plan-without-the-guilt-loop](/blog/how-to-start-a-bible-reading-plan-without-the-guilt-loop)
 - Read about the KJV app: [/versions/kjv](/versions/kjv)
-- Google Play: https://play.google.com/store/apps/details?id=com.gyc.ace.kjv
+- [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.kjv&referrer=utm_source%3Dwordrhythm%26utm_medium%3Dweb%26utm_campaign%3Dkjv%26utm_content%3Dblog-body)
 
 A year only works if each day is worth opening.
 

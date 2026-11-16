@@ -111,7 +111,7 @@ If you’re looking for a **KJV Bible app** that helps you meet anxiety with Scr
 - Browse all 20 [bible verses for anxiety](/bible-verses/anxiety), with the reference for each
 - Read more about devotional features: [/blog/kjv-bible-app-daily-devotional-features](/blog/kjv-bible-app-daily-devotional-features)
 - Browse the KJV online: [/versions/kjv](/versions/kjv)
-- Google Play: https://play.google.com/store/apps/details?id=com.gyc.ace.kjv
+- [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.kjv&referrer=utm_source%3Dwordrhythm%26utm_medium%3Dweb%26utm_campaign%3Dkjv%26utm_content%3Dblog-body)
 
 When anxiety hits, the best first move is rarely to read more.
 It’s finding just the right verse to begin.

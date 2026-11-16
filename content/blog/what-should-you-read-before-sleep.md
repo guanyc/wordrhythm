@@ -156,7 +156,7 @@ If you want a **KJV Bible app** with **bedtime devotional support**, evening rhy
 - Read more about devotional features: [/blog/kjv-bible-app-daily-devotional-features](/blog/kjv-bible-app-daily-devotional-features)
 - Verses for peace and rest: [/bible-verses/peace](/bible-verses/peace)
 - Read about the KJV app: [/versions/kjv](/versions/kjv)
-- Google Play: https://play.google.com/store/apps/details?id=com.gyc.ace.kjv
+- [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.kjv&referrer=utm_source%3Dwordrhythm%26utm_medium%3Dweb%26utm_campaign%3Dkjv%26utm_content%3Dblog-body)
 
 Before sleep, you do not need to read a lot.
 

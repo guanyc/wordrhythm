@@ -238,7 +238,7 @@ If you want a KJV Bible app built for both Bible study and real-life devotion:
 - Read more about devotional features: [/blog/kjv-bible-app-daily-devotional-features](/blog/kjv-bible-app-daily-devotional-features)
 - Read this related piece: [/blog/what-do-people-need-from-a-bible-app-today](/blog/what-do-people-need-from-a-bible-app-today)
 - Browse the KJV online: [/versions/kjv](/versions/kjv)
-- Google Play: [https://play.google.com/store/apps/details?id=com.gyc.ace.kjv](https://play.google.com/store/apps/details?id=com.gyc.ace.kjv)
+- [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.kjv&referrer=utm_source%3Dwordrhythm%26utm_medium%3Dweb%26utm_campaign%3Dkjv%26utm_content%3Dblog-body)
 
 A Bible app should support deep study when that’s what someone wants.
 It should also help people live with Scripture on the messy, ordinary days they actually live.
