@@ -53,9 +53,12 @@ export const metadata: Metadata = {
  * they exist; an empty array omits `sameAs` rather than shipping a guess.
  */
 const SAME_AS: string[] = [
-  // The Play developer page slug follows the developer name, so this moves with
-  // it: "right" → "Word Rhythm". The new URL only resolves once Play has
-  // approved the name change; until then it 404s and the old one still works.
+  // Both URLs are the same publisher. Every Play listing now links to the
+  // `Word+Rhythm` slug (that is Play's own link, not ours), but the developer
+  // *page* index still only answers on the legacy `right` slug while Play
+  // rebuilds it after the name change — the new one returns 404 for now.
+  // Keep both until the new slug resolves, then drop the legacy entry.
+  "https://play.google.com/store/apps/developer?id=right",
   "https://play.google.com/store/apps/developer?id=Word+Rhythm",
 ];
 
