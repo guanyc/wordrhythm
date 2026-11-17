@@ -192,6 +192,29 @@ export const privacyPolicies: PrivacyPolicy[] = [
     versionSlug: "swahili",
   },
   {
+    // Written before the first upload, because Play Console asks for the URL
+    // first. Measured against the build, not copied from Igbo: backup is a
+    // JSON file the user exports through the system picker (ActivityCloudBackup
+    // is not in the manifest and is launched from nowhere), the banner is the
+    // only ad format that renders (the native and interstitial unit ids are
+    // configured, but resource shrinking drops their strings from the release
+    // APK), there is no billing code, and no microphone or camera permission is
+    // declared at all — voice search hands the request to the device's own
+    // speech recogniser.
+    //
+    // versionSlug is deliberately absent: /versions/hausa does not exist yet, and
+    // a link to a 404 is worse than no link.
+    slug: "hausa",
+    appName: "Littafi Mai Tsarki (Hausa)",
+    storeName: "Littafi Mai Tsarki (Hausa)",
+    androidPackage: "com.gyc.ace.hausa",
+    developerName: DEVELOPER,
+    legalEntity: DEVELOPER,
+    contactEmail: EMAIL,
+    updated: "November 17, 2026",
+    icon: "/apps/hausa/icon.png",
+  },
+  {
     slug: "take-a-break",
     appName: "Take a Break",
     storeName: "Take a Break",
