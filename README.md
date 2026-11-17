@@ -45,6 +45,9 @@ A push is therefore a production action. Look first:
 npm run build && npm run preview
 ```
 
+Build order, post-push checks, rollback and the failure table live in
+[docs/DEPLOY.md](docs/DEPLOY.md).
+
 ## KJV reading routes (`/kjv`)
 
 `https://wordrhythm.app/kjv/<book>/<chapter>/<verse>` is the address a verse
