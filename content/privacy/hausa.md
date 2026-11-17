@@ -79,7 +79,7 @@ Each of these services operates under its own privacy policy.
 
 Reading the Bible, searching, and saving notes never sends anything to a third party. The App sends no reading data anywhere.
 
-When you share a verse, only the verse text and the app’s name travel — and only to the app you picked. The App does not upload it. The credit for the translation is shown inside the App, in **Settings → Game da → Fassara da haƙƙin mallaka**: Biblica® Open Hausa Contemporary Bible™, © 2020 Biblica, Inc., CC BY-SA 4.0. If you publish the text elsewhere, that licence asks you to keep the credit with it.
+When you share a verse, the verse text, the app’s name and the translation credit travel — and only to the app you picked. The App does not upload it. The credit reads Biblica® Open Hausa Contemporary Bible™, © 2020 Biblica, Inc., CC BY-SA 4.0, and it is also shown inside the App, in **Settings → Game da → Fassara da haƙƙin mallaka**. If you publish the text elsewhere, that licence asks you to keep the credit with it.
 
 ## 4. Your Choices & Controls
 
