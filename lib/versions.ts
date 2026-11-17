@@ -326,6 +326,32 @@ export const versions: BibleVersion[] = [
     feature: "/apps/swahili/feature.webp",
     ogImage: "/brand/og-swahili.jpg",
   },
+  {
+    // One text in one language: the Biblica Open Hausa Contemporary Bible, with
+    // the interface in Hausa and English. No KJV is paired here, unlike the
+    // Yorùbá and Igbo builds, so this entry must never say "+ KJV".
+    //
+    // Not on Play yet: the release APK is signed with the family upload key and
+    // the gate reports FAIL=0, but the listing has not been uploaded, so there
+    // is no playUrl and the page shows the pre-launch note instead of a button.
+    slug: "hausa",
+    code: "HAU",
+    name: "Littafi Mai Tsarki",
+    listing: "Word Rhythm: Hausa Bible",
+    storeTitle: "Littafi Mai Tsarki (Hausa)",
+    language: "Hausa",
+    lang: "ha",
+    summary:
+      "The complete Biblica Open Hausa Contemporary Bible — all 66 books offline, with a Hausa interface, four daily slots, devotionals, reading plans and search.",
+    status: "planned",
+    // Read-aloud only: the dedicated Sleep Audio track is KJV-only, so this app
+    // must not inherit the KJV's `sleep` level.
+    audio: "tts",
+    sleepSlotLabel: "Bacci",
+    package: "com.gyc.ace.hausa",
+    icon: "/apps/hausa/icon.png",
+    feature: "/apps/hausa/feature.png",
+  },
 ];
 
 export function getVersion(slug: string): BibleVersion | undefined {

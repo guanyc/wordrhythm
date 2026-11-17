@@ -166,6 +166,20 @@ export const versions = [
     sleepLabel: "Usiku",
     package: "com.gyc.ace.swahili",
   },
+  {
+    slug: "hausa",
+    name: "Littafi Mai Tsarki",
+    listing: "Word Rhythm: Hausa Bible",
+    summary:
+      "the complete Biblica Open Hausa Contemporary Bible, offline, with a Hausa interface, four daily slots, devotionals, reading plans and search",
+    language: "Hausa",
+    lang: "ha",
+    status: "planned",
+    audio: "tts",
+    audioNote: "text-to-speech audio",
+    sleepLabel: "Bacci",
+    package: "com.gyc.ace.hausa",
+  },
 ];
 
 /** The four daily slots, matching `DAILY_SLOTS` in lib/versions.ts. */

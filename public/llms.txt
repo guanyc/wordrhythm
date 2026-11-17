@@ -1,12 +1,12 @@
 # Word Rhythm
 
-> Scripture for the rhythm of everyday life. A family of 11 Android Bible apps
-> — KJV Bible, ASV Bible, WEB Bible, Biblia RVR, 和合本圣经, Bíblia AA, Bible Louis Segond 1910, Lutherbibel 1912, Yorùbá + KJV, Igbo + KJV, Biblia Takatifu — each built around
+> Scripture for the rhythm of everyday life. A family of 12 Android Bible apps
+> — KJV Bible, ASV Bible, WEB Bible, Biblia RVR, 和合本圣经, Bíblia AA, Bible Louis Segond 1910, Lutherbibel 1912, Yorùbá + KJV, Igbo + KJV, Biblia Takatifu, Littafi Mai Tsarki — each built around
 > 4 daily touchpoints: morning, day, evening, sleep.
 
 ## Daily rhythm (every app)
 
-All 11 apps run the same 4 daily slots:
+All 12 apps run the same 4 daily slots:
 
 1. **Morning** (early morning)
 2. **Day** (daytime)
@@ -15,7 +15,7 @@ All 11 apps run the same 4 daily slots:
 
 The fourth slot is a real slot, not a synonym for the third: it opens in the
 evening and runs past midnight. Every app has before-bed devotional content —
-the label is localised (Sleep, Sleep, Sleep, Noche, 睡前, Noite, Nuit, Nacht, Sleep, Sleep, Usiku).
+the label is localised (Sleep, Sleep, Sleep, Noche, 睡前, Noite, Nuit, Nacht, Sleep, Sleep, Usiku, Bacci).
 
 Each devotional follows the same shape: time window, theme tag, the verse with
 its reference, what the verse says, how to reflect, and a short prayer.
@@ -26,7 +26,7 @@ Audio is the feature that differs between apps:
 
 - **Sleep Audio — KJV Bible only.** Gentle nighttime Scripture
   reading with soft pacing and quiet pauses, plus peaceful background sounds.
-- **Text-to-speech — WEB Bible, Biblia RVR, 和合本圣经, Bíblia AA, Lutherbibel 1912, Yorùbá + KJV, Igbo + KJV, Biblia Takatifu.** Read-aloud Scripture playback.
+- **Text-to-speech — WEB Bible, Biblia RVR, 和合本圣经, Bíblia AA, Lutherbibel 1912, Yorùbá + KJV, Igbo + KJV, Biblia Takatifu, Littafi Mai Tsarki.** Read-aloud Scripture playback.
 - **No audio — ASV Bible, Bible Louis Segond 1910.** Reading and devotionals only.
 
 Every app has all 4 devotional slots, including the sleep slot.
@@ -45,6 +45,7 @@ Only KJV Bible ships the dedicated Sleep Audio track.
 - [Word Rhythm: Yorùbá + KJV](https://wordrhythm.app/versions/yoruba) (Yorùbá & English) — the Open Yoruba Contemporary Bible and the KJV side by side, fully offline, with red letter in both texts, text-to-speech audio. [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.yoruba)
 - [Word Rhythm: Igbo + KJV](https://wordrhythm.app/versions/igbo) (Igbo & English) — the Open Igbo Contemporary Bible and the KJV side by side, fully offline, with red letter from the Igbo text's own speaker markers, text-to-speech audio. [Google Play](https://play.google.com/store/apps/details?id=com.gyc.ace.igbo)
 - [Word Rhythm: Swahili Bible](https://wordrhythm.app/versions/swahili) (Kiswahili) — the complete Neno (Open Kiswahili Contemporary Version) offline, with a Kiswahili interface, devotionals, reading plans and search, text-to-speech audio. *(coming soon to Google Play)*
+- [Word Rhythm: Hausa Bible](https://wordrhythm.app/versions/hausa) (Hausa) — the complete Biblica Open Hausa Contemporary Bible, offline, with a Hausa interface, four daily slots, devotionals, reading plans and search, text-to-speech audio. *(coming soon to Google Play)*
 - [All versions](https://wordrhythm.app/versions)
 
 ## Bible verses by feeling
@@ -175,7 +176,7 @@ the link above.
 - Platform: Android only. Fully offline reading. No account required.
 - 4 daily slots in every app: morning, day, evening, sleep.
 - Reading plans, memorization and Take a Break are available in every app.
-- Audio varies: Sleep Audio (KJV Bible), text-to-speech (WEB Bible, Biblia RVR, 和合本圣经, Bíblia AA, Lutherbibel 1912, Yorùbá + KJV, Igbo + KJV, Biblia Takatifu), or none (ASV Bible, Bible Louis Segond 1910).
+- Audio varies: Sleep Audio (KJV Bible), text-to-speech (WEB Bible, Biblia RVR, 和合本圣经, Bíblia AA, Lutherbibel 1912, Yorùbá + KJV, Igbo + KJV, Biblia Takatifu, Littafi Mai Tsarki), or none (ASV Bible, Bible Louis Segond 1910).
 - Also available as a standalone app: [Take a Break](https://wordrhythm.app/take-a-break)
 - KJV archaic-word glossary: 1439 entries, examples verified against the full KJV text.
 

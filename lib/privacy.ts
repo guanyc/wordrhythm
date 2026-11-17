@@ -202,8 +202,10 @@ export const privacyPolicies: PrivacyPolicy[] = [
     // declared at all — voice search hands the request to the device's own
     // speech recogniser.
     //
-    // versionSlug is deliberately absent: /versions/hausa does not exist yet, and
-    // a link to a 404 is worse than no link.
+    // versionSlug used to be absent because /versions/hausa did not exist — a
+    // link to a 404 is worse than no link. The version entry exists now
+    // (planned: signed and gate-clean, but not uploaded to Play yet), so the
+    // policy links to it and the page carries the pre-launch note.
     slug: "hausa",
     appName: "Littafi Mai Tsarki (Hausa)",
     storeName: "Littafi Mai Tsarki (Hausa)",
@@ -213,6 +215,7 @@ export const privacyPolicies: PrivacyPolicy[] = [
     contactEmail: EMAIL,
     updated: "November 17, 2026",
     icon: "/apps/hausa/icon.png",
+    versionSlug: "hausa",
   },
   {
     slug: "take-a-break",
