@@ -3,7 +3,7 @@ import path from "node:path";
 import { marked } from "marked";
 
 /** The single Terms of Service URL Google Play asks each app to provide. */
-export const TERMS_UPDATED = "November 4, 2026";
+export const TERMS_UPDATED = "November 20, 2026";
 
 /**
  * Reads content/terms.md and converts it to HTML at build time. The markdown

@@ -5,7 +5,7 @@ import { TERMS_UPDATED, renderTerms } from "@/lib/terms";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "The terms that govern your use of every app published by Guan Yongchun on Google Play — the Word Rhythm Bible apps, Take a Break, HanziNova, and Born Win. Last updated " +
+    "The terms that govern your use of every app published by Guan Yongchun on Google Play, including the Word Rhythm Bible apps. Last updated " +
     TERMS_UPDATED +
     ".",
   alternates: { canonical: "/terms" },
@@ -45,14 +45,12 @@ export default function TermsPage() {
           <div className="flex flex-wrap gap-1">
             <dt className="font-semibold text-ink">Apps covered:</dt>
             <dd>
-              <strong>Word Rhythm</strong> Bible apps (KJV, ASV, WEB, RVR, 道韵
-              CUV, Bíblia AA, Louis Segond 1910, Lutherbibel 1912, Bible KJV
-              Quick, Bijbel Statenvertaling Lite, Yorùbá + KJV, Igbo + KJV and
-              the Kiswahili Bible), and{" "}
-              <strong>Take a Break</strong>; plus{" "}
-              <strong>HanziNova</strong> (Chinese character learning) and{" "}
-              <strong>Born Win</strong> / <strong>WatchList Tracker Lite</strong>{" "}
-              (trading discipline).
+              Every app published by this developer on Google Play whose
+              listing links here — including the Word Rhythm Bible apps and
+              Take a Break, and any app added in the future. The section
+              &quot;The Service&quot; below describes what each category of app
+              does; each app&apos;s own Google Play listing is the authoritative
+              description of its features.
             </dd>
           </div>
         </dl>
