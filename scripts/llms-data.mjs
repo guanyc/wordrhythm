@@ -151,8 +151,8 @@ export const versions = [
     // One text only — Neno, with a Kiswahili interface throughout. Keep in
     // sync with lib/versions.ts.
     //
-    // No store page yet, so `status` says "planned": llms.mjs prints "coming
-    // soon" instead of a Play link that would 404.
+    // Live on Play, so `status` is omitted (check-data.mjs reads an absent
+    // status as "live") and llms.mjs prints the store link.
     slug: "swahili",
     name: "Biblia Takatifu",
     listing: "Word Rhythm: Swahili Bible",
@@ -160,13 +160,15 @@ export const versions = [
       "the complete Neno (Open Kiswahili Contemporary Version) offline, with a Kiswahili interface, devotionals, reading plans and search",
     language: "Kiswahili",
     lang: "sw",
-    status: "planned",
     audio: "tts",
     audioNote: "text-to-speech audio",
     sleepLabel: "Usiku",
     package: "com.gyc.ace.swahili",
   },
   {
+    // Still pre-launch on the store: the Play URL for this package served 404
+    // as of 2026-11-20, so `status` stays "planned" and llms.mjs prints
+    // "coming soon" rather than a dead link. Flip with lib/versions.ts.
     slug: "hausa",
     name: "Littafi Mai Tsarki",
     listing: "Word Rhythm: Hausa Bible",

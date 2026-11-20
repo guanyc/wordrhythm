@@ -305,8 +305,9 @@ export const versions: BibleVersion[] = [
     // its interface is Kiswahili throughout, which is why the summary leads
     // with the translation rather than with a pairing.
     //
-    // Not on Play yet: the release build is still unsigned, so there is no
-    // playUrl and the page shows the pre-launch note instead of a button.
+    // Live on Play since the listing went public; the package resolves to
+    // "Word Rhythm: Swahili Bible". Keep the playUrl verified against the
+    // store rather than the build, which is what unblocked the upload.
     slug: "swahili",
     code: "SWA",
     name: "Biblia Takatifu",
@@ -316,12 +317,14 @@ export const versions: BibleVersion[] = [
     lang: "sw",
     summary:
       "The complete Neno — the Open Kiswahili Contemporary Version — with a Kiswahili interface: four daily slots, devotionals, reading plans, search and audio, all offline.",
-    status: "planned",
+    status: "live",
     // The sleep slot and its devotionals are there; the Sleep Audio track is
     // KJV-only for now, so read-aloud is the whole audio story.
     audio: "tts",
     sleepSlotLabel: "Usiku",
     package: "com.gyc.ace.swahili",
+    playUrl:
+      "https://play.google.com/store/apps/details?id=com.gyc.ace.swahili",
     icon: "/apps/swahili/icon.png",
     feature: "/apps/swahili/feature.webp",
     ogImage: "/brand/og-swahili.jpg",
@@ -331,9 +334,11 @@ export const versions: BibleVersion[] = [
     // the interface in Hausa and English. No KJV is paired here, unlike the
     // Yorùbá and Igbo builds, so this entry must never say "+ KJV".
     //
-    // Not on Play yet: the release APK is signed with the family upload key and
-    // the gate reports FAIL=0, but the listing has not been uploaded, so there
-    // is no playUrl and the page shows the pre-launch note instead of a button.
+    // Still to be confirmed on the store: the release APK is signed with the
+    // family upload key and the gate reports FAIL=0, but as of 2026-11-20 the
+    // Play URL for this package returns 404, so there is no playUrl and the
+    // page shows the pre-launch note instead of a button. Flip to "live" only
+    // once that URL serves the listing — a dead store link is worse than none.
     slug: "hausa",
     code: "HAU",
     name: "Littafi Mai Tsarki",

@@ -173,7 +173,8 @@ export const privacyPolicies: PrivacyPolicy[] = [
   },
   {
     // Written before the first upload, because Play Console asks for the URL
-    // first. It differs from the Igbo policy in three measured ways: the Drive
+    // first; the app is on Play now, so the listing link is filled in. It
+    // differs from the Igbo policy in three measured ways: the Drive
     // backup category is commented out in this build (so backup is a file on
     // the device), there is no rewarded ad, and ProManager reports every
     // purchase as already unlocked, so no Billing flow is reachable.
@@ -184,6 +185,7 @@ export const privacyPolicies: PrivacyPolicy[] = [
     appName: "Word Rhythm: Swahili Bible",
     storeName: "Word Rhythm: Swahili Bible",
     androidPackage: "com.gyc.ace.swahili",
+    playUrl: "https://play.google.com/store/apps/details?id=com.gyc.ace.swahili",
     developerName: DEVELOPER,
     legalEntity: DEVELOPER,
     contactEmail: EMAIL,
@@ -203,9 +205,9 @@ export const privacyPolicies: PrivacyPolicy[] = [
     // speech recogniser.
     //
     // versionSlug used to be absent because /versions/hausa did not exist — a
-    // link to a 404 is worse than no link. The version entry exists now
-    // (planned: signed and gate-clean, but not uploaded to Play yet), so the
-    // policy links to it and the page carries the pre-launch note.
+    // link to a 404 is worse than no link. The version entry exists now, so the
+    // policy links to it and the page carries the pre-launch note. No playUrl
+    // yet: the store URL for this package still served 404 as of 2026-11-20.
     slug: "hausa",
     appName: "Littafi Mai Tsarki (Hausa)",
     storeName: "Littafi Mai Tsarki (Hausa)",
