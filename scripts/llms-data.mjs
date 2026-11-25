@@ -166,9 +166,8 @@ export const versions = [
     package: "com.gyc.ace.swahili",
   },
   {
-    // Still pre-launch on the store: the Play URL for this package served 404
-    // as of 2026-11-20, so `status` stays "planned" and llms.mjs prints
-    // "coming soon" rather than a dead link. Flip with lib/versions.ts.
+    // Live on Play since 2026-11-25; status omitted so llms.mjs prints the
+    // store link. Keep in sync with lib/versions.ts.
     slug: "hausa",
     name: "Littafi Mai Tsarki",
     listing: "Word Rhythm: Hausa Bible",
@@ -176,11 +175,27 @@ export const versions = [
       "the complete Biblica Open Hausa Contemporary Bible, offline, with a Hausa interface, four daily slots, devotionals, reading plans and search",
     language: "Hausa",
     lang: "ha",
-    status: "planned",
     audio: "tts",
     audioNote: "text-to-speech audio",
     sleepLabel: "Bacci",
     package: "com.gyc.ace.hausa",
+  },
+  {
+    // Quick lineage: a single-text pocket reader, not a devotional app. Keep it
+    // in the same data source as the version grid, but do not claim four slots.
+    // Pre-launch on Play, so status stays "planned" and llms.mjs says coming soon.
+    slug: "sv1917-quick",
+    name: "Svenska 1917 Bible quick",
+    listing: "Svenska 1917 Bible quick",
+    summary:
+      "focused offline reader for the 1917 Swedish Bible, with fast search, highlights, tags, memorization and reading plans but no devotional slots",
+    language: "Svenska",
+    lang: "sv",
+    status: "planned",
+    audio: "tts",
+    audioNote: "text-to-speech audio",
+    noSlots: true,
+    package: "com.gyc.ace.sv1917_quick",
   },
 ];
 

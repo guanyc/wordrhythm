@@ -210,11 +210,18 @@ export default async function VersionPage({
 
           <p className="mt-4 max-w-xl text-muted">{version.summary}</p>
 
-          <p className="mt-3 text-sm text-muted">
-            Four daily slots: morning, day, evening, and the before-bed
-            devotional.{" "}
-            {audioNote(version.slug) ?? "Reading and devotionals only."}
-          </p>
+          {version.dailySlots === false ? (
+            <p className="mt-3 text-sm text-muted">
+              A focused reader without devotional slots — reading, search,
+              highlights, tags and memorization. {audioNote(version.slug)}
+            </p>
+          ) : (
+            <p className="mt-3 text-sm text-muted">
+              Four daily slots: morning, day, evening, and the before-bed
+              devotional.{" "}
+              {audioNote(version.slug) ?? "Reading and devotionals only."}
+            </p>
+          )}
 
           {version.playUrl ? (
             <div className="mt-6 flex flex-wrap items-center gap-4">

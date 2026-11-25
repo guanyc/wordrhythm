@@ -15,6 +15,9 @@ import path from "node:path";
 import { versions, slots, guides } from "./llms-data.mjs";
 
 const HOST = "https://wordrhythm.app";
+const devotionalApps = versions.filter((v) => !v.noSlots);
+const quickApps = versions.filter((v) => v.noSlots);
+const quickNames = quickApps.map((v) => v.name).join(" and ");
 const OUT = path.join(process.cwd(), "out");
 const PUBLIC = path.join(process.cwd(), "public");
 
@@ -134,18 +137,20 @@ const appLines = versions.map((v) => {
 const md = `# Word Rhythm
 
 > Scripture for the rhythm of everyday life. A family of ${versions.length} Android Bible apps
-> — ${list(versions.map((v) => v.name))} — each built around
-> ${slots.length} daily touchpoints: ${slots.map((s) => s.en.toLowerCase()).join(", ")}.
+> — ${list(versions.map((v) => v.name))} — ${devotionalApps.length} built around
+> ${slots.length} daily touchpoints (${slots.map((s) => s.en.toLowerCase()).join(", ")}) and ${quickApps.length} focused reader${quickApps.length === 1 ? "" : "s"} without devotional slots.
 
-## Daily rhythm (every app)
+## Daily rhythm
 
-All ${versions.length} apps run the same ${slots.length} daily slots:
+${devotionalApps.length} apps run the same ${slots.length} daily slots:
 
 ${slots.map((s, i) => `${i + 1}. **${s.en}** (${s.window})`).join("\n")}
 
 The fourth slot is a real slot, not a synonym for the third: it opens in the
-evening and runs past midnight. Every app has before-bed devotional content —
-the label is localised (${list(versions.map((v) => v.sleepLabel))}).
+evening and runs past midnight. Each of these apps has before-bed devotional
+content — the label is localised (${list(devotionalApps.map((v) => v.sleepLabel))}).
+
+${quickApps.length > 0 ? `${quickNames} ${quickApps.length === 1 ? "is a focused reader" : "are focused readers"} without devotional slots: just reading, search, highlights and memorization.` : ""}
 
 Each devotional follows the same shape: time window, theme tag, the verse with
 its reference, what the verse says, how to reflect, and a short prayer.
@@ -159,7 +164,7 @@ Audio is the feature that differs between apps:
 - **Text-to-speech — ${list(byAudio("tts"))}.** Read-aloud Scripture playback.
 - **No audio — ${list(byAudio("none"))}.** Reading and devotionals only.
 
-Every app has all ${slots.length} devotional slots, including the sleep slot.
+Every devotional app has all ${slots.length} slots, including the sleep slot.
 Only ${list(byAudio("sleep"))} ships the dedicated Sleep Audio track.
 
 ## Apps
@@ -212,8 +217,8 @@ the link above.
 ## Facts
 
 - Platform: Android only. Fully offline reading. No account required.
-- ${slots.length} daily slots in every app: ${slots.map((s) => s.en.toLowerCase()).join(", ")}.
-- Reading plans, memorization and Take a Break are available in every app.
+- ${slots.length} daily slots in ${devotionalApps.length} apps: ${slots.map((s) => s.en.toLowerCase()).join(", ")}; ${quickNames} ${quickApps.length === 1 ? "has" : "have"} none.
+- Reading plans and memorization are available in every app; Take a Break is also a standalone app.
 - Audio varies: Sleep Audio (${list(byAudio("sleep"))}), text-to-speech (${list(byAudio("tts"))}), or none (${list(byAudio("none"))}).
 - Also available as a standalone app: [Take a Break](${HOST}/take-a-break)
 - KJV archaic-word glossary: ${allWords.length} entries, examples verified against the full KJV text.

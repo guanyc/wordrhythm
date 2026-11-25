@@ -1361,6 +1361,99 @@ const swahili: StoreListing = {
   ],
 };
 
+const sv1917Quick: StoreListing = {
+  intro: [
+    "Svenska 1917 Bible quick is a focused, offline reader for the 1917 Swedish Church Bible. All 66 books and 31,152 verses live on the device, so the text opens wherever you are — on a train, offline at home, or during a quiet moment at church.",
+    "It is the quick, basic member of the Word Rhythm family. There is no devotional layer in the way: just a fast Bible, thoughtful study tools, and a calm reading experience. Swedish is the default interface; English is available in Settings.",
+  ],
+  sections: [
+    {
+      heading: "Read comfortably",
+      blocks: [
+        {
+          list: [
+            "Continue Reading opens exactly where you left off",
+            "Clean reading view with adjustable font size and font family",
+            "Light and dark themes, with a red-letter setting",
+            "Book / chapter / verse locator for instant navigation",
+            "Chapter navigation buttons and a focused reading mode",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Find a verse quickly",
+      blocks: [
+        {
+          list: [
+            "Full-text search across the whole Bible",
+            "Search by keyword, phrase, prefix or topic",
+            "Grouped results by book, plus search history for recent queries",
+            "Ready-made topic searches such as Love, Faith, Hope and Salvation",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Mark what matters",
+      blocks: [
+        {
+          list: [
+            "Five highlight colours with a clear meaning: Christ and gospel, God and promise, life and growth, hope and eternity, warning and sin",
+            "Favourites, bookmarks and personal notes",
+            "Topic, Doctrine and Life tags with stable keys, so your data stays portable across languages",
+            "Highlights list with colour filters",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Remember Scripture",
+      blocks: [
+        {
+          list: [
+            "Four memorization levels",
+            "Hide the text and review from the original text position",
+            "Clear in-progress and mastered states",
+            "Filter and sort your memorized verses",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Keep reading",
+      blocks: [
+        {
+          list: [
+            "Daily reading and a wide set of reading plans",
+            "Reading statistics, streaks and progress",
+            "Home-screen widgets with the daily verse or a favourite verse",
+            "Optional on-device text-to-speech with selectable voice, rate and pitch",
+            "Share verses as text or images",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Privacy and data",
+      blocks: [
+        {
+          list: [
+            "All reading data is stored locally on your device; there is no in-app cloud backup or sync",
+            "Text-to-speech uses the Android system engine",
+            "Analytics and crash reports are off unless you turn them on in Settings",
+            "Advertising is consent-gated where required",
+          ],
+        },
+      ],
+    },
+  ],
+  closing: [
+    "Read. Search. Mark. Memorize.",
+    "Svenska 1917 Bibeln Snabb.",
+  ],
+};
+
 export const listings: Record<string, StoreListing> = {
   kjv,
   asv,
@@ -1373,6 +1466,7 @@ export const listings: Record<string, StoreListing> = {
   yoruba,
   igbo,
   swahili,
+  sv1917Quick,
 };
 
 export function getListing(slug: string): StoreListing | undefined {

@@ -62,6 +62,8 @@ export interface BibleVersion {
   status: VersionStatus;
   /** Audio capability. Omit when the app is text-only. */
   audio?: AudioSupport;
+  /** Set false for Quick/basic readers that do not ship devotional slots. */
+  dailySlots?: boolean;
   /** Localised label for the before-bed slot, e.g. "睡前", "Noche", "Nuit". */
   sleepSlotLabel?: string;
   /** Android package id (if published) */
@@ -334,11 +336,8 @@ export const versions: BibleVersion[] = [
     // the interface in Hausa and English. No KJV is paired here, unlike the
     // Yorùbá and Igbo builds, so this entry must never say "+ KJV".
     //
-    // Still to be confirmed on the store: the release APK is signed with the
-    // family upload key and the gate reports FAIL=0, but as of 2026-11-20 the
-    // Play URL for this package returns 404, so there is no playUrl and the
-    // page shows the pre-launch note instead of a button. Flip to "live" only
-    // once that URL serves the listing — a dead store link is worse than none.
+    // Live on Play since 2026-11-25: the listing resolves to
+    // "Littafi Mai Tsarki (Hausa)" and the install button is present.
     slug: "hausa",
     code: "HAU",
     name: "Littafi Mai Tsarki",
@@ -348,14 +347,36 @@ export const versions: BibleVersion[] = [
     lang: "ha",
     summary:
       "The complete Biblica Open Hausa Contemporary Bible — all 66 books offline, with a Hausa interface, four daily slots, devotionals, reading plans and search.",
-    status: "planned",
+    status: "live",
     // Read-aloud only: the dedicated Sleep Audio track is KJV-only, so this app
     // must not inherit the KJV's `sleep` level.
     audio: "tts",
     sleepSlotLabel: "Bacci",
     package: "com.gyc.ace.hausa",
+    playUrl: "https://play.google.com/store/apps/details?id=com.gyc.ace.hausa",
     icon: "/apps/hausa/icon.png",
     feature: "/apps/hausa/feature.png",
+  },
+  {
+    // Quick lineage: a single-text pocket reader, not a devotional app. Keep it
+    // in the versions grid so it is discoverable next to the full translations,
+    // but do not claim the four daily slots it does not have. No playUrl yet —
+    // the store listing is not live, so the detail page shows the pre-launch note.
+    slug: "sv1917-quick",
+    code: "SV1917",
+    name: "Svenska 1917 Bible quick",
+    listing: "Svenska 1917 Bible quick",
+    storeTitle: "Svenska 1917 Bible quick",
+    language: "Svenska",
+    lang: "sv",
+    summary:
+      "A focused offline reader for the 1917 Swedish Bible — 66 books and 31,152 verses, with fast search, five-colour highlights, tags, memorization and reading plans.",
+    status: "planned",
+    audio: "tts",
+    dailySlots: false,
+    package: "com.gyc.ace.sv1917_quick",
+    icon: "/apps/sv1917-quick/icon.png",
+    screenshots: shots("sv1917-quick"),
   },
 ];
 

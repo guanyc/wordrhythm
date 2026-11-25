@@ -24,6 +24,8 @@ export interface PrivacyPolicy {
   icon?: string;
   /** Matching /versions/[slug], when the app is a Bible translation */
   versionSlug?: string;
+  /** Matching standalone project page under /projects, when there is no /versions entry */
+  projectUrl?: string;
   /**
    * Other apps by the same developer. They are reachable at
    * /privacy/<slug> for store listings, but stay out of the index
@@ -204,14 +206,13 @@ export const privacyPolicies: PrivacyPolicy[] = [
     // declared at all — voice search hands the request to the device's own
     // speech recogniser.
     //
-    // versionSlug used to be absent because /versions/hausa did not exist — a
-    // link to a 404 is worse than no link. The version entry exists now, so the
-    // policy links to it and the page carries the pre-launch note. No playUrl
-    // yet: the store URL for this package still served 404 as of 2026-11-20.
+    // Live on Play since 2026-11-25; the listing resolves, so the policy
+    // carries the store URL alongside the link to /versions/hausa.
     slug: "hausa",
     appName: "Littafi Mai Tsarki (Hausa)",
     storeName: "Littafi Mai Tsarki (Hausa)",
     androidPackage: "com.gyc.ace.hausa",
+    playUrl: "https://play.google.com/store/apps/details?id=com.gyc.ace.hausa",
     developerName: DEVELOPER,
     legalEntity: DEVELOPER,
     contactEmail: EMAIL,
@@ -230,6 +231,18 @@ export const privacyPolicies: PrivacyPolicy[] = [
     contactEmail: EMAIL,
     updated: "September 26, 2026",
     icon: "/apps/take-a-break/icon.png",
+  },
+  {
+    slug: "sv1917-quick",
+    appName: "Svenska 1917 Bible quick",
+    storeName: "Svenska 1917 Bible quick",
+    androidPackage: "com.gyc.ace.sv1917_quick",
+    developerName: DEVELOPER,
+    legalEntity: DEVELOPER,
+    contactEmail: EMAIL,
+    updated: "November 24, 2026",
+    icon: "/apps/sv1917-quick/icon.png",
+    projectUrl: "/projects/sv1917-quick",
   },
   {
     slug: "quick",

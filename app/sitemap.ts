@@ -127,6 +127,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${BASE}/projects/sv1917-quick`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${BASE}/privacy`,
       lastModified: now,
       changeFrequency: "yearly",

@@ -18,6 +18,9 @@ export default function Footer() {
             <Link href="/versions" className="hover:text-ink">
               Versions
             </Link>
+            <Link href="/projects/sv1917-quick" className="hover:text-ink">
+              Svenska 1917 quick
+            </Link>
             <Link href="/kjv-words" className="hover:text-ink">
               KJV Words
             </Link>

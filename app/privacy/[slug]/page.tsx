@@ -115,6 +115,14 @@ export default async function PrivacyPolicyPage({
             About this app
           </Link>
         )}
+        {policy.projectUrl && (
+          <Link
+            href={policy.projectUrl}
+            className="rounded-xl border border-black/10 bg-surface px-4 py-2 font-semibold transition-colors hover:border-brand/40 hover:text-brand"
+          >
+            About this app
+          </Link>
+        )}
         {policy.slug === "take-a-break" && (
           <Link
             href="/take-a-break"
